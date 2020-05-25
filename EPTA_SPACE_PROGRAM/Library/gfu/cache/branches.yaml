@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2020-05-23T16:54:33.563-03:00
+  lastUpdatedAtString: 2020-05-23T16:58:08.853-03:00
   initializedAtString: 2020-05-23T16:54:33.533-03:00
-  localBranches: []
+  localBranches:
+  - name: master
+    tracking: origin/master
   remoteBranches:
   - name: origin/HEAD
     tracking: '[None]'
@@ -28,8 +30,14 @@ MonoBehaviour:
     function: 0
     token: 
   localConfigBranches:
-    keys: []
-    values: []
+    keys:
+    - master
+    values:
+    - name: master
+      remote:
+        name: origin
+        url: https://github.com/olavocinacio/EPTA_SPACE_PROGRAM.git
+      trackingBranch: master
   remoteConfigBranches:
     keys:
     - origin
