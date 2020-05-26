@@ -7,39 +7,26 @@ using UnityEngine.UI;
 
 public class movimentação : MonoBehaviour
 {
-
-    public Rigidbody2D rb;
-    public float velocity;
+    public float speed;
+    Rigidbody2D rb;
     private float screenWidth;
     private Vector3 localScreenWidth;
+    private float move;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        screenWidth = Screen.width;
     }
 
-    // Update is called once per frame
-    void Update()
+    void Update() {
+        
+    }
+
+    void FixedUpdate()
     {
-        if (Input.touchCount > 0)
-        {
-            if (Input.GetTouch(0).position.x > screenWidth / 2)
-            {
-                if (transform.position.x <= screenWidth / 2)
-                {
-                    rb.velocity = Vector2.right * velocity;
-                }
-            }
-            else if (Input.GetTouch(0).position.x < screenWidth / 2)
-            {
-                if (transform.position.x >= -screenWidth / 2)
-                {
-                    rb.velocity = Vector2.left * velocity;
-                }
-            }
-        }
+        move = Input.GetAxis("Horizontal");
+
+        rb.velocity = new Vector2 (move * speed, rb.velocity.y);
 
         localScreenWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
 
