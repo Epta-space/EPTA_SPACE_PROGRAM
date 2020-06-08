@@ -24,9 +24,18 @@ public class movimentação : MonoBehaviour
 
     void FixedUpdate()
     {
-        move = Input.GetAxis("Horizontal");
 
-        rb.velocity = new Vector2 (move * speed, rb.velocity.y);
+        if(Input.GetMouseButton(0))
+        {
+            Vector3 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if(touchPos.x < 0){
+                rb.velocity = new Vector2( -speed, rb.velocity.y);
+            }
+            else{
+                rb.velocity = new Vector2( speed, rb.velocity.y);
+            }
+
+        }  
 
         localScreenWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
 
