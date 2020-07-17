@@ -19,20 +19,21 @@ public class movimentação : MonoBehaviour
     }
 
     void Update() {
-        
+
+  
+
     }
 
     void FixedUpdate()
     {
-
-        if(Input.GetMouseButton(0))
-        {
+        if(Input.GetMouseButton(0)){
             Vector3 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
             if(touchPos.x < 0){
-                rb.velocity = new Vector2( -speed, rb.velocity.y);
+                rb.velocity = new Vector2(-speed, rb.velocity.y);
             }
             else{
-                rb.velocity = new Vector2( speed, rb.velocity.y);
+                rb.velocity = new Vector2(speed, rb.velocity.y);
             }
 
         }  

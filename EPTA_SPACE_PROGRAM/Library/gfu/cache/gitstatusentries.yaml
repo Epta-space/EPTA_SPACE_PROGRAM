@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-06-08T17:46:12.252-03:00
-  initializedAtString: 2020-06-08T17:10:38.163-03:00
+  lastUpdatedAtString: 2020-07-08T10:42:14.640-03:00
+  initializedAtString: 2020-07-08T10:42:14.640-03:00
   entries:
   - path: EPTA_SPACE_PROGRAM\.collabignore
     fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\.collabignore
@@ -34,6 +34,18 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: EPTA_SPACE_PROGRAM\Assets\Spawner.cs
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Assets\Spawner.cs
+    projectPath: Assets\Spawner.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Assets\Spawner.cs.meta
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Assets\Spawner.cs.meta
+    projectPath: Assets\Spawner.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: EPTA_SPACE_PROGRAM\Library\ArtifactDB
     fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ArtifactDB
     projectPath: Library\ArtifactDB
@@ -44,47 +56,11 @@ MonoBehaviour:
     fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\19\19bb0945fa619a205931261e17767ded
     projectPath: Library\Artifacts\19\19bb0945fa619a205931261e17767ded
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: EPTA_SPACE_PROGRAM\Library\Artifacts\42\42e9258c8db693c5365a64bdc8c31516
     fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\42\42e9258c8db693c5365a64bdc8c31516
     projectPath: Library\Artifacts\42\42e9258c8db693c5365a64bdc8c31516
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\4e\4ecd5599c48b29080b12bf5c2b2a9d30
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\4e\4ecd5599c48b29080b12bf5c2b2a9d30
-    projectPath: Library\Artifacts\4e\4ecd5599c48b29080b12bf5c2b2a9d30
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\55\551a99af4fbcf5476fcd9b8dba1dd296
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\55\551a99af4fbcf5476fcd9b8dba1dd296
-    projectPath: Library\Artifacts\55\551a99af4fbcf5476fcd9b8dba1dd296
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\5f\5f2579b2540fe194f5392da855b24495
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\5f\5f2579b2540fe194f5392da855b24495
-    projectPath: Library\Artifacts\5f\5f2579b2540fe194f5392da855b24495
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\60\607b7fec35c42976b1a1c7e0b0d60261
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\60\607b7fec35c42976b1a1c7e0b0d60261
-    projectPath: Library\Artifacts\60\607b7fec35c42976b1a1c7e0b0d60261
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\6a\6a08d3cc11d6d990354db1164f76a29c
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\6a\6a08d3cc11d6d990354db1164f76a29c
-    projectPath: Library\Artifacts\6a\6a08d3cc11d6d990354db1164f76a29c
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\6c\6cbeb4c7a964ac825412f2c9e05a4225
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\6c\6cbeb4c7a964ac825412f2c9e05a4225
-    projectPath: Library\Artifacts\6c\6cbeb4c7a964ac825412f2c9e05a4225
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
@@ -92,29 +68,11 @@ MonoBehaviour:
     fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\80\80f8ab009ad2b2bfc9fc23f1637d93d4
     projectPath: Library\Artifacts\80\80f8ab009ad2b2bfc9fc23f1637d93d4
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\87\873bd887bde0d628b911a2884011fe29
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\87\873bd887bde0d628b911a2884011fe29
-    projectPath: Library\Artifacts\87\873bd887bde0d628b911a2884011fe29
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
   - path: EPTA_SPACE_PROGRAM\Library\Artifacts\89\89b866dcb4bd424e7700b20528fd4222
     fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\89\89b866dcb4bd424e7700b20528fd4222
     projectPath: Library\Artifacts\89\89b866dcb4bd424e7700b20528fd4222
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\aa\aa9916c134ea094c0031b379305857d2
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\aa\aa9916c134ea094c0031b379305857d2
-    projectPath: Library\Artifacts\aa\aa9916c134ea094c0031b379305857d2
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\b6\b6a011c6652b8aae533d46dcb2960f33
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\b6\b6a011c6652b8aae533d46dcb2960f33
-    projectPath: Library\Artifacts\b6\b6a011c6652b8aae533d46dcb2960f33
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
@@ -122,17 +80,23 @@ MonoBehaviour:
     fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\b9\b9e6f8d9112f976067e60aab9899e40f
     projectPath: Library\Artifacts\b9\b9e6f8d9112f976067e60aab9899e40f
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: EPTA_SPACE_PROGRAM\Library\Artifacts\cc\ccdddafa06367cba1c702adb82932717
     fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\cc\ccdddafa06367cba1c702adb82932717
     projectPath: Library\Artifacts\cc\ccdddafa06367cba1c702adb82932717
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: EPTA_SPACE_PROGRAM\Library\Artifacts\d5\d53703a852af452101773c86425df34b
     fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\d5\d53703a852af452101773c86425df34b
     projectPath: Library\Artifacts\d5\d53703a852af452101773c86425df34b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\d6\d6237f429ddcda2c8943630d35a7a214
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\d6\d6237f429ddcda2c8943630d35a7a214
+    projectPath: Library\Artifacts\d6\d6237f429ddcda2c8943630d35a7a214
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -140,20 +104,20 @@ MonoBehaviour:
     fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\f5\f592984aa22315f92ef7355405d1b079
     projectPath: Library\Artifacts\f5\f592984aa22315f92ef7355405d1b079
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\fb\fbecedb4eba349fe4d3979504e3753ad
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\fb\fbecedb4eba349fe4d3979504e3753ad
-    projectPath: Library\Artifacts\fb\fbecedb4eba349fe4d3979504e3753ad
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\fd\fd935055f366afaf50d0526cb7977282
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\fd\fd935055f366afaf50d0526cb7977282
+    projectPath: Library\Artifacts\fd\fd935055f366afaf50d0526cb7977282
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: EPTA_SPACE_PROGRAM\Library\Collab\CollabSnapshot_bab3bcbf-747c-436b-975f-03204f4342f9.txt
     fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Collab\CollabSnapshot_bab3bcbf-747c-436b-975f-03204f4342f9.txt
     projectPath: Library\Collab\CollabSnapshot_bab3bcbf-747c-436b-975f-03204f4342f9.txt
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: EPTA_SPACE_PROGRAM\Library\CurrentLayout-default.dwlt
     fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\CurrentLayout-default.dwlt
     projectPath: Library\CurrentLayout-default.dwlt
@@ -163,18 +127,6 @@ MonoBehaviour:
   - path: EPTA_SPACE_PROGRAM\Library\EditorInstance.json
     fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\EditorInstance.json
     projectPath: Library\EditorInstance.json
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\EditorUserBuildSettings.asset
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\EditorUserBuildSettings.asset
-    projectPath: Library\EditorUserBuildSettings.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\EditorUserSettings.asset
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\EditorUserSettings.asset
-    projectPath: Library\EditorUserSettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -214,87 +166,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.Rider.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.Timeline.dll
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.Timeline.dll
-    projectPath: Library\ScriptAssemblies\Unity.Timeline.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-    projectPath: Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEditor.UI.dll
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEditor.UI.dll
-    projectPath: Library\ScriptAssemblies\UnityEditor.UI.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-    projectPath: Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEngine.UI.dll
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEngine.UI.dll
-    projectPath: Library\ScriptAssemblies\UnityEngine.UI.dll
+  - path: EPTA_SPACE_PROGRAM\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -310,69 +184,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\StateCache\SceneView\7c7f78-mainStage.json
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\StateCache\SceneView\7c7f78-mainStage.json
-    projectPath: Library\StateCache\SceneView\7c7f78-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\ProjectSettings\ProjectSettings.asset
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\ProjectSettings\ProjectSettings.asset
-    projectPath: ProjectSettings\ProjectSettings.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: EPTA_SPACE_PROGRAM\Temp\__Backupscenes\0.backup
     fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Temp\__Backupscenes\0.backup
     projectPath: Temp\__Backupscenes\0.backup
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: EPTA_SPACE_PROGRAM\Temp\UnityLockfile
     fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Temp\UnityLockfile
     projectPath: Temp\UnityLockfile
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-068f18c1ade2fb7418007ebde6b608ea
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-068f18c1ade2fb7418007ebde6b608ea
-    projectPath: Temp\UnityTempFile-068f18c1ade2fb7418007ebde6b608ea
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-598c3908045ee6149aad61a8b96fb61a
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-598c3908045ee6149aad61a8b96fb61a
-    projectPath: Temp\UnityTempFile-598c3908045ee6149aad61a8b96fb61a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-6fc5ff217e5739b4cbdba44454035610
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-6fc5ff217e5739b4cbdba44454035610
-    projectPath: Temp\UnityTempFile-6fc5ff217e5739b4cbdba44454035610
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-9b9437783a08aef41bed721437ebad05
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-9b9437783a08aef41bed721437ebad05
-    projectPath: Temp\UnityTempFile-9b9437783a08aef41bed721437ebad05
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-d56049ecff756bd41a61fbdb46c07d0c
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-d56049ecff756bd41a61fbdb46c07d0c
-    projectPath: Temp\UnityTempFile-d56049ecff756bd41a61fbdb46c07d0c
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-ea2de89640003cb439564c04ca34bdd0
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-ea2de89640003cb439564c04ca34bdd0
-    projectPath: Temp\UnityTempFile-ea2de89640003cb439564c04ca34bdd0
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-ff7a8d3758585074c964021d31da6eb9
-    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-ff7a8d3758585074c964021d31da6eb9
-    projectPath: Temp\UnityTempFile-ff7a8d3758585074c964021d31da6eb9
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
