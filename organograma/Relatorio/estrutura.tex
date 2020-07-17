@@ -1,0 +1,77 @@
+%----------------------------------------------------------------------------------------
+%	Pacotes utilizados.(evitar mudar, se for necessária alguma mudança, comunicar gerencia)
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper, 12pt,  oneside,a4paper,english,french,spanish,brazil]{book}     % Para folha A4, default 11pt tamanho
+\usepackage[utf8]{inputenc}                                               % Acentos
+\usepackage[brazil]{babel}                                                % Biblioteca para português
+\usepackage{amssymb}                                                      % Biblioteca para símbolos
+\usepackage{graphicx}                                                     % Biblioteca para figuras
+\usepackage{tikz}                                                         % Pacote gráfico
+\usepackage{amsmath}                                                      % Biblioteca para símbolos
+\usepackage[T1]{fontenc}                                                  % encode para acentos 
+\usepackage{fouriernc}                                                    % New Century Schoolbook font
+\usepackage{xcolor}                                                       % Controle de cores
+\usepackage[many]{tcolorbox}                                              % Controle de cores
+\usepackage{amsthm}                                                       % Suporte matemático ams
+\usepackage{physics}                                                      % Suporte em notações
+\usepackage{gensymb}                                                      % Suporte em notação
+\usepackage{amsfonts}                                                     % Suporte em fontes ams
+\usepackage[left=1.00cm, right=1.00cm, top=3cm, bottom=2.50cm]{geometry}  % Parâmetros geométricos
+\usepackage{caption}                                                      % Legenda para imagens
+\usepackage{subcaption}                                                   % Legenda para figuras múltiplas
+\usepackage{capt-of}                                                      % Suporte com legendas
+\usepackage{float}                                                        % Suporte para maiores floats  
+\usepackage[figurename=Fig.]{caption}                                     % Suporte 2 títulos legendas
+\usepackage{tabularx}                                                     % suporte com tabelas
+\usepackage{ragged2e}                                                     % suporte localização texto
+\usepackage{mathrsfs}                                                     % Fontes para equações
+\usepackage{makecell}                                                     % Formatação de tabelas
+\usepackage{textpos}                                                      % Facilita posicionamento de forma absoluta
+\usepackage[hyphens]{url}                                                 % Possibilita uso de hífen em links
+\usepackage[makeroom]{cancel}                                             % Desconsidera limites para retas
+\usepackage{empheq}                                                       % Possibilita emoldurar fórmulas
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,bookmarksopen=true, bookmarksnumbered, pdfencoding=auto]{hyperref}                                               % links clicáveis em PDF
+\usepackage{fancyhdr}                                                     % Ajuda na criação de footers e headers
+\usepackage{siunitx}                                                      % General suporte
+\usepackage{enumitem}                                                     % Controle sobre layout
+\usepackage{cancel}                                                       % Riscar coisas
+\usepackage{bookmark}                                                     % Hiperlink em PDF
+\usepackage{versions}                                                     % Devido às versões
+\usepackage[pages=some,scale=1,angle=0,opacity=1]{background}             % Imagem de Background
+\usetikzlibrary{decorations.pathmorphing}                                 % Permite utilização direta fonte abaixo
+\usetikzlibrary{shapes.callouts,positioning}                              % Balões   
+\usetikzlibrary{shapes.geometric,arrows,shadows}                          % flechas
+\usepackage{frcursive}                                                    % Fonte cursiva
+\usepackage{multirow}                                                     % Suporte tabelas
+
+\setlength\parindent{3ex}                                                 % Parâmetro geométrico
+\setlength{\parskip}{0.25em}                                              % Parâmetro geométrico
+\setlength{\fboxsep}{10pt}                                                % Espaço ao redor dos quadros
+\definecolor{zelena}{RGB}{0,100,0}                                        % Define cores em estruturas
+\tcbuselibrary{theorems}                                                  % Cor nas caixas                           
+\tcbuselibrary{breakable}                                                 % Particiona coisas
+\pagestyle{fancy}  
+\fancyhead[RO , RE]{\footnotesize 
+	\begin{minipage}[b]{0.435\linewidth}\flushright\leftmark\end{minipage}}  % cabeçalho direito ímpar=título do capítulo
+\fancyhead[LO , LE]{\footnotesize 	
+	\begin{minipage}[b]{0.435\linewidth}\flushleft\rightmark\end{minipage}} % cabeçalho esquerdo = nome da seção
+\fancyfoot[CE,CO]{\thepage}                                               % Nota de pé
+\allowdisplaybreaks                                                       % Possibilita alguns comandos de controle
+\setcellgapes{5pt}                                                        % Formatação de tabelas
+\definecolor{eggshell}{rgb}{0.94, 0.92, 0.84}                             % Definição de cor 
+
+
+
+\setlength\headheight{27.05003pt}
+\renewcommand\headrule{\hrulefill
+	\raisebox{10.1pt}[-10pt][-10pt]{\plogo}\hrulefill}                      % Headers
+\newcommand{\plogo}{\fbox{  $EPTA$   }}                                   % sigla equipe 
+\newcommand\BackImage[2][scale=1]{\BgThispage\backgroundsetup{
+		contents={\includegraphics[#1]{#2}}}}                             % cria a função background
+\newtcbox{\caixaeq}[1][]{nobeforeafter,math upper,tcbox raise base,enhanced,
+	colframe=black!50!black,colback=eggshell!40!white,arc=4pt,	
+	boxrule=1pt,drop fuzzy shadow,#1}                                     % Moldura para fórmulas
+
+\DeclareMathOperator{\tg}{tg}                                             % Declara construção mat. 
+\DeclareMathOperator{\cotg}{cotg}                                         % Declara construção mat.
