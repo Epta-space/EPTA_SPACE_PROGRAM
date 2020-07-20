@@ -13,126 +13,208 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-07-17T11:36:00.957-03:00
-  initializedAtString: 2020-07-17T11:35:59.436-03:00
+  lastUpdatedAtString: 2020-07-20T13:32:50.727-03:00
+  initializedAtString: 2020-07-20T11:25:15.275-03:00
   entries:
-  - path: EPTA_SPACE_PROGRAM\.vscode\launch.json
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\.vscode\launch.json
-    projectPath: .vscode\launch.json
+  - path: EPTA_SPACE_PROGRAM\Assets\interface_handler.cs
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Assets\interface_handler.cs
+    projectPath: Assets\interface_handler.cs
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\.vscode\settings.json
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\.vscode\settings.json
-    projectPath: .vscode\settings.json
+  - path: EPTA_SPACE_PROGRAM\Assets\interface_handler.cs.meta
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Assets\interface_handler.cs.meta
+    projectPath: Assets\interface_handler.cs.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: "EPTA_SPACE_PROGRAM\\Assets\\movimenta\xE7\xE3o.cs"
-    fullPath: "E:\\OneDrive\\Artist front\\GAME_DEV\\EPTA_PROJECT\\2020\\EPTA_PROJECT\\EPTA_SPACE_PROGRAM\\Assets\\movimenta\xE7\xE3o.cs"
-    projectPath: "Assets\\movimenta\xE7\xE3o.cs"
+  - path: EPTA_SPACE_PROGRAM\Assets\karma future.ttf
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Assets\karma
+      future.ttf
+    projectPath: Assets\karma future.ttf
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\APIUpdater\project-dependencies.graph
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\APIUpdater\project-dependencies.graph
-    projectPath: Library\APIUpdater\project-dependencies.graph
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Assets\karma future.ttf.meta
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Assets\karma
+      future.ttf.meta
+    projectPath: Assets\karma future.ttf.meta
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Assets\pause button.png
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Assets\pause
+      button.png
+    projectPath: Assets\pause button.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Assets\pause button.png.meta
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Assets\pause
+      button.png.meta
+    projectPath: Assets\pause button.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: EPTA_SPACE_PROGRAM\Library\ArtifactDB
     fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ArtifactDB
     projectPath: Library\ArtifactDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\0c\0c32254f04a35dae0196dc679192ce7b
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\0c\0c32254f04a35dae0196dc679192ce7b
-    projectPath: Library\Artifacts\0c\0c32254f04a35dae0196dc679192ce7b
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\02\029d0fdd0c4555ae8b8f1bbb532f834d
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\02\029d0fdd0c4555ae8b8f1bbb532f834d
+    projectPath: Library\Artifacts\02\029d0fdd0c4555ae8b8f1bbb532f834d
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\4e\4e54d96806a5e0ebdf8cfd424b96b69b
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\4e\4e54d96806a5e0ebdf8cfd424b96b69b
-    projectPath: Library\Artifacts\4e\4e54d96806a5e0ebdf8cfd424b96b69b
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\10\100c7792320f4f8ae09e342f7ee7abc0
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\10\100c7792320f4f8ae09e342f7ee7abc0
+    projectPath: Library\Artifacts\10\100c7792320f4f8ae09e342f7ee7abc0
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\4f\4f10eefb34bc9985e107f10f004e21ee
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\4f\4f10eefb34bc9985e107f10f004e21ee
-    projectPath: Library\Artifacts\4f\4f10eefb34bc9985e107f10f004e21ee
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\22\22f54c301d0e86a2910cc45d05ab8846
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\22\22f54c301d0e86a2910cc45d05ab8846
+    projectPath: Library\Artifacts\22\22f54c301d0e86a2910cc45d05ab8846
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\54\5488d7954089aff18bbe63c5070655be
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\54\5488d7954089aff18bbe63c5070655be
-    projectPath: Library\Artifacts\54\5488d7954089aff18bbe63c5070655be
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\55\55dc0ddec37c045c1d23f9ac96b49ab3
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\55\55dc0ddec37c045c1d23f9ac96b49ab3
-    projectPath: Library\Artifacts\55\55dc0ddec37c045c1d23f9ac96b49ab3
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\30\308da59ec849caee5af83214931b913e
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\30\308da59ec849caee5af83214931b913e
+    projectPath: Library\Artifacts\30\308da59ec849caee5af83214931b913e
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\62\6211979aeb6cdcda08ca9a2e1973ba7b
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\62\6211979aeb6cdcda08ca9a2e1973ba7b
-    projectPath: Library\Artifacts\62\6211979aeb6cdcda08ca9a2e1973ba7b
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\69\690d476a27a71e26001380fcc30657ed
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\69\690d476a27a71e26001380fcc30657ed
-    projectPath: Library\Artifacts\69\690d476a27a71e26001380fcc30657ed
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\70\7037f2ecc223712584c00ac30de6a36a
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\70\7037f2ecc223712584c00ac30de6a36a
-    projectPath: Library\Artifacts\70\7037f2ecc223712584c00ac30de6a36a
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\36\36ea689b46370cc09a354cc224976e74
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\36\36ea689b46370cc09a354cc224976e74
+    projectPath: Library\Artifacts\36\36ea689b46370cc09a354cc224976e74
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\ce\cee8991a908217ddba8a551c26c886a5
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\ce\cee8991a908217ddba8a551c26c886a5
-    projectPath: Library\Artifacts\ce\cee8991a908217ddba8a551c26c886a5
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\38\381383c41133562e35317c5440878fc1
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\38\381383c41133562e35317c5440878fc1
+    projectPath: Library\Artifacts\38\381383c41133562e35317c5440878fc1
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\dc\dc633dcb7d56b4afb50dbfa2688f1168
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\dc\dc633dcb7d56b4afb50dbfa2688f1168
-    projectPath: Library\Artifacts\dc\dc633dcb7d56b4afb50dbfa2688f1168
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\3b\3b187c1bf6f1a6b953ab802059f4174f
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\3b\3b187c1bf6f1a6b953ab802059f4174f
+    projectPath: Library\Artifacts\3b\3b187c1bf6f1a6b953ab802059f4174f
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\f2\f255aae791174c7cafd438369f414258
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\f2\f255aae791174c7cafd438369f414258
-    projectPath: Library\Artifacts\f2\f255aae791174c7cafd438369f414258
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\42\422573fe07bd87ab3731f74a119050ed
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\42\422573fe07bd87ab3731f74a119050ed
+    projectPath: Library\Artifacts\42\422573fe07bd87ab3731f74a119050ed
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\54\54b191309763ba798c515388fbe939fc
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\54\54b191309763ba798c515388fbe939fc
+    projectPath: Library\Artifacts\54\54b191309763ba798c515388fbe939fc
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\58\580a7eaa08066766296edcd11ac512b1
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\58\580a7eaa08066766296edcd11ac512b1
+    projectPath: Library\Artifacts\58\580a7eaa08066766296edcd11ac512b1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\66\664ae916e67b4de6b01daf2dc09dcd84
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\66\664ae916e67b4de6b01daf2dc09dcd84
+    projectPath: Library\Artifacts\66\664ae916e67b4de6b01daf2dc09dcd84
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\71\716c9ac2b506a30f067f05251a2f5a42
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\71\716c9ac2b506a30f067f05251a2f5a42
+    projectPath: Library\Artifacts\71\716c9ac2b506a30f067f05251a2f5a42
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\90\9006a2ec6c0427bd42f1d8a33a89e4ca
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\90\9006a2ec6c0427bd42f1d8a33a89e4ca
+    projectPath: Library\Artifacts\90\9006a2ec6c0427bd42f1d8a33a89e4ca
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\93\937e4fad4dac99862b5210c90c7d82b0
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\93\937e4fad4dac99862b5210c90c7d82b0
+    projectPath: Library\Artifacts\93\937e4fad4dac99862b5210c90c7d82b0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\a9\a96e0a7deef8d83c11b48c29190f6c0d
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\a9\a96e0a7deef8d83c11b48c29190f6c0d
+    projectPath: Library\Artifacts\a9\a96e0a7deef8d83c11b48c29190f6c0d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\ae\ae73e7694904e51dca71bdb2c13842e4
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\ae\ae73e7694904e51dca71bdb2c13842e4
+    projectPath: Library\Artifacts\ae\ae73e7694904e51dca71bdb2c13842e4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\b3\b385138017040248663d96747e95c16d
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\b3\b385138017040248663d96747e95c16d
+    projectPath: Library\Artifacts\b3\b385138017040248663d96747e95c16d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\b6\b6c3a6fb1e2ebdedbcae425be06c43d9
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\b6\b6c3a6fb1e2ebdedbcae425be06c43d9
+    projectPath: Library\Artifacts\b6\b6c3a6fb1e2ebdedbcae425be06c43d9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\b9\b9babf96027c75c74bfd380d000e08f7
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\b9\b9babf96027c75c74bfd380d000e08f7
+    projectPath: Library\Artifacts\b9\b9babf96027c75c74bfd380d000e08f7
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\bb\bb19b47da3354f75849eefb3e5b2a768
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\bb\bb19b47da3354f75849eefb3e5b2a768
+    projectPath: Library\Artifacts\bb\bb19b47da3354f75849eefb3e5b2a768
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\c3\c3aea320decf7199850a45917f6868e1
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\c3\c3aea320decf7199850a45917f6868e1
+    projectPath: Library\Artifacts\c3\c3aea320decf7199850a45917f6868e1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\ca\ca4bc90f585f0c0fb68f8ee50e44583b
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\ca\ca4bc90f585f0c0fb68f8ee50e44583b
+    projectPath: Library\Artifacts\ca\ca4bc90f585f0c0fb68f8ee50e44583b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\ef\ef558f5c0489bf2c63874a121e30c86b
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\ef\ef558f5c0489bf2c63874a121e30c86b
+    projectPath: Library\Artifacts\ef\ef558f5c0489bf2c63874a121e30c86b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\fb\fbf991ca3c5fffa85b34fbb52ca18615
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Artifacts\fb\fbf991ca3c5fffa85b34fbb52ca18615
+    projectPath: Library\Artifacts\fb\fbf991ca3c5fffa85b34fbb52ca18615
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: EPTA_SPACE_PROGRAM\Library\Collab\CollabSnapshot_bab3bcbf-747c-436b-975f-03204f4342f9.txt
     fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Collab\CollabSnapshot_bab3bcbf-747c-436b-975f-03204f4342f9.txt
     projectPath: Library\Collab\CollabSnapshot_bab3bcbf-747c-436b-975f-03204f4342f9.txt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\CurrentLayout-default.dwlt
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\CurrentLayout-default.dwlt
-    projectPath: Library\CurrentLayout-default.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: EPTA_SPACE_PROGRAM\Library\EditorInstance.json
     fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\EditorInstance.json
     projectPath: Library\EditorInstance.json
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\expandedItems
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\expandedItems
-    projectPath: Library\expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -172,330 +254,12 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\CHANGELOG.md
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\CHANGELOG.md
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\CHANGELOG.md
+  - path: EPTA_SPACE_PROGRAM\Library\InspectorExpandedItems.asset
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\CHANGELOG.md.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\CHANGELOG.md.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\CHANGELOG.md.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\CONTRIBUTING.md
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\CONTRIBUTING.md
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\CONTRIBUTING.md
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\CONTRIBUTING.md.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\CONTRIBUTING.md.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\CONTRIBUTING.md.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Documentation~\README.md
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Documentation~\README.md
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Documentation~\README.md
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\AssemblyNameProvider.cs
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\AssemblyNameProvider.cs
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\AssemblyNameProvider.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\AssemblyNameProvider.cs.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\AssemblyNameProvider.cs.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\AssemblyNameProvider.cs.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\FileIO.cs
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\FileIO.cs
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\FileIO.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\FileIO.cs.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\FileIO.cs.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\FileIO.cs.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\GUIDGenerator.cs
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\GUIDGenerator.cs
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\GUIDGenerator.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\GUIDGenerator.cs.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\GUIDGenerator.cs.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\GUIDGenerator.cs.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\ProjectGeneration.cs
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\ProjectGeneration.cs
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\ProjectGeneration.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\ProjectGeneration.cs.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\ProjectGeneration.cs.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\ProjectGeneration.cs.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\ProjectGenerationFlag.cs
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\ProjectGenerationFlag.cs
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\ProjectGenerationFlag.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\ProjectGenerationFlag.cs.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\ProjectGenerationFlag.cs.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\ProjectGeneration\ProjectGenerationFlag.cs.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\Unity.com.unity.vscode.Editor.asmdef
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\Unity.com.unity.vscode.Editor.asmdef
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\Unity.com.unity.vscode.Editor.asmdef
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\Unity.com.unity.vscode.Editor.asmdef.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\Unity.com.unity.vscode.Editor.asmdef.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\Unity.com.unity.vscode.Editor.asmdef.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\VSCodeDiscovery.cs
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\VSCodeDiscovery.cs
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\VSCodeDiscovery.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\VSCodeDiscovery.cs.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\VSCodeDiscovery.cs.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\VSCodeDiscovery.cs.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\VSCodeScriptEditor.cs
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\VSCodeScriptEditor.cs
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\VSCodeScriptEditor.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\VSCodeScriptEditor.cs.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\VSCodeScriptEditor.cs.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\Editor\VSCodeScriptEditor.cs.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\LICENSE.md
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\LICENSE.md
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\LICENSE.md
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\LICENSE.md.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\LICENSE.md.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\LICENSE.md.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\package.json
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\package.json
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\package.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\package.json.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.0\package.json.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.0\package.json.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\CHANGELOG.md
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\CHANGELOG.md
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\CHANGELOG.md
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\CHANGELOG.md.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\CHANGELOG.md.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\CHANGELOG.md.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\CONTRIBUTING.md
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\CONTRIBUTING.md
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\CONTRIBUTING.md
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\CONTRIBUTING.md.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\CONTRIBUTING.md.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\CONTRIBUTING.md.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Documentation~\README.md
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Documentation~\README.md
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Documentation~\README.md
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\AssemblyNameProvider.cs
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\AssemblyNameProvider.cs
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\AssemblyNameProvider.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\AssemblyNameProvider.cs.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\AssemblyNameProvider.cs.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\AssemblyNameProvider.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\FileIO.cs
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\FileIO.cs
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\FileIO.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\FileIO.cs.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\FileIO.cs.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\FileIO.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\GUIDGenerator.cs
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\GUIDGenerator.cs
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\GUIDGenerator.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\GUIDGenerator.cs.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\GUIDGenerator.cs.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\GUIDGenerator.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\ProjectGeneration.cs
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\ProjectGeneration.cs
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\ProjectGeneration.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\ProjectGeneration.cs.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\ProjectGeneration.cs.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\ProjectGeneration.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\ProjectGenerationFlag.cs
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\ProjectGenerationFlag.cs
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\ProjectGenerationFlag.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\ProjectGenerationFlag.cs.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\ProjectGenerationFlag.cs.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\ProjectGeneration\ProjectGenerationFlag.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\Unity.com.unity.vscode.Editor.asmdef
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\Unity.com.unity.vscode.Editor.asmdef
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\Unity.com.unity.vscode.Editor.asmdef
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\Unity.com.unity.vscode.Editor.asmdef.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\Unity.com.unity.vscode.Editor.asmdef.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\Unity.com.unity.vscode.Editor.asmdef.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\VSCodeDiscovery.cs
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\VSCodeDiscovery.cs
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\VSCodeDiscovery.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\VSCodeDiscovery.cs.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\VSCodeDiscovery.cs.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\VSCodeDiscovery.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\VSCodeScriptEditor.cs
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\VSCodeScriptEditor.cs
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\VSCodeScriptEditor.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\VSCodeScriptEditor.cs.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\VSCodeScriptEditor.cs.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\Editor\VSCodeScriptEditor.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\LICENSE.md
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\LICENSE.md
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\LICENSE.md
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\LICENSE.md.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\LICENSE.md.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\LICENSE.md.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\package.json
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\package.json
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\package.json
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\package.json.meta
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\PackageCache\com.unity.ide.vscode@1.2.1\package.json.meta
-    projectPath: Library\PackageCache\com.unity.ide.vscode@1.2.1\package.json.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    workTreeStatus: 3
   - path: EPTA_SPACE_PROGRAM\Library\SceneVisibilityState.asset
     fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\SceneVisibilityState.asset
     projectPath: Library\SceneVisibilityState.asset
@@ -508,303 +272,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.pdb
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.pdb
-    projectPath: Library\ScriptAssemblies\Unity.2D.Sprite.Editor.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.pdb
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.pdb
-    projectPath: Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.Rider.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.Timeline.dll
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.Timeline.dll
-    projectPath: Library\ScriptAssemblies\Unity.Timeline.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.VSCode.Editor.pdb
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Unity.VSCode.Editor.pdb
-    projectPath: Library\ScriptAssemblies\Unity.VSCode.Editor.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-    projectPath: Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEditor.UI.dll
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEditor.UI.dll
-    projectPath: Library\ScriptAssemblies\UnityEditor.UI.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEditor.UI.pdb
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEditor.UI.pdb
-    projectPath: Library\ScriptAssemblies\UnityEditor.UI.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-    projectPath: Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEngine.UI.dll
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEngine.UI.dll
-    projectPath: Library\ScriptAssemblies\UnityEngine.UI.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEngine.UI.pdb
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\UnityEngine.UI.pdb
-    projectPath: Library\ScriptAssemblies\UnityEngine.UI.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ScriptMapper
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptMapper
-    projectPath: Library\ScriptMapper
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\0\0829d665a80c79b725d76b49b63516fc.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\0\0829d665a80c79b725d76b49b63516fc.bin
-    projectPath: Library\ShaderCache\0\0829d665a80c79b725d76b49b63516fc.bin
+  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\6\6c55e6bb55dbd6a5057b950a50158e37.bin
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\6\6c55e6bb55dbd6a5057b950a50158e37.bin
+    projectPath: Library\ShaderCache\6\6c55e6bb55dbd6a5057b950a50158e37.bin
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\0\084e47efa25a1b4cd1db671410df9346.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\0\084e47efa25a1b4cd1db671410df9346.bin
-    projectPath: Library\ShaderCache\0\084e47efa25a1b4cd1db671410df9346.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\0\0d5102b2d1e9797ab8683dd6c2152617.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\0\0d5102b2d1e9797ab8683dd6c2152617.bin
-    projectPath: Library\ShaderCache\0\0d5102b2d1e9797ab8683dd6c2152617.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\0\0fd75bda900b39e0109a10e3b9b610fd.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\0\0fd75bda900b39e0109a10e3b9b610fd.bin
-    projectPath: Library\ShaderCache\0\0fd75bda900b39e0109a10e3b9b610fd.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\1\117e34e38f2feb7afe3b2ea6549f8bb0.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\1\117e34e38f2feb7afe3b2ea6549f8bb0.bin
-    projectPath: Library\ShaderCache\1\117e34e38f2feb7afe3b2ea6549f8bb0.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\1\131ec041fa78bc5567732a3601d1760e.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\1\131ec041fa78bc5567732a3601d1760e.bin
-    projectPath: Library\ShaderCache\1\131ec041fa78bc5567732a3601d1760e.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\1\132bbf1de30b806804b45a1de1a0ca5e.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\1\132bbf1de30b806804b45a1de1a0ca5e.bin
-    projectPath: Library\ShaderCache\1\132bbf1de30b806804b45a1de1a0ca5e.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\1\1cd25d9589d6b3d0f80a15ef315497bc.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\1\1cd25d9589d6b3d0f80a15ef315497bc.bin
-    projectPath: Library\ShaderCache\1\1cd25d9589d6b3d0f80a15ef315497bc.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\2\24d1376850b6e711a5d81d65346de0e4.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\2\24d1376850b6e711a5d81d65346de0e4.bin
-    projectPath: Library\ShaderCache\2\24d1376850b6e711a5d81d65346de0e4.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\2\29ab3ef6c3a3a2016d50a57ac29ce6d9.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\2\29ab3ef6c3a3a2016d50a57ac29ce6d9.bin
-    projectPath: Library\ShaderCache\2\29ab3ef6c3a3a2016d50a57ac29ce6d9.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\3\381b98e4014250969ddbfca985f41021.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\3\381b98e4014250969ddbfca985f41021.bin
-    projectPath: Library\ShaderCache\3\381b98e4014250969ddbfca985f41021.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\3\3a407f1611537d6a01b312124b9cd13b.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\3\3a407f1611537d6a01b312124b9cd13b.bin
-    projectPath: Library\ShaderCache\3\3a407f1611537d6a01b312124b9cd13b.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\3\3d1c42723c04746db05650c4e082b7c5.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\3\3d1c42723c04746db05650c4e082b7c5.bin
-    projectPath: Library\ShaderCache\3\3d1c42723c04746db05650c4e082b7c5.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\3\3de3c0a6e3beb9fc538d2d3b2532dedb.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\3\3de3c0a6e3beb9fc538d2d3b2532dedb.bin
-    projectPath: Library\ShaderCache\3\3de3c0a6e3beb9fc538d2d3b2532dedb.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\4\48f20fbfce4817004d161d32c38944a5.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\4\48f20fbfce4817004d161d32c38944a5.bin
-    projectPath: Library\ShaderCache\4\48f20fbfce4817004d161d32c38944a5.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\4\4e39c9a81b12db21bdfa35ca8103d915.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\4\4e39c9a81b12db21bdfa35ca8103d915.bin
-    projectPath: Library\ShaderCache\4\4e39c9a81b12db21bdfa35ca8103d915.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\5\5515f23d7d415bf60fa2d26feaf37eba.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\5\5515f23d7d415bf60fa2d26feaf37eba.bin
-    projectPath: Library\ShaderCache\5\5515f23d7d415bf60fa2d26feaf37eba.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\7\733938275f33b7b548e21b99ad856ff8.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\7\733938275f33b7b548e21b99ad856ff8.bin
-    projectPath: Library\ShaderCache\7\733938275f33b7b548e21b99ad856ff8.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\7\7e39b1a82c547cb176b8b994f4da57ad.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\7\7e39b1a82c547cb176b8b994f4da57ad.bin
-    projectPath: Library\ShaderCache\7\7e39b1a82c547cb176b8b994f4da57ad.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\9\92315d11214cba272ca122aa7493b461.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\9\92315d11214cba272ca122aa7493b461.bin
-    projectPath: Library\ShaderCache\9\92315d11214cba272ca122aa7493b461.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\9\961e31c8675992dbf32f383c28b97d94.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\9\961e31c8675992dbf32f383c28b97d94.bin
-    projectPath: Library\ShaderCache\9\961e31c8675992dbf32f383c28b97d94.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\a\a049b479e5e6f5e5eb5c6ffbc2bcb1f8.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\a\a049b479e5e6f5e5eb5c6ffbc2bcb1f8.bin
-    projectPath: Library\ShaderCache\a\a049b479e5e6f5e5eb5c6ffbc2bcb1f8.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\a\a2dc17dc96fe71f394340511aa9b6611.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\a\a2dc17dc96fe71f394340511aa9b6611.bin
-    projectPath: Library\ShaderCache\a\a2dc17dc96fe71f394340511aa9b6611.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\b\b6b66e8bfe19d5227d391dbaf050ffb2.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\b\b6b66e8bfe19d5227d391dbaf050ffb2.bin
-    projectPath: Library\ShaderCache\b\b6b66e8bfe19d5227d391dbaf050ffb2.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\c\ce0b713ba194c3fd5fedff67dbbffb27.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\c\ce0b713ba194c3fd5fedff67dbbffb27.bin
-    projectPath: Library\ShaderCache\c\ce0b713ba194c3fd5fedff67dbbffb27.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\c\ce965693ab22142f7960248d1efb6949.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\c\ce965693ab22142f7960248d1efb6949.bin
-    projectPath: Library\ShaderCache\c\ce965693ab22142f7960248d1efb6949.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\d\d18bc8def28dde2a01e3bb41f23e9004.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\d\d18bc8def28dde2a01e3bb41f23e9004.bin
-    projectPath: Library\ShaderCache\d\d18bc8def28dde2a01e3bb41f23e9004.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\d\d3d486e178e6473e6347662bda94745a.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\d\d3d486e178e6473e6347662bda94745a.bin
-    projectPath: Library\ShaderCache\d\d3d486e178e6473e6347662bda94745a.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\e\ecc0638f41e0de67add1570e35918907.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\e\ecc0638f41e0de67add1570e35918907.bin
-    projectPath: Library\ShaderCache\e\ecc0638f41e0de67add1570e35918907.bin
+  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\8\8f8fcfd5e0a9e74bcc622e9f8a6fedaa.bin
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\8\8f8fcfd5e0a9e74bcc622e9f8a6fedaa.bin
+    projectPath: Library\ShaderCache\8\8f8fcfd5e0a9e74bcc622e9f8a6fedaa.bin
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -814,12 +290,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\ShaderCache\f\f5a754753f806e0e0aebbcea59b8efe1.bin
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ShaderCache\f\f5a754753f806e0e0aebbcea59b8efe1.bin
-    projectPath: Library\ShaderCache\f\f5a754753f806e0e0aebbcea59b8efe1.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: EPTA_SPACE_PROGRAM\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
@@ -844,15 +314,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\SourceAssetDB-lock
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\SourceAssetDB-lock
-    projectPath: Library\SourceAssetDB-lock
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\SpriteAtlasDatabase.asset
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\SpriteAtlasDatabase.asset
-    projectPath: Library\SpriteAtlasDatabase.asset
+  - path: EPTA_SPACE_PROGRAM\Library\StateCache\Hierarchy\fbd997-mainStage.json
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\StateCache\Hierarchy\fbd997-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\fbd997-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -862,195 +326,129 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Library\Style.catalog
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Style.catalog
-    projectPath: Library\Style.catalog
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Logs\Packages-Update.log
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Logs\Packages-Update.log
-    projectPath: Logs\Packages-Update.log
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: EPTA_SPACE_PROGRAM\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\obj\Debug\UnityEngine.UI.csprojAssemblyReference.cache
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\obj\Debug\UnityEngine.UI.csprojAssemblyReference.cache
-    projectPath: obj\Debug\UnityEngine.UI.csprojAssemblyReference.cache
+  - path: EPTA_SPACE_PROGRAM\Temp\__Backupscenes\0.backup
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\__Backupscenes\0.backup
+    projectPath: Temp\__Backupscenes\0.backup
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\Packages\manifest.json
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Packages\manifest.json
-    projectPath: Packages\manifest.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: EPTA_SPACE_PROGRAM\Packages\packages-lock.json
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Packages\packages-lock.json
-    projectPath: Packages\packages-lock.json
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: EPTA_SPACE_PROGRAM\ProjectSettings\ProjectVersion.txt
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\ProjectSettings\ProjectVersion.txt
-    projectPath: ProjectSettings\ProjectVersion.txt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: EPTA_SPACE_PROGRAM\Temp\UnityLockfile
     fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityLockfile
     projectPath: Temp\UnityLockfile
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: organograma\organograma.xlsx
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\organograma.xlsx
-    projectPath: ..\organograma\organograma.xlsx
-    originalPath: 
     indexStatus: 0
-    workTreeStatus: 5
-  - path: organograma\organograma_epta.xlsx
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\organograma_epta.xlsx
-    projectPath: ..\organograma\organograma_epta.xlsx
+    workTreeStatus: 3
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-1354cf110a6277c44956ac0c2a34b245
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-1354cf110a6277c44956ac0c2a34b245
+    projectPath: Temp\UnityTempFile-1354cf110a6277c44956ac0c2a34b245
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\bibfile.bib
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\bibfile.bib
-    projectPath: ..\organograma\Relatorio\bibfile.bib
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-1ec71ea9601bebc45be6a2d9ce161e1e
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-1ec71ea9601bebc45be6a2d9ce161e1e
+    projectPath: Temp\UnityTempFile-1ec71ea9601bebc45be6a2d9ce161e1e
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\desktop.ini
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\desktop.ini
-    projectPath: ..\organograma\Relatorio\desktop.ini
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-2f990040a0544f94bae672ccbb119a1e
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-2f990040a0544f94bae672ccbb119a1e
+    projectPath: Temp\UnityTempFile-2f990040a0544f94bae672ccbb119a1e
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\estrutura.tex
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\estrutura.tex
-    projectPath: ..\organograma\Relatorio\estrutura.tex
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-32b93ccd5eaf20549b54d67ef02f9529
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-32b93ccd5eaf20549b54d67ef02f9529
+    projectPath: Temp\UnityTempFile-32b93ccd5eaf20549b54d67ef02f9529
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\midia\desktop.ini
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\midia\desktop.ini
-    projectPath: ..\organograma\Relatorio\midia\desktop.ini
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-361ad233ed201974ea64ea9490449b66
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-361ad233ed201974ea64ea9490449b66
+    projectPath: Temp\UnityTempFile-361ad233ed201974ea64ea9490449b66
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\midia\epta_logo.png
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\midia\epta_logo.png
-    projectPath: ..\organograma\Relatorio\midia\epta_logo.png
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-3f3dcf635d037dd45aab56629340bee9
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-3f3dcf635d037dd45aab56629340bee9
+    projectPath: Temp\UnityTempFile-3f3dcf635d037dd45aab56629340bee9
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\midia\epta_projeto.pdf
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\midia\epta_projeto.pdf
-    projectPath: ..\organograma\Relatorio\midia\epta_projeto.pdf
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-5db1317a53148174d85b60bd0b1d739a
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-5db1317a53148174d85b60bd0b1d739a
+    projectPath: Temp\UnityTempFile-5db1317a53148174d85b60bd0b1d739a
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\midia\epta_projeto.psd
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\midia\epta_projeto.psd
-    projectPath: ..\organograma\Relatorio\midia\epta_projeto.psd
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-66382b8c4ce83a6489fda43c9d66998e
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-66382b8c4ce83a6489fda43c9d66998e
+    projectPath: Temp\UnityTempFile-66382b8c4ce83a6489fda43c9d66998e
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\midia\epta_projeto_template.pdf
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\midia\epta_projeto_template.pdf
-    projectPath: ..\organograma\Relatorio\midia\epta_projeto_template.pdf
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-8c6e5cb7fd09aeb47973db9170d63bf9
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-8c6e5cb7fd09aeb47973db9170d63bf9
+    projectPath: Temp\UnityTempFile-8c6e5cb7fd09aeb47973db9170d63bf9
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\midia\exemplo.jpg
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\midia\exemplo.jpg
-    projectPath: ..\organograma\Relatorio\midia\exemplo.jpg
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-911ad24233f143744a10291e9685b72f
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-911ad24233f143744a10291e9685b72f
+    projectPath: Temp\UnityTempFile-911ad24233f143744a10291e9685b72f
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\midia\exemplo2.jpg
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\midia\exemplo2.jpg
-    projectPath: ..\organograma\Relatorio\midia\exemplo2.jpg
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-925306dc7abbaef46b3909616bc4d46a
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-925306dc7abbaef46b3909616bc4d46a
+    projectPath: Temp\UnityTempFile-925306dc7abbaef46b3909616bc4d46a
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\midia\GESTAO.pdf
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\midia\GESTAO.pdf
-    projectPath: ..\organograma\Relatorio\midia\GESTAO.pdf
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-9f1a8709e1f362a4a8fff9aa7cafbbbf
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-9f1a8709e1f362a4a8fff9aa7cafbbbf
+    projectPath: Temp\UnityTempFile-9f1a8709e1f362a4a8fff9aa7cafbbbf
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\Template_Relatorio.aux
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\Template_Relatorio.aux
-    projectPath: ..\organograma\Relatorio\Template_Relatorio.aux
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-a03e14805806a194e8bb09dee871695d
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-a03e14805806a194e8bb09dee871695d
+    projectPath: Temp\UnityTempFile-a03e14805806a194e8bb09dee871695d
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\Template_Relatorio.bbl
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\Template_Relatorio.bbl
-    projectPath: ..\organograma\Relatorio\Template_Relatorio.bbl
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-db017e7bafc6dfe4a8a6dd16a8f5f60c
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-db017e7bafc6dfe4a8a6dd16a8f5f60c
+    projectPath: Temp\UnityTempFile-db017e7bafc6dfe4a8a6dd16a8f5f60c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\Template_Relatorio.blg
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\Template_Relatorio.blg
-    projectPath: ..\organograma\Relatorio\Template_Relatorio.blg
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-de716948d68faf04786ea66686bf2ec9
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-de716948d68faf04786ea66686bf2ec9
+    projectPath: Temp\UnityTempFile-de716948d68faf04786ea66686bf2ec9
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\Template_Relatorio.lof
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\Template_Relatorio.lof
-    projectPath: ..\organograma\Relatorio\Template_Relatorio.lof
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-eeaf28f4e16bce1429369a534bb38763
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-eeaf28f4e16bce1429369a534bb38763
+    projectPath: Temp\UnityTempFile-eeaf28f4e16bce1429369a534bb38763
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\Template_Relatorio.log
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\Template_Relatorio.log
-    projectPath: ..\organograma\Relatorio\Template_Relatorio.log
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-f2f650213974b70409911a48c3bea191
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-f2f650213974b70409911a48c3bea191
+    projectPath: Temp\UnityTempFile-f2f650213974b70409911a48c3bea191
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: organograma\Relatorio\Template_Relatorio.pdf
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\Template_Relatorio.pdf
-    projectPath: ..\organograma\Relatorio\Template_Relatorio.pdf
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: organograma\Relatorio\Template_Relatorio.synctex.gz
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\Template_Relatorio.synctex.gz
-    projectPath: ..\organograma\Relatorio\Template_Relatorio.synctex.gz
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: organograma\Relatorio\Template_Relatorio.tex
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\Template_Relatorio.tex
-    projectPath: ..\organograma\Relatorio\Template_Relatorio.tex
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: organograma\Relatorio\Template_Relatorio.toc
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\Template_Relatorio.toc
-    projectPath: ..\organograma\Relatorio\Template_Relatorio.toc
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: organograma\Relatorio\Template_Relatorio[Conflict].log
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\organograma\Relatorio\Template_Relatorio[Conflict].log
-    projectPath: ..\organograma\Relatorio\Template_Relatorio[Conflict].log
+  - path: EPTA_SPACE_PROGRAM\Temp\UnityTempFile-fc0d208a23b627d4aac77ebed7a9f5e3
+    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityTempFile-fc0d208a23b627d4aac77ebed7a9f5e3
+    projectPath: Temp\UnityTempFile-fc0d208a23b627d4aac77ebed7a9f5e3
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
