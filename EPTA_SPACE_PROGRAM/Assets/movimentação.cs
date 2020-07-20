@@ -24,7 +24,8 @@ public class movimentação : MonoBehaviour
 
     void FixedUpdate()
     {
-
+        
+        // Button clicking detection
         if(Input.GetMouseButton(0))
         {
             Vector3 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
