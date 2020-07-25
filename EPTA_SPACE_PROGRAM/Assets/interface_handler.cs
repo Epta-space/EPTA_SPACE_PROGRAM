@@ -6,6 +6,7 @@ public class interface_handler : MonoBehaviour
     // Game references:
     public GameObject Basic_UI;
     public GameObject Pause_UI;
+    public GameObject About_UI;
     public int score = 0;
     public Text scoreText;
 
@@ -35,11 +36,30 @@ public class interface_handler : MonoBehaviour
         
     }
 
+    // Script executado quando se quer encerrar o jogo. 
+    public void exit(){
+        Application.Quit();
+    }
+
     // Script executado quando o jogo é resumido. 
     public void Resume(){
         Basic_UI.SetActive(true);
         Pause_UI.SetActive(false);
         Time.timeScale = 1f;
+        
+    }
+
+    // Script executado quando clica-se no botão "about". 
+    public void About(){
+        About_UI.SetActive(true);
+        Pause_UI.SetActive(false);
+        
+    }
+
+    // Script executado quando clica-se no botão "X" para sair do menu about. 
+    public void exit_about(){
+        About_UI.SetActive(false);
+        Pause_UI.SetActive(true);
         
     }
 
