@@ -16,9 +16,9 @@ MonoBehaviour:
   lastUpdatedAtString: 2020-07-25T16:00:26.532-03:00
   initializedAtString: 2020-07-25T14:45:39.170-03:00
   entries:
-  - path: EPTA_SPACE_PROGRAM\.vscode\settings.json
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\.vscode\settings.json
-    projectPath: .vscode\settings.json
+  - path: EPTA_SPACE_PROGRAM\Assets\Player.unity
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Assets\Player.unity
+    projectPath: Assets\Player.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -57,6 +57,18 @@ MonoBehaviour:
   - path: EPTA_SPACE_PROGRAM\Assets\scripts.meta
     fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Assets\scripts.meta
     projectPath: Assets\scripts.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\06\06a8f101838bc8d5a6266ac8bf1ddce8
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\06\06a8f101838bc8d5a6266ac8bf1ddce8
+    projectPath: Library\Artifacts\06\06a8f101838bc8d5a6266ac8bf1ddce8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: EPTA_SPACE_PROGRAM\Library\Artifacts\08\08056f28378b3b4ec231c41e0edfc232
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Artifacts\08\08056f28378b3b4ec231c41e0edfc232
+    projectPath: Library\Artifacts\08\08056f28378b3b4ec231c41e0edfc232
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -20587,19 +20599,19 @@ MonoBehaviour:
     indexStatus: 0
     workTreeStatus: 5
   - path: EPTA_SPACE_PROGRAM\Library\Collab\CollabSnapshot_bab3bcbf-747c-436b-975f-03204f4342f9.txt
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\Collab\CollabSnapshot_bab3bcbf-747c-436b-975f-03204f4342f9.txt
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\Collab\CollabSnapshot_bab3bcbf-747c-436b-975f-03204f4342f9.txt
     projectPath: Library\Collab\CollabSnapshot_bab3bcbf-747c-436b-975f-03204f4342f9.txt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: EPTA_SPACE_PROGRAM\Library\CurrentLayout-default.dwlt
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\CurrentLayout-default.dwlt
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\CurrentLayout-default.dwlt
     projectPath: Library\CurrentLayout-default.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: EPTA_SPACE_PROGRAM\Library\EditorInstance.json
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\EditorInstance.json
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\EditorInstance.json
     projectPath: Library\EditorInstance.json
     originalPath: 
     indexStatus: 1
@@ -20623,7 +20635,7 @@ MonoBehaviour:
     indexStatus: 0
     workTreeStatus: 3
   - path: EPTA_SPACE_PROGRAM\Library\gfu\cache\gitlocks.yaml
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     indexStatus: 0
@@ -20635,19 +20647,19 @@ MonoBehaviour:
     indexStatus: 0
     workTreeStatus: 3
   - path: EPTA_SPACE_PROGRAM\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: EPTA_SPACE_PROGRAM\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: EPTA_SPACE_PROGRAM\Library\gfu\cache\repoinfo.yaml
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
@@ -30306,8 +30318,14 @@ MonoBehaviour:
     indexStatus: 0
     workTreeStatus: 3
   - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -30768,7 +30786,7 @@ MonoBehaviour:
     indexStatus: 1
     workTreeStatus: 1
   - path: EPTA_SPACE_PROGRAM\Library\SourceAssetDB
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\SourceAssetDB
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
     originalPath: 
     indexStatus: 0
@@ -30798,7 +30816,7 @@ MonoBehaviour:
     indexStatus: 1
     workTreeStatus: 1
   - path: EPTA_SPACE_PROGRAM\Library\StateCache\SceneView\7c7f78-mainStage.json
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Library\StateCache\SceneView\7c7f78-mainStage.json
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Library\StateCache\SceneView\7c7f78-mainStage.json
     projectPath: Library\StateCache\SceneView\7c7f78-mainStage.json
     originalPath: 
     indexStatus: 0
@@ -30876,7 +30894,7 @@ MonoBehaviour:
     indexStatus: 1
     workTreeStatus: 1
   - path: EPTA_SPACE_PROGRAM\Temp\UnityLockfile
-    fullPath: E:\OneDrive\Artist front\GAME_DEV\EPTA_PROJECT\2020\EPTA_PROJECT\EPTA_SPACE_PROGRAM\Temp\UnityLockfile
+    fullPath: C:\Projetos\EPTA\Entertainment\EPTA_SPACE_PROGRAM_REBOOT\EPTA_SPACE_PROGRAM\EPTA_SPACE_PROGRAM\Temp\UnityLockfile
     projectPath: Temp\UnityLockfile
     originalPath: 
     indexStatus: 1
