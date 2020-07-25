@@ -3,7 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Alien
+  - Balao
+  - Met_1
+  - Met_2
+  - Met_3
+  - Nuv_1_0
+  - Nuv_1_1
+  - Nuv_1_2
+  - Nuv_3_0
+  - Nuv_11_0
+  - Sat_1
+  - Sat_2
+  - Sat_3
   layers:
   - Default
   - TransparentFX
