@@ -1,22 +1,38 @@
-﻿// using System.Collections;
-// using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public float max_time = 1; //Esse valor pode ser substituído por uma fórmula que varia o spawn de acordo com o nível ou decair de forma escalar
-    private float timer = 0;
+    public float max_time; //Esse valor pode ser substituído por uma fórmula que varia o spawn de acordo com o nível ou decair de forma escalar
+    public float max_time_0;
+    private float timer;
     public GameObject obstacle;
     public float large;
     public float width;
     public float pontuacao;
-    public int index = 0;
-    public GameObject[] obstaculos = new GameObject[] {alien, balao_1, meteoro_1_0, meteoro_2_0, meteoro_3_0, nuvem_1_0, nuvem_1_1, nuvem_1_2, nuvem_3_0, nuvem_11_0, satelite_3, satelite_1, satelite_2};
+    public float pontos;
+    public GameObject alien;
+    public GameObject balao_1;
+    public GameObject meteoro_1_0;
+    public GameObject meteoro_2_0;
+    public GameObject meteoro_3_0;
+    public GameObject nuvem_1_0;
+    public GameObject nuvem_1_1;
+    public GameObject nuvem_1_2;
+    public GameObject nuvem_11_0;
+    public GameObject nuvem_3_0;
+    public GameObject satelite_3;
+    public GameObject satelite_1;
+    public GameObject satelite_2;
+    public GameObject[] obstaculos;
+    public int index;
 
     void Start()
     {
         GameObject new_obstacle = Instantiate(obstacle);
         new_obstacle.transform.position = transform.position + new Vector3(Random.Range(-width, width), 0, 0);
+        obstaculos = new GameObject[] {alien, balao_1, meteoro_1_0, meteoro_2_0, meteoro_3_0, nuvem_1_0, nuvem_1_1, nuvem_1_2, nuvem_3_0, nuvem_11_0, satelite_3, satelite_1, satelite_2};
     }
 
     void Update()
