@@ -10,11 +10,16 @@ public class interface_handler : MonoBehaviour
     public int score = 0;
     public Text scoreText;
 
+
+    //! Função chamada uma vez por frame. CUIDADO com o que se coloca aqui.
+
     void Update() {
         
         // Checa se a distância é maior que mil metros para adequar unidade de medida.
         // Podemos setar o objetivo atual como a lua (384400km). Ou seja depois dessa medida 
-        // o jogador passa a dar voltas na lua até a gente aumentar o jogo. 
+        // o jogador passa a dar voltas na lua até a gente aumentar o jogo.
+
+        // Gerenciador de grandeza 
         if(score < 1000){
             scoreText.text = score + " m  "; 
         }else{
@@ -23,11 +28,14 @@ public class interface_handler : MonoBehaviour
 
         // Contador simples para teste. No futuro referenciaremos script "phase_handler"
         if(Input.GetKeyDown(KeyCode.Space)){
-            score = score + 100;
+            score = score + 100;                                                          //TODO: tirar dependência de framerate 
         }
 
     }
-    
+
+
+    //! Funções referentes aos botões de tela principal:
+
     // Script executado quando o jogo é pausado.
     public void Pause(){
         Basic_UI.SetActive(false);
@@ -35,6 +43,9 @@ public class interface_handler : MonoBehaviour
         Time.timeScale = 0f;
         
     }
+
+
+    //! Funções referentes ao menu pause:
 
     // Script executado quando se quer encerrar o jogo. 
     public void exit(){
@@ -56,6 +67,9 @@ public class interface_handler : MonoBehaviour
         
     }
 
+
+    //! Funções referentes ao menu about:
+
     // Script executado quando clica-se no botão "X" para sair do menu about. 
     public void exit_about(){
         About_UI.SetActive(false);
@@ -63,5 +77,46 @@ public class interface_handler : MonoBehaviour
         
     }
 
+    // Script executado quando clica-se no botão do instagram. 
+    public void instagram_about(){
+        Application.OpenURL("https://www.instagram.com/equipe_epta/");
+    }
+
+    // Script executado quando clica-se no botão do Facebook. 
+    public void facebook_about(){
+        Application.OpenURL("https://www.facebook.com/eptarocketdesign/");   
+    }
+
+    // Engenharia aeronáutica, mecânica, mecatrônica, elétrica, eletrônica e telecomunicações, ciências contábeis, jornalismo e Administração
+    // FEMEC                                        , FEELT                                  , FACIC              , FACED        , FAGEN
+    // Script executado quando clica-se no botão da femec. 
+    public void femec_about(){
+        Application.OpenURL("http://www.mecanica.ufu.br/");   
+    }
+
+    // Script executado quando clica-se no botão da feelt. 
+    public void feelt_about(){
+        Application.OpenURL("http://www.feelt.ufu.br/");   
+    }
+
+    // Script executado quando clica-se no botão da facic. 
+    public void facic_about(){
+        Application.OpenURL("http://www.facic.ufu.br/");   
+    }
+
+    // Script executado quando clica-se no botão da faced. 
+    public void faced_about(){
+        Application.OpenURL("http://www.faced.ufu.br/");   
+    }
+
+    // Script executado quando clica-se no botão da fagen. 
+    public void fagen_about(){
+        Application.OpenURL("http://www.fagen.ufu.br/");   
+    }
+
+    // Script executado quando clica-se no botão da ufu. 
+    public void ufu_about(){
+        Application.OpenURL("http://www.ufu.br/");   
+    }
 
 }
