@@ -14,107 +14,106 @@ public class Spawner : MonoBehaviour
     public float velocidade;
     public float pontos;
 
-    public float large;
     public float width;
 
-    public GameObject alien  {
+    public GameObject alien ;//{
         // set{
         // max_time_0 = 0;
         // velocidade = 0;
         // max_time = max_time_0;
         // pontos = 5;
         // }
-    }
+    //}
 
-    public GameObject balao_1{
+    public GameObject balao_1;//{
         // set{
         // max_time_0 = 0;
         // velocidade = 0;
         // max_time = max_time_0;
-        // pontos = 5;
+      // pontos = 5;
         // }
-    }
+    //}
 
-    public GameObject meteoro_1_0{
+    public GameObject meteoro_1_0;//{
         // set{
         // max_time_0 = 0;
         // velocidade = 0;
         // max_time = max_time_0;
-        // pontos = 5;
+      // pontos = 5;
         // }
-    }
+    //}
 
-    public GameObject meteoro_2_0{
+    public GameObject meteoro_2_0;//{
         // set{
         // max_time_0 = 0;
         // velocidade = 0;
         // max_time = max_time_0;
-        // pontos = 5;
+      // pontos = 5;
         // }
-    }
+    //}
 
-    public GameObject meteoro_3_0{
+    public GameObject meteoro_3_0;//{
         // set{
         // max_time_0 = 0;
         // velocidade = 0;
         // max_time = max_time_0;
-        // pontos = 5;
+      // pontos = 5;
         // }
-    }
+    //}
 
-    public GameObject nuvem_1_0{
+    public GameObject nuvem_1_0;//{
         // set{
         // max_time_0 = 0;
         // velocidade = 0;
         // max_time = max_time_0;
-        // pontos = 5;
+      // pontos = 5;
         // }
-    }
+    //}
 
-    public GameObject nuvem_1_1{
+    public GameObject nuvem_1_1;//{
         // set{
         // max_time_0 = 0;
         // velocidade = 0;
         // max_time = max_time_0;
-        // pontos = 5;
+      // pontos = 5;
         // }
-    }
+    //}
 
-    public GameObject nuvem_3_0{
+    public GameObject nuvem_3_0;//{
         // set{
         // max_time_0 = 0;
         // velocidade = 0;
         // max_time = max_time_0;
-        // pontos = 5;
+      // pontos = 5;
         // }
-    }
+    //}
 
-    public GameObject satelite_3{
+    public GameObject satelite_3;//{
         // set{
         // max_time_0 = 0;
         // velocidade = 0;
         // max_time = max_time_0;
-        // pontos = 5;
+      // pontos = 5;
         // }
-    }
+    //}
 
-    public GameObject satelite_1{
+    public GameObject satelite_1;//{
         // set{
         // max_time_0 = 0;
         // velocidade = 0;
         // max_time = max_time_0;
-        // pontos = 5;
+      // pontos = 5;
         // }
-    }
+    //}
 
-    public GameObject satelite_2{
+    public GameObject satelite_2;//{
         // set{
         // max_time_0 = 0;
         // velocidade = 0;
         // max_time = max_time_0;
-        // pontos = 5;
+      // pontos = 5;
         // }
-    }
+    //}
 
     public GameObject[] extras;
     public GameObject[] actual_stage;
@@ -137,22 +136,22 @@ public class Spawner : MonoBehaviour
 
     void Update()
     {
-        obstacle = actual_stage[stage_index][obstacle_index];
-        if(timer > obstacle.max_time){ //Se o tempo limite do "nível" for atingido, um novo objeto é criado
+        // obstacle = actual_stage[stage_index][obstacle_index];
+        if(timer > max_time){ //Se o tempo limite do "nível" for atingido, um novo objeto é criado
             //isso seria feito com um parâmetro utilizado na fórmula que varia de acordo com a tag
             GameObject new_obstacle = Instantiate(obstacle); 
             new_obstacle.transform.position = transform.position + new Vector3(Random.Range(-width, width), 0, 0);
             Destroy(new_obstacle, 10);  //Destrói o objeto depois de 10 segundos que um novo for criado
-            obstacle.max_time = 0.9f * obstacle.max_time;  //Diminui o intervalo de tempo conforme novos obstáculos forem gerados
-            if(obstacle.max_time < obstacle.max_time_0/2.0f){
+            max_time = 0.9f * max_time;  //Diminui o intervalo de tempo conforme novos obstáculos forem gerados
+            if(max_time < max_time_0/2.0f){
                 obstacle_index++; //Se o novo max_timer for menor que metade (ajuste) do original, um novo obstáculo passa a surgir
                 if(obstacle_index > 2){
                     stage_index++;
                 }
             }
-            score += obstacle.pontos;
             timer = 0; //Zera o timer
         }
+        score += pontos;
         timer += Time.deltaTime; //Incremento do tempo
     }
 }
