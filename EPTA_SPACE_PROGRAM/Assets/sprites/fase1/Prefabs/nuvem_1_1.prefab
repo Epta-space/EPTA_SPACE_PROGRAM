@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2337825001010196340}
   - component: {fileID: 2337825001010196343}
   - component: {fileID: 2337825001010196341}
+  - component: {fileID: 5850911359328979581}
   m_Layer: 0
   m_Name: nuvem_1_1
   m_TagString: Nuv_1_1
@@ -146,3 +147,36 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &5850911359328979581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2337825001010196342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c5251a00ca5da74b848783268360296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacle: {fileID: 0}
+  score: 0
+  max_time: 10
+  max_time_0: 10
+  pontos: 5
+  width: 0
+  alien: {fileID: 0}
+  balao_1: {fileID: 0}
+  meteoro_1_0: {fileID: 0}
+  meteoro_2_0: {fileID: 0}
+  meteoro_3_0: {fileID: 0}
+  nuvem_1_0: {fileID: 0}
+  nuvem_1_1: {fileID: 0}
+  nuvem_3_0: {fileID: 0}
+  satelite_1: {fileID: 0}
+  satelite_2: {fileID: 0}
+  satelite_3: {fileID: 0}
+  extras: []
+  actual_stage: []
+  stage_index: 0
+  obstacle_index: 0
