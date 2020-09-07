@@ -12,6 +12,6 @@ public class move : MonoBehaviour
 
     void Update()
     {
-        transform.position += Vector3.down * spawner.speed * Time.deltaTime;
+        // transform.position += Vector3.down * spawner.speed * Time.deltaTime;
     }
 }
