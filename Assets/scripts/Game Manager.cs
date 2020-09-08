@@ -5,24 +5,6 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    // public GameObject alien;
-    // public GameObject balao_1;
-    // public GameObject meteoro_1_0;
-    // public GameObject meteoro_2_0;
-    // public GameObject meteoro_3_0;
-    // public GameObject nuvem_1_0;
-    // public GameObject nuvem_1_1;
-    // public GameObject nuvem_3_0;
-    // public GameObject satelite_3;
-    // public GameObject satelite_1;
-    // public GameObject satelite_2;
-
-    // public GameObject[] extras;
-    // public GameObject[] actual_stage;
-
-    // public int stage_index = 0;
-    // public int obstacle_index = 0;
-
     void Start()
     {
         // spawner.obstacle = new actual_stage[stage_index][obstacle_index]
