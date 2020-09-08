@@ -2,10 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class spawner : MonoBehaviour {
-
-
-
+public class spawner_f : MonoBehaviour {
 
     void Start() {
     
@@ -13,7 +10,6 @@ public class spawner : MonoBehaviour {
 
     void Update()
     {
-
 
     }
 }

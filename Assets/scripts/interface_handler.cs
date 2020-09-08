@@ -11,8 +11,13 @@ public class interface_handler : MonoBehaviour
     public Text scoreText;
 
 
-    //! Função chamada uma vez por frame. CUIDADO com o que se coloca aqui.
 
+    void start() {
+        
+
+    }
+
+    //! Função chamada uma vez por frame. CUIDADO com o que se coloca aqui.
     void Update() {
         
         // Checa se a distância é maior que mil metros para adequar unidade de medida.

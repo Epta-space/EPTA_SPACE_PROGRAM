@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 5376109011881203717}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -19.146048, y: 79.826775, z: -2293.0242}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 1}
   m_Children:
   - {fileID: 5376109013614660002}
   m_Father: {fileID: 0}
@@ -45,13 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c5251a00ca5da74b848783268360296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 5376109011881203717}
-  score: 0
   maxTime: 10
-  maxTime0: 10
+  obstacle: {fileID: 5376109011881203717}
   pontos: 5
-  width: 0
-  height: 0
+  score: 0
 --- !u!114 &2209009588463491746
 MonoBehaviour:
   m_ObjectHideFlags: 0
