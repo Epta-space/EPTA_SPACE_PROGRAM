@@ -17,25 +17,29 @@ public class ObjectSelector : MonoBehaviour
     public GameObject satelite_1;
     public GameObject satelite_2;
 
-    private GameObject obstacle;
+    public GameObject obstacle;
 
     public GameObject[] extras;
     public GameObject[] actual_stage;
 
-    public int stage_index =  GameManager.stage;
+    // private int stage_index =  GameManager.stage;
+    private int stage_index = 0;
+
     public int obstacle_index = 0;
+    private int stage_length = 0;
 
     void Start()
     {
         GameObject[][] actual_stage = new GameObject[3][];
 
-        actual_stage[0] = new GameObject[3] {nuvem_1_0, nuvem_1_1, nuvem_3_0, balao_1};
+        actual_stage[0] = new GameObject[4] {nuvem_1_0, nuvem_1_1, nuvem_3_0, balao_1};
         actual_stage[1] = new GameObject[3] {meteoro_1_0, meteoro_2_0, meteoro_3_0};
-        actual_stage[2] = new GameObject[3] {satelite_1, satelite_2, satelite_3, alien};
+        actual_stage[2] = new GameObject[4] {satelite_1, satelite_2, satelite_3, alien};
+        
+        // stage_length = (actual_stage[stage_index]).Count;
+        // obstacle_index = Random.Range(0, stage_length);
 
-        obstacle_index = Random.Range(0, length(actual_stage[stage_index]));
-
-        obstacle = new actual_stage[stage_index][obstacle_index];
+        GameObject obstacle = actual_stage[stage_index][obstacle_index];
     }
 
     void Update()

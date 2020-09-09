@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 public class Spawner : MonoBehaviour {
     public float maxTime = 1;
     private float timer = 0;
@@ -12,8 +13,6 @@ public class Spawner : MonoBehaviour {
 
     private float random_range_a;
     private float random_range_b;
-
-    private float maxTime0 = 10;
     public int pontos = 5;
 
     public float score;
