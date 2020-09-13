@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Spawner : MonoBehaviour {
     public float maxTime = 1;
     private float timer = 0;
-    public GameObject obstacle;
+    public static GameObject obstacle = Object_Selector.obstacle;
     private float width;
     private Vector3 localScreenWidth;
 
@@ -19,6 +19,7 @@ public class Spawner : MonoBehaviour {
 
 
        void Start() {
+        GameObject obstacle = Object_Selector.obstacle;
         localScreenWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
         random_range_a = localScreenWidth.x - (0.3f * localScreenWidth.x);
         random_range_b = localScreenWidth.x + (0.2f * localScreenWidth.x);
@@ -30,6 +31,7 @@ public class Spawner : MonoBehaviour {
     void Update()
     {
         if(timer > maxTime) {
+            GameObject obstacle = Object_Selector.obstacle;
             GameObject new_obstacle = Instantiate(obstacle);
             new_obstacle.transform.position = transform.position + new Vector3(Random.Range(-random_range_a, random_range_b), 0, 0);
         
