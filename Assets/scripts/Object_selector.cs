@@ -26,6 +26,7 @@ public class Object_Selector : MonoBehaviour
     public int obstacle_index = 0;
     private int stage_length = 0;
 
+
     void Start()
     {
         stage_index = Game_Manager.stage;
@@ -34,16 +35,20 @@ public class Object_Selector : MonoBehaviour
         actual_stage[1] = new GameObject[3] {meteoro_1_0, meteoro_2_0, meteoro_3_0};
         actual_stage[2] = new GameObject[4] {satelite_1, satelite_2, satelite_3, alien};
         
-        //stage_length = (actual_stage[stage_index]).Count;
-        // obstacle_index = Random.Range(0, stage_length);
+        stage_length = (actual_stage[stage_index]).Length;
+        obstacle_index = Random.Range(0, stage_length);
+        print(obstacle_index);
 
         GameObject obstacle = actual_stage[stage_index][obstacle_index];
     }
 
     void Update()
     {
-        stage_index = Game_Manager.stage;
-        print(stage_index);
-
+        if(stage_index == Game_Manager.stage){
+            obstacle_index = Random.Range(0, stage_length);
+            print(obstacle_index);
+        }else{
+            // stage_length = (actual_stage[stage_index]).Length;
+        }
     }
 }
