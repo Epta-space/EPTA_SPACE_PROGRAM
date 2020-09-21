@@ -5,6 +5,8 @@ using UnityEngine;
 public class spawner_f : MonoBehaviour {
     private int phase;
 
+    private 
+
     // private int[] spawn_groups = new int[1]{
         // {0 , } 
 
@@ -28,6 +30,6 @@ public class spawner_f : MonoBehaviour {
         // spawn( spawn_groups[phase][aleatorio()][3][0] , spawn_groups[phase][aleatorio()][3][1])
 
         // Debuging command
-        Debug.Log(this.gameObject.GetComponent<game_manager_f>().Get_phase_time()); 
+        Debug.Log(this.gameObject.GetComponent<game_manager_f>().Get_player_x()); 
     }
 }

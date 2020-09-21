@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class game_manager_f : MonoBehaviour
 {
+    public GameObject player;
     private float time_point;
     private int phase;
     
@@ -28,6 +29,9 @@ public class game_manager_f : MonoBehaviour
         }
         
     }
+
+    // Function for getting the player x axis -2.6 < x < 2.6
+    public float Get_player_x(){return player.GetComponent<Transform>().position.x;}
 
     // Function for other scripts to aces current phase
     public int Get_phase(){return phase;}
