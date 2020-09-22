@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class game_manager_f : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
     private float time_point;
     private int phase;
     
@@ -16,7 +16,9 @@ public class game_manager_f : MonoBehaviour
         // Register time when the game starts 
         time_point = Time.time;
         phase = 0;
-
+        
+        // searchs for the player game object
+        player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -41,4 +43,7 @@ public class game_manager_f : MonoBehaviour
 
     // Function for Getting time globall time
     public float Get_time(){return Time.time;}
+
+    // Function for getting player game object
+    public GameObject Get_player(){return player;}
 }

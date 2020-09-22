@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class spawner_f : MonoBehaviour {
     private int phase;
+    public GameObject spawn_group_0_0;
+    public GameObject spawn_group_0_1;
+    public GameObject spawn_group_0_2;
 
-    private 
+    private GameObject[][] spawn_groups = new GameObject[1][];
 
+    
     // private int[] spawn_groups = new int[1]{
         // {0 , } 
 
@@ -19,15 +23,16 @@ public class spawner_f : MonoBehaviour {
 
 
     void Start() {
-        
+        spawn_groups[0] = new GameObject[3]{spawn_group_0_0 , spawn_group_0_1 , spawn_group_0_2};
     }
 
     void Update()
     {
         // Get current phase 
         phase = this.gameObject.GetComponent<game_manager_f>().Get_phase();
+        
+        
 
-        // spawn( spawn_groups[phase][aleatorio()][3][0] , spawn_groups[phase][aleatorio()][3][1])
 
         // Debuging command
         Debug.Log(this.gameObject.GetComponent<game_manager_f>().Get_player_x()); 
