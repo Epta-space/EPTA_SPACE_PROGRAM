@@ -19,7 +19,7 @@ public class Object_Selector : MonoBehaviour
 
     public static GameObject obstacle;
 
-    public GameObject[] actual_stage;
+    public GameObject[][] actual_stage;
 
     private static int stage_index = Game_Manager.stage;
 
@@ -34,21 +34,18 @@ public class Object_Selector : MonoBehaviour
         actual_stage[0] = new GameObject[4] {nuvem_1_0, nuvem_1_1, nuvem_3_0, balao_1};
         actual_stage[1] = new GameObject[3] {meteoro_1_0, meteoro_2_0, meteoro_3_0};
         actual_stage[2] = new GameObject[4] {satelite_1, satelite_2, satelite_3, alien};
-        
-        stage_length = (actual_stage[stage_index]).Length;
-        obstacle_index = Random.Range(0, stage_length);
-        print(obstacle_index);
-
-        GameObject obstacle = actual_stage[stage_index][obstacle_index];
     }
 
-    void Update()
-    {
-        if(stage_index == Game_Manager.stage){
-            obstacle_index = Random.Range(0, stage_length);
-            print(obstacle_index);
-        }else{
-            // stage_length = (actual_stage[stage_index]).Length;
-        }
+    void Update(){}
+
+    public GameObject Get_Obstacle(){
+        stage_index = Game_Manager.stage;
+        stage_length = (actual_stage[stage_index]).Length;
+
+        obstacle_index = Random.Range(0, stage_length);
+
+        obstacle = actual_stage[Game_Manager.stage][obstacle_index];
+
+        return obstacle;
     }
 }

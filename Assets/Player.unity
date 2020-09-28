@@ -143,6 +143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 948671533}
   - component: {fileID: 948671534}
+  - component: {fileID: 948671535}
   m_Layer: 0
   m_Name: GameSpawner
   m_TagString: Untagged
@@ -187,8 +188,24 @@ MonoBehaviour:
   satelite_3: {fileID: 5760012962804978328, guid: 131da0a1ade3e144db7820c5af1b361d, type: 3}
   satelite_1: {fileID: 8259966946108037709, guid: 7ff99b28ff512a74a994e1922f82cf4d, type: 3}
   satelite_2: {fileID: 7264048153884858304, guid: b87cd5cebcfcb234e9cea2c61c2a41de, type: 3}
-  actual_stage: []
   obstacle_index: 0
+--- !u!114 &948671535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948671532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c5251a00ca5da74b848783268360296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 1451158846}
+  obstacle: {fileID: 5376109011881203717, guid: faab41e7b2093d844a4bcfbbed19607a, type: 3}
+  objeto1: {fileID: 5376109011881203717, guid: faab41e7b2093d844a4bcfbbed19607a, type: 3}
+  objeto2: {fileID: 4069429966911774188, guid: 2de47077589024d45a34ed2471b52523, type: 3}
+  objselector: {fileID: 0}
 --- !u!1 &1119974262
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,7 +512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5e7ab5adee9a3f41ad405897c9456cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
   n: 1
 --- !u!4 &1656122628
 Transform:
