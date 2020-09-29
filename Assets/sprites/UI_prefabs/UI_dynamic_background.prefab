@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 325462671944225155}
   - component: {fileID: 4033243152089915177}
   - component: {fileID: 4255605637830935212}
+  - component: {fileID: 5143952637675112783}
   m_Layer: 5
   m_Name: UI_dynamic_background
   m_TagString: Untagged
@@ -30,7 +31,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 2770730031091057431}
+  - {fileID: 9022483733062555983}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48,7 +49,7 @@ Canvas:
   m_GameObject: {fileID: 7039952417400048065}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -72,7 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -99,6 +100,22 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5143952637675112783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7039952417400048065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d40ce0f6fdcb8d42abbd3e330bc021c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nuvens: {fileID: 8559192967847247741}
+  nuvens_velocity: 2
+  estrelas: {fileID: 0}
+  fundo_azul: {fileID: 0}
 --- !u!1 &8559192967847247741
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,8 +124,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2770730031091057431}
+  - component: {fileID: 9022483733062555983}
   - component: {fileID: 3686717612176391853}
+  - component: {fileID: 4851450482666450271}
   m_Layer: 0
   m_Name: nuvens a distancia
   m_TagString: Untagged
@@ -116,20 +134,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2770730031091057431
-Transform:
+--- !u!224 &9022483733062555983
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8559192967847247741}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 886, z: 0}
-  m_LocalScale: {x: 434.39523, y: 434.39523, z: 434.39523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 758.0311, y: 758.0311, z: 758.0311}
   m_Children: []
   m_Father: {fileID: 4900736054496796215}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0.539917, y: 2519}
+  m_SizeDelta: {x: -798.92, y: 4.380005}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &3686717612176391853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -181,3 +204,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &4851450482666450271
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8559192967847247741}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
