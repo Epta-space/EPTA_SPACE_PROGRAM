@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2817234906870207696}
   - component: {fileID: 2817234906870207697}
   - component: {fileID: 2817234906870207699}
+  - component: {fileID: 2088044033792054047}
   m_Layer: 0
   m_Name: nuvem_3_0
   m_TagString: Nuv_3_0
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2817234906870207710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -228, y: 47, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -131,3 +132,16 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &2088044033792054047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2817234906870207710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 362f24d604f4e674cb50f4c4a3a25d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4

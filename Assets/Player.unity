@@ -142,7 +142,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 948671533}
-  - component: {fileID: 948671534}
   - component: {fileID: 948671535}
   m_Layer: 0
   m_Name: GameSpawner
@@ -165,30 +164,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &948671534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 948671532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf690f088e3b2af40b6334045f979079, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alien: {fileID: 1576144646237445307, guid: 11c9123e840c59c45a4cee7f92e1c19c, type: 3}
-  balao_1: {fileID: 5376109011881203717, guid: faab41e7b2093d844a4bcfbbed19607a, type: 3}
-  meteoro_1_0: {fileID: 8015198512085035377, guid: 084704f8ca360a7459b795cf16126271, type: 3}
-  meteoro_2_0: {fileID: 8481067611752862440, guid: 34d9ab8757e583f41a1e7cb4c0b2f663, type: 3}
-  meteoro_3_0: {fileID: 1013226772820384082, guid: 2ef32a89b16bf7e4cb39c02939931646, type: 3}
-  nuvem_1_0: {fileID: 4069429966911774188, guid: 2de47077589024d45a34ed2471b52523, type: 3}
-  nuvem_1_1: {fileID: 2337825001010196342, guid: 840cefa19f3715f4095f6978e2e5823f, type: 3}
-  nuvem_3_0: {fileID: 2817234906870207710, guid: a6981d96ff17af14eb4c8721f5981682, type: 3}
-  satelite_3: {fileID: 5760012962804978328, guid: 131da0a1ade3e144db7820c5af1b361d, type: 3}
-  satelite_1: {fileID: 8259966946108037709, guid: 7ff99b28ff512a74a994e1922f82cf4d, type: 3}
-  satelite_2: {fileID: 7264048153884858304, guid: b87cd5cebcfcb234e9cea2c61c2a41de, type: 3}
-  obstacle_index: 0
 --- !u!114 &948671535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,10 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1451158846}
-  obstacle: {fileID: 5376109011881203717, guid: faab41e7b2093d844a4bcfbbed19607a, type: 3}
-  objeto1: {fileID: 5376109011881203717, guid: faab41e7b2093d844a4bcfbbed19607a, type: 3}
-  objeto2: {fileID: 4069429966911774188, guid: 2de47077589024d45a34ed2471b52523, type: 3}
-  objselector: {fileID: 0}
+  objselector: {fileID: 1522875363}
 --- !u!1 &1119974262
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,6 +450,63 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &1522875362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1522875364}
+  - component: {fileID: 1522875363}
+  m_Layer: 0
+  m_Name: ObjectSelector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1522875363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522875362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf690f088e3b2af40b6334045f979079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alien: {fileID: 1576144646237445307, guid: 11c9123e840c59c45a4cee7f92e1c19c, type: 3}
+  balao_1: {fileID: 5376109011881203717, guid: faab41e7b2093d844a4bcfbbed19607a, type: 3}
+  meteoro_1_0: {fileID: 8015198512085035377, guid: 084704f8ca360a7459b795cf16126271, type: 3}
+  meteoro_2_0: {fileID: 8481067611752862440, guid: 34d9ab8757e583f41a1e7cb4c0b2f663, type: 3}
+  meteoro_3_0: {fileID: 1013226772820384082, guid: 2ef32a89b16bf7e4cb39c02939931646, type: 3}
+  nuvem_1_0: {fileID: 4069429966911774188, guid: 2de47077589024d45a34ed2471b52523, type: 3}
+  nuvem_1_1: {fileID: 2337825001010196342, guid: 840cefa19f3715f4095f6978e2e5823f, type: 3}
+  nuvem_3_0: {fileID: 2817234906870207710, guid: a6981d96ff17af14eb4c8721f5981682, type: 3}
+  satelite_3: {fileID: 5760012962804978328, guid: 131da0a1ade3e144db7820c5af1b361d, type: 3}
+  satelite_1: {fileID: 8259966946108037709, guid: 7ff99b28ff512a74a994e1922f82cf4d, type: 3}
+  satelite_2: {fileID: 7264048153884858304, guid: b87cd5cebcfcb234e9cea2c61c2a41de, type: 3}
+  obstacle_index: 0
+  stage_length: 0
+  aux: []
+--- !u!4 &1522875364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522875362}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.8657787, y: -0.17770812, z: -58.47675}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1592161151 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5994996201125594087, guid: 7aa60317a0db63f4b8dbe45a5ec39a8b, type: 3}

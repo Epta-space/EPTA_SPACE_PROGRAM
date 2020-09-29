@@ -9,7 +9,7 @@ public class Spawner : MonoBehaviour {
 
     public GameObject Player;
 
-    public GameObject obstacle;
+    private GameObject obstacle;
 
     //Variáveis para dimensão da tela
     private float width;
@@ -26,8 +26,8 @@ public class Spawner : MonoBehaviour {
     private float tempo_relativo;
     private float tempo_para_spawn;
 
-    public GameObject objeto1;
-    public GameObject objeto2;
+    private GameObject objeto1;
+    private GameObject objeto2;
 
     //Lista com os últimos objetos criados
     private GameObject[] lastObstacles;
@@ -46,18 +46,17 @@ public class Spawner : MonoBehaviour {
     }   
 
     float take_height(GameObject obj){
-        RectTransform rt = (RectTransform)Player.transform;
-        float player_height = rt.rect.height;
-
+        // RectTransform rt = (RectTransform)Player.transform;   
+        // float player_height = rt.rect.height;
+        player_height = 1;
         return player_height;
     }
 
     void Start() {
-        
-        objeto1 = objselector.Get_Obstacle();
-        objeto2 = objselector.Get_Obstacle();
+        lastObstacles = new GameObject[2];
 
-        lastObstacles = new GameObject[2] {objeto1, objeto2};
+        lastObstacles[0] = objselector.Get_Obstacle();
+        lastObstacles[1] = objselector.Get_Obstacle();
 
         localScreenWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
         random_range_a = localScreenWidth.x - (0.3f * localScreenWidth.x);
@@ -70,6 +69,9 @@ public class Spawner : MonoBehaviour {
         float player_height = take_height(Player);
         float safeDistance = player_height;
         safeDistance *= 1.1f;
+
+        objeto1 = lastObstacles[0];
+        objeto2 = lastObstacles[1];
     }
 
     void Update()

@@ -16,8 +16,8 @@ public class Game_Manager : MonoBehaviour{
     void Update()
     {
         time += Time.deltaTime;
-        if(stage < 4){
-            if(time >= 200 * n){
+        if(stage < 2){
+            if(time >= 3000 * n){
                 stage++;
                 n *= 1.5f;
             }
