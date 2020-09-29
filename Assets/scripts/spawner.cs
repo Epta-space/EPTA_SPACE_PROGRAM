@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour {
 
     //Variáveis para dimensão da tela
     private float width;
-    private Vector3 localScreenWidth;
+    private Vector3 localScreenSize;
 
     //Variáveis para estabelecer range seguro para geração de obstáculos
     private float random_range_a;
@@ -33,6 +33,11 @@ public class Spawner : MonoBehaviour {
     private GameObject[] lastObstacles;
 
     public Object_Selector objselector;
+
+    public GameObject GameSpawner;
+
+    private float Tx;
+    private float Ty;
 
     GameObject createObstacle(){
         obstacle = objselector.Get_Obstacle();
@@ -58,13 +63,12 @@ public class Spawner : MonoBehaviour {
         lastObstacles[0] = objselector.Get_Obstacle();
         lastObstacles[1] = objselector.Get_Obstacle();
 
-        localScreenWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
-        random_range_a = localScreenWidth.x - (0.3f * localScreenWidth.x);
-        random_range_b = localScreenWidth.x + (0.2f * localScreenWidth.x);
+        localScreenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        random_range_a = localScreenSize.x - (0.1f * localScreenSize.x);
+        random_range_b = localScreenSize.x;// + (0.2f * localScreenSize.x);
 
-        // GameObject[] lastObstacles ;
-        lastObstacles[0] = lastObstacles[1];
-        lastObstacles[1] = createObstacle();
+        // lastObstacles[0] = lastObstacles[1];
+        // lastObstacles[1] = createObstacle();
 
         float player_height = take_height(Player);
         float safeDistance = player_height;
@@ -74,15 +78,28 @@ public class Spawner : MonoBehaviour {
         objeto2 = lastObstacles[1];
     }
 
+    void RightTimeToSpawn(){
+        Tx = Math.Abs(2* (0.6f * localScreenSize.y)/(objeto1.GetComponent<move>().Get_velocity()));
+        Ty = Math.Abs(2*((0.6f * localScreenSize.y) - safeDistance)/(objeto2.GetComponent<move>().Get_velocity()));
+        tempo_para_spawn = (Tx - Ty) * 4;
+    }
+
     void Update()
     {
         objeto1 = lastObstacles[0];
         objeto2 = lastObstacles[1];
 
-        //! NullReferenceException: Object reference not set to an instance of an object
-        tempo_para_spawn = (safeDistance - (objeto1.transform.position.y - objeto2.transform.position.y)) / (objeto1.GetComponent<move>().Get_velocity() - objeto2.GetComponent<move>().Get_velocity());
+        // print("Velocidade do objeto1: " + objeto1.GetComponent<move>().Get_velocity() +
+        //       "\nVelocidade do objeto2: " + objeto2.GetComponent<move>().Get_velocity() + 
+        //       "\nPosição do objeto1: " + objeto1.transform.position.y + 
+        //       "\nPosição do objeto2: " + objeto2.transform.position.y
+        //     );
+    
 
-        
+        //!
+        RightTimeToSpawn();
+        print("Tempo para spawn: " + tempo_para_spawn);
+        print("Tempo atual: " + (Game_Manager.time - tempo_relativo));
         if(Game_Manager.time - tempo_relativo >= tempo_para_spawn){
             lastObstacles[0] = lastObstacles[1];
             lastObstacles[1] = createObstacle();

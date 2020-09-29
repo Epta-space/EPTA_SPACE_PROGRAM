@@ -59,10 +59,8 @@ public class Object_Selector : MonoBehaviour
         stage_length_list.Add(3);
         stage_length_list.Add(4);
 
-        stage_index = Game_Manager.stage;
         stage_length = stage_length_list[Game_Manager.stage];
         obstacle_index = (int)Random.Range(0, stage_length);
-        // print(obstacle_index);
         obstacle = actual_stage[Game_Manager.stage][obstacle_index];
         return obstacle;
     }
