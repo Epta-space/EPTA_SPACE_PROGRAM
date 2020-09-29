@@ -17,6 +17,8 @@ TagManager:
   - Sat_1
   - Sat_2
   - Sat_3
+  - audio_control
+  - music_control_1
   layers:
   - Default
   - TransparentFX

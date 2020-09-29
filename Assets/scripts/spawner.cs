@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour {
     private float random_range_a;
     private float random_range_b;
 
-    private float maxTime0 = 10;
+    // private float maxTime0 = 10;
     public int pontos = 5;
 
     public float score;
