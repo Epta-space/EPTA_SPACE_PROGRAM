@@ -117,6 +117,7 @@ GameObject:
   - component: {fileID: 3586649942499019675}
   - component: {fileID: 1556053571483640088}
   - component: {fileID: 1556053571483640089}
+  - component: {fileID: 8284316439847659264}
   m_Layer: 0
   m_Name: arvore_grande_2
   m_TagString: Untagged
@@ -213,6 +214,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &8284316439847659264
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556053571483640090}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1556053571517019505
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,6 +246,7 @@ GameObject:
   - component: {fileID: 5302079346784116546}
   - component: {fileID: 1556053571517019519}
   - component: {fileID: 1556053571517019504}
+  - component: {fileID: 131749951130431983}
   m_Layer: 0
   m_Name: computer00
   m_TagString: Untagged
@@ -320,6 +343,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &131749951130431983
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556053571517019505}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1556053571878600710
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,6 +375,7 @@ GameObject:
   - component: {fileID: 109536663387721197}
   - component: {fileID: 1556053571878600708}
   - component: {fileID: 1556053571878600709}
+  - component: {fileID: 7755765742815836535}
   m_Layer: 0
   m_Name: arvore1_0001
   m_TagString: Untagged
@@ -427,6 +472,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &7755765742815836535
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556053571878600710}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1556053571941743752
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 855401869636522707}
   - component: {fileID: 1556053571941743767}
+  - component: {fileID: 7280926726101784511}
   m_Layer: 0
   m_Name: femec
   m_TagString: Untagged
@@ -514,6 +581,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &7280926726101784511
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556053571941743752}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1556053572185075228
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,6 +613,7 @@ GameObject:
   - component: {fileID: 354703393906029659}
   - component: {fileID: 1556053572185075226}
   - component: {fileID: 1556053572185075227}
+  - component: {fileID: 2698490848008518620}
   m_Layer: 0
   m_Name: arvore_pequena_1
   m_TagString: Untagged
@@ -621,6 +710,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &2698490848008518620
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556053572185075228}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1556053572420819526
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,6 +742,7 @@ GameObject:
   - component: {fileID: 4849757492131418192}
   - component: {fileID: 1556053572420819524}
   - component: {fileID: 1556053572420819525}
+  - component: {fileID: 6806432585294016534}
   m_Layer: 0
   m_Name: arvore_grande_1
   m_TagString: Untagged
@@ -728,6 +839,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &6806432585294016534
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556053572420819526}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1556053572807437080
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1299820711970272065}
   - component: {fileID: 1556053572807437095}
+  - component: {fileID: 2180867232944926622}
   m_Layer: 0
   m_Name: mesinha
   m_TagString: Untagged
@@ -815,6 +948,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2180867232944926622
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556053572807437080}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &6206292190538015395
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,6 +980,7 @@ GameObject:
   - component: {fileID: 1340119675430165066}
   - component: {fileID: 4978240115270199481}
   - component: {fileID: 1727616787970877039}
+  - component: {fileID: 669378175139758351}
   m_Layer: 0
   m_Name: buttom_launch
   m_TagString: Untagged
@@ -917,3 +1072,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &669378175139758351
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6206292190538015395}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
