@@ -12,7 +12,9 @@ public class interface_handler : MonoBehaviour
 
 
 
-    void start() {
+    void Start() {
+        // Turn on ui basic
+        Basic_UI.SetActive(true);
         
 
     }

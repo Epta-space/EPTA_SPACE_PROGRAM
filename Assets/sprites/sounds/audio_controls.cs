@@ -9,7 +9,7 @@ public class audio_controls: MonoBehaviour
     void Start()
     {
         music_volume_control = GameObject.FindWithTag("audio_control");
-
+        music_volume_control.GetComponent<AudioSource>().volume = 1.0f;
         // this.gameObject.GetComponent<AudioSource>().volume = music_volume_control.GetComponent<Slider>();
     }
 

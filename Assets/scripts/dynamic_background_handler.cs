@@ -20,12 +20,6 @@ public class dynamic_background_handler : MonoBehaviour
     void Start()
     {
        nuvens.GetComponent<Rigidbody2D>().velocity = new Vector2(0, - nuvens_velocity);
-        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

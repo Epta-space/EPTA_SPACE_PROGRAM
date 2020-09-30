@@ -17,26 +17,30 @@ public class Object_Selector : MonoBehaviour
     public GameObject satelite_1;
     public GameObject satelite_2;
 
+    private GameObject Game_manager;
+
     public static GameObject obstacle;
 
     private GameObject[][] actual_stage;
 
-    private static int stage_index = Game_Manager.stage;
+    private int stage_index;
 
-    public int obstacle_index = 0;
+    private int obstacle_index;
     public List<int> stage_length_list;
     public int stage_length;
     public int i;
 
     void Start()
     {
+        Game_manager = GameObject.FindWithTag("Game_manager");
 
     }
 
-    void Update(){}
-
     public GameObject Get_Obstacle(){
-        stage_index = Game_Manager.stage;
+        
+        Debug.Log(Game_manager.GetComponent<Game_Manager>().Get_phase());
+        stage_index = 0;
+
         actual_stage = new GameObject[3][];
 
         actual_stage[0] = new GameObject[4];
@@ -59,9 +63,13 @@ public class Object_Selector : MonoBehaviour
         stage_length_list.Add(3);
         stage_length_list.Add(4);
 
-        stage_length = stage_length_list[Game_Manager.stage];
+        Debug.Log("---------------------------------------------------------");
+        stage_length = stage_length_list[stage_index];
         obstacle_index = (int)Random.Range(0, stage_length);
-        obstacle = actual_stage[Game_Manager.stage][obstacle_index];
+        obstacle = actual_stage[stage_index][obstacle_index];
         return obstacle;
     }
+
+
+
 }

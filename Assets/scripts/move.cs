@@ -8,14 +8,8 @@ public class move : MonoBehaviour
     public float speed;
     void Start()
     {
-        
+        this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, - speed);
     }
-
-    void Update()
-    {
-        transform.position += Vector3.down * speed * Time.deltaTime;
-    }
-
     public float Get_velocity(){return speed;}
     
 }

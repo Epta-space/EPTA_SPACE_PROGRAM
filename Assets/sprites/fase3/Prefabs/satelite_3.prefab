@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5760012962804978326}
   - component: {fileID: 5760012962804978327}
-  - component: {fileID: 5760012962804978325}
   - component: {fileID: 6835128778197459973}
+  - component: {fileID: -3598775964969621896}
+  - component: {fileID: 279696213191225104}
   m_Layer: 0
   m_Name: satelite_3
   m_TagString: Sat_3
@@ -84,40 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &5760012962804978325
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5760012962804978328}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.15354027, y: 0.08682869}
-  - {x: -0.27913168, y: 0.07485458}
-  - {x: -0.2569251, y: 0.057280194}
-  - {x: -0.19184166, y: 0.011206092}
-  - {x: 0.11342331, y: -0.16487484}
-  - {x: 0.16392723, y: -0.17563163}
-  - {x: 0.19814281, y: -0.16592339}
-  - {x: 0.21135314, y: -0.12462351}
-  - {x: 0.2107983, y: -0.0696933}
-  - {x: 0.10834228, y: 0.014600563}
-  - {x: -0.012782325, y: 0.098863944}
-  - {x: -0.09263447, y: 0.16521613}
-  - {x: -0.16749565, y: 0.19926125}
-  - {x: -0.16283889, y: 0.09315006}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &6835128778197459973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,3 +98,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.9
+--- !u!50 &-3598775964969621896
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5760012962804978328}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &279696213191225104
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5760012962804978328}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6, y: 0.45}
+    newSize: {x: 0.6, y: 0.45}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.13, y: 0.205}
+      - {x: -0.17, y: 0.21499999}
+      - {x: -0.19999999, y: 0.195}
+      - {x: -0.17, y: 0.114999995}
+      - {x: -0.19, y: 0.114999995}
+      - {x: -0.25, y: 0.125}
+      - {x: -0.29, y: 0.074999996}
+      - {x: -0.29, y: 0.055}
+      - {x: -0.17999999, y: -0.024999999}
+      - {x: 0.13, y: -0.195}
+      - {x: 0.19999999, y: -0.195}
+      - {x: 0.22999999, y: -0.175}
+      - {x: 0.22999999, y: -0.065}
+      - {x: 0.21, y: -0.015}

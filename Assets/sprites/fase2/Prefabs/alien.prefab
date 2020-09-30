@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1576144646237445305}
   - component: {fileID: 1576144646237445306}
-  - component: {fileID: 1576144646237445304}
   - component: {fileID: 7970320225104639848}
+  - component: {fileID: 1847635221527950041}
+  - component: {fileID: -3875469922958818910}
   m_Layer: 0
   m_Name: alien
   m_TagString: Alien
@@ -84,50 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &1576144646237445304
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1576144646237445307}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.0061871335, y: 0.23436676}
-  - {x: -0.018516082, y: 0.2319191}
-  - {x: -0.049166337, y: 0.22711715}
-  - {x: -0.105492555, y: 0.21742965}
-  - {x: -0.1504274, y: 0.19268036}
-  - {x: -0.18786316, y: 0.15859039}
-  - {x: -0.21406105, y: 0.12303619}
-  - {x: -0.2479943, y: 0.11964584}
-  - {x: -0.29787534, y: 0.0894104}
-  - {x: -0.32970306, y: 0.05601013}
-  - {x: -0.32481545, y: -0.001508789}
-  - {x: -0.25789735, y: -0.12938736}
-  - {x: 0.0071459957, y: -0.14791992}
-  - {x: 0.24646266, y: -0.13991775}
-  - {x: 0.34784576, y: 0.015701903}
-  - {x: 0.33835143, y: 0.046769254}
-  - {x: 0.31278473, y: 0.08005203}
-  - {x: 0.2799123, y: 0.10311188}
-  - {x: 0.22839043, y: 0.11152527}
-  - {x: 0.20309483, y: 0.14127822}
-  - {x: 0.16341731, y: 0.18172744}
-  - {x: 0.115048066, y: 0.21371947}
-  - {x: 0.059536055, y: 0.23134811}
-  - {x: -0.0014971923, y: 0.23628783}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &7970320225104639848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,3 +98,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.6
+--- !u!50 &1847635221527950041
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576144646237445307}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &-3875469922958818910
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576144646237445307}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 0.8}
+    newSize: {x: 0.8, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.12, y: 0.25}
+      - {x: -0.32999998, y: 0.14}
+      - {x: -0.35999998, y: 0.089999996}
+      - {x: -0.35999998, y: -0.049999997}
+      - {x: -0.26, y: -0.16}
+      - {x: 0.26, y: -0.16}
+      - {x: 0.37, y: -0.049999997}
+      - {x: 0.37, y: 0.11}
+      - {x: 0.13, y: 0.25}

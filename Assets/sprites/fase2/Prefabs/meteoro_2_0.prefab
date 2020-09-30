@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8481067611752862442}
   - component: {fileID: 8481067611752862441}
-  - component: {fileID: 8481067611752862443}
   - component: {fileID: 5241653114345989574}
+  - component: {fileID: -8734325316707041322}
+  - component: {fileID: 544859265751774732}
   m_Layer: 0
   m_Name: meteoro_2_0
   m_TagString: Met_2
@@ -84,50 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &8481067611752862443
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8481067611752862440}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.08296482, y: -0.27918032}
-  - {x: -0.1501224, y: -0.28571865}
-  - {x: -0.18496081, y: -0.26318392}
-  - {x: -0.2216312, y: -0.21153888}
-  - {x: -0.22946659, y: -0.17248721}
-  - {x: -0.24892475, y: -0.11372519}
-  - {x: -0.34184733, y: -0.07172925}
-  - {x: -0.36543444, y: -0.020740366}
-  - {x: -0.36256343, y: 0.07282302}
-  - {x: -0.31423303, y: 0.14365324}
-  - {x: -0.27601528, y: 0.17377447}
-  - {x: -0.22898929, y: 0.17196365}
-  - {x: -0.19104168, y: 0.21693465}
-  - {x: 0.00682209, y: 0.25552088}
-  - {x: 0.16748397, y: 0.25401753}
-  - {x: 0.26837608, y: 0.2279623}
-  - {x: 0.31509036, y: 0.16320576}
-  - {x: 0.27599913, y: -0.012507686}
-  - {x: 0.13439895, y: -0.16459519}
-  - {x: 0.086746134, y: -0.20056674}
-  - {x: 0.08868423, y: -0.20719989}
-  - {x: 0.072954364, y: -0.20316337}
-  - {x: -0.0142309945, y: -0.27155662}
-  - {x: -0.06845493, y: -0.27444836}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &5241653114345989574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,3 +98,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.1
+--- !u!50 &-8734325316707041322
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8481067611752862440}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &544859265751774732
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8481067611752862440}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 0.8}
+    newSize: {x: 0.8, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.32999998, y: 0.089999996}
+      - {x: 0.32999998, y: 0.19999999}
+      - {x: 0.24, y: 0.28}
+      - {x: -0.06, y: 0.28}
+      - {x: -0.19999999, y: 0.26}
+      - {x: -0.39, y: 0.11}
+      - {x: -0.39, y: -0.06}
+      - {x: -0.29, y: -0.11}
+      - {x: -0.24, y: -0.22}
+      - {x: -0.19999999, y: -0.29999998}
+      - {x: -0.16, y: -0.31}
+      - {x: -0.02, y: -0.31}
+      - {x: 0.03, y: -0.29}
+      - {x: 0.28, y: -0.08}
+      - {x: 0.32, y: 0.04}

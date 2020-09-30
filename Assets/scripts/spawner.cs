@@ -7,7 +7,8 @@ using UnityEngine.UI;
 
 public class Spawner : MonoBehaviour {
 
-    public GameObject Player;
+    private GameObject Player;
+    public GameObject Object_selector;
 
     private GameObject obstacle;
 
@@ -32,36 +33,26 @@ public class Spawner : MonoBehaviour {
     //Lista com os últimos objetos criados
     private GameObject[] lastObstacles;
 
-    public Object_Selector objselector;
+    // public Object_Selector objselector;
 
     public GameObject GameSpawner;
 
     private float Tx;
     private float Ty;
 
-    GameObject createObstacle(){
-        obstacle = objselector.Get_Obstacle();
-
-        GameObject new_obstacle = Instantiate(obstacle);
-        new_obstacle.transform.position = transform.position + new Vector3(UnityEngine.Random.Range(-random_range_a, random_range_b), 0, 0);
-
-        tempo_relativo = Game_Manager.time;
-
-        return new_obstacle;
-    }   
-
-    float take_height(GameObject obj){
-        // RectTransform rt = (RectTransform)Player.transform;   
-        // float player_height = rt.rect.height;
-        player_height = 1;
-        return player_height;
-    }
 
     void Start() {
+
+        Player = GameObject.FindWithTag("Player");
+        Object_selector = GameObject.FindWithTag("Object_selector");
+
         lastObstacles = new GameObject[2];
 
-        lastObstacles[0] = objselector.Get_Obstacle();
-        lastObstacles[1] = objselector.Get_Obstacle();
+        lastObstacles[0] = Object_selector.GetComponent<obj>().Get_Obstacle();
+        lastObstacles[1] = Object_selector.GetComponent<obj>().Get_Obstacle();
+        
+        // lastObstacles[0] = objselector.Get_Obstacle();
+        // lastObstacles[1] = objselector.Get_Obstacle();
 
         localScreenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
         random_range_a = localScreenSize.x - (0.1f * localScreenSize.x);
@@ -78,11 +69,6 @@ public class Spawner : MonoBehaviour {
         objeto2 = lastObstacles[1];
     }
 
-    void RightTimeToSpawn(){
-        Tx = Math.Abs(2* (0.6f * localScreenSize.y)/(objeto1.GetComponent<move>().Get_velocity()));
-        Ty = Math.Abs(2*((0.6f * localScreenSize.y) - safeDistance)/(objeto2.GetComponent<move>().Get_velocity()));
-        tempo_para_spawn = (Tx - Ty) * 4;
-    }
 
     void Update()
     {
@@ -98,11 +84,42 @@ public class Spawner : MonoBehaviour {
 
         //!
         RightTimeToSpawn();
-        print("Tempo para spawn: " + tempo_para_spawn);
-        print("Tempo atual: " + (Game_Manager.time - tempo_relativo));
-        if(Game_Manager.time - tempo_relativo >= tempo_para_spawn){
+        // print("Tempo para spawn: " + tempo_para_spawn);
+
+        float tempo = GameObject.FindWithTag("Game_manager").GetComponent<Game_Manager>().Get_time();
+        // print("Tempo atual: " + (tempo - tempo_relativo));
+        if(tempo - tempo_relativo >= tempo_para_spawn){
             lastObstacles[0] = lastObstacles[1];
             lastObstacles[1] = createObstacle();
         }
     }
-} 
+
+
+    GameObject createObstacle(){
+
+        obstacle = Object_selector.GetComponent<obj>().Get_Obstacle();
+
+        // obstacle = objselector.Get_Obstacle();
+
+        GameObject new_obstacle = Instantiate(obstacle);
+
+        new_obstacle.transform.position = transform.position + new Vector3(UnityEngine.Random.Range(-random_range_a, random_range_b), 0, 0);
+
+        tempo_relativo = GameObject.FindWithTag("Game_manager").GetComponent<Game_Manager>().Get_time();
+
+        return new_obstacle;
+    }
+
+    void RightTimeToSpawn(){
+        Tx = Math.Abs(2* (0.6f * localScreenSize.y)/(objeto1.GetComponent<move>().Get_velocity()));
+        Ty = Math.Abs(2*((0.6f * localScreenSize.y) - safeDistance)/(objeto2.GetComponent<move>().Get_velocity()));
+        tempo_para_spawn = (Tx - Ty) * 4;
+    }
+
+    float take_height(GameObject obj){
+        // RectTransform rt = (RectTransform)Player.transform;   
+        // float player_height = rt.rect.height;
+        player_height = 1;
+        return player_height;
+    }
+}

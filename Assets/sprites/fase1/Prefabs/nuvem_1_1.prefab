@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2337825001010196340}
   - component: {fileID: 2337825001010196343}
-  - component: {fileID: 2337825001010196341}
   - component: {fileID: 4058664524669461439}
+  - component: {fileID: -9030380784177196899}
+  - component: {fileID: 5549794178714105937}
   m_Layer: 0
   m_Name: nuvem_1_1
   m_TagString: Nuv_1_1
@@ -84,69 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &2337825001010196341
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2337825001010196342}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.03961258, y: -0.1295974}
-  - {x: -0.082303315, y: -0.13234816}
-  - {x: -0.10625564, y: -0.11732437}
-  - {x: -0.12300491, y: -0.12929772}
-  - {x: -0.14074707, y: -0.12882118}
-  - {x: -0.15753037, y: -0.10905151}
-  - {x: -0.17943116, y: -0.1281115}
-  - {x: -0.23698394, y: -0.1370185}
-  - {x: -0.26998246, y: -0.12018188}
-  - {x: -0.295473, y: -0.09016662}
-  - {x: -0.33711714, y: -0.071594544}
-  - {x: -0.3613426, y: -0.026452102}
-  - {x: -0.35656142, y: -0.002416992}
-  - {x: -0.3485106, y: 0.02894928}
-  - {x: -0.32990906, y: 0.051537246}
-  - {x: -0.3080931, y: 0.0872567}
-  - {x: -0.3102568, y: 0.118443064}
-  - {x: -0.26793015, y: 0.12521668}
-  - {x: -0.23323959, y: 0.16164252}
-  - {x: -0.1986975, y: 0.16663466}
-  - {x: -0.19350876, y: 0.15447052}
-  - {x: -0.15733643, y: 0.15529068}
-  - {x: -0.13170348, y: 0.16258697}
-  - {x: -0.1035469, y: 0.18807793}
-  - {x: -0.08570526, y: 0.21343559}
-  - {x: -0.06053131, y: 0.23178656}
-  - {x: -0.01534256, y: 0.25386894}
-  - {x: 0.03624443, y: 0.24162994}
-  - {x: 0.08720436, y: 0.2051677}
-  - {x: 0.11268486, y: 0.16202682}
-  - {x: 0.15084869, y: 0.1424414}
-  - {x: 0.18519859, y: 0.13221161}
-  - {x: 0.20693009, y: 0.086883165}
-  - {x: 0.22482078, y: 0.044174116}
-  - {x: 0.23125343, y: -0.0035207367}
-  - {x: 0.19751625, y: -0.043076478}
-  - {x: 0.19551224, y: -0.061261594}
-  - {x: 0.16246994, y: -0.10541}
-  - {x: 0.11821663, y: -0.104613796}
-  - {x: 0.07110687, y: -0.11753952}
-  - {x: 0.04167839, y: -0.12923478}
-  - {x: 0.00037384033, y: -0.108161695}
-  - {x: -0.033175047, y: -0.13137268}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &4058664524669461439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,3 +98,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+--- !u!50 &-9030380784177196899
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2337825001010196342}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &5549794178714105937
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2337825001010196342}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 0.8}
+    newSize: {x: 0.8, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.08, y: 0.26}
+      - {x: -0.01, y: 0.28}
+      - {x: -0.049999997, y: 0.28}
+      - {x: -0.24, y: 0.17999999}
+      - {x: -0.32, y: 0.13}
+      - {x: -0.37, y: 0.03}
+      - {x: -0.38, y: -0.01}
+      - {x: -0.38, y: -0.049999997}
+      - {x: -0.34, y: -0.12}
+      - {x: -0.26, y: -0.13}
+      - {x: 0.16, y: -0.13}
+      - {x: 0.22, y: -0.099999994}
+      - {x: 0.24, y: -0.01}
+      - {x: 0.24, y: 0.11}
