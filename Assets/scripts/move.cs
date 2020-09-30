@@ -15,4 +15,7 @@ public class move : MonoBehaviour
     {
         transform.position += Vector3.down * speed * Time.deltaTime;
     }
+
+    public float Get_velocity(){return speed;}
+    
 }
