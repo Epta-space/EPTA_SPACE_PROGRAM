@@ -25,7 +25,6 @@ public class Game_Manager : MonoBehaviour{
     void Update()
     {
         
-        Debug.Log(phase_plan.Length +" "+ phase);
         // Phase Query
         if(Time.time > phase_plan[phase] & phase < phase_plan.Length){
             phase++;

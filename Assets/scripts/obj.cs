@@ -21,8 +21,8 @@ public class obj : MonoBehaviour
     private GameObject Game_Manager;
 
     // Matrix para obstaculos
-    private GameObject[][] actual_stage;
-    public List<int> stage_length_list;
+    public GameObject[][] actual_stage;
+    public int[] stage_length_list;
     
     // Start is called before the first frame update
     void Start()
@@ -33,35 +33,34 @@ public class obj : MonoBehaviour
         // Declaring the obstacle matrix
         actual_stage = new GameObject[3][];
         
-        actual_stage[0] = new GameObject[4];
-        actual_stage[0][0] = nuvem_1_0;
-        actual_stage[0][1] = nuvem_1_1;
-        actual_stage[0][2] = nuvem_3_0;
-        actual_stage[0][3] = balao_1;
+        actual_stage[0] = new GameObject[4]{nuvem_1_0, nuvem_1_1, nuvem_3_0, balao_1};
 
-        actual_stage[1] = new GameObject[3];
-        actual_stage[1][0] = meteoro_1_0;
-        actual_stage[1][1] = meteoro_2_0;
-        actual_stage[1][2] = meteoro_3_0;
+        actual_stage[1] = new GameObject[3]{meteoro_1_0, meteoro_2_0, meteoro_3_0};
 
-        actual_stage[2] = new GameObject[4];
-        actual_stage[2][0] = satelite_1;
-        actual_stage[2][1] = satelite_2;
-        actual_stage[2][2] = satelite_3;
-        actual_stage[2][3] = alien;
+        actual_stage[2] = new GameObject[4]{satelite_1, satelite_2, satelite_3, alien};
 
-        // actual_stage[2].Length;
-        stage_length_list.Add(4);
-        stage_length_list.Add(3);
-        stage_length_list.Add(4);
+        // Indicate the length of the lists above;
+        stage_length_list = new int[3]{4 , 3 , 4};
+    }
+
+    void Update() {
+        Testando();
+    }
+
+    public void Testando(){
+
+        Debug.Log("------------------------------------------------------");
+        Debug.Log(Game_Manager.GetComponent<Game_Manager>().Get_time());
+        Debug.Log(actual_stage[1].Length);
     }
 
     public GameObject Get_Obstacle(){
         
-        int stage_index = Game_Manager.GetComponent<Game_Manager>().Get_phase();
-        int stage_length = stage_length_list[stage_index];
-        int obstacle_index = (int)Random.Range(0, stage_length);
+        // int stage_index = Game_Manager.GetComponent<Game_Manager>().Get_phase();
+        // int stage_index = 1;
+        // int stage_length = stage_length_list[stage_index];
+        // int obstacle_index = (int)Random.Range(0, stage_length);
 
-        return actual_stage[stage_index][obstacle_index];
+        return alien;
     }
 }
