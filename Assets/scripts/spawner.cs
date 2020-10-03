@@ -36,6 +36,7 @@ public class Spawner : MonoBehaviour {
     // public Object_Selector objselector;
 
     public GameObject GameSpawner;
+    private GameObject Game_manager;
 
     private float Tx;
     private float Ty;
@@ -45,6 +46,11 @@ public class Spawner : MonoBehaviour {
 
         Player = GameObject.FindWithTag("Player");
         Object_selector = GameObject.FindWithTag("Object_selector");
+        Game_manager = GameObject.FindWithTag("Game_manager");
+
+
+        Object_selector.gameObject.GetComponent<obj>().Start();
+
 
         lastObstacles = new GameObject[2];
 
@@ -105,12 +111,14 @@ public class Spawner : MonoBehaviour {
 
         new_obstacle.transform.position = transform.position + new Vector3(UnityEngine.Random.Range(-random_range_a, random_range_b), 0, 0);
 
-        tempo_relativo = GameObject.FindWithTag("Game_manager").GetComponent<Game_Manager>().Get_time();
+        tempo_relativo = Game_manager.GetComponent<Game_Manager>().Get_time();
 
         return new_obstacle;
     }
 
     void RightTimeToSpawn(){
+        Debug.Log( Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0)) );
+        
         Tx = Math.Abs(2* (0.6f * localScreenSize.y)/(objeto1.GetComponent<move>().Get_velocity()));
         Ty = Math.Abs(2*((0.6f * localScreenSize.y) - safeDistance)/(objeto2.GetComponent<move>().Get_velocity()));
         tempo_para_spawn = (Tx - Ty) * 4;

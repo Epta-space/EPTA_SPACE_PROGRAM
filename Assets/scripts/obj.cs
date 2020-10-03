@@ -19,47 +19,28 @@ public class obj : MonoBehaviour
 
     // Referente ao script game manager
     private GameObject Game_Manager;
+    private GameObject camera;
 
     // Matrix para obstaculos
-    private GameObject[][] actual_stage;
-    public List<int> stage_length_list;
+    private GameObject[][] actual_stage = new GameObject[3][];
     
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         // Geting game manager from tag in scene
         Game_Manager = GameObject.FindWithTag("Game_manager");
-        
-        // Declaring the obstacle matrix
-        actual_stage = new GameObject[3][];
-        
-        actual_stage[0] = new GameObject[4];
-        actual_stage[0][0] = nuvem_1_0;
-        actual_stage[0][1] = nuvem_1_1;
-        actual_stage[0][2] = nuvem_3_0;
-        actual_stage[0][3] = balao_1;
+        camera = GameObject.FindWithTag("MainCamera");
 
-        actual_stage[1] = new GameObject[3];
-        actual_stage[1][0] = meteoro_1_0;
-        actual_stage[1][1] = meteoro_2_0;
-        actual_stage[1][2] = meteoro_3_0;
-
-        actual_stage[2] = new GameObject[4];
-        actual_stage[2][0] = satelite_1;
-        actual_stage[2][1] = satelite_2;
-        actual_stage[2][2] = satelite_3;
-        actual_stage[2][3] = alien;
-
-        // actual_stage[2].Length;
-        stage_length_list.Add(4);
-        stage_length_list.Add(3);
-        stage_length_list.Add(4);
+        // Declarando a matrix de objetos
+        actual_stage[0] = new GameObject[4]{nuvem_1_0, nuvem_1_1, nuvem_3_0, balao_1};
+        actual_stage[1] = new GameObject[3]{meteoro_1_0, meteoro_2_0, meteoro_3_0};
+        actual_stage[2] = new GameObject[4]{satelite_1, satelite_2, satelite_3, alien};
     }
 
     public GameObject Get_Obstacle(){
-        
+
         int stage_index = Game_Manager.GetComponent<Game_Manager>().Get_phase();
-        int stage_length = stage_length_list[stage_index];
+        int stage_length = actual_stage[stage_index].Length;
         int obstacle_index = (int)Random.Range(0, stage_length);
 
         return actual_stage[stage_index][obstacle_index];
