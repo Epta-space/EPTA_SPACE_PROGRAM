@@ -29,9 +29,20 @@
 
 \frontmatter
 \date{}
-%\thispagestyle{empty}
+% \thispagestyle{empty}
 \date{\today}
 \sloppy
+
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,%
+keepaspectratio]{midia/epta_projeto_template}%
+\vfill
+}}}
 
 %----------------------------------------------------------------------------------------
 %    INÍCIO DO DOCUMENTO    (a partir daqui pode editar sem grandes complicações)
@@ -42,14 +53,13 @@
 %	PÁGINA DE TÍTULO
 %----------------------------------------------------------------------------------------
 
- \begin{titlepage} % Suprime cabeçalhos e notas na base da folha.
+\begin{titlepage} % Suprime cabeçalhos e notas na base da folha.
 
-		\BackImage[scale = 1]{midia/epta_projeto_template}% imagem de background
-	
-	\begin{minipage}[h!]{0.37\textwidth}
-		.%\textcolor{white}{.}% Para ocupar espaço (some times nothing is everything)
-	\end{minipage}
-	\begin{minipage}[h!]{0.6\textwidth}
+	    \AddToShipoutPicture*{\BackgroundPic}
+	    \begin{minipage}[h!]{0.36\textwidth}
+            \phantom{..}
+        \end{minipage} 
+        \begin{minipage}[h!]{0.6\textwidth}
 	
 		\centering % centraliza os textos na página
 	
@@ -64,7 +74,7 @@
 	
 		\vspace{0.75\baselineskip} % espaço sobre o título
 	
-		{\LARGE Título do template base para relatórios da Equipe de Propulsão e Tecnologia Aeroespacial\\} % Título
+		{\LARGE EPTA Entertainment\\} % Título
 	
 		\vspace{0.75\baselineskip} % espaço abaixo do título
 	
@@ -77,7 +87,7 @@
 		%	Subtítulo
 		%------------------------------------------------
 	
-		Aqui coloca-se um subtítulo para descrever em linhas gerais o objetivo do texto. % descrição adicional (sub-título)
+		Neste documento encontra-se o plano de desenvolvimento que se refere à criação da versão $1.0$ do aplicativo EPTA Space Program, desenvolvido pela EPTA Entertainment.% descrição adicional (sub-título)
 	
 		\vspace*{3\baselineskip} % espaço abaixo do subtítulo
 	
@@ -88,26 +98,34 @@
 		Desenvolvido Por
 	
 		\vspace{0.5\baselineskip} % Espaço antes de autores
-	
-		{\scshape\Large Felipe J. O. Ribeiro \\ Maíra F. O. Miranda \\} % Lista de autores (ordem alfabética)
-	
-		\vspace{0.5\baselineskip} % Espaço após os autores
+		
+        {
+        Felipe J. O. Ribeiro \\ 
+        Mateus da Silva Fernandes \\ 
+        Olavo Caetano Inácio \\
+        Pedro Guilherme R. V. de Melo
+        } % Lista de autores (ordem alfabética)
+        
+		
+        \vspace{0.5\baselineskip} % Espaço após os autores
 	
 		\textit{Universidade Federal de \\ Uberlândia} % Entidades envolvidas
 	
-		\vspace{14.8\baselineskip} % Espaço (diminuir se houver mais autores)
+		\vspace{12.8\baselineskip} % Espaço (diminuir se houver mais autores)
 	
 		{\large Equipe de Propulsão e Tecnologia Aeroespacial} % equipe
 		
 		\vspace{0.3\baselineskip} % Espaço embaixo da logo
 		
-		Missão \_NOME DA MISSÂO\_ % Núcleo análogo
+		EPTA Space Program - Versão 1.0 % Núcleo análogo
 		
 		\vspace{0.3\baselineskip} % Espaço embaixo da logo
 		
 		\today % Data de compilação
 		
 	\end{minipage}
+
+
 
 \end{titlepage}
 
@@ -117,24 +135,14 @@
 {
 	\thispagestyle{empty}     % Sem numeração no abstract
 	
-	{\LARGE Abstract\\} % Abstract (grande)
+	{\LARGE Resumo\\} % Abstract (grande)
 	
-	Neste local do texto coloca-se um breve resumo de tudo que irá constar no texto inteiro, para que os outros membros leiam e saibam exatamente do que o texto fala. Isso é necessário para que eles possam decidir se irão ler ou não este texto, e para facilitar a vida dos responsáveis por organizar a produção bibliográfica da equipe.
-	
-	Assim, será dado o exemplo agora, ou seja, direi tudo que será tratado dentro do texto. Primeiramente, será dado um breve resumo de formatação básica em latex, mudança de tamanho de texto, criação de capítulos, seções, subseções, etc... Funções em latex, disposição de parágrafos, comentários, espaçamento, automatizações da linguagem e criação de bullet points.
-	
-	Falar-se-á também sobre as motivações da criação deste template e suas finalidades. Se ensinará também como se cria urls clicáveis, também se explanando brevemente sobre nosso modelo de citações.
-	
-	Depois disso se fala sobre a formatação das equações, com diferentes formas de se manipular os números. Depois se fala de como importar imagens e sub-imagens, e como se utilizar o recurso das minipages para formatações mais ousadas de texto e imagens. Depois se mostra como utilizar a biblioteca Tikz para a criação de flowcharts e o que se pode adicionar nelas.
-	
-	Por fim se demonstra como criar tabelas dentro do latex, com exemplos bem interessantes, e se oferece uma ferramenta online, que alem de fazer o trem por você, pode ser uma boa ferramenta didática.
-	
-	Assim, a Equipe de propulsão e tecnologia aeroespacial agradece seu interesse em ler e aprender latex com este documento, mas na situação de dúvidas pode chamar o pessoal da gerencia. 
-	
-	Valeu.
-	
+    Neste documento encontram-se documentadas as práticas adotadas no desenvolvimento da versão 1.0 do aplicativo Epta Space Program. O Plicativo já havia sido lançado na google play em meados de 2017, mas ele foi tirado do ar devido a questões burocráticas (ausência de uma política de privacidade). 
+
+    Nesta primeira etapa de desenvolvimento a equipe atualizará o jogo para a versão mais recente do unity. Também revisará o work flow uma vez que na versão de 2017 estava impossível de escalar e de fazer a manutenção do código, devido a más práticas de programação. Como resposta a isso, a sub área se propôs a revisar todas as boas práticas de programação, de forma a estar conforme com os mais altos padrões da indústria.  
+
 	\vspace{1cm}
-	{\large Palavras chave:} {\small Primeira palavra, Segunda palavra, terceira palavra, quarta palavra, quinta palavra, ...}
+	{\large Palavras chave:} {\small Desenvolvimento de Software, aplicativo, android, jogo, google play.}
 
 }
 %----------------------------------------------------------------------------------------

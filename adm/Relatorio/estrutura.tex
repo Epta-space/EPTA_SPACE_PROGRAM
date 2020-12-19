@@ -51,16 +51,13 @@
 \definecolor{zelena}{RGB}{0,100,0}                                        % Define cores em estruturas
 \tcbuselibrary{theorems}                                                  % Cor nas caixas                           
 \tcbuselibrary{breakable}                                                 % Particiona coisas
-\pagestyle{fancy}  
-\fancyhead[RO , RE]{\footnotesize 
-	\begin{minipage}[b]{0.435\linewidth}\flushright\leftmark\end{minipage}}  % cabeçalho direito ímpar=título do capítulo
-\fancyhead[LO , LE]{\footnotesize 	
-	\begin{minipage}[b]{0.435\linewidth}\flushleft\rightmark\end{minipage}} % cabeçalho esquerdo = nome da seção
-\fancyfoot[CE,CO]{\thepage}                                               % Nota de pé
+% \let\@Vs@envwarn\@gobble% Remove environment renewal warnings. Todo 
+\usepackage{silence}
+\WarningFilter{`Versions'}{Redefining environment}
 \allowdisplaybreaks                                                       % Possibilita alguns comandos de controle
 \setcellgapes{5pt}                                                        % Formatação de tabelas
 \definecolor{eggshell}{rgb}{0.94, 0.92, 0.84}                             % Definição de cor 
-
+\setlength\headheight{14.5pt}                                             % headheight length 
 
 
 \setlength\headheight{27.05003pt}

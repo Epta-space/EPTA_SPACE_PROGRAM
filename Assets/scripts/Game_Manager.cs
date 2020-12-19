@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Game_Manager : MonoBehaviour{
 
@@ -13,7 +11,7 @@ public class Game_Manager : MonoBehaviour{
     // Refere-se ao tempo relativo da fase
     private float phase_time;
 
-    // Defines the phase brake points in seconds 
+    // Defines the phase brake points in seconds            fase 1     |      fase 2      |  fease 3
     private float[] phase_plan = new float[3]{10.0f, 30.0f , 0.0f};
 
     void Start()
@@ -24,7 +22,7 @@ public class Game_Manager : MonoBehaviour{
 
     void Update()
     {
-        
+        Debug.Log(phase);
         // Phase Query
         if(Time.time > phase_plan[phase] & phase < phase_plan.Length){
             phase++;

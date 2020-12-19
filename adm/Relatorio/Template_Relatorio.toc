@@ -1,15 +1,15 @@
 \babel@toc {brazil}{}
-\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Isso \IeC {\'e} uma sess\IeC {\~a}o}{1}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Isso \IeC {\'e} uma sub sess\IeC {\~a}o}{1}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Isso \IeC {\'e} outra sub sess\IeC {\~a}o}{2}{subsection.1.1.2}
-\contentsline {section}{\numberline {1.2}Isso \IeC {\'e} outra se\IeC {\c c}\IeC {\~a}o}{3}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Isso \IeC {\'e} mais uma outra subse\IeC {\c c}\IeC {\~a}o}{3}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}\IeC {\'I}ndice interativo}{3}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Cita\IeC {\c c}\IeC {\~o}es}{3}{subsection.1.2.3}
-\contentsline {chapter}{\numberline {2}Equa\IeC {\c c}\IeC {\~o}es matem\IeC {\'a}ticas}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Mais uma se\IeC {\c c}\IeC {\~a}o, pq n\IeC {\~a}o?}{6}{section.2.1}
-\contentsline {chapter}{\numberline {3}Trabalhando com imagens}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Minipage, o que \IeC {\'e}?}{8}{section.3.1}
-\contentsline {section}{\numberline {3.2}Criando flowcharts com tecnicas de tikz (obs: vejo o que ocorre com t\IeC {\'\i }tulos de cap\IeC {\'\i }tulos muito muito grandes...)}{9}{section.3.2}
-\contentsline {chapter}{\numberline {4}Trabalhando com tabelas}{10}{chapter.4}
+\contentsline {chapter}{\numberline {1}Introdução}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Isso é uma sessão}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Isso é uma sub sessão}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Isso é outra sub sessão}{2}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Isso é outra seção}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Isso é mais uma outra subseção}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Índice interativo}{3}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Citações}{3}{subsection.1.2.3}%
+\contentsline {chapter}{\numberline {2}Equações matemáticas}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Mais uma seção, pq não?}{6}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Trabalhando com imagens}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Minipage, o que é?}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Criando flowcharts com tecnicas de tikz (obs: vejo o que ocorre com títulos de capítulos muito muito grandes...)}{9}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Trabalhando com tabelas}{10}{chapter.4}%
