@@ -1,25 +1,14 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class movimentação : MonoBehaviour
 {
     public float speed;
-    Rigidbody2D rb;
-    private float screenWidth;
+    private Rigidbody2D rb;
     private Vector3 localScreenWidth;
-    private float move;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-    }
-
-    void Update() {
-        
     }
 
     void FixedUpdate()
@@ -40,16 +29,17 @@ public class movimentação : MonoBehaviour
 
         localScreenWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
 
-        if (transform.position.x >= localScreenWidth.x + 0.06 * localScreenWidth.x)
+        if (transform.position.x >= 1.09 * localScreenWidth.x)
         {
 
-            transform.position = new Vector3(-transform.position.x + 0.06f * localScreenWidth.x, transform.position.y, transform.position.z);
+            transform.position = new Vector3(- 1.07f * localScreenWidth.x, transform.position.y, transform.position.z);
 
         }
-        else if (transform.position.x <= -(localScreenWidth.x + 0.06 * localScreenWidth.x))
+        else if (transform.position.x <= -1.09 * localScreenWidth.x)
         {
 
-            transform.position = new Vector3(-transform.position.x - 0.06f * localScreenWidth.x, transform.position.y, transform.position.z);
+            transform.position = new Vector3( 1.07f * localScreenWidth.x, transform.position.y, transform.position.z);
+
         }
     }
 }
