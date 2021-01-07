@@ -34,7 +34,6 @@
 \sloppy
 
 \usepackage{eso-pic}
-\usepackage[pdftex]{hyperref}
 \newcommand\BackgroundPic{%
 \put(0,0){%
 \parbox[b][\paperheight]{\paperwidth}{%
@@ -56,11 +55,11 @@ keepaspectratio]{midia/epta_projeto_template}%
 
 \begin{titlepage} % Suprime cabeçalhos e notas na base da folha.
 
-	\AddToShipoutPicture*{\BackgroundPic}
-	\begin{minipage}[h!]{0.36\textwidth}
-        \phantom{..}
-    \end{minipage} 
-    \begin{minipage}[h!]{0.6\textwidth}
+	    \AddToShipoutPicture*{\BackgroundPic}
+	    \begin{minipage}[h!]{0.36\textwidth}
+            \phantom{..}
+        \end{minipage} 
+        \begin{minipage}[h!]{0.6\textwidth}
 	
 		\centering % centraliza os textos na página
 	
@@ -138,7 +137,7 @@ keepaspectratio]{midia/epta_projeto_template}%
 	
 	{\LARGE Resumo\\} % Abstract (grande)
 	
-    Neste documento encontram-se as práticas adotadas no desenvolvimento da versão $1.0$ do aplicativo Epta Space Program. O programa já havia sido lançado na google play em meados de 2017, mas ele foi retirado do ar devido a questões burocráticas (ausência de uma política de privacidade). 
+    Neste documento encontram-se documentadas as práticas adotadas no desenvolvimento da versão 1.0 do aplicativo Epta Space Program. O Plicativo já havia sido lançado na google play em meados de 2017, mas ele foi tirado do ar devido a questões burocráticas (ausência de uma política de privacidade). 
 
     Nesta etapa de desenvolvimento a equipe atualizará o jogo para a versão mais recente do unity.
     Também revisará o work flow uma vez que na versão de 2017 estava impossível de escalar e inviável de manter devido a más práticas de programação.
@@ -148,37 +147,17 @@ keepaspectratio]{midia/epta_projeto_template}%
 
     \begin{description}[font=$\bullet$~\normalfont\scshape]
         \item [Arcade] Mecânica base do jogo mantém-se arcade, com rolagem para cima com obstáculos e replay ágil.
-        \item [Assests reutilizados] Serão utilizados os assets do antigo lançamento. Novos devem ser feitos conforme necessidade.
-        \item [Propaganda] As propagandas tipo banner e tipo Intersticial devem ser implementadas novamente.
+        \item [Assests reutilizados] Serão utilizados os assets do antigo lançamento.
+        \item [Propaganda] As propagandas tipo banner e tipo Intersticial devem ser implementadas.
         \item [Versão paga] Deve haver uma versão sem propagandas e que é paga. (preço a determinar)
         \item [Tabela Info] Tabela de informações sobre a equipe no menu opções.
-        \item [Tela inicial] Desenvolvimento da tela inicial com animações. Que não precise iniciar o jogo pausado.
         \item [Volume] Deve ser possível ajustar o volume.
-        \item [Explosão] Som e efeito visual de explosão.
         \item [Salvar] A melhor pontuação do jogador deve ser salva localmente, assim como o volume.
         \item [3 fases] Três etapas distintas de jogo. (céu azul, extratosfera, espaço)
-        \item [Dificuldade crescente] O sistema de dificuldade deve ser implementado de forma a permitir razoável controle em função de fase e tempo.
         \item [fase final] A certa altura (a determinar), o player tem a opção de de ir para a lua. (o conteúdo será adicionado posteriormente. Mas por hora o player recebe uma mensagem de congratulações)
     \end{description}
 
-    A metodologia adotada para a criação do APP tem duas etapas importantes: Até o término da versão $1.0$ será adotada uma metodologia em cascata, nesta que é a etapa de pré lançamento, onde se dividirão as features a implementar em uma ordem lógica de execução. 
-    Datas para pontos chave no desenvolvimento serão determinadas seguindo o padrão industrial (pre-alpha : $0.5.0$, alpha : $0.6.0$, beta-1 : $0.7.0$, beta-2 : $0.8.0$, ..., release : $1.0.0$), onde cada uma terá um objetivo e uma lista de requerimentos a serem atendidos.
-    Em seguida, após lançado, será adotada a metodologia ágil para desenvolvimento contínuo de atualizações e melhoramentos conforme necessário. Esse será chamada de etapa contínua de pós lançamento.
-
-    Será implementado um ciclo de desenvolvimento completamente integrado à ferramente Git de controle de versão e à página GitHub (\url{https://github.com/Epta-space/EPTA_SPACE_PROGRAM}), onde o jogo será salvo em cloud em um repositório privado.
-    Assim, essas ferramentas servirão para possibilitar o desenvolvimento em grupo do código fonte, além de também ser uma forma de quantificação da produtividade, uma vez que o controle do número de commits é uma métrica importante no acompanhamento das atividades.
-    Mais detalhes podem ser encontrados na descrição das etapas de desenvolvimento do pré lançamento.
-
-    A criação do produto mínimo viável já foi feita na primeira versão do jogo, motivo pelo qual não temos a etapa MVP neste texto. 
-    Apesar disso será inserida aqui alguma documentação sobre esse processo nos capítulos iniciais.
-    O desenvolvimentos que ocorreram anteriores a esse relatório são o motivo, também, da enumeração das etapas começarem em $0.5$.
-    Nos capítulos iniciais também será dada uma detalhada noção do estado atual do aplicativo assim como algumas informações sobre como foi o desenvolvimento até então.
-    Tudo que foi feito até o momento foi desenvolvido durante o ano corrido de 2020, com exceção dos assets que vem da versão anterior.
-
-    Dentre as informações do estado atual do aplicativo serão listados os scripts que existem atualmente em formato UML e por escrito, a estrutura de arquivos no projeto unity e a estrutura de Prefabs.
-    Estas estruturas também já atendem a padrões de projeto sugeridos online e facilitam o desenvolvimento do controle de versão via Git, além de organizar as informações para facilitar o acesso e aumentar a escalabilidade.
-
-    Próximo ao fim do documento também serão apresentadas algumas propostas de melhoramento na etapa ágil de lançamento, isso é, após a primeira versão do programa ser lançada na Google Play. Isso mostra as possíveis rotas que a subárea tomará no futuro, após o começo da etapa de desenvolvimento contínuo.
+    A metodologia adotada para a criação do APP tem duas etapas importantes: Até o término da versão 1.0 será adotada uma metodologia em cascata, que dividirá as features que se deseja implementar em uma ordem lógica de execução. Datas para pontos chave no desenvolvimento serão determinadas seguindo o padrão industrial . Em seguida, após lançado, será adotada a metodologia ágil para desenvolvimento contínuo de atualizações e melhoramentos.
 
 	\vspace{1cm}
 	{\large Palavras chave:} {\small Desenvolvimento de Software, aplicativo, android, jogo, google play.}
