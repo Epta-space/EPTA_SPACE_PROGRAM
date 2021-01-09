@@ -42,6 +42,52 @@
 keepaspectratio]{midia/epta_projeto_template}%
 \vfill
 }}}
+\lstdefinestyle{sharpc}{language=[Sharp]C, frame=lr, rulecolor=\color{blue!80!black}} % Style of code
+\lstset{
+language=csh,
+basicstyle=\footnotesize\ttfamily,
+numbers=left,
+numberstyle=\tiny,
+numbersep=5pt,
+tabsize=2,
+extendedchars=true,
+breaklines=true,
+frame=b,
+stringstyle=\color{blue}\ttfamily,
+showspaces=false,
+showtabs=false,
+xleftmargin=17pt,
+framexleftmargin=17pt,
+framexrightmargin=5pt,
+framexbottommargin=4pt,
+commentstyle=\color{black},
+morecomment=[l]{//}, %use comment-line-style!
+morecomment=[s]{/*}{*/}, %for multiline comments
+showstringspaces=false,
+morekeywords={ abstract, event, new, struct,
+as, explicit, null, switch,
+base, extern, object, this,
+bool, false, operator, throw,
+break, finally, out, true,
+byte, fixed, override, try,
+case, float, params, typeof,
+catch, for, private, uint,
+char, foreach, protected, ulong,
+checked, goto, public, unchecked,
+class, if, readonly, unsafe,
+const, implicit, ref, ushort,
+continue, in, return, using,
+decimal, int, sbyte, virtual,
+default, interface, sealed, volatile,
+delegate, internal, short, void,
+do, is, sizeof, while,
+double, lock, stackalloc,
+else, long, static,
+enum, namespace, string},
+keywordstyle=\color{blue},
+identifierstyle=\color{red},
+backgroundcolor=\color{white},
+}
 
 %----------------------------------------------------------------------------------------
 %    INÍCIO DO DOCUMENTO    (a partir daqui pode editar sem grandes complicações)
@@ -216,26 +262,26 @@ keepaspectratio]{midia/epta_projeto_template}%
 
     Considerando que o aplicativo só ficou disponível por 5 meses e que estava em seu estado base, sem qualquer atualização ou melhoramento, considera-se este retorno um ótimo resultado. Espera-se ultrapassar essa marca com o novo lançamento em 2021.
 
-\section{Sobre o papel do desenvolvimento de jogos na equipe}
+    \section{Sobre o papel do desenvolvimento de jogos na equipe}
 
-    Este é um assunto de grande complexidade. 
-    
-    Na ciência da computação, o assunto é tratado como um dos mais difíceis, uma vez que, assim como na criação de foguetes, é uma prática extremamente multidisciplinar. 
-    Dentre as competências que se espera de uma equipe que se propõe a tal papel temos todo tipo de habilidade que oscila entre técnico e artístico de forma dramática. 
+        Este é um assunto de grande complexidade. 
+        
+        Na ciência da computação, o assunto é tratado como um dos mais difíceis, uma vez que, assim como na criação de foguetes, é uma prática extremamente multidisciplinar. 
+        Dentre as competências que se espera de uma equipe que se propõe a tal papel temos todo tipo de habilidade que oscila entre técnico e artístico de forma dramática. 
 
-    Tendo a diversidade do assunto em vista, observa-se uma oportunidade de uma rica interlocução de agentes das mais diversas áreas, assim como vemos de um ponto de vista geral, dentro da equipe de propulsão e tecnologia aeroespacial. 
-    Desse forma espera-se que a subárea de desenvolvimento de jogos usufrua dessa diversidade que existe dentro da equipe, e até a expanda ainda mais.
+        Tendo a diversidade do assunto em vista, observa-se uma oportunidade de uma rica interlocução de agentes das mais diversas áreas, assim como vemos de um ponto de vista geral, dentro da equipe de propulsão e tecnologia aeroespacial. 
+        Desse forma espera-se que a subárea de desenvolvimento de jogos usufrua dessa diversidade que existe dentro da equipe, e até a expanda ainda mais.
 
-    Outro aspecto importante desta prática é a forma como se enxerga a programação. 
-    Na pesquisa e na engenharia também é constante a prática de programar, mas isso é feito de forma pragmática e apressada.
-    Esse é o natural, uma vez que o código não é o produto final, mas um meio que se precisa percorrer, seja para uma pesquisa ou para desenvolver uma estrutura ou peça para o foguete.
-    Tudo isso é familiar aos outros integrantes da equipe e para qualquer um da área de engenharia.
-    Mas, dentro da EPTA Entertainment a perspectiva é outra.
-    O código que está sendo desenvolvido é o produto final, e como tal, deve ser feito de forma bem diferente do código acadêmico. 
-    Além de funcionar ele deve ser legível e obedecer a padrões de projeto. 
-    Além disso, no lugar de exercer uma funcionalidade única e específica, códigos como os desenvolvidos na subárea muitas vezes precisam ser flexíveis e robustos de forma a trabalharem harmonicamente no ecossistema lógico do aplicativo.
-    
-    Desenvolver essa outra perspectiva de desenvolvimento de software é extremamente positivo a qualquer engenheiro, uma vez que mais e mais o engenheiro moderno se vê cercado por programação, em qualquer especialidade.
+        Outro aspecto importante desta prática é a forma como se enxerga a programação. 
+        Na pesquisa e na engenharia também é constante a prática de programar, mas isso é feito de forma pragmática e apressada.
+        Esse é o natural, uma vez que o código não é o produto final, mas um meio que se precisa percorrer, seja para uma pesquisa ou para desenvolver uma estrutura ou peça para o foguete.
+        Tudo isso é familiar aos outros integrantes da equipe e para qualquer um da área de engenharia.
+        Mas, dentro da EPTA Entertainment a perspectiva é outra.
+        O código que está sendo desenvolvido é o produto final, e como tal, deve ser feito de forma bem diferente do código acadêmico. 
+        Além de funcionar ele deve ser legível e obedecer a padrões de projeto. 
+        Além disso, no lugar de exercer uma funcionalidade única e específica, códigos como os desenvolvidos na subárea muitas vezes precisam ser flexíveis e robustos de forma a trabalharem harmonicamente no ecossistema lógico do aplicativo.
+        
+        Desenvolver essa outra perspectiva de desenvolvimento de software é extremamente positivo a qualquer engenheiro, uma vez que mais e mais o engenheiro moderno se vê cercado por programação, em qualquer especialidade.
 
 \section{O Mínimo produto viável(MVP)}
 
@@ -248,9 +294,86 @@ keepaspectratio]{midia/epta_projeto_template}%
     
     Dentre as coisas descritas temos os seguintes tópicos:
 
-    \begin{description}
-        \item A certa altura (a determinar), o player tem a opção de de ir para a lua.
-    \end{description}
+    \begin{itemize}
+        \item Disposição dos arquivos.
+        \item Disposição de Game Objects.
+        \item Ecossistema lógico.
+    \end{itemize}
+
+    \section{Disposição de arquivos}
+
+    O gerenciamento de arquivos é muito importante no desenvolvimento de jogos.
+
+    O objetivo é organizar a informação, uma vez que existem muitos arquivos (centenas). E podem ser figuras, música, scripts, meta dados, e objetos lógicos de jogo, como prefabs, animações, cenas e muitas outras coisas.
+    Dessa forma é muito importante que tais arquivos sejam dispostos de uma forma inteligível, uma vez que mexer neles faz parte do cotidiano dos desenvolvedores.
+        
+    Existem duas pastas importantes que devemos saber a composição. A pasta Assets e a pasta Adm. Ambas estão localizadas na pasta principal do projeto Unity do aplicativo. 
+
+    Na primeira se coloca tudo que entra no desenvolvimento do jogo. Entre as coisas que estão lá dentro temos os scripts, músicas, prefabs, etc... Toda vez que se quer modificar algo no jogo, um dos arquivos dentro desta pasta será modificado.
+
+    Na pasta adm são colocados arquivos que não são usados no desenvolvimento do jogo, mas ainda sim são importantes para esse desenvolvimento. Entre as coisas presentes nessa pasta temos o relatório que documenta a criação do aplicativo (como este que estão lendo), a política de privacidade que usamos no lançamento do aplicativo, a chave de publicação, e outros detalhes.
+
+    
+    \section{Disposição de Game Objects}
+    \section{Ecossistema lógico}
+
+    \begin{figure}[h!]
+        \centering
+        \begin{lstlisting}
+            using UnityEngine;
+
+            public class Destroy_obstacles : MonoBehaviour
+            {
+                
+                 // Destroi tudo que encostar neste objeto
+                 void OnCollisionEnter2D(Collision2D coll) 
+                 {
+                    Destroy(coll.gameObject);
+                 }
+            }
+        \end{lstlisting}
+        \label{destruction_code}
+        \caption{Código do script "Destroy\_obstacles.cs".}
+
+    \end{figure}
+
+
+    \begin{figure}[h!]
+        \centering
+        \begin{lstlisting}
+            using UnityEngine;
+
+            public class audio_controls: MonoBehaviour
+            {
+                // Reference to the scene audio controll 
+                private GameObject music_volume_control;
+
+                // makes the starting volume change in UI
+                [SerializeField]
+                private float volume;
+
+                // Start is called before the first frame update
+                void Start()
+                {
+                    // Acha o game audio principal, com a música do jogo via tag (GameObject Audio Source)
+                    music_volume_control = GameObject.FindWithTag("audio_control");
+                    
+                    // Declara o volume 
+                    music_volume_control.GetComponent<AudioSource>().volume = volume;
+
+                }
+
+                // Quando o valor do volume muda, atualiza o valor no Audio source da música
+                public void volume_controll(float volume){
+                    music_volume_control.GetComponent<AudioSource>().volume = volume;
+                }
+            }
+
+        \end{lstlisting}
+        \label{destruction_code}
+        \caption{Código do script "audio\_controls.cs".}
+
+    \end{figure}
 
 
 
