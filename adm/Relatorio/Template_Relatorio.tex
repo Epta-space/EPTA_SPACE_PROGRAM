@@ -25,16 +25,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \include{estrutura}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
 \date{}
 % \thispagestyle{empty}
 \date{\today}
 \sloppy
-
 \usepackage{eso-pic}
-\usepackage[pdftex]{hyperref}
 \newcommand\BackgroundPic{%
 \put(0,0){%
 \parbox[b][\paperheight]{\paperwidth}{%
@@ -136,13 +134,14 @@ keepaspectratio]{midia/epta_projeto_template}%
 {
 	\thispagestyle{empty}     % Sem numeração no abstract
 	
-	{\LARGE Resumo\\} % Abstract (grande)
+	{\LARGE Resumo} % Abstract (grande)
+    \vspace{1cm}
 	
     Neste documento encontram-se as práticas adotadas no desenvolvimento da versão $1.0$ do aplicativo Epta Space Program. O programa já havia sido lançado na google play em meados de 2017, mas ele foi retirado do ar devido a questões burocráticas (ausência de uma política de privacidade). 
 
     Nesta etapa de desenvolvimento a equipe atualizará o jogo para a versão mais recente do unity.
     Também revisará o work flow uma vez que na versão de 2017 estava impossível de escalar e inviável de manter devido a más práticas de programação.
-    Como resposta a isso, a sub área se propôs a revisar todos os padrões de desenvolvimento de forma a estar conforme com os mais altos padrões da indústria.
+    Como resposta a isso, a sub área se propôs a revisar todos os padrões de desenvolvimento de forma a estar conforme com as mais altas recomendações desta indústria.
 
     As features que espera-se que estejam presentes no jogo na data de estreia são:
 
@@ -157,8 +156,9 @@ keepaspectratio]{midia/epta_projeto_template}%
         \item [Explosão] Som e efeito visual de explosão.
         \item [Salvar] A melhor pontuação do jogador deve ser salva localmente, assim como o volume.
         \item [3 fases] Três etapas distintas de jogo. (céu azul, extratosfera, espaço)
+        \item [Alturas reais] As alturas de mudança de fase devem ser consistentes com o mundo real.
         \item [Dificuldade crescente] O sistema de dificuldade deve ser implementado de forma a permitir razoável controle em função de fase e tempo.
-        \item [fase final] A certa altura (a determinar), o player tem a opção de de ir para a lua. (o conteúdo será adicionado posteriormente. Mas por hora o player recebe uma mensagem de congratulações)
+        \item [Fase final] A certa altura (a determinar), o player tem a opção de de ir para a lua. (o conteúdo será adicionado posteriormente. Mas por hora o player recebe uma mensagem de congratulações)
     \end{description}
 
     A metodologia adotada para a criação do APP tem duas etapas importantes: Até o término da versão $1.0$ será adotada uma metodologia em cascata, nesta que é a etapa de pré lançamento, onde se dividirão as features a implementar em uma ordem lógica de execução. 
@@ -194,430 +194,38 @@ keepaspectratio]{midia/epta_projeto_template}%
 \thispagestyle{empty}     % Sem numeração na página da lista de imagens
 \mainmatter
 
+\chapter{O desenvolvimento até aqui}
 
+    O início deste projeto ocorreu no começo do primeiro semestre de 2018. Um grupo de membros se juntou no desenvolvimento do aplicativo como uma nova proposta de angariação de fundos para a equipe. 
+    Observou-se o potencial do mercado de aplicativos global, que cresce consistentemente ao longo dos anos.
+    Além disso pensou-se na oportunidade de se aprofundar no desenvolvimento de software e o aprendizado que isso traria.
 
-\chapter{Introdução}%  <------------  Esse comando cria um capítulo
+    Ao longo do ano o aplicativo foi desenvolvido e finalmente lançado em dezembro de 2018. Ele foi baixado em mais de 40 países e mais de 800 vezes, com uma avaliação média de $4.88$ estrelas de $5$. 
 
-Olá caro integrante da Equipe de Propulsão e Tecnologia Aeroespacial que almeja escrever um texto relatório de circulação interna. Este documento está pronto para servir de base para sua empreitada. Aqui esta listado todo tipo de recurso para o pleno desenvolvimento desta tarefa de documentação que consideramos tão importante.
 
-Aqui estão ferramentas para exibição de imagens, equações, tabelas, hiperlinks e texto nas mais diversas formatações. Assim, basta alterar o texto aqui contido de forma a tornar este documento um reflexo do trabalho desenvolvido pela equipe.
+    O desenvolvimento de jogos é um assunto de grande complexidade. 
+    Na ciência da computação, o assunto é tratado como um dos mais difíceis, uma vez que, assim como na criação de foguetes, é uma prática extremamente multidisciplinar.
+    Além disso a otimização de recursos computacionais frente ao escopo do projeto torna o processo de desenvolvimento muito complicado.
 
-\section{Isso é uma sessão} %  <------------  Esse comando cria a sessão
-É possível observar aqui a presença de uma sessão. O código referente a isso pode ser encontrado no texto fonte desse documento. Ela está referenciada com um "\%  <------------  Esse comando cria a sessão", nisso, o \% é o sinal para começar um comentário, assim "<------------  Esse comando cria a sessão" é ignorado pelo compilador.
+\section{O Mínimo produto viável(MVP)}
 
-Para começar um novo parágrafo, observe no código o espaço entre os textos, isso cria um novo parágrafo com edentação correta.
+\chapter{Estado do aplicativo}
 
-Nas páginas anteriores tem-se o título, altores e informações adicionais. Para mudar isto basta se procurar estes nomes nos códigos e mudar. Com as barras duplas pode-se por mais autores, se houverem mais de dois para este trabalho, dependendo da quantidade será necessário diminuir o tamanho do espaço após os autores.
+    O jogo para celular "Epta space program" é um programa desenvolvido para Android cujo público alvo são os entusiastas da indústria aeroespacial. Desse forma, o objetivo da equipe é criar algo acessível e informativo.
 
-Dessa forma basta agora que aprenda a importar os recursos gráficos, como segue no próximo tópico.
+    Para que haja 
 
-\subsection{Isso é uma sub sessão} % <---------------- Esse comando cria uma sub-sessão
+\chapter{Plano de gestão para 2021}
 
-Aqui se encontra um sub tópico do tópico. A formatação padrão da equipe só aceita até este nível de subdivisão, que provavelmente será suficiente às compulsões organizacionais mais violentas de você, singelo integrante da EPTA. \\
-Usando barras duplas é possível começar um novo parágrafo, mas sem endentação padrão, ou seja, sem a margem estabelecida em template.  
-
-Também para os designers de prontidão, é possível dar espaços arbitrários entre elementos do texto, usando o comando "vspace{1cm}" antecedido de uma barra. Neste caso, deu-se um espaço de 1 cm. (infelizmente houve quebra de página, sugiro usar o comando em outras linhas pra observar o espaço dado).
-
-\vspace{1cm}
-
-É possível observar também, no fundo da página, a numeração. Esta numeração aparece de forma automática e é atualizada também de forma automática, assim como capítulos no índice e a lista de imagens. As únicas páginas que não são contabilizadas são a capa e a página do índice.
-
-Existe também o cabeçalho em cada página, mas ele só aparece em páginas que não são inícios de novos capítulos. E também não aparecem na capa e no índice. O texto livre colocado no código é transformado em texto corpo.
-
-Há Muitos caracteres especiais que o latex permite. Tantas que nem posso listar (para mais exemplos, buscar na internet). Seguem as mais importantes:
-
-\begin{itemize}
-	\item Primeiramente é interessante observar como se fez esta lista de tópicos no código fonte. Começa-se um espaço do tipo "itemize" e se usa as funções "item" para criar os tópicos. 
-	\item Algo interessante também é a função de criar textos em \textbf{negrito}. Isso pode ser visto também na documentação base, com a função "textbf".
-	\item Para a utilização do  \textit{itálico} usa-se "textit", como amostrado no código fonte.
-	\item Existem também comandos pra muitas formas de formatação de texto: \texttt{olá olá} , \LARGE olá olá , \normalsize olá olá, \scriptsize olá olá. \normalsize É interessante observar que ao usar uma dessas funções sem chaves, ele continua em vigor indefinidamente (estas funções em específico), é necessário chamar "normalsize" para voltar ao normal. 
-\end{itemize}
-
-\centering 
-Também é possível centralizar o texto. Muito importante para fins estilísticos. Na equipe tal prática não é proibida nem incentivada. Uma questão de estilo.
-
-Assim, tudo é centralizado, incluindo gráficos e tabelas.
-
-Assim como as funções de formatação, esta continua em vigência de forma indefinida. Para liberar ao modo "normal", basta usar a função "flushleft".
-
-\flushleft
-
-Assim tem-se texto de volta ao normal.
-
-\flushright 
-
-Também é possível fazer o contrário, acumulando-se o texto a direita.
-
-Nesse modo os textos acumulam-se todos à direita.
-
-\flushleft                                                                % Joga tudo para a esquerda 
-\setlength\parindent{3ex}                                                 % ajeita endentação
-\setlength{\parskip}{0.25em}                                              % espaço paragrafo
-% É necessário ajeitar essas coisas após mexer com a formatação.
-
-Depois de mudar esse tipo de configuração é importante fazer tudo voltar ao normal. Usando as funções de levar tudo à esquerda e ajustar a margem e espaço entre parágrafos.
-
-Assim temos novamente nossos parágrafos com espaçamento correto.
-
-\subsection{Isso é outra sub sessão} 
-
-Só para demonstrar a presença de duas dessas em um mesmo capítulo. Como não há muito o que falar, tenho que inventar qualquer texto para por aqui. Feito.
-
-É bom mais um parágrafo para demonstrar o espaço de parágrafos funcionando bem também. Como pôde notar, o único início de parágrafo que não obedece a esse espaçamento é o primeiro de capítulos e seções. 
-
-Apesar deste template não obedecer à ABNT, nosso foco é em deixar este documento bonito, profissional e prático. Um exemplo disto é o maior espaço por página, que possibilita figura e tabelas maiores e mais texto. Também, como estes documentos de circulação interna são pensados mais para serem lidos como PDF, espaço para encadernação é algo inútil. Assim podemos aproveitar bem o espaço das folhas e fazer o eptense leitor passar menos páginas.
-
-Quando for o caso de transformar um destes documentos em ABNT para externalização de conteúdo, ou adequação de algum congresso, passar textos latex de um template a outro é muito simples. Nesse sentido, basta somente se lembrar de mudar as equações em que se utilizou funções criadas nesse template, como "caixaeq", mas nada que um "ctrl + f" não resolva.  
-
-\section{Isso é outra seção}
-
-Só para mostrar como ficam duas seções em um capítulo.
-
-\subsection{Isso é mais uma outra subseção}
-
-Só para mostrar como fica subseções em várias seções em um capítulo. Recomendo ver como fica bonito no índice.
-
-\subsection{Índice interativo}
-
-Algo interessante é que o índice é interativo, isto é, você pode clicar nos capítulos para ser levado a eles. Também é possível adicional url's clicáveis no pdf, como por exemplo: \url{https://en.wikipedia.org/wiki/Pikachu}
-
-\subsection{Citações}
-
-Para embasar bem o conhecimento desenvolvido pela equipe, citamos livros artigos e normas com bastante frequência. Para isso o Latex tem uma ferramente ótima, o bibfile. Nele você põe um banco de dados com todas as citações, e elas aparecem conforme você as chama dentro do texto. Isso permite que montemos um banco de dados com todas as citações já feitas pela equipe, basta que ao final de se redigir um texto, você encaminhe o bibfile final para o membro responsável que ele incluirá a citação no database do template, assim, com o tempo, esse data base ficará tão rico, que se tornará raro a necessidade de inclusão de novas referencias.
-
-Para se citar uma referencia da bibfile, basta usar o comando "cite", e o resultado é: \cite{CavaliniJunior2015}
-
-\chapter{Equações matemáticas}
-
-
-Muito importante também nos relatórios da EPTA são as equações. Seja em situações de dimensionamento ou embasamento teórico. Assim, este template oferece opções muito interessantes para embarcar os desenvolvimentos matemáticos do seu projeto. 
-
-Primeiramente, é possível colocar uma equação no meio de um parágrafo de texto, com "\$". Como por exemplo "\$ frac\{1\}\{2\}\$" resulta em "$\frac{1}{2}$". É interessante notar que quando se quer por um simbolo que é utilizado em funções de programação, basta colocar uma barra antes. Isso é especialmente útil para representar grandezas de dentro da função no texto, como $L.W_{minimo}^2$. Ou seja, as grandezas vistas na equação podem estar todas dentro do texto, o que facilita explicações e referencias a coisas específicas de dentro das equações.
-
-Adiante exemplificaremos uma forma de demonstrar equações:
-
-\begin{equation}\label{equacao1}
-	\caixaeq{                            % as duas linhas abaixo estão dentro desta função (criar caixa)
-		P=\frac{U}{I}                    % equação
-		\quad                            % dá o espaço entre equação e texto
-		\text{\footnotesize(Oloco, posso por parenteses ao lado da equação)}    % função text cria texto dentro de ambiente de equação
-	} 
-\end{equation}
-
-Esse formato é guardado para equações importantes, como fórmulas de onde parte um desenvolvimento algébrico, ou resultados finais.
-
-Outra forma de representação é a mais simples:
-
-\begin{equation}\label{equacao2}
-	\frac{\partial Q}{\partial t} = Q^\prime
-\end{equation}
-
-Latex é incrível para fazer equações. A praticidade permite o desenvolvimento de equações excepcionalmente grandes, e quando se pega o jeito, torna-se mais simples fazer isso em latex que no word. Como pode-se ver na Eq.\ref{equacao3}:
-\begin{equation}\label{equacao3}
-	\frac{\partial \overline{T}}{\partial t} +\frac{\partial{}}{\partial{x}} \left(\overline{T^\prime  u^\prime}\right) + \frac{\partial{}}{\partial{x}}\left(\overline{u} \ \overline{T}\right)     + 
-	\frac{\partial{}}{\partial{y}} \left(\overline{T^\prime v^\prime}\right) + \frac{\partial{}}{\partial{x}}\left(\overline{v} \ \overline{T}\right) 
-	=
-	{\frac{\partial{}}{\partial{x}}} \left(\alpha {\frac{\partial{\overline{T}}}{\partial{x}}} \right) +
-	{\frac{\partial{}}{\partial{y}}} \left(\alpha {\frac{\partial{\overline{T}}}{\partial{y}}} \right) .
-\end{equation}
-
-Uma boa funcionalidade do latex é a facilidade de se referenciar os elementos do texto. Se observar com atenção a função que deu origem a esta equação, observará uma componente "label" dentro, que serve para se referenciar esta equação dentro do texto. Quando for necessário se referenciar ela, basta usar a função "ref", resultando em "\ref{equacao1}". Neste template decidiu-se a seguinte formatação para referencias às equações: "Eq.\ref{equacao1}". O nome utilizado nas Labels é completamente arbitrário. Ele só precisa ser única (não se pode ter duas ou mais equações com a mesma label).
-
-Quanto à se acostumar com o código, acredito que a melhor forma de se aprender é observar exemplos, assim, disponibilizo abaixo vários exemplos de equações, na internet também há documentação para tudo que se possa imaginar: 
-
-\begin{equation}
-T_m(x) = \frac{\int u(y) T(x , y) dy}{\int u(y)  dy} .
-\end{equation}
-
-Para equações maiores é possível quebrá-la em partes, mas é aconselhável se utilizar os comandos na equação a seguir, para mantar-se centralizada e bem distribuída a equação:
-
-\begin{center}
-\begin{equation}
-	\begin{split}
-	\frac{\partial ( \overline{ T^\ast + T_w } ) }{\partial t} +
-	\frac{\partial{}}{\partial{x}} \left(\overline{T_w^{\prime} u^{\prime}}\right) +\frac{\partial{}}{\partial{x}} \left(\overline{{T^{\ast}}^{\prime} u^{\prime}}\right)
-	+\frac{\partial{}}{\partial{x}}\left(\overline{u} \ \overline{T^{\ast}}\right)+ 
-	\frac{\partial{}}{\partial{x}}\left(\overline{u} \ \overline{T_w}\right)+ 
-	\\
-	\frac{\partial{}}{\partial{y}} \left(\overline{{T^{\ast}}^{\prime} v^{\prime}}\right)+
-	\frac{\partial{}}{\partial{y}} \left(\overline{T_w^\prime v^\prime}\right) + \frac{\partial{}}{\partial{y}}\left(\overline{v} \ \overline{T^\ast}\right) +
-	\frac{\partial{}}{\partial{y}}\left(\overline{v} \ \overline{T_w}\right) 
-	= 
-	\\
-	{\frac{\partial{}}{\partial{x}}} \left(\alpha {\frac{\partial{\overline{(T^\ast + T_w)}}}{\partial{x}}} \right) +
-	{\frac{\partial{}}{\partial{y}}} \left(\alpha {\frac{\partial{\overline{(T^\ast + T_w)}}}{\partial{y}}} \right) .
-	\end{split}
-\end{equation}
-\end{center}
-
-Também é possível mudar a cor de elementos dentro da equação, e isso pode ter consequências muito positivas na explicação de desenvolvimentos algébricos:
-
-\begin{center}
-\begin{equation}
-	\begin{split}
-	\color{red}\frac{\partial ( \overline{ T^\ast + T_w } ) }{\partial t} \color{black} +
-	\frac{\partial{}}{\partial{x}} \left(\overline{ \color{red}T_w^{\prime} \color{black} u^{\prime}}\right) +
-	\color{red}\frac{\partial{}}{\partial{x}} \left(\overline{{T^{\ast}}^{\prime} u^{\prime}}\right)+ \color{black}
-	\color{red} \frac{\partial{}}{\partial{x}}\left(\overline{u} \ \overline{T^{\ast}}\right) \color{black}+ 
-	\frac{\partial{}}{\partial{x}}\left(\overline{u} \ \overline{T_w}\right)+ 
-	\\
-	\frac{\partial{}}{\partial{y}} \left(\overline{{T^{\ast}}^{\prime} v^{\prime}}\right)+
-	\frac{\partial{}}{\partial{y}} \left(\overline{\color{red}T_w^\prime \color{black} v^\prime}\right) + \frac{\partial{}}{\partial{y}}\left(\color{red}\overline{v} \color{black} \ \overline{T^\ast}\right) +
-	\frac{\partial{}}{\partial{y}}\left(\color{red}\overline{v}\color{black} \ \overline{T_w}\right) 
-	= 
-	\\
-	\color{red}{\frac{\partial{}}{\partial{x}}} \left(\alpha {\frac{\partial{\overline{(T^\ast + T_w)}}}{\partial{x}}} \right) \color{black}+
-	{\frac{\partial{}}{\partial{y}}} \left(\alpha {\frac{\partial{\overline{(T^\ast + \color{red} T_w \color{black})}}}{\partial{y}}} \right) .
-	\end{split}
-\end{equation}
-\end{center}
-
-Ao se acostumar com a linguagem, fazer equações muito complexas pode ser mais simples do que se pensa:
-
-\begin{equation}
-	{\frac{\partial{}}{\partial{\tilde{y}}}} \left( \left( \frac{Re_\tau}{Pr}   
-	- \frac{{L}^2 Re_\tau ^3}{Pr_t}\frac{\partial \tilde{\overline{u}}}{\partial \tilde{y}} \right) \frac{\partial \tilde{\overline{T^\ast}}}{\partial \tilde{y}} \right)
-	= 
-	\frac{\tilde{\overline{u}}}{\tilde{u_m}}.
-\end{equation}
-
-Também é possível se utilizar funções para equações, um caso interessante é o da função "cases", que possibilita:
-
-\begin{equation}
-	\label{ola}
-	\text{Propriedades}=
-	\begin{cases}
-		\overline{f}({x})=\frac{1}{t_f - t_i} \int_{t_i}^{t_f} f({x} , t) dt.      & \quad  \\
-		f({x} , t) = \overline{f}({x}) + f^\prime ({x} ,t) . & \quad   \\
-		\overline{f^\prime ({x} ,t)} = 0 . & \quad   \\
-		\overline{\overline{f({x})}} = \overline{f({x})} . & \quad   \\
-		\overline{f^\prime ({x} ,t)\overline{f({x})}} = 0 .& \quad   \\
-		\overline{f^\prime ({x} ,t)g^\prime ({x} ,t)} \neq 0 . & \quad   \\
-		\overline{  \overline{g({x})} \ \overline{f({x})}  } = {\overline{g({x})}} \ {\overline{f({x})}} . & \quad   \\
-	\end{cases}
-\end{equation}
-
-\section{Mais uma seção, pq não?}
-
-Para esta última seção guardamos o mais interessante:
-
- \rotatebox{90}{$ \frac{1}{2}$} 
-
-O próximo exemplo permite encadear várias equações uma atrás da outra, separadas por barra dupla. Observa-se também dois métodos de se escrever o "seno". Neste template achamos cômodo usar o padrão internacional "sin":
-\begin{eqnarray}
-	\frac{1}{n} \sin x & = & \mathrm{?} \\
-	\frac{1}{\cancel{n}} \mathrm{si}\cancel{\mathrm{n}} ~x & = & \mathrm{?} \\
-	\mathrm{six} & = & 6 \quad \text{(só leio verdades)}
-\end{eqnarray}
-
-Utilizando a biblioteca Tikx é possível se fazer também loucuras, como desenhar um triangulo a partir de código no latex, como no exemplo "onde está o $x$?", abaixo:
-
-\begin{figure}[h!]
-	\centering
-\begin{tikzpicture} 
-\draw (0,0) -- (4,0) node[midway,below] {4 cm}
--- (4,3) node[midway,right] {3 cm}
--- (0,0) node[midway,left,circle,draw=blue,decorate,decoration={random steps,segment length=1pt,amplitude=0.5pt}]{$x$}
--- (4,0) rectangle (3.7,0.3)
--- cycle;
-\draw (0.4,0) arc (0:30:0.5);
-\draw (4,2.6) arc (270:226:0.5);
-\draw (1,2.1) node []{\color{blue}\fontfamily{frc}\selectfont{Aqui está !!}};
-\end{tikzpicture}
-\end{figure}
-
-Dessa forma, essa ferramenta pode ser utilizada para, virtualmente, se fazer qualquer coisa.
-
-Mas a utilização do tikz é opcional. Muito mais prático é criar imagens em programas como photoshop ou paint e importar com a ferramente de amostragem de imagens. Mas como fazer isso ?
-
-
-
-\chapter{Trabalhando com imagens}
-
-
-
-Para trabalhar com imagens, basta adicionar um arquivo na pasta onde se encontra o código fonte deste documento e chamá-la com a função dedicada para isso:
-
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[trim = {0cm 0cm 0cm 0cm}, clip , angle=0, scale=0.30]{midia/exemplo}
-	\caption{"todos os relatórios na epta são feitos em LaTex".}
-	\label{pika1}
-\end{figure}
-
-Também é possível por várias figuras em uma figura. Se isso não fez muito sentido, observar exemplo a seguir:
-
-\begin{figure}[h!]
-	\centering
-	\begin{subfigure}[b]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{midia/exemplo}
-		\caption{estou na esquerda}
-		\label{pika2}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{midia/exemplo}
-		\caption{estou no centro}
-		\label{pika3}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{midia/exemplo}
-		\caption{estou na direita}
-		\label{pika4}
-	\end{subfigure}
-	\caption{Três pikashus, entendeu?}
-	\label{pika5}
-\end{figure}
-
-Assim, é possível adicionar imagens com um vínculo lógico entre elas. E elas todas são igualmente muito bem referenciáveis. Assim como com as equações, neste template escolhemos referenciar imagens com "Fig.\ref{pika4}", ou "Fig.\ref{pika5}". A forma de referencia é parecida com as de equações.
-
-\section{Minipage, o que é?}
-
-Há também uma forma de se dispor elementos lado a lado se a necessidade de subfigures, e, o mais interessante, é que é possível por texto ao lado de imagens com esse método. Basta utilizar a função "minipage". 	
-
-\begin{figure}[ht]
-	\begin{minipage}[b]{0.45\linewidth}
-		\centering
-		\includegraphics[trim = {0cm 0cm 0cm 3cm} , clip , width=\textwidth]{midia/exemplo}
-		\caption{Estou a esquerda, mas sou uma figura normal.}
-		\label{pika88}
-	\end{minipage}
-	\hspace{0.5cm}
-	\begin{minipage}[b]{0.45\linewidth}
-		\centering
-		\includegraphics[trim = {0cm 0cm 0cm 3cm} , clip  , width=\textwidth]{midia/exemplo}
-		\caption{Estou a direita, mas sou uma figura normal.}
-		\label{pika99}
-	\end{minipage}
-\end{figure}
-
-Agora, vou compartilhar um exemplo. Colocando-se texto e equações ao lado de uma imagem. É importante salientar que além de textos e imagens, qualquer elemento gráfico pode ser colocado em uma "minipage". Segue um exemplo muito instrutivo:
-
-\begin{figure}[ht]
-	\begin{minipage}[b]{0.45\linewidth}
-		O flamingo é uma ave pertencente à família Phoenicopteridae da ordem Phoenicopteriformes. Anteriormente pertencia a ordem Ciconiiformes. Tradicionalmente todas as espécies eram incluídas no género Phoenicopteruss, mas actualmente o flamingo-andino e o flamingo-de-james são considerados um gênero à parte, Phoenicoparrus, por causa de certas diferenças no bico, e o flamingo-pequeno também foi incluído no seu próprio género, Phoeniconaias.
-		\begin{equation}
-		\text{cor}_{rosa} + \text{ave} = flamingo
-		\end{equation}
-		\vspace{0.5cm}
-	\end{minipage}
-	\hspace{0.5cm}
-	\begin{minipage}[b]{0.45\linewidth}
-		\centering
-		\includegraphics[trim = {10cm 0cm 10cm 0cm}, clip , width=\textwidth]{midia/exemplo2}
-		\caption{Ave rosa, AKA flamingo.}
-		\label{pika11}
-	\end{minipage}
-\end{figure}
-
-Se você observar o texto instrutivo ao lado da imagem acima, observará que "vspace" está sendo usado para localizar o texto corretamente ao lado da imagem.
-
-A utilização destas ferramentas todas são opcionais e algo que tem dependência completamente estilística. Deixar textos acadêmicos bonitos é parte do trabalho de um cientista, pois de nada adianta criar muita informação se você não consegue passar isso adiante de forma efetiva. 
-
-\section{Criando flowcharts com tecnicas de tikz (obs: vejo o que ocorre com títulos de capítulos muito muito grandes...)}
-
-Como se já não fosse o bastante, também é possível se criar diagramas com a biblioteca tikz. Apesar de ser algo um tanto avançado, e haver softwares que fazem isso de forma muito simples, fica a recomendação da utilização do pacote tikz, por proporcionar homogeneidade e controle estilístico. Mas ressalto que é uma opção sua utilização, visto que é perfeitamente possível, se criar estes diagramas com programas externos, salvando-se eles como PDF ou png e importando eles como mostrado anteriormente. Mas fica a escolha de se fazer isso inteiramente dentro da plataforma latex.
-
-
-%Criando os formatos:
-\tikzstyle{rect} = [draw, rectangle,fill = gray!20, text width=6em, text centered, minimum height = 2em ]
-\tikzstyle{elli} = [draw, ellipse,fill=white!20,minimum height=2em]
-\tikzstyle{circ} = [draw, circle,fill=white!20, minimum width=8pt,inner sep=10pt]
-\tikzstyle{diam} = [draw, diamond,fill=white!20,text width=6em, text badly centered, inner sep=0pt]
-\tikzstyle{line} = [draw, -latex']
-
-%Criando o flowshart:
-\begin{figure}[h]
-	\begin{center}
-		\begin{tikzpicture}[node distance = 1.5cm, auto]
-		\node[rect, rounded corners](step1) { necessidade de um flowchart};
-		\node[rect,rounded corners , right of=step1, node distance=4.5cm] (step2) {Esquema de flowchart criado};
-		\node[rect, right of=step2, node distance=4.5cm] (step3) {$P^\prime = \frac{\vec{U_m}}{\partial t}$};
-		\node[rect, right of=step3, node distance=4.5cm] (step4){\includegraphics[trim = {0cm 0cm 0cm 0cm}, clip , width=\textwidth]{midia/exemplo}};
-		\node[rect, rounded corners, below of=step4, node distance=4.5cm](step5){Flowchart final};
-		
-		\path[line](step1) -- node [above, text width=4em] {Organização das ideias.} node [below, text width=4em] { É possível citar Eq.\ref{equacao2}} (step2);
-		
-		\path[line](step2) -- node [above, text width=4em] {Escrita do código} node (line2) [below, text width=4em] {Imagens e equaçõe} (step3);
-		
-		\path[line](step3) -- node [above, text width=4em] {Dá de por imagens?} node [below, text width=4em] {} (step4);
-		
-		\path[line](step4) -- node [left, text width=5em] {Ok, tudo pronto} (step5);
-		
-		\path[line](step5) -| node [right, near end, text width=6em] {Não, vishe, refaz} (line2);
-		
-		\path[line](step5) -| node [right, near end, text width=6em] {Sim, de acordo, fechouu} node [below, near start, text width=12em] {Gostei do meu flowchart?} (step1);
-		\end{tikzpicture}
-	\end{center}
-	\caption{Processo de criação de um flowchart (mais ou menos).}
-\end{figure}
-
-Assim, observando-se o código, é possível editar este flowchart para a maioria das aplicações. Mas, se for do interesse mais detalhes, recomendo estudar a documentação da biblioteca Tikz. Ela está disponível de graça na internet. (\url{http://www.texample.net/tikz/}) É incrível o que se pode fazer com essa biblioteca.
-
-
-
-\chapter{Trabalhando com tabelas}
-
-Outro recurso importante é a habilidade de se fazer tabelas. Muitas vezes, para se ilustrar dados, nada mais esclarecedor que uma tabela. Tais construções também são úteis para listagens como de preço, massa ou altura no foguete. 
-
-Segue o exemplo de uma tabela padrão latex: 
-
-
-\begin{table}[h!]
-	\centering
-	\begin{tabular}{|llll|l}
-		\cline{1-4}
-		\multicolumn{1}{|l|}{Peça} & \multicolumn{1}{l|}{Preço} & \multicolumn{1}{l|}{Massa} & Espaço  ocupado &  \\ \cline{1-4}
-		1                          & 10,00 R\$                  & 40 g                       & 30 cm           &  \\
-		2                          & 25,00 R\$                  & 20 g                       & 20 cm           &  \\
-		3                          & 43,00 R\$                  & 57 g                       & 50 cm           &  \\ \cline{1-4}
-	\end{tabular}
-	\caption{tabela para fins de exemplo.}
-\end{table}
-
-
-Recomendamos aprender a sintaxe da criação de tabelas, mas oferecemos também ferramentas que auxiliem. Nesse site há um programa online que cria o código para você:
-\url{https://www.tablesgenerator.com/}
-
-Porém, aprender a linguagem permite que crie tabelas mais bonitas e completas:
-
-\begin{table}[h!]
-	\centering
-	\begin{tabular}{|c|c|c|c|c|c|}
-		\hline
-		\multirow{3}{*}{\includegraphics[trim = {0cm 0cm 0cm 0cm}, clip , scale = 0.03]{midia/exemplo}} & \multicolumn{2}{c|}{Algo B} & %
-		\multicolumn{2}{c|}{Algo C} & \multirow{3}{*}{\includegraphics[trim = {0cm 0cm 0cm 0cm}, clip , scale = 0.03]{midia/exemplo}}\\
-		\cline{2-5}
-		& \multicolumn{2}{c|}{Valor} & \multicolumn{2}{c|}{Valor} & \\
-		\cline{2-5}
-		& B1 & B2 & C1 & C2 & \\
-		\hline
-		& & & & & \\
-		\hline
-		& & & & & \\
-		\hline
-		% etc. ...
-	\end{tabular}
-	\caption{Outra tabela exemplo.}
-\end{table}
-
-É possível se inserir todo tipo de elemento gráfico nestas tabelas, abrindo margem para muita liberdade criativa.
-
-Fora a metodologia recomendada, também são possíveis soluções menos recomendadas. Uma delas é se criar a tabela em outro software, vulgo excel, por exemplo, e salvá-la como pdf. Depois basta importar ela da mesma forma que importamos todos os pikachus até o momento. O latex trata o pdf como uma imagem, mas suas propriedades de vetorização dos gráficos são mantidas. 
-Dessa forma recomenda-se fortemente sempre se utilizar Pdf's para guardar qualquer recurso gráfico.
+\chapter{Planos futuros}
 
 %----------------------------------------------------------------------------------------
 % Bibliografia.
 %----------------------------------------------------------------------------------------
 
 
-\bibliographystyle{unsrt}
-\bibliography{bibfile}
+% \bibliographystyle{unsrt}
+% \bibliography{bibfile}
 
 
 
