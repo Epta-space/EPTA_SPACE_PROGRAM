@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class audio_controls: MonoBehaviour
 {
@@ -14,16 +12,15 @@ public class audio_controls: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Acha o game audio principal, com a música do jogo via tag (GameObject Audio Source)
         music_volume_control = GameObject.FindWithTag("audio_control");
+        
+        // Declara o volume 
         music_volume_control.GetComponent<AudioSource>().volume = volume;
-        // this.gameObject.GetComponent<AudioSource>().volume = music_volume_control.GetComponent<Slider>();
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
+    // Quando o valor do volume muda, atualiza o valor no Audio source da música
     public void volume_controll(float volume){
         music_volume_control.GetComponent<AudioSource>().volume = volume;
     }

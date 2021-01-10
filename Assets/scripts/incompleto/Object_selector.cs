@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class Object_Selector : MonoBehaviour
+public class Object_selector : MonoBehaviour
 {
 
     public GameObject alien;
@@ -16,22 +15,18 @@ public class Object_Selector : MonoBehaviour
     public GameObject satelite_3;
     public GameObject satelite_1;
     public GameObject satelite_2;
-
     private GameObject Game_manager;
-
-    public static GameObject obstacle;
-
+    private static GameObject obstacle;
     private GameObject[][] actual_stage;
-
     private int stage_index;
-
     private int obstacle_index;
-    public List<int> stage_length_list;
-    public int stage_length;
-    public int i;
+    private List<int> stage_length_list;
+    private int stage_length;
+
 
     void Start()
     {
+        // Acha o script game manager via tag
         Game_manager = GameObject.FindWithTag("Game_manager");
 
     }
@@ -69,7 +64,5 @@ public class Object_Selector : MonoBehaviour
         obstacle = actual_stage[stage_index][obstacle_index];
         return obstacle;
     }
-
-
 
 }
