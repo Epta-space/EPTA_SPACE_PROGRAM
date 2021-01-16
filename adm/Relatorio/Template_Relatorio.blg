@@ -1,5 +1,0 @@
-[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
-[0] Config.pm:307> INFO - Logfile is 'Template_Relatorio.blg'
-[64] biber:322> INFO - === Sat Jan  9, 2021, 14:58:38
-[92] Biber.pm:415> INFO - Reading 'Template_Relatorio.bcf'
-[151] Utils.pm:293> WARN - No data sources defined!

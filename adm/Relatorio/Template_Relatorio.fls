@@ -374,6 +374,12 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/silence/silence.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/silence/silence.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty

@@ -25,6 +25,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \include{estrutura}
+\usepackage{csquotes}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
@@ -44,6 +45,8 @@ keepaspectratio]{midia/epta_projeto_template}%
 }}}
 \lstdefinestyle{sharpc}{language=[Sharp]C, frame=lr, rulecolor=\color{blue!80!black}} % Style of code
 \lstset{
+extendedchars=true,
+literate={á}{{\'a}}1 {ã}{{\~a}}1 {é}{{\'e}}1 {ú}{{\'u}}1,
 language=csh,
 basicstyle=\footnotesize\ttfamily,
 numbers=left,
@@ -189,22 +192,28 @@ backgroundcolor=\color{white},
     Também revisará o work flow uma vez que na versão de 2017 estava impossível de escalar e inviável de manter devido a más práticas de programação.
     Como resposta a isso, a sub área se propôs a revisar todos os padrões de desenvolvimento de forma a estar conforme com as mais altas recomendações desta indústria.
 
+
+    As funções base do aplicativo são:
+
+    \begin{description}[font=$\bullet$~\normalfont\scshape]
+        \item [Tela inicial] Desenvolvimento da tela inicial com animações. Que não precise iniciar o jogo pausado.
+        \item [3 fases] Três etapas distintas de jogo. (céu azul, extratosfera, espaço)
+        \item [Fase final] A certa altura (a determinar), o player tem a opção de de ir para a lua. (o conteúdo será adicionado posteriormente. Mas por hora o player recebe uma mensagem de congratulações)
+        \item [Morte] Som e efeito visual de explosão no momento de morte.
+        \item [Arcade] Mecânica base do jogo mantém-se arcade, com rolagem para cima com obstáculos e replay ágil.
+    \end{description}
+
     As features que espera-se que estejam presentes no jogo na data de estreia são:
 
     \begin{description}[font=$\bullet$~\normalfont\scshape]
-        \item [Arcade] Mecânica base do jogo mantém-se arcade, com rolagem para cima com obstáculos e replay ágil.
-        \item [Assests reutilizados] Serão utilizados os assets do antigo lançamento. Novos devem ser feitos conforme necessidade.
         \item [Propaganda] As propagandas tipo banner e tipo Intersticial devem ser implementadas novamente.
         \item [Versão paga] Deve haver uma versão sem propagandas e que é paga. (preço a determinar)
         \item [Tabela Info] Tabela de informações sobre a equipe no menu opções.
-        \item [Tela inicial] Desenvolvimento da tela inicial com animações. Que não precise iniciar o jogo pausado.
         \item [Volume] Deve ser possível ajustar o volume.
-        \item [Explosão] Som e efeito visual de explosão.
         \item [Salvar] A melhor pontuação do jogador deve ser salva localmente, assim como o volume.
-        \item [3 fases] Três etapas distintas de jogo. (céu azul, extratosfera, espaço)
+        \item [Assests reutilizados] Serão utilizados os assets do antigo lançamento. Novos devem ser feitos conforme necessidade.
         \item [Alturas reais] As alturas de mudança de fase devem ser consistentes com o mundo real.
         \item [Dificuldade crescente] O sistema de dificuldade deve ser implementado de forma a permitir razoável controle em função de fase e tempo.
-        \item [Fase final] A certa altura (a determinar), o player tem a opção de de ir para a lua. (o conteúdo será adicionado posteriormente. Mas por hora o player recebe uma mensagem de congratulações)
     \end{description}
 
     A metodologia adotada para a criação do APP tem duas etapas importantes: Até o término da versão $1.0$ será adotada uma metodologia em cascata, nesta que é a etapa de pré lançamento, onde se dividirão as features a implementar em uma ordem lógica de execução. 
@@ -317,7 +326,7 @@ backgroundcolor=\color{white},
     \section{Disposição de Game Objects}
     \section{Ecossistema lógico}
 
-    \begin{figure}[h!]
+    \begin{figure}[ht!]
         \centering
         \begin{lstlisting}
             using UnityEngine;
@@ -338,7 +347,7 @@ backgroundcolor=\color{white},
     \end{figure}
 
 
-    \begin{figure}[h!]
+    \begin{figure}[ht!]
         \centering
         \begin{lstlisting}
             using UnityEngine;
@@ -370,7 +379,7 @@ backgroundcolor=\color{white},
             }
 
         \end{lstlisting}
-        \label{destruction_code}
+        \label{volume_code}
         \caption{Código do script "audio\_controls.cs".}
 
     \end{figure}
