@@ -6,40 +6,58 @@ public class interface_handler : MonoBehaviour
     // Game references:
     public GameObject Basic_UI;
     public GameObject Pause_UI;
-    public GameObject About_UI;
-    public int score = 0;
+    public GameObject About_UI,tela_de_perdeu;
+    public float score = 0;
     public Text scoreText;
-
-
+    private string tex;
+    public float combustivel_total = 100, combus_atual;
+    public Image barra_de_combus;
+    
 
     void Start() {
         // Turn on ui basic
         Basic_UI.SetActive(true);
-        
-
+        combus_atual = 100;
+        tela_de_perdeu.SetActive(false);
     }
 
     //! Função chamada uma vez por frame. CUIDADO com o que se coloca aqui.
     void Update() {
-        
-        // Checa se a distância é maior que mil metros para adequar unidade de medida.
-        // Podemos setar o objetivo atual como a lua (384400km). Ou seja depois dessa medida 
-        // o jogador passa a dar voltas na lua até a gente aumentar o jogo.
+        score = Time.time;
+        tex = score.ToString();
+        scoreText.text = tex;
 
-        // Gerenciador de grandeza 
-        if(score < 1000){
-            scoreText.text = score + " m  "; 
-        }else{
-            scoreText.text = score/10 + " km  ";
+        if(combus_atual >= 80)
+        {
+            barra_de_combus.color = Color.green;
         }
 
-        // Contador simples para teste. No futuro referenciaremos script "phase_handler"
-        if(Input.GetKeyDown(KeyCode.Space)){
-            score = score + 100;                                                          //TODO: tirar dependência de framerate 
+        if (combus_atual < 80 & combus_atual >= 50)
+        {
+            barra_de_combus.color = Color.yellow;
+        }
+
+        if (combus_atual < 25)
+        {
+            barra_de_combus.color = Color.red;
+        }
+
+        if (combus_atual > 0)
+        {
+            combus_atual -= 1*Time.deltaTime;
+        }
+        
+
+        float preenchimento = (combus_atual / combustivel_total) / 1;
+        barra_de_combus.fillAmount = Mathf.SmoothStep(barra_de_combus.fillAmount, preenchimento, 10* Time.deltaTime);
+        if(combus_atual <= 0)
+        {
+            Time.timeScale = 0;
+            tela_de_perdeu.SetActive(true);
         }
 
     }
-
+    
 
     //! Funções referentes aos botões de tela principal:
 

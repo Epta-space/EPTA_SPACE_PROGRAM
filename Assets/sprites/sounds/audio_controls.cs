@@ -1,24 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class audio_controls: MonoBehaviour
 {
     private GameObject music_volume_control;
-    // Start is called before the first frame update
-    void Start()
+    public UnityEngine.UI.Slider som;
+    private void Awake()
     {
         music_volume_control = GameObject.FindWithTag("audio_control");
-        music_volume_control.GetComponent<AudioSource>().volume = 1.0f;
-        // this.gameObject.GetComponent<AudioSource>().volume = music_volume_control.GetComponent<Slider>();
+        music_volume_control.GetComponent<AudioSource>().volume = 1f;
+        
+        
+    }
+    void Start()
+    {
+        music_volume_control.GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("volume");
+        som.value = PlayerPrefs.GetFloat("volume"); // atribui o valor do volume no slider
+        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
+
 
     public void volume_controll(float volume){
         music_volume_control.GetComponent<AudioSource>().volume = volume;
+        PlayerPrefs.SetFloat("volume", volume); //salva valor do volume
+        
     }
 }
