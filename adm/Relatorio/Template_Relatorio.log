@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.21)  16 JAN 2021 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.21)  17 JAN 2021 20:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1607,7 +1607,7 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 
 ]
 Cap\'{\i }tulo 1.
-<midia/users_global.png, id=105, 955.31906pt x 363.60844pt>
+<midia/users_global.png, id=106, 955.31906pt x 363.60844pt>
 File: midia/users_global.png Graphic file (type png)
 <use midia/users_global.png>
 Package pdftex.def Info: midia/users_global.png  used on input line 263.
@@ -1623,42 +1623,42 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 Cap\'{\i }tulo 2.
 [3
 
-] [4]
+] [4] [5]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 463.
+(Font)              scaled to size 9.29993pt on input line 489.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 464.
- [5] [6]
+(Font)              scaled to size 5.57996pt on input line 490.
+ [6] [7]
 Cap\'{\i }tulo 3.
-[7
+[8
 
-] [8]
+] [9]
 Cap\'{\i }tulo 4.
-[9
+[10
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 553.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 553.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 579.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 579.
  (./Template_Relatorio.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 553.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 553.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 579.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 579.
 Package logreq Info: Writing requests to 'Template_Relatorio.run.xml'.
 \openout1 = `Template_Relatorio.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45104 strings out of 483090
- 879484 string characters out of 5963928
- 1620203 words of memory out of 5000000
- 59259 multiletter control sequences out of 15000+600000
+ 45137 strings out of 483090
+ 879876 string characters out of 5963928
+ 1613280 words of memory out of 5000000
+ 59291 multiletter control sequences out of 15000+600000
  591324 words of font info for 100 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
  65i,13n,99p,1163b,1722s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/felipejoribeiro/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/felipejoribeiro/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Template_Relatorio.pdf (14 pages, 669887 bytes).
+Output written on Template_Relatorio.pdf (15 pages, 671870 bytes).
 PDF statistics:
- 348 PDF objects out of 1000 (max. 8388607)
- 209 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 354 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
+ 72 named destinations out of 1000 (max. 500000)
  197 words of extra memory for PDF output out of 10000 (max. 10000000)
 

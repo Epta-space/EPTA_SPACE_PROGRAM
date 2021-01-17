@@ -256,13 +256,13 @@ backgroundcolor=\color{white},
     Observou-se o potencial do mercado de aplicativos global, que cresce consistentemente ao longo dos anos.
     Além disso pensou-se na oportunidade de se aprofundar no desenvolvimento de software e o aprendizado que isso traria.
 
-    Ao longo do ano o aplicativo foi desenvolvido e finalmente lançado em dezembro de 2018. Ele foi baixado em mais de 40 países e mais de 800 vezes, com uma avaliação média de $4.88$ estrelas de $5$. 
+    Ao longo do ano o aplicativo foi desenvolvido e finalmente lançado em dezembro de 2018. Ele foi baixado em mais de 40 países e mais de 800 vezes, com uma avaliação média de $4.88$ estrelas de $5$ (Fig.\ref{grafico_inicial}): 
 
     \begin{figure}[h!]
         \centering
         \includegraphics[trim = {0cm 0cm 0cm 0cm}, clip , angle=0, scale=0.55]{midia/users_global.png}
         \caption{Downloads do aplicativo distribuídos no tempo.}
-        \label{pika1}
+        \label{grafico_inicial}
     \end{figure}
 
     Em julho de 2019 o aplicativo foi retirado da Play Store devido à ausência de uma politica de privacidade. Isso deu início a um longo hiato no desenvolvimento que só foi retomado no início de 2020. 
@@ -416,12 +416,12 @@ backgroundcolor=\color{white},
 
             \node[rect](player) { Player };
 
-            \node[rect, rounded corners, right of=player, node distance=6cm](UE) {User\_Experience};
+            \node[rect, rounded corners, right of=player, node distance=10cm](UE) {User\_Experience};
             \node[rect, rounded corners, below of=player, node distance=1.5cm](GH) { Game\_Handler };
             \path[line](player) -- (UE);
             \path[line](player) -- (GH);
             
-            \node[elli, right of=UE, node distance=4cm](mc) {Main Camera};
+            \node[line, right of=UE, node distance=4cm](mc) {Main Camera};
             \node[rect, rounded corners, below of=mc, node distance=1cm](Ub) { UI\_basic };
             \node[rect, rounded corners, below of=Ub, node distance=1cm](Up) { UI\_pause };
             \node[rect, rounded corners, below of=Up, node distance=1cm](Ua) { UI\_about };
@@ -438,20 +438,46 @@ backgroundcolor=\color{white},
             \path[line](UE) |- (AS);
             \path[line](UE) |- (Usr);
 
-            \node[rect, rounded corners, left of=GH, node distance=4cm](GM) {GameManager};
-            \node[rect, rounded corners, below of=GM, node distance=1cm](sh) {spawn\_handler};
+            \node[line, right of=GH, node distance=4cm](GM) {GameManager};
+            \node[rect, rounded corners, below of=GM, node distance=2cm](sh) {spawn\_handler};
+            \path[line](GH) |- (GM);
+            \path[line](GH) |- (sh);
 
 
+            \node[rect, rounded corners, right of=GM, node distance=4cm](so){save\_options};
+            \node[rect, rounded corners, below of=so, node distance=1cm](eh){end\_handler};
+            \path[line](GM) |- (so);
+            \path[line](GM) |- (eh);
+
+
+            \node[line, right of=sh, node distance=4cm](GS){GameSpawner};
+            \node[line, below of=GS, node distance=1cm](D){Destroyer};
+            \node[line, below of=D, node distance=1cm](OS){Object\_Selector};
+            \path[line](sh) |- (GS);
+            \path[line](sh) |- (D);
+            \path[line](sh) |- (OS);
             % \path[line](step5) -| node [right, near end, text width=6em] {Não, vishe, refaz} (line2);
             
             \end{tikzpicture}
         \end{center}
         \caption{Árvore de objetos de jogo, prefabs em azul.}
+        \label{ola}
     \end{figure}
 
-    Além dos elementos mostrados acima, temos também o player e o objeto "EventSystem".
+    Além dos elementos mostrados acima, temos também o objeto "player" e o objeto "EventSystem", ambos dentro somente da cena.
     O desenvolvedor que precisar alterar estes elementos é o única que terá a liberdade de fazer alterações no arquivo "Player.scene".
     Qualquer outra alteração será feita nos dois prefabs principais ou nos outros que estejam dentro destes.
+
+    Na Figura \ref{ola} podemos ver que existem Game Objects em azul e em branco.
+    Os game objects em azul são os prefabs, ou seja, as alterações feitas neles não são gravadas nos objetos de jogo que os contém.
+    Já os elementos em branco não são.
+    Dessa forma, qualquer alteração feita neles serão salvas no prefab que o contém.
+
+    Por exemplo, se o desenvolvedor fizer uma alteração no objeto "save\_options", tal alteração não aparecerá no prefab "Game\_Handler", mas se a alteração for feita em "Game Manager", aparecerá.
+    Também, se um desenvolvedor fizer alterações em "Audio Source", isso será salvo em "User\_Experience". Já se a alteração for feita em "UI\_basic", não aparecerá, mas sim no próprio prefab "UI\_basic".
+
+    A única forma de se causar alterações no arquivo da cena é se forem feitas alterações nos objetos "player" e "EventSystem".
+    Eles estão localizados junto com "User\_Experience" e "Game\_Handler".
 
 
 
