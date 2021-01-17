@@ -26,6 +26,7 @@
 
 \include{estrutura}
 \usepackage{csquotes}
+\usepackage{adjustbox}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
@@ -316,14 +317,145 @@ backgroundcolor=\color{white},
     O objetivo é organizar a informação, uma vez que existem muitos arquivos (centenas). E podem ser figuras, música, scripts, meta dados, e objetos lógicos de jogo, como prefabs, animações, cenas e muitas outras coisas.
     Dessa forma é muito importante que tais arquivos sejam dispostos de uma forma inteligível, uma vez que mexer neles faz parte do cotidiano dos desenvolvedores.
         
-    Existem duas pastas importantes que devemos saber a composição. A pasta Assets e a pasta Adm. Ambas estão localizadas na pasta principal do projeto Unity do aplicativo. 
+    Existem dois diretórios importantes que devemos saber a composição. O diretório Assets e o diretório Adm. Ambos estão localizadas no diretório principal do projeto Unity do aplicativo. 
 
-    Na primeira se coloca tudo que entra no desenvolvimento do jogo. Entre as coisas que estão lá dentro temos os scripts, músicas, prefabs, etc... Toda vez que se quer modificar algo no jogo, um dos arquivos dentro desta pasta será modificado.
+    No primeiro se coloca tudo que entra no desenvolvimento do jogo. Entre as coisas que estão lá dentro temos os scripts, músicas, prefabs, etc... Toda vez que se quer modificar algo no jogo, um dos arquivos dentro desta pasta será modificado.
 
-    Na pasta adm são colocados arquivos que não são usados no desenvolvimento do jogo, mas ainda sim são importantes para esse desenvolvimento. Entre as coisas presentes nessa pasta temos o relatório que documenta a criação do aplicativo (como este que estão lendo), a política de privacidade que usamos no lançamento do aplicativo, a chave de publicação, e outros detalhes.
+    No diretório adm são colocados arquivos que não são usados no desenvolvimento do jogo, mas ainda sim são importantes. Entre as coisas presentes lá temos o relatório que documenta a criação do aplicativo (como este que estão lendo), a política de privacidade que usamos no lançamento do aplicativo, a chave de publicação, e outros detalhes.
 
+    Dentro do diretório Assets existe uma estrutura interna de pastas que dispõe recursos utilizados no desenvolvimento de forma organizada e escalável. Existes recursos gerais e recursos específicos de fases, eles são dispostos da seguinte forma:
+
+    \newpage
+
+    %Criando os formatos:
+    \tikzstyle{rect} = [draw, rectangle,fill = gray!20, text width=8em, text centered, minimum height = 2em ]
+    \tikzstyle{elli} = [draw, ellipse,fill=white!20,minimum height=2em]
+    \tikzstyle{circ} = [draw, circle,fill=white!20, minimum width=8pt,inner sep=10pt]
+    \tikzstyle{diam} = [draw, diamond,fill=white!20,text width=6em, text badly centered, inner sep=0pt]
+    \tikzstyle{line} = [draw, -latex']
+
+    \begin{figure}[ht!]
+        \begin{center}
+            \begin{tikzpicture}[node distance = 1.5cm, auto]
+
+                \node[rect, rounded corners](step1) {Pasta Assets};
+
+                \node[rect, rounded corners , right of=step1, node distance=4cm] (step2) {scripts};
+                \node[rect, rounded corners , below of=step2, node distance=4cm] (step3) {sprites};
+                \path[line](step1) |- node [above, text width=4em] {} node [below, text width=4em] {} (step2);
+                \path[line](step1) |- node [above, text width=4em] {} node [below, text width=4em] {} (step3);
+                
+                \node[rect, rounded corners , right of=step2, node distance=4cm] (step22) {incompleto};
+                \node[rect, rounded corners , above of=step22, node distance=1cm] (step21) {completo};
+                \node[rect, rounded corners , below of=step22, node distance=1cm] (step23) {misc};
+                \path[line](step2) |- (step21);
+                \path[line](step2) |- (step22);
+                \path[line](step2) |- (step23);
+
+
+                \node[rect, rounded corners , right of=step3, node distance=4cm] (step31) {fonts};
+                \node[rect, rounded corners , above of=step31, node distance=1cm] (step32) {figures};
+                \node[rect, rounded corners , above of=step32, node distance=1cm] (step33) {fasen};
+                \node[rect, rounded corners , below of=step31, node distance=1cm] (step34) {general\_prefabs};
+                \node[rect, rounded corners , below of=step34, node distance=1cm] (step35) {sounds};
+                \path[line](step3) |- (step31);
+                \path[line](step3) |- (step32);
+                \path[line](step3) |- (step33);
+                \path[line](step3) |- (step34);
+                \path[line](step3) |- (step35);
+
+
+                
+            \end{tikzpicture}
+        \end{center}
+        \caption{Sistema de arquivos da pasta Assets. O que fora ignorado não tem importância para o desenvolvimento atual.}
+    \end{figure}
+
+    Dentro da pasta scripts temos três diretórios. 
+    Um para programas em c\# completos, ou seja, já funcionais para o que se propõem.
+    Outro para programas incompletos (coisas que estão em desenvolvimento devem ser postas aqui, até segunda ordem).
+    E uma terceira pasta para scripts em geral, ou seja, para testes de alguma funcionalidade. 
     
+    Dentro do diretório sprites encontram-se todo tipo de asset utilizado no jogo. 
+    Nas pastas fonts, general\_prefabs, sounds e figures estão assets de uso geral no jogo, enquanto nas pastas fasen estão assets específicos de alguma fase.
+
+    \begin{itemize}
+        \item fasen: Assets específicos de uso na fase de número n. Aqui encontra-se os prefabs dos obstáculos e os componentes do background dinâmico.
+        \item figures: estão assets visuais de uso geral, como as logos das universidades, os assets do background dinâmico inicial, a skin do player e elementos visuais da UI.
+        \item fonts: encontram-se todas as fonts utilizadas no aplicativo.
+        \item general\_prefabs: encontram-se prefabs relacionados a UI e aos componentes puramente lógicos do jogo, cada qual em sua pasta dedicada (UI\_prefabs e Game\_rules).
+        \item sounds: Nesta pasta encontram-se as músicas e sons do jogo.
+    \end{itemize}
+
+    Diretamente dentro da pasta Assets também encontra-se o arquivo "Player.Scene" que é a única cena do jogo. Nela encontram-se todas as referências a todos os elementos exibidos dentro do jogo.
+
     \section{Disposição de Game Objects}
+
+    A plataforma Unity permite a divisão e objetos lógicos do jogo em "Game Objects", estas entidades são unidades de informação.
+    Nelas é possível se armazenar qualquer tipo de elemento que possa aparecer dentro do jogo, inclusive outros "Game Objects". 
+    Tal procedimento permite dividir os elementos lógicos da cena em unidades funcionais.
+    Essas unidades podem então ser salvas de forma não volátil nos chamados "prefabs". 
+
+    Dessa forma, dividir em unidades funcionais os elementos lógicos do jogo e separá-los fisicamente na memória do projeto resulta em muitos benefícios. 
+    Um deles é a organização e a escalabilidade.
+    Torna-se muito fácil referir-se e um elemento do jogo quando a estrutura lógica é bem feita. 
+    Basta dar as coordenadas do elemento a partir dos Game Objects que a englobam.
+    A estrutura ramificada garante um ambiente organizado mesmo com centenas de elementos na tela.
+
+    Outra vantagem está no controle de versão. 
+    Quando esses elementos lógicos são divididos por funcionalidade de forma física na memória, isso significa que ao se alterar elementos referentes a uma unidade, essas alterações estarão confinadas aquela unidade, não interferindo em outras.
+    Tal propriedade permite que muitos integrantes da equipe de desenvolvimento trabalhem simultaneamente sem que editem os mesmos arquivos ao trabalharem em áreas diferentes do aplicativo. 
+    Isso facilita o processo de unificar o trabalho dos integrantes da equipe e garante menos problemas na utilização de sistemas de controle de versão como o "Git", ferramenta utilizada pelo grupo.
+
+    A seguir encontra-se a estrutura destes Game Objects na cena principal de jogo:
+
+
+    \begin{figure}[h]
+        \begin{center}
+            \begin{tikzpicture}[node distance = 1.5cm, auto]
+
+            \node[rect](player) { Player };
+
+            \node[rect, rounded corners, right of=player, node distance=6cm](UE) {User\_Experience};
+            \node[rect, rounded corners, below of=player, node distance=1.5cm](GH) { Game\_Handler };
+            \path[line](player) -- (UE);
+            \path[line](player) -- (GH);
+            
+            \node[elli, right of=UE, node distance=4cm](mc) {Main Camera};
+            \node[rect, rounded corners, below of=mc, node distance=1cm](Ub) { UI\_basic };
+            \node[rect, rounded corners, below of=Ub, node distance=1cm](Up) { UI\_pause };
+            \node[rect, rounded corners, below of=Up, node distance=1cm](Ua) { UI\_about };
+            \node[rect, text width=12em, rounded corners, below of=Ua, node distance=1cm](Udb) { UI\_dynamic\_background };
+            \node[rect, text width=12em, rounded corners, below of=Udb, node distance=1cm](Uib) { UI\_initial\_background };
+            \node[line, below of=Uib, node distance=1cm](AS) { Audio Source };
+            \node[line, below of=AS, node distance=1cm](Usr) { UI\_script\_handler };
+            \path[line](UE) |- (mc);
+            \path[line](UE) |- (Ub);
+            \path[line](UE) |- (Up);
+            \path[line](UE) |- (Ua);
+            \path[line](UE) |- (Udb);
+            \path[line](UE) |- (Uib);
+            \path[line](UE) |- (AS);
+            \path[line](UE) |- (Usr);
+
+            \node[rect, rounded corners, left of=GH, node distance=4cm](GM) {GameManager};
+            \node[rect, rounded corners, below of=GM, node distance=1cm](sh) {spawn\_handler};
+
+
+            % \path[line](step5) -| node [right, near end, text width=6em] {Não, vishe, refaz} (line2);
+            
+            \end{tikzpicture}
+        \end{center}
+        \caption{Árvore de objetos de jogo, prefabs em azul.}
+    \end{figure}
+
+    Além dos elementos mostrados acima, temos também o player e o objeto "EventSystem".
+    O desenvolvedor que precisar alterar estes elementos é o única que terá a liberdade de fazer alterações no arquivo "Player.scene".
+    Qualquer outra alteração será feita nos dois prefabs principais ou nos outros que estejam dentro destes.
+
+
+
+
     \section{Ecossistema lógico}
 
     \begin{figure}[ht!]
@@ -388,6 +520,24 @@ backgroundcolor=\color{white},
 
 \chapter{Plano de gestão para 2021}
 
+\newpage
+
+\begin{adjustbox}{width = \textwidth, caption = {Planejamento escalonado}, nofloat=table, center, angle=90}
+        \begin{tabular}{|cccccccc|}
+            \cline{1-8}
+            \multicolumn{1}{|c|}{Recurso} & \multicolumn{1}{c|}{Semana 1} & \multicolumn{1}{c|}{Semana 2} & \multicolumn{1}{c|}{Semana 3} & \multicolumn{1}{c|}{Semana 4} & \multicolumn{1}{c|}{Semana 5} & \multicolumn{1}{c|}{Semana 6} & Semana 7 \\
+            \multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{(01/16)} & \multicolumn{1}{c|}{(01/23)} & \multicolumn{1}{c|}{(01/30)} & \multicolumn{1}{c|}{(02/06)} & \multicolumn{1}{c|}{(02/13)} & \multicolumn{1}{c|}{(02/20)} & (02/27) \\ 
+            \cline{1-8} 
+            Background dinâmico & & & & & & & \\
+            Memória não volátil & & & & & & & \\
+            Tela inicial dinâmica & & & & & & & \\
+            Recursos de fim de jogo & & & & & & & \\
+            Mecânica de Spawn & & & & & & & \\
+            Propaganda funcional & & & & & & & \\ \cline{1-8}
+        \end{tabular}
+\end{adjustbox}
+
+    
 \chapter{Planos futuros}
 
 %----------------------------------------------------------------------------------------
