@@ -369,6 +369,7 @@ backgroundcolor=\color{white},
             \end{tikzpicture}
         \end{center}
         \caption{Sistema de arquivos da pasta Assets. O que fora ignorado não tem importância para o desenvolvimento atual.}
+        \label{fig:arquivos}
     \end{figure}
 
     Dentro da pasta scripts temos três diretórios. 
@@ -461,14 +462,14 @@ backgroundcolor=\color{white},
             \end{tikzpicture}
         \end{center}
         \caption{Árvore de objetos de jogo, prefabs em azul.}
-        \label{ola}
+        \label{fig:gameo}
     \end{figure}
 
     Além dos elementos mostrados acima, temos também o objeto "player" e o objeto "EventSystem", ambos dentro somente da cena.
     O desenvolvedor que precisar alterar estes elementos é o única que terá a liberdade de fazer alterações no arquivo "Player.scene".
     Qualquer outra alteração será feita nos dois prefabs principais ou nos outros que estejam dentro destes.
 
-    Na Figura \ref{ola} podemos ver que existem Game Objects em azul e em branco.
+    Na Figura \ref{fig:gameo} podemos ver que existem Game Objects em azul e em branco.
     Os game objects em azul são os prefabs, ou seja, as alterações feitas neles não são gravadas nos objetos de jogo que os contém.
     Já os elementos em branco não são.
     Dessa forma, qualquer alteração feita neles serão salvas no prefab que o contém.
@@ -483,6 +484,24 @@ backgroundcolor=\color{white},
 
 
     \section{Ecossistema lógico}
+
+    O aplicativo, como demonstrado anteriormente, já possui uma variedade de game objects e assets implementados.
+    Além deles também já foram desenvolvidos muitos scripts na linguagem C\#.
+    Esses scripts estão presentes nos vários game objects mostrados anteriormente (Fig.\ref{fig:gameo}). 
+    Também vale a pena lembrar que estão dentro da pasta scripts (Fig.\ref{fig:arquivos}).
+
+    Dentre os scripts mais simples, temos:
+
+    \begin{itemize}
+
+        \item Destroy\_obstacles.cs (Fig.\ref{code:destruction_code}) (spawn\_handler > Destroyer): Tem instruções simples de destruir qualquer objeto que colidir com elemento inquilino.
+
+        \item Object\_Selector.cs (Fig.\ref{code:object_selector}) (spawn\_handler > Object\_Selector): Retorna um prefab de obstáculo conforme fase atual.
+
+        \item 
+
+    \end{itemize}
+
 
     \begin{figure}[ht!]
         \centering
@@ -499,10 +518,142 @@ backgroundcolor=\color{white},
                  }
             }
         \end{lstlisting}
-        \label{destruction_code}
         \caption{Código do script "Destroy\_obstacles.cs".}
+        \label{code:destruction_code}
 
     \end{figure}
+
+
+
+    \begin{figure}[ht!]
+        \centering
+        \begin{lstlisting}
+            using System.Collections.Generic;
+            using UnityEngine;
+            public class Object_selector : MonoBehaviour
+            {
+                public GameObject alien;
+                public GameObject balao_1;
+                ... (obstáculos)
+                public GameObject satelite_2;
+                private GameObject Game_manager;
+                private static GameObject obstacle;
+                private GameObject[][] actual_stage;
+                private int stage_index;
+                private int obstacle_index;
+                private List<int> stage_length_list;
+                private int stage_length;
+
+                void Start()
+                {
+                    // Acha o script game manager via tag
+                    Game_manager = GameObject.FindWithTag("Game_manager");
+
+                }
+
+                public GameObject Get_Obstacle(){
+                    
+                    Debug.Log(Game_manager.GetComponent<Game_Manager>().Get_phase());
+                    stage_index = 0;
+                    actual_stage = new GameObject[3][];
+                    actual_stage[0] = new GameObject[4];
+                    actual_stage[0][0] = nuvem_1_0;
+                    actual_stage[0][1] = nuvem_1_1;
+                    actual_stage[0][2] = nuvem_3_0;
+                    actual_stage[0][3] = balao_1;
+                    actual_stage[1] = new GameObject[3];
+                    actual_stage[1][0] = meteoro_1_0;
+                    actual_stage[1][1] = meteoro_2_0;
+                    actual_stage[1][2] = meteoro_3_0;
+                    actual_stage[2] = new GameObject[4];
+                    actual_stage[2][0] = satelite_1;
+                    actual_stage[2][1] = satelite_2;
+                    actual_stage[2][2] = satelite_3;
+                    actual_stage[2][3] = alien;
+                    stage_length_list.Add(4);
+                    stage_length_list.Add(3);
+                    stage_length_list.Add(4);
+
+                    stage_length = stage_length_list[stage_index];
+                    obstacle_index = (int)Random.Range(0, stage_length);
+                    obstacle = actual_stage[stage_index][obstacle_index];
+                    return obstacle;
+                }
+            }
+        \end{lstlisting}
+        \caption{Código do script "Object\_Selector.cs".}
+        \label{code:object_selector}
+    \end{figure}
+
+
+\begin{figure}[ht!]
+        \centering
+        \begin{lstlisting}
+
+            using UnityEngine;
+
+            public class Game_Manager : MonoBehaviour{
+
+                // Refere-se à fase
+                private int phase = 0;
+                // Refere-se ao jogador
+                private GameObject player;
+                // Refere-se ao tempo relativo da fase
+                private float phase_time;
+                // Tempo da próxima fase
+                private float next_phase;
+                // Refere-se ao tempo total de jogo
+                private float game_time;
+                // Define a duração de cad fase
+                private float[] phase_plan = new float[2]{10.0f, 10.0f};
+                void Start()
+                {
+                    // Procura pelo objeto de jogo do jogador
+                    player = GameObject.FindWithTag("Player");
+                    // Tempo inicial, após dado play
+                    game_time = Time.time;
+                    next_phase = 0.0f;
+                }
+                void Update()
+                {
+                    // Phase Query from time
+                    if(Time.time > next_phase){
+                        if (phase >= phase_plan.Length){
+                            // final com fase infinita
+                            next_phase = 36000000.0f;
+                        }else{
+                            // Registra tempo de conversão para nova fase
+                            next_phase = phase_plan[phase] + Time.time;
+                        }
+                        // Passa a fase e registra tempo
+                        phase++;
+                        phase_time = Time.time;
+                    }
+                }
+                // Pega posição em x do jogador -2.6 < x < 2.6
+                public float Get_player_x(){return player.GetComponent<Transform>().position.x;}
+                // Pega objeto do jogador
+                public GameObject Get_player(){return player;}
+                // Pega fase atual (começa em 1)
+                public int Get_phase(){return phase;}
+                // Pega tempo de fase atual
+                public float Get_phase_time(){return Time.time - phase_time;}
+                // Pega fração de completude de fase de 0 a 1
+                public float Get_phase_fraction(){return (Time.time - phase_time)/phase_plan[phase];}
+                // Pegar tempo global de execução
+                public float Get_time(){return Time.time - game_time;}
+            }
+        \end{lstlisting}
+        \label{volume_code}
+        \caption{Código do script "audio\_controls.cs".}
+
+    \end{figure}
+
+
+
+
+
+
 
 
     \begin{figure}[ht!]

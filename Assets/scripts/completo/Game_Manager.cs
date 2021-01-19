@@ -11,40 +11,63 @@ public class Game_Manager : MonoBehaviour{
     // Refere-se ao tempo relativo da fase
     private float phase_time;
 
-    // Defines the phase brake points in seconds            fase 1     |      fase 2      |  fease 3
-    private float[] phase_plan = new float[3]{10.0f, 30.0f , 0.0f};
+    // Tempo da próxima fase
+    private float next_phase;
+
+    // Refere-se ao tempo total de jogo
+    private float game_time;
+
+    // Define a duração de cad fase
+    private float[] phase_plan = new float[2]{10.0f, 10.0f};
 
     void Start()
     {
-        // searchs for the player game object
+        // Procura pelo objeto de jogo do jogador
         player = GameObject.FindWithTag("Player");
+
+        // Tempo inicial, após dado play
+        game_time = Time.time;
+        next_phase = 0.0f;
+
     }
 
     void Update()
     {
 
-        // Phase Query
-        if(Time.time > phase_plan[phase] & phase < phase_plan.Length){
+        // Phase Query from time
+        if(Time.time > next_phase){
+
+            if (phase >= phase_plan.Length){
+                // final com fase infinita
+                next_phase = 36000000.0f;
+            }else{
+                // Registra tempo de conversão para nova fase
+                next_phase = phase_plan[phase] + Time.time;
+            }
+
+            // Passa a fase e registra tempo
             phase++;
             phase_time = Time.time;
+            
         }
 
     }
 
-    // Function for getting the player x axis -2.6 < x < 2.6
+    // Pega posição em x do jogador -2.6 < x < 2.6
     public float Get_player_x(){return player.GetComponent<Transform>().position.x;}
-
-    // Function for other scripts to aces current phase
+    
+    // Pega objeto do jogador
+    public GameObject Get_player(){return player;}
+    
+    // Pega fase atual (começa em 1)
     public int Get_phase(){return phase;}
     
-    // Function for other scripts to aces current phase time in seconds
+    // Pega tempo de fase atual
     public float Get_phase_time(){return Time.time - phase_time;}
 
-    // Function for Getting time globall time
-    public float Get_time(){return Time.time;}
-
-    // Function for getting player game object
-    public GameObject Get_player(){return player;}
-
-
+    // Pega fração de completude de fase de 0 a 1
+    public float Get_phase_fraction(){return (Time.time - phase_time)/phase_plan[phase];}
+    
+    // Pegar tempo global de execução
+    public float Get_time(){return Time.time - game_time;}
 }
