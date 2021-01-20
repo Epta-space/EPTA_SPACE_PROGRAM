@@ -1,3 +1,5 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Template_Relatorio.aux
-The style file: unsrt.bst
-Database file #1: bibfile.bib
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'Template_Relatorio.blg'
+[61] biber:322> INFO - === Sun Jan 17, 2021, 20:12:14
+[82] Biber.pm:415> INFO - Reading 'Template_Relatorio.bcf'
+[141] Utils.pm:293> WARN - No data sources defined!
