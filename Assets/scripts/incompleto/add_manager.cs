@@ -19,7 +19,7 @@ public class add_manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Create_the_banner(app_id , banner_id);
+        // Create_the_banner(app_id , banner_id);
     }
 
     private void Create_the_banner(string App , string banner)
