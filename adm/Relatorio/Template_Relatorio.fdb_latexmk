@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber Template_Relatorio"] 1610925133 "Template_Relatorio.bcf" "Template_Relatorio.bbl" "Template_Relatorio" 1611031581
-  "Template_Relatorio.bcf" 1611031564 101204 c0cd9b8c8b7cab2f27147dc18c5d5d43 ""
+["biber Template_Relatorio"] 1610925133 "Template_Relatorio.bcf" "Template_Relatorio.bbl" "Template_Relatorio" 1611110325
+  "Template_Relatorio.bcf" 1611110324 101204 c0cd9b8c8b7cab2f27147dc18c5d5d43 ""
   (generated)
-  "Template_Relatorio.blg"
   "Template_Relatorio.bbl"
-["pdflatex"] 1611031581 "Template_Relatorio.tex" "Template_Relatorio.pdf" "Template_Relatorio" 1611031581
+  "Template_Relatorio.blg"
+["pdflatex"] 1611110322 "Template_Relatorio.tex" "Template_Relatorio.pdf" "Template_Relatorio" 1611110325
   "/etc/texmf/web2c/texmf.cnf" 1608527407 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/felipejoribeiro/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk" 1610225881 20008 373f7585aa2543a0c79d91210f76790d ""
   "/home/felipejoribeiro/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk" 1610029042 24132 6cad31d280fe58f769f7ff955d1beb40 ""
@@ -303,22 +303,22 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1608527766 4466278 956ccdc8d57f396eef7b8798b3b11e08 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1608527784 4881101 df2f841847670263d2552a10afb67614 ""
-  "Template_Relatorio.aux" 1611031564 6352 8591e96a81b8629dc2791c1e7bfea5ee ""
+  "Template_Relatorio.aux" 1611110324 7139 ca9d5a2d6d6784332349b2697d9a1401 ""
   "Template_Relatorio.bbl" 1610925134 0 d41d8cd98f00b204e9800998ecf8427e "biber Template_Relatorio"
-  "Template_Relatorio.lof" 1611031564 1174 b9deb2186240a77aadd26cfdc21306e0 ""
-  "Template_Relatorio.run.xml" 1611031564 2391 1ec21fe6f213f3eb1c51427cf71edc97 ""
-  "Template_Relatorio.tex" 1611031580 37153 605b2f217a45cee19a932320db162004 ""
-  "Template_Relatorio.toc" 1611031564 891 2514ae0e3314b1282dcd2f4381e0bea8 ""
+  "Template_Relatorio.lof" 1611110324 1547 c16d34a60dd7456e2b2a857399a4e76a ""
+  "Template_Relatorio.run.xml" 1611110324 2391 1ec21fe6f213f3eb1c51427cf71edc97 ""
+  "Template_Relatorio.tex" 1611110317 42873 ab1f6aca1b001cce19a70d6a85e66188 ""
+  "Template_Relatorio.toc" 1611110324 891 50509ab3da921884f118d69875e80726 ""
   "estrutura.tex" 1610828428 6801 dd0f99eefc0455f5f19a411b6dce7a52 ""
   "midia/epta_projeto_template.pdf" 1599525957 564892 b15956cb76edc367dc368f99d7484b44 ""
   "midia/users_global.png" 1610828428 33195 f3d20e5c267b5df3d6f304cc34569daf ""
   (generated)
-  "Template_Relatorio.log"
-  "Template_Relatorio.bcf"
-  "csquotes.aux"
-  "Template_Relatorio.aux"
   "Template_Relatorio.run.xml"
   "estrutura.aux"
   "Template_Relatorio.pdf"
+  "Template_Relatorio.log"
+  "csquotes.aux"
   "Template_Relatorio.toc"
+  "Template_Relatorio.bcf"
+  "Template_Relatorio.aux"
   "Template_Relatorio.lof"

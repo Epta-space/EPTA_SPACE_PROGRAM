@@ -47,7 +47,7 @@ keepaspectratio]{midia/epta_projeto_template}%
 \lstdefinestyle{sharpc}{language=[Sharp]C, frame=lr, rulecolor=\color{blue!80!black}} % Style of code
 \lstset{
 extendedchars=true,
-literate={á}{{\'a}}1 {ã}{{\~a}}1 {é}{{\'e}}1 {ú}{{\'u}}1,
+literate={á}{{\'a}}1 {ã}{{\~a}}1 {é}{{\'e}}1 {ç}{{\c{c}}}1 {ú}{{\'u}}1 {ó}{{\'o}}1 {à}{{\`a}}1,
 language=csh,
 basicstyle=\footnotesize\ttfamily,
 numbers=left,
@@ -498,7 +498,15 @@ backgroundcolor=\color{white},
 
         \item Object\_Selector.cs (Fig.\ref{code:object_selector}) (spawn\_handler > Object\_Selector): Retorna um prefab de obstáculo conforme fase atual.
 
-        \item 
+        \item Game\_Manager.cs (Fig.\ref{code:gamemanager}) (Player > Game\_Handler): Fornece informações gerais e contabiliza o estado do jogo (fase e estado).
+
+        \item audio\_controls.cs (Fig.\ref{code:audiocontrol}) (User\_Experience > Audio Source): Habilita o controle de volume presente na interface do menu pause.
+        
+        \item move.cs (Fig.\ref{code:move}) (none): Implementa a movimentação dos obstáculos.
+
+        \item movimentação.cs (Fig.\ref{code:movimentacao}) (Player > player): Implementa a movimentação do jogador.
+
+        \item interface\_handler (Fig.\ref{code:interfacehandler}) (User\_Experience > UI\_script\_handler): Possui as funções de todos os botões da interface.
 
     \end{itemize}
 
@@ -523,6 +531,143 @@ backgroundcolor=\color{white},
 
     \end{figure}
 
+
+    \begin{figure}[ht!]
+        \centering
+        \begin{lstlisting}
+            
+            using UnityEngine;
+
+
+            public class move : MonoBehaviour
+            {
+                public float speed;
+                void Start()
+                {
+                    this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, - speed);
+                }
+                public float Get_velocity(){return speed;}
+                
+            }
+
+        \end{lstlisting}
+        \caption{Código do script "move.cs".}
+        \label{code:move}
+
+    \end{figure}
+
+
+    \begin{figure}[ht!]
+        \centering
+        \begin{lstlisting}
+            
+            using UnityEngine;
+            using UnityEngine.UI;
+
+            public class interface_handler : MonoBehaviour
+            {
+                // Game references:
+                public GameObject Basic_UI;
+                public GameObject Pause_UI;
+                public GameObject About_UI;
+                public int score = 0;
+                public Text scoreText;
+
+                void Start() {
+                    // Turn on ui basic
+                    Basic_UI.SetActive(true);
+                }
+                //! Função chamada uma vez por frame. CUIDADO com o que se coloca aqui.
+                void Update() {
+                    if(score < 1000){
+                        scoreText.text = score + " m  "; 
+                    }else{
+                        scoreText.text = score/10 + " km  ";
+                    }
+                    // Contador simples para teste. No futuro referenciaremos script "phase_handler"
+                    if(Input.GetKeyDown(KeyCode.Space)){
+                        score = score + 100;
+                    }
+                }
+                public void Pause(){Basic_UI.SetActive(false);Pause_UI.SetActive(true);Time.timeScale = 0f;}
+                public void exit(){Application.Quit();}
+                public void Resume(){Basic_UI.SetActive(true);Pause_UI.SetActive(false);Time.timeScale = 1f;}
+                public void About(){About_UI.SetActive(true);Pause_UI.SetActive(false);}
+                public void exit_about(){About_UI.SetActive(false);Pause_UI.SetActive(true);}
+                public void instagram_about(){Application.OpenURL("https://www.instagram.com/equipe_epta/");}
+                public void facebook_about(){Application.OpenURL("https://www.facebook.com/eptarocketdesign/");}
+                public void femec_about(){Application.OpenURL("http://www.mecanica.ufu.br/");}
+                public void feelt_about(){Application.OpenURL("http://www.feelt.ufu.br/");}
+                public void facic_about(){Application.OpenURL("http://www.facic.ufu.br/");}
+                public void faced_about(){Application.OpenURL("http://www.faced.ufu.br/");}
+                public void fagen_about(){Application.OpenURL("http://www.fagen.ufu.br/");}
+                public void ufu_about(){Application.OpenURL("http://www.ufu.br/");}
+
+            }
+
+        \end{lstlisting}
+        \caption{Código do script "interface\_handler.cs".}
+        \label{code:interfacehandler}
+
+    \end{figure}
+
+
+
+    \begin{figure}[ht!]
+        \centering
+        \begin{lstlisting}
+            
+            using UnityEngine;
+
+            public class movimentação : MonoBehaviour
+            {
+                public float speed;
+                private Rigidbody2D rb;
+                private Vector3 localScreenWidth;
+
+                void Start()
+                {
+                    rb = GetComponent<Rigidbody2D>();
+                }
+
+                void FixedUpdate()
+                {
+                    
+                    // Button clicking detection
+                    if(Input.GetMouseButton(0))
+                    {
+                        Vector3 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                        if(touchPos.x < 0){
+                            rb.velocity = new Vector2( -speed, rb.velocity.y);
+                        }
+                        else{
+                            rb.velocity = new Vector2( speed, rb.velocity.y);
+                        }
+
+                    }  
+
+                    localScreenWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+
+                    if (transform.position.x >= 1.09 * localScreenWidth.x)
+                    {
+
+                        transform.position = new Vector3(- 1.07f * localScreenWidth.x, transform.position.y, transform.position.z);
+
+                    }
+                    else if (transform.position.x <= -1.09 * localScreenWidth.x)
+                    {
+
+                        transform.position = new Vector3( 1.07f * localScreenWidth.x, transform.position.y, transform.position.z);
+
+                    }
+                }
+            }
+
+        \end{lstlisting}
+        \caption{Código do script "movimentação.cs".}
+        \label{code:movimentacao}
+
+    \end{figure}
 
 
     \begin{figure}[ht!]
@@ -644,8 +789,8 @@ backgroundcolor=\color{white},
                 public float Get_time(){return Time.time - game_time;}
             }
         \end{lstlisting}
-        \label{volume_code}
-        \caption{Código do script "audio\_controls.cs".}
+        \caption{Código do script "Game\_Manager.cs".}
+        \label{code:gamemanager}
 
     \end{figure}
 
@@ -688,8 +833,8 @@ backgroundcolor=\color{white},
             }
 
         \end{lstlisting}
-        \label{volume_code}
         \caption{Código do script "audio\_controls.cs".}
+        \label{code:audiocontrol}
 
     \end{figure}
 

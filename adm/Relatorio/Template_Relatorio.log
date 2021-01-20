@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.21)  19 JAN 2021 01:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.21)  19 JAN 2021 23:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1327,11 +1327,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'brazil'.
- (./Template_Relatorio.aux
-
-LaTeX Warning: Label `volume_code' multiply defined.
-
-)
+ (./Template_Relatorio.aux)
 \openout1 = `Template_Relatorio.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
@@ -1611,7 +1607,7 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 
 ]
 Cap\'{\i }tulo 1.
-<midia/users_global.png, id=110, 955.31906pt x 363.60844pt>
+<midia/users_global.png, id=116, 955.31906pt x 363.60844pt>
 File: midia/users_global.png Graphic file (type png)
 <use midia/users_global.png>
 Package pdftex.def Info: midia/users_global.png  used on input line 263.
@@ -1629,288 +1625,47 @@ Cap\'{\i }tulo 2.
 
 ] [4] [5]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 508.
+(Font)              scaled to size 9.29993pt on input line 516.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 509.
+(Font)              scaled to size 5.57996pt on input line 517.
 
 
-./Template_Relatorio.tex:597: Package inputenc Error: Invalid UTF-8 byte sequence.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.597                 // Refere-se à 
-                                      fase
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
+LaTeX Warning: Float too large for page by 39.34328pt on input line 612.
 
 
-./Template_Relatorio.tex:597: Package inputenc Error: Invalid UTF-8 byte "A0.
+LaTeX Warning: Float too large for page by 27.34328pt on input line 795.
 
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.597                 // Refere-se à 
-                                      fase
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-./Template_Relatorio.tex:603: Package inputenc Error: Invalid UTF-8 byte sequence.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.603                 // Tempo da próxima 
-                                           fase
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-./Template_Relatorio.tex:603: Package inputenc Error: Invalid UTF-8 byte "B3.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.603                 // Tempo da próxima 
-                                           fase
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-./Template_Relatorio.tex:607: Package inputenc Error: Invalid UTF-8 byte sequence.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.607                 // Define a duraçã
-                                          o de cad fase
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-./Template_Relatorio.tex:607: Package inputenc Error: Invalid UTF-8 byte "A7.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.607                 // Define a duraçã
-                                          o de cad fase
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-./Template_Relatorio.tex:613: Package inputenc Error: Invalid UTF-8 byte sequence.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.613                     // Tempo inicial, após 
-                                                  dado play
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-./Template_Relatorio.tex:613: Package inputenc Error: Invalid UTF-8 byte "B3.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.613                     // Tempo inicial, após 
-                                                  dado play
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-./Template_Relatorio.tex:633: Package inputenc Error: Invalid UTF-8 byte sequence.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.633                 // Pega posiçã
-                                      o em x do jogador -2.6 < x < 2.6
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-./Template_Relatorio.tex:633: Package inputenc Error: Invalid UTF-8 byte "A7.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.633                 // Pega posiçã
-                                      o em x do jogador -2.6 < x < 2.6
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-./Template_Relatorio.tex:637: Package inputenc Error: Invalid UTF-8 byte sequence.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.637                 // Pega fase atual (começa 
-                                                  em 1)
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-./Template_Relatorio.tex:637: Package inputenc Error: Invalid UTF-8 byte "A7.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.637                 // Pega fase atual (começa 
-                                                  em 1)
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-./Template_Relatorio.tex:641: Package inputenc Error: Invalid UTF-8 byte sequence.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.641                 // Pega fraçã
-                                     o de completude de fase de 0 a 1
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-./Template_Relatorio.tex:641: Package inputenc Error: Invalid UTF-8 byte "A7.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.641                 // Pega fraçã
-                                     o de completude de fase de 0 a 1
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-./Template_Relatorio.tex:643: Package inputenc Error: Invalid UTF-8 byte sequence.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.643 ...       // Pegar tempo global de execuçã
-                                                  o
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-./Template_Relatorio.tex:643: Package inputenc Error: Invalid UTF-8 byte "A7.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.643 ...       // Pegar tempo global de execuçã
-                                                  o
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-LaTeX Warning: Float too large for page by 27.34328pt on input line 650.
-
-[6] [7] [8] [9]
+[6] [7] [8] [9] [10] [11] [12]
 Cap\'{\i }tulo 3.
-[10
+[13
 
-] [11]
+] [14]
 Cap\'{\i }tulo 4.
-[12
+[15
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 730.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 730.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 875.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 875.
  (./Template_Relatorio.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 730.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 730.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 875.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 875.
 Package logreq Info: Writing requests to 'Template_Relatorio.run.xml'.
 \openout1 = `Template_Relatorio.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45307 strings out of 483090
- 882359 string characters out of 5963928
- 1850556 words of memory out of 5000000
- 59349 multiletter control sequences out of 15000+600000
+ 45480 strings out of 483090
+ 884789 string characters out of 5963928
+ 2098790 words of memory out of 5000000
+ 59409 multiletter control sequences out of 15000+600000
  591324 words of font info for 100 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
  65i,13n,99p,1163b,1722s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/felipejoribeiro/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/felipejoribeiro/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Template_Relatorio.pdf (17 pages, 685211 bytes).
+Output written on Template_Relatorio.pdf (20 pages, 699510 bytes).
 PDF statistics:
- 515 PDF objects out of 1000 (max. 8388607)
- 359 compressed objects within 4 object streams
- 184 named destinations out of 1000 (max. 500000)
+ 682 PDF objects out of 1000 (max. 8388607)
+ 511 compressed objects within 6 object streams
+ 297 named destinations out of 1000 (max. 500000)
  197 words of extra memory for PDF output out of 10000 (max. 10000000)
 
