@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.21)  19 JAN 2021 23:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.21)  20 JAN 2021 13:30
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1644,11 +1644,11 @@ Cap\'{\i }tulo 4.
 [15
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 875.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 875.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 876.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 876.
  (./Template_Relatorio.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 875.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 875.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 876.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 876.
 Package logreq Info: Writing requests to 'Template_Relatorio.run.xml'.
 \openout1 = `Template_Relatorio.run.xml'.
 
@@ -1662,7 +1662,7 @@ Here is how much of TeX's memory you used:
  61 hyphenation exceptions out of 8191
  65i,13n,99p,1163b,1722s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/felipejoribeiro/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/felipejoribeiro/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Template_Relatorio.pdf (20 pages, 699510 bytes).
+Output written on Template_Relatorio.pdf (20 pages, 699562 bytes).
 PDF statistics:
  682 PDF objects out of 1000 (max. 8388607)
  511 compressed objects within 6 object streams
