@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.21)  20 JAN 2021 13:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.21)  20 JAN 2021 20:26
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1625,15 +1625,15 @@ Cap\'{\i }tulo 2.
 
 ] [4] [5]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 516.
+(Font)              scaled to size 9.29993pt on input line 524.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 517.
+(Font)              scaled to size 5.57996pt on input line 525.
 
 
-LaTeX Warning: Float too large for page by 39.34328pt on input line 612.
+LaTeX Warning: Float too large for page by 39.34328pt on input line 620.
 
 
-LaTeX Warning: Float too large for page by 27.34328pt on input line 795.
+LaTeX Warning: Float too large for page by 27.34328pt on input line 803.
 
 [6] [7] [8] [9] [10] [11] [12]
 Cap\'{\i }tulo 3.
@@ -1644,11 +1644,11 @@ Cap\'{\i }tulo 4.
 [15
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 876.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 876.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 884.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 884.
  (./Template_Relatorio.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 876.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 876.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 884.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 884.
 Package logreq Info: Writing requests to 'Template_Relatorio.run.xml'.
 \openout1 = `Template_Relatorio.run.xml'.
 
@@ -1656,13 +1656,13 @@ Package logreq Info: Writing requests to 'Template_Relatorio.run.xml'.
 Here is how much of TeX's memory you used:
  45480 strings out of 483090
  884789 string characters out of 5963928
- 2098790 words of memory out of 5000000
+ 2099790 words of memory out of 5000000
  59409 multiletter control sequences out of 15000+600000
  591324 words of font info for 100 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
  65i,13n,99p,1163b,1722s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/felipejoribeiro/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/felipejoribeiro/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Template_Relatorio.pdf (20 pages, 699562 bytes).
+Output written on Template_Relatorio.pdf (20 pages, 699667 bytes).
 PDF statistics:
  682 PDF objects out of 1000 (max. 8388607)
  511 compressed objects within 6 object streams
