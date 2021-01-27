@@ -19,13 +19,17 @@ public class movimentação : MonoBehaviour
         if(Input.GetMouseButton(0))
         {
             Vector3 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            if(touchPos.x < 0){
-                rb.velocity = new Vector2( -speed, rb.velocity.y);
-            }
-            else{
-                rb.velocity = new Vector2( speed, rb.velocity.y);
-            }
 
+            Debug.Log(touchPos.y);
+
+            if(touchPos.y < 0){
+                if(touchPos.x < 0){
+                    rb.velocity = new Vector2( -speed, rb.velocity.y);
+                }
+                else{
+                    rb.velocity = new Vector2( speed, rb.velocity.y);
+                }
+            }
         }  
 
 
