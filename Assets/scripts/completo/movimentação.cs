@@ -9,6 +9,7 @@ public class movimentação : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        localScreenWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
     }
 
     void FixedUpdate()
@@ -27,7 +28,6 @@ public class movimentação : MonoBehaviour
 
         }  
 
-        localScreenWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
 
         if (transform.position.x >= 1.09 * localScreenWidth.x)
         {
@@ -35,7 +35,7 @@ public class movimentação : MonoBehaviour
             transform.position = new Vector3(- 1.07f * localScreenWidth.x, transform.position.y, transform.position.z);
 
         }
-        else if (transform.position.x <= -1.09 * localScreenWidth.x)
+        if (transform.position.x <= -1.09 * localScreenWidth.x)
         {
 
             transform.position = new Vector3( 1.07f * localScreenWidth.x, transform.position.y, transform.position.z);
