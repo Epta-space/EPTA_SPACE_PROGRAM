@@ -27,6 +27,11 @@
 \include{estrutura}
 \usepackage{csquotes}
 \usepackage{adjustbox}
+\usepackage{plantuml}
+\usepackage{epstopdf}
+\epstopdfDeclareGraphicsRule{.svg}{pdf}{.pdf}{
+    inkscape -z --file=#1 ==export-pdf=\OutputFile
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
@@ -849,6 +854,37 @@ backgroundcolor=\color{white},
 
 
 \chapter{Plano de gestão para 2021}
+
+
+\begin{figure}[h!]
+    \centering
+        \begin{plantuml}
+            @startuml
+
+                robust "Web Browser" as WB
+                concise "Web User" as WU
+
+                @0
+                WU is Idle
+                WB is Idle
+
+                @1
+                WU is Waiting
+                WB is Processing
+
+                @3
+                WB is Waiting
+
+                @7
+                WU is Idle
+
+            @enduml
+        \end{plantuml}
+    \caption{Plano de execução do projeto.}
+    \label{diagram:plano_de_execucao}
+\end{figure}
+
+
 
 \newpage
 
