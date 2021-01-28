@@ -15,24 +15,9 @@ public class movimentação : MonoBehaviour
     void FixedUpdate()
     {
         
-        // Button clicking detection
-        if(Input.GetMouseButton(0))
-        {
-            Vector3 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        checkUserInput();
 
-            Debug.Log(touchPos.y);
-
-            if(touchPos.y < 0){
-                if(touchPos.x < 0){
-                    rb.velocity = new Vector2( -speed, rb.velocity.y);
-                }
-                else{
-                    rb.velocity = new Vector2( speed, rb.velocity.y);
-                }
-            }
-        }  
-
-
+        // Teleporta jogador para o outro canto da tela.
         if (transform.position.x >= 1.09 * localScreenWidth.x)
         {
 
@@ -44,6 +29,26 @@ public class movimentação : MonoBehaviour
 
             transform.position = new Vector3( 1.07f * localScreenWidth.x, transform.position.y, transform.position.z);
 
+        }
+    }
+
+    public void checkUserInput()
+    {
+        // Button clicking detection
+        if(Input.GetMouseButton(0))
+        {
+            Vector3 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            // Debug.Log(touchPos.y);
+
+            if(touchPos.y < 0){
+                if(touchPos.x < 0){
+                    rb.velocity = new Vector2( -speed, rb.velocity.y);
+                }
+                else{
+                    rb.velocity = new Vector2( speed, rb.velocity.y);
+                }
+            }
         }
     }
 }
