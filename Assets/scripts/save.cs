@@ -18,19 +18,19 @@ public class save : MonoBehaviour
 
         if(tipo.Equals(typeof(string)))
         {
-            PlayerPrefs.SetString(endereço, entrada);
+            PlayerPrefs.SetString(endereço, (string)entrada);
         }
 
         if (tipo.Equals(typeof(int)))
         {
             
-            PlayerPrefs.SetInt(endereço, entrada);
+            PlayerPrefs.SetInt(endereço,(int)entrada);
         }
 
         if (tipo.Equals(typeof(float)))
         {
             
-            PlayerPrefs.SetFloat(endereço, entrada);
+            PlayerPrefs.SetFloat(endereço,(float)entrada);
         }
 
         // o endereço deve ser setado sempre (como serão endereços diferentes nao a problemas de sobreposição )
