@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -6,30 +7,35 @@ using UnityEngine;
 public class save : MonoBehaviour
 {
     
-    public static string endereço; // endereço na memoria
-    public static float Float; // save interno
-    public static string verifica_valor_que_sera_salvo; // valor que sera setado em outro script;
-    public float valor; // save interno
-   
-    
-    
-    public void salvar()
+    private static string endereço; // endereço na memoria
+    private float valor_float; // save interno
+    private int valor_int;
+
+
+
+    public void salvar(object entrada)
     {
-        bool ehValido = verifica_valor_que_sera_salvo.Length == 30 && verifica_valor_que_sera_salvo.All(char.IsDigit); // verifica se a string é numero ou não
-        if (ehValido) // se for usa um PlayerPrefs para float 
-        {
-            valor = float.Parse(verifica_valor_que_sera_salvo);
+        Type tipo = entrada.GetType();
 
-           PlayerPrefs.SetFloat(endereço,valor);
+        if(tipo.Equals(typeof(string)))
+        {
+            layerPrefs.SetString(endereço, entrada);
         }
-        else // caso contrario PlayerPrefs para string
-        {
 
-            PlayerPrefs.SetString(endereço, verifica_valor_que_sera_salvo);
+        if (tipo.Equals(typeof(int)))
+        {
+            valor_int = int.Parse(entrada);
+            PlayerPrefs.SetInt(endereço, valor_int);
+        }
+
+        if (tipo.Equals(typeof(float)))
+        {
+            valor_float = float.Parse(entrada);
+            PlayerPrefs.SetFloat(endereço, valor_float);
         }
 
         // o endereço deve ser setado sempre (como serão endereços diferentes nao a problemas de sobreposição )
-       
+
     }
     
     
