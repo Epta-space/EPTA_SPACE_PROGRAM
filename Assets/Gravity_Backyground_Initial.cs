@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gravity : MonoBehaviour
+public class Gravity_Backyground_Initial : MonoBehaviour
 {
     void Start()
     {
