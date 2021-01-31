@@ -5,7 +5,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Sistema de arquivos da pasta Assets. O que fora ignorado não tem importância para o desenvolvimento atual.\relax }}{4}{figure.caption.4}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Árvore de objetos de jogo, prefabs em azul.\relax }}{5}{figure.caption.5}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Código do script "Destroy\_obstacles.cs".\relax }}{6}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Código do script "Destroy\_obstacles.cs".\relax }}{7}{figure.caption.6}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Código do script "move.cs".\relax }}{7}{figure.caption.7}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Código do script "interface\_handler.cs".\relax }}{8}{figure.caption.8}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Código do script "movimentação.cs".\relax }}{9}{figure.caption.9}%
@@ -13,4 +13,5 @@
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Código do script "Game\_Manager.cs".\relax }}{11}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Código do script "audio\_controls.cs".\relax }}{12}{figure.caption.12}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Plano de execução do projeto.\relax }}{13}{figure.caption.13}%
 \addvspace {10\p@ }
