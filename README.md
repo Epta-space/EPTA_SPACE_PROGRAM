@@ -118,8 +118,10 @@ stop
 
 - Felipe J. O. Ribeiro : bug-fixes : 19/01/2021
 
-- Pedro G. R. v> Melo: Queda_da_tela_inicial : 23/01/2021
+- Olavo Caetano Inácio : trocar_sprites_on_demand : 23/01/2021
+ 
+- Pedro G. R. V. Melo : Queda_da_tela_inicial : 23/01/2021
 
-- Felipe J. O. Ribeiro : fix_input_jogador: 23/01/2021
+- Felipe J. O. Ribeiro : fix_input_jogador : 23/01/2021
  
 - Mateus da Silva Fernandes : Salvamento_modular : 23/01/2021
