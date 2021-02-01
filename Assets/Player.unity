@@ -257,6 +257,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 580116274372133822, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.8999023
+      objectReference: {fileID: 0}
     - target: {fileID: 8392558111159909713, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
       propertyPath: m_Name
       value: User_Experience
@@ -305,6 +309,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8829138901479446645, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
 --- !u!1 &1451158846
@@ -321,6 +329,7 @@ GameObject:
   - component: {fileID: 1451158851}
   - component: {fileID: 1451158852}
   - component: {fileID: 1451158850}
+  - component: {fileID: 1451158853}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -336,7 +345,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451158846}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 6382e0e54702acc4ead829aa02b7a79b, type: 2}
   m_CullingMode: 0
@@ -502,3 +511,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1451158853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451158846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a548d556399701f4f8c59211b62bf057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "explos\xE3o": {fileID: 21300000, guid: 03625f26d84d5c44fa264a98150531a9, type: 3}
