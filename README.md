@@ -119,3 +119,5 @@ stop
 - Felipe J. O. Ribeiro : bug-fixes : 19/01/2021
 
 - Felipe J. O. Ribeiro : fix_input_jogador: 23/01/2021
+ 
+- Mateus da Silva Fernandes : Salvamento_modular : 23/01/2021
