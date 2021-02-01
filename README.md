@@ -1,4 +1,4 @@
-# EPTA_SPACE_PROGRAM
+# EPTA_SPACE_PROGRAM - 0.5.1
 Aplicativo para celular Android de jogo Arcade desenvolvido na plataforma **Unity** (**2020.1.3f1**). Com fins de angariar fundos para a equipe **EPTA** (Equipe de Propulsão e Tecnologia Aeroespacial)
 
 ## Plano de gestão para 2021-A
