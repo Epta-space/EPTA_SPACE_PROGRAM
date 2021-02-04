@@ -125,3 +125,5 @@ stop
 - Felipe J. O. Ribeiro : fix_input_jogador : 23/01/2021
  
 - Mateus da Silva Fernandes : Salvamento_modular : 23/01/2021
+
+-Pedro G. R. V. Melo : 04/02/2021
