@@ -32,9 +32,7 @@ public class Object_selector : MonoBehaviour
     }
 
     public GameObject Get_Obstacle(){
-        
-        Debug.Log(Game_manager.GetComponent<Game_Manager>().Get_phase());
-        stage_index = 0;
+        stage_index = Game_manager.GetComponent<Game_Manager>().Get_phase();
 
         actual_stage = new GameObject[3][];
 
@@ -59,9 +57,9 @@ public class Object_selector : MonoBehaviour
         stage_length_list.Add(4);
 
         Debug.Log("---------------------------------------------------------");
-        stage_length = stage_length_list[stage_index];
+        stage_length = stage_length_list[stage_index-2];
         obstacle_index = (int)Random.Range(0, stage_length);
-        obstacle = actual_stage[stage_index][obstacle_index];
+        obstacle = actual_stage[stage_index-2][obstacle_index];
         return obstacle;
     }
 
