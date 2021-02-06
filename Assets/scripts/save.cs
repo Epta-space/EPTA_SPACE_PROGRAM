@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class save : MonoBehaviour
@@ -36,7 +35,11 @@ public class save : MonoBehaviour
         // o endereço deve ser setado sempre (como serão endereços diferentes nao a problemas de sobreposição )
 
     }
-    
+    public void retornar_save(string endereço)
+    {
+
+        return PlayerPrefs.GetString(endereço);
+    }
     
 
 }
