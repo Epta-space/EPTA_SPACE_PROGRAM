@@ -48,7 +48,6 @@ public class Spawner : MonoBehaviour {
         objselector = GameObject.FindWithTag("Object_selector");
         Game_manager = GameObject.FindWithTag("Game_manager");
 
-
         // Object_selector.gameObject.GetComponent<obj>().Start();
 
 
@@ -110,9 +109,10 @@ public class Spawner : MonoBehaviour {
 
         // obstacle = Object_Selector.GetComponent<Object_Selector>().Get_Obstacle();
         if(Game_manager.GetComponent<Game_Manager>().Get_phase() >= 2){
+            Debug.Log("OK");
+            objselector.GetComponent<Object_selector >().Get_Obstacle();
             // GameObject new_obstacle = Instantiate(objselector.GetComponent<Object_selector >().Get_Obstacle());
             // new_obstacle.transform.position = transform.position + new Vector3(0, 0, 0);
-            Debug.Log("OK");
         }
 
         // obstacle = objselector.Get_Obstacle();

@@ -23,7 +23,6 @@ public class Object_selector : MonoBehaviour
     private List<int> stage_length_list;
     private int stage_length;
 
-
     void Start()
     {
         // Acha o script game manager via tag
@@ -33,7 +32,7 @@ public class Object_selector : MonoBehaviour
 
     public GameObject Get_Obstacle(){
         stage_index = Game_manager.GetComponent<Game_Manager>().Get_phase();
-
+        
         actual_stage = new GameObject[3][];
 
         actual_stage[0] = new GameObject[4];
@@ -42,16 +41,19 @@ public class Object_selector : MonoBehaviour
         actual_stage[0][2] = nuvem_3_0;
         actual_stage[0][3] = balao_1;
 
+
         actual_stage[1] = new GameObject[3];
         actual_stage[1][0] = meteoro_1_0;
         actual_stage[1][1] = meteoro_2_0;
         actual_stage[1][2] = meteoro_3_0;
+
 
         actual_stage[2] = new GameObject[4];
         actual_stage[2][0] = satelite_1;
         actual_stage[2][1] = satelite_2;
         actual_stage[2][2] = satelite_3;
         actual_stage[2][3] = alien;
+        Debug.Log(actual_stage[2][2]);
         stage_length_list.Add(4);
         stage_length_list.Add(3);
         stage_length_list.Add(4);
@@ -60,7 +62,11 @@ public class Object_selector : MonoBehaviour
         stage_length = stage_length_list[stage_index-2];
         obstacle_index = (int)Random.Range(0, stage_length);
         obstacle = actual_stage[stage_index-2][obstacle_index];
+        Debug.Log("Alien");
         return obstacle;
+        Debug.Log(stage_index);
+        Debug.Log(obstacle_index);
+        Debug.Log(obstacle);
     }
 
 }

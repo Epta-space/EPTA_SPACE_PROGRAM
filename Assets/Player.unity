@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c5251a00ca5da74b848783268360296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Object_selector: {fileID: 898726581}
+  objselector: {fileID: 898726581}
   GameSpawner: {fileID: 898726582}
 --- !u!1 &1119974262
 GameObject:
