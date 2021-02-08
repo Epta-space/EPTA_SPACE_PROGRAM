@@ -20,7 +20,7 @@ public class Object_selector : MonoBehaviour
     private GameObject[][] actual_stage;
     private int stage_index;
     private int obstacle_index;
-    private List<int> stage_length_list;
+    private List<int> stage_length_list = new List<int>{4,3,4};
     private int stage_length;
 
     void Start()
@@ -53,20 +53,11 @@ public class Object_selector : MonoBehaviour
         actual_stage[2][1] = satelite_2;
         actual_stage[2][2] = satelite_3;
         actual_stage[2][3] = alien;
-        Debug.Log(actual_stage[2][2]);
-        stage_length_list.Add(4);
-        stage_length_list.Add(3);
-        stage_length_list.Add(4);
 
-        Debug.Log("---------------------------------------------------------");
         stage_length = stage_length_list[stage_index-2];
         obstacle_index = (int)Random.Range(0, stage_length);
         obstacle = actual_stage[stage_index-2][obstacle_index];
-        Debug.Log("Alien");
         return obstacle;
-        Debug.Log(stage_index);
-        Debug.Log(obstacle_index);
-        Debug.Log(obstacle);
     }
 
 }
