@@ -98,29 +98,16 @@ public class Spawner : MonoBehaviour {
         //     lastObstacles[0] = lastObstacles[1];
         //     lastObstacles[1] = createObstacle();
         // }
-
-        // createObstacle();
-        // delay(1000);
         
     // }
 
 
     void createObstacle(){
-
-        // obstacle = Object_Selector.GetComponent<Object_Selector>().Get_Obstacle();
         if(Game_manager.GetComponent<Game_Manager>().Get_phase() >= 2){
             GameObject new_obstacle = Instantiate(objselector.GetComponent<Object_selector >().Get_Obstacle());
             new_obstacle.transform.position = transform.position + new Vector3(0, 0, 0);
         }
-
-        // obstacle = objselector.Get_Obstacle();
-
-        // GameObject new_obstacle = Instantiate(obstacle);
-
-
         // tempo_relativo = Game_manager.GetComponent<Game_Manager>().Get_time();
-
-        // return new_obstacle;
     }
 
     // void RightTimeToSpawn(){
