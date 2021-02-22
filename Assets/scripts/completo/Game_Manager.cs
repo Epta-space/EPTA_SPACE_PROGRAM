@@ -24,25 +24,27 @@ public class Game_Manager : MonoBehaviour{
     {
         // Procura pelo objeto de jogo do jogador
         player = GameObject.FindWithTag("Player");
+        phase_time = 0.0f;
+        next_phase = 3600000000.0f;
 
-        // Tempo inicial, após dado play
-        game_time = Time.time;
-        next_phase = 0.0f;
+        Initiate_game();
 
     }
 
     void Update()
     {
+        Debug.Log(phase);
+        Debug.Log(Get_phase_time());
 
         // Phase Query from time
-        if(Time.time > next_phase){
+        if(Get_phase_time() > next_phase){
 
             if (phase >= phase_plan.Length){
                 // final com fase infinita
-                next_phase = 36000000.0f;
+                next_phase = 3600000000.0f;
             }else{
                 // Registra tempo de conversão para nova fase
-                next_phase = phase_plan[phase] + Time.time;
+                next_phase = phase_plan[phase];
             }
 
             // Passa a fase e registra tempo
@@ -70,4 +72,14 @@ public class Game_Manager : MonoBehaviour{
     
     // Pegar tempo global de execução
     public float Get_time(){return Time.time - game_time;}
+
+    // Função para iniciar jogo
+    public void Initiate_game(){
+
+        // Zera next phase para iniciar partida
+        next_phase = 0.0f;
+
+        // Tempo inicial, após dado play
+        game_time = Time.time;
+    }
 }
