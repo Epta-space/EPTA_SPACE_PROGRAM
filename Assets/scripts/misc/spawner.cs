@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Spawner : MonoBehaviour {
 
     private GameObject Player;
-    public GameObject Object_selector;
+    public GameObject objselector;
 
     private GameObject obstacle;
 
@@ -45,9 +45,8 @@ public class Spawner : MonoBehaviour {
     void Start() {
 
         // Player = GameObject.FindWithTag("Player");
-        // Object_selector = GameObject.FindWithTag("Object_selector");
-        // Game_manager = GameObject.FindWithTag("Game_manager");
-
+        objselector = GameObject.FindWithTag("Object_selector");
+        Game_manager = GameObject.FindWithTag("Game_manager");
 
         // Object_selector.gameObject.GetComponent<obj>().Start();
 
@@ -60,7 +59,7 @@ public class Spawner : MonoBehaviour {
         // // lastObstacles[0] = objselector.Get_Obstacle();
         // // lastObstacles[1] = objselector.Get_Obstacle();
 
-        // localScreenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        localScreenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
         // random_range_a = localScreenSize.x - (0.1f * localScreenSize.x);
         // random_range_b = localScreenSize.x;// + (0.2f * localScreenSize.x);
 
@@ -73,11 +72,12 @@ public class Spawner : MonoBehaviour {
 
         // objeto1 = lastObstacles[0];
         // objeto2 = lastObstacles[1];
+        InvokeRepeating("createObstacle",1f,1f);
     }
 
 
-    void Update()
-    {
+    // void Update()
+    // {
         // objeto1 = lastObstacles[0];
         // objeto2 = lastObstacles[1];
 
@@ -98,23 +98,17 @@ public class Spawner : MonoBehaviour {
         //     lastObstacles[0] = lastObstacles[1];
         //     lastObstacles[1] = createObstacle();
         // }
-    }
-
-
-    // GameObject createObstacle(){
-
-    //     obstacle = Object_selector.GetComponent<obj>().Get_Obstacle();
-
-    //     // obstacle = objselector.Get_Obstacle();
-
-    //     GameObject new_obstacle = Instantiate(obstacle);
-
-    //     new_obstacle.transform.position = transform.position + new Vector3(UnityEngine.Random.Range(-random_range_a, random_range_b), 0, 0);
-
-    //     tempo_relativo = Game_manager.GetComponent<Game_Manager>().Get_time();
-
-    //     return new_obstacle;
+        
     // }
+
+
+    void createObstacle(){
+        if(Game_manager.GetComponent<Game_Manager>().Get_phase() >= 2){
+            GameObject new_obstacle = Instantiate(objselector.GetComponent<Object_selector >().Get_Obstacle());
+            new_obstacle.transform.position = transform.position + new Vector3(0, 0, 0);
+        }
+        // tempo_relativo = Game_manager.GetComponent<Game_Manager>().Get_time();
+    }
 
     // void RightTimeToSpawn(){
     //     Debug.Log( Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0)) );

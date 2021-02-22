@@ -20,9 +20,8 @@ public class Object_selector : MonoBehaviour
     private GameObject[][] actual_stage;
     private int stage_index;
     private int obstacle_index;
-    private List<int> stage_length_list;
+    private List<int> stage_length_list = new List<int>{4,3,4};
     private int stage_length;
-
 
     void Start()
     {
@@ -32,10 +31,8 @@ public class Object_selector : MonoBehaviour
     }
 
     public GameObject Get_Obstacle(){
+        stage_index = Game_manager.GetComponent<Game_Manager>().Get_phase();
         
-        Debug.Log(Game_manager.GetComponent<Game_Manager>().Get_phase());
-        stage_index = 0;
-
         actual_stage = new GameObject[3][];
 
         actual_stage[0] = new GameObject[4];
@@ -44,24 +41,22 @@ public class Object_selector : MonoBehaviour
         actual_stage[0][2] = nuvem_3_0;
         actual_stage[0][3] = balao_1;
 
+
         actual_stage[1] = new GameObject[3];
         actual_stage[1][0] = meteoro_1_0;
         actual_stage[1][1] = meteoro_2_0;
         actual_stage[1][2] = meteoro_3_0;
+
 
         actual_stage[2] = new GameObject[4];
         actual_stage[2][0] = satelite_1;
         actual_stage[2][1] = satelite_2;
         actual_stage[2][2] = satelite_3;
         actual_stage[2][3] = alien;
-        stage_length_list.Add(4);
-        stage_length_list.Add(3);
-        stage_length_list.Add(4);
 
-        Debug.Log("---------------------------------------------------------");
-        stage_length = stage_length_list[stage_index];
+        stage_length = stage_length_list[stage_index-2];
         obstacle_index = (int)Random.Range(0, stage_length);
-        obstacle = actual_stage[stage_index][obstacle_index];
+        obstacle = actual_stage[stage_index-2][obstacle_index];
         return obstacle;
     }
 
