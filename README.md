@@ -1,4 +1,4 @@
-# EPTA_SPACE_PROGRAM - 0.5.1
+# EPTA_SPACE_PROGRAM - 0.5.2
 Aplicativo para celular Android de jogo Arcade desenvolvido na plataforma **Unity** (**2020.1.3f1**). Com fins de angariar fundos para a equipe **EPTA** (Equipe de Propulsão e Tecnologia Aeroespacial)
 
 ## Plano de gestão para 2021-A
@@ -84,23 +84,23 @@ fork again
 :destruicao_tela_inicial;
 |EPTA_SPACE_PROGRAM|
 end fork
-:0.5.2 - Prealpha - 06/fev;
+:0.5.2 - Prealpha - 20/fev;
 
 fork
 |Felipe Ribeiro|
-:movimento_modular_player;
-fork again
-|Matheus Fernandes|
-:chamada_funcao_volume;
-fork again
-|Olavo Inácio|
 :spawn_basico_2;
 fork again
+|Matheus Fernandes|
+:chamada_save_volume;
+fork again
+|Olavo Inácio|
+:recuo_inicial_player;
+fork again
 |Pedro Melo|
-:tela info;
+:resgatar_npcs;
 |EPTA_SPACE_PROGRAM|
 end fork
-:0.5.3 - Prealpha - 06/fev;
+:0.5.3 - Prealpha - 27/fev;
 
 
 stop
@@ -135,3 +135,11 @@ stop
 - Pedro G. R. V. Melo : Destruição_Tela_Inicial :04/02/2021
 
 - Felipe J. O. Ribeiro : funcao_morte : 01/02/2021
+
+- Olavo Caetano Inácio :
+
+- Mateus da Silva Fernandes :
+
+- Pedro G. R. V. Melo :
+
+- Felipe J. O. Ribeiro :

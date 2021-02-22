@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class Gravity_Backyground_Initial : MonoBehaviour
 {
-    void Start()
+
+    void Start(){
+
+        Start_fall();
+
+    }
+
+    void Start_fall()
     {
         Component[] elementos;
 
