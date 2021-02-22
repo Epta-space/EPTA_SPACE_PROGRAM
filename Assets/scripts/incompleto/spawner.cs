@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Spawner : MonoBehaviour {
+public class spawner : MonoBehaviour {
 
     private GameObject Player;
     public GameObject objselector;
@@ -22,7 +22,7 @@ public class Spawner : MonoBehaviour {
 
     private float player_height;
 
-    private float safeDistance = 0;
+    // private float safeDistance = 0;
 
     private float tempo_relativo;
     private float tempo_para_spawn;
@@ -103,7 +103,7 @@ public class Spawner : MonoBehaviour {
 
 
     void createObstacle(){
-        if(Game_manager.GetComponent<Game_Manager>().Get_phase() >= 2){
+        if(Game_manager.GetComponent<Game_Manager>().Get_phase() > 1){
             GameObject new_obstacle = Instantiate(objselector.GetComponent<Object_selector >().Get_Obstacle());
             new_obstacle.transform.position = transform.position + new Vector3(0, 0, 0);
         }

@@ -7,6 +7,7 @@ using UnityEngine;
 public class Initial_background_Destroyer : MonoBehaviour
 {  // Start is called before the first frame update
     private GameObject manager_object;
+    public float tempo_morte;
 
     void Start()
     {   
@@ -18,12 +19,10 @@ public class Initial_background_Destroyer : MonoBehaviour
     {
         int fase = manager_object.GetComponent<Game_Manager>().Get_phase();       
         float time = manager_object.GetComponent<Game_Manager>().Get_phase_time();
-        Debug.Log(time);
 
-        if (time > 5)
+        if (time > tempo_morte)
         {
             Destroy(this.gameObject);
-            Debug.Log("Fim");
         }
     
     }  

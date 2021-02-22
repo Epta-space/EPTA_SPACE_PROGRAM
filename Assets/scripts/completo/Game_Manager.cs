@@ -33,8 +33,6 @@ public class Game_Manager : MonoBehaviour{
 
     void Update()
     {
-        Debug.Log(phase);
-        Debug.Log(Get_phase_time());
 
         // Phase Query from time
         if(Get_phase_time() > next_phase){

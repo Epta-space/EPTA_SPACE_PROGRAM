@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 6553771558936460436}
   m_Layer: 0
   m_Name: Object_Selector
-  m_TagString: Untagged
+  m_TagString: Object_selector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -208,13 +208,13 @@ MonoBehaviour:
 --- !u!1 &8193955627906935906
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 7799408083294117787, guid: e18314dbf5f71bc42808ea52c46e0ed9, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8193955627906935907}
-  - component: {fileID: 8193955627906935904}
+  - component: {fileID: 1339701149}
   m_Layer: 0
   m_Name: GameSpawner
   m_TagString: Untagged
@@ -225,26 +225,28 @@ GameObject:
 --- !u!4 &8193955627906935907
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 7799408083294117786, guid: e18314dbf5f71bc42808ea52c46e0ed9, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8193955627906935906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.030000001, y: 5, z: 0}
+  m_LocalPosition: {x: 0, y: 30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3136657942702854243}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8193955627906935904
+--- !u!114 &1339701149
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 7799408083294117785, guid: e18314dbf5f71bc42808ea52c46e0ed9, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8193955627906935906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa037ca945b71854a82786299e8a32d8, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c5251a00ca5da74b848783268360296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objselector: {fileID: 2819336518296794917}
+  GameSpawner: {fileID: 8193955627906935906}
