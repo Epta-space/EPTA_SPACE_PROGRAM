@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class save : MonoBehaviour
 {
-    
-   
-    
-
-
 
     public void salvar(object entrada, string endereço)
     {
@@ -36,7 +30,13 @@ public class save : MonoBehaviour
         // o endereço deve ser setado sempre (como serão endereços diferentes nao a problemas de sobreposição )
 
     }
-    
+
+    // retorna os (valores ou textos) salvos em forma de string.
+    public string retornar_save(string endereço)  
+    {
+        //GetString garante que o será em string.
+        return PlayerPrefs.GetString(endereço); 
+    }
     
 
 }

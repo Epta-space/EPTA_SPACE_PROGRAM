@@ -118,6 +118,8 @@ stop
 
 - Felipe J. O. Ribeiro : bug-fixes : 19/01/2021
 
+- Mateus da Silva Fernandes : Salvamento_modular : 23/01/2021;
+
 - Olavo Caetano Inácio : trocar_sprites_on_demand : 23/01/2021
  
 - Pedro G. R. V. Melo : Queda_da_tela_inicial : 23/01/2021
@@ -127,3 +129,9 @@ stop
 - Mateus da Silva Fernandes : Salvamento_modular : 23/01/2021
 
 - Olavo Caetano Inácio : spawn_basico_1 : 01/02/2021
+
+- Mateus da Silva Fernandes : Leitura_modular : 03/02/2021;
+
+- Pedro G. R. V. Melo : Destruição_Tela_Inicial :04/02/2021
+
+- Felipe J. O. Ribeiro : funcao_morte : 01/02/2021
