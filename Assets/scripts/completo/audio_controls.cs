@@ -2,12 +2,11 @@
 
 public class audio_controls: MonoBehaviour
 {
-    // Reference to the scene audio controll 
+    // Reference to the scene audio control 
     private GameObject music_volume_control;
 
     // makes the starting volume change in UI
-    [SerializeField]
-    private float volume;
+    public float volume;
 
     // Start is called before the first frame update
     void Start()
