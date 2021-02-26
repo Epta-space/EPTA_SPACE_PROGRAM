@@ -128,18 +128,15 @@ stop
  
 - Mateus da Silva Fernandes : Salvamento_modular : 23/01/2021
 
-<<<<<<< HEAD
+
 - Mateus da Silva Fernandes : Leitura_modular : 03/02/2021;
-
-
 
 - Olavo Caetano Inácio : spawn_basico_1 : 01/02/2021
-
-- Mateus da Silva Fernandes : Leitura_modular : 03/02/2021;
 
 - Pedro G. R. V. Melo : Destruição_Tela_Inicial :04/02/2021
 
 - Felipe J. O. Ribeiro : funcao_morte : 01/02/2021
+
 
 - Olavo Caetano Inácio :
 
