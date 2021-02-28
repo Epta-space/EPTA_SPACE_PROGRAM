@@ -48,7 +48,7 @@ public class spawner : MonoBehaviour {
         new_obstacle.GetComponent<move>().SetSpeed(y_velocity);
     }
 
-    // SPAWN METHODS  ##################################################################################
+    // MÉTODOS DE SPAWN  ##################################################################################
     private void Spawn_método_simples(){
 
         // Take current player location

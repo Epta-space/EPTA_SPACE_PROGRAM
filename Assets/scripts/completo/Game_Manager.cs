@@ -86,9 +86,6 @@ public class Game_Manager : MonoBehaviour{
     // Função para iniciar jogo
     public void Initiate_game(){
 
-        GameObject ola = Get_save_options();
-        string oi = ola.GetComponent<save>().retornar_save("vishe");
-
         // Zera next phase para iniciar partida
         next_phase = 0.0f;
 
