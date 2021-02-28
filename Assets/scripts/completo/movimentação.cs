@@ -10,7 +10,12 @@ public class movimentação : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         localScreenWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
-        recuo_inicial();
+    }
+
+    void Update(){
+        if(transform.position.y >= -1.5){
+            rb.velocity = new Vector2( rb.velocity.x, -0.5f*speed);
+        }
     }
 
     void FixedUpdate()
@@ -50,12 +55,6 @@ public class movimentação : MonoBehaviour
                     rb.velocity = new Vector2( speed, rb.velocity.y);
                 }
             }
-        }
-    }
-
-    private void recuo_inicial(){
-        while(transform.position.y >= -3.5){
-            rb.velocity = new Vector2( 0, -speed);
         }
     }
 }
