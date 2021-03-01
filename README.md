@@ -150,7 +150,7 @@ stop
 
 0.5.3
 
-- Olavo Caetano Inácio :
+- Olavo Caetano Inácio : spawn_metodo_1 : 01/03/2021
 
 - Mateus da Silva Fernandes :
 
