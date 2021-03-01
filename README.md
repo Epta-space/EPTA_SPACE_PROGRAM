@@ -118,6 +118,8 @@ stop
 
 - Felipe J. O. Ribeiro : bug-fixes : 19/01/2021
 
+0.5.0
+
 - Mateus da Silva Fernandes : Salvamento_modular : 23/01/2021;
 
 - Olavo Caetano Inácio : trocar_sprites_on_demand : 23/01/2021
@@ -125,6 +127,8 @@ stop
 - Pedro G. R. V. Melo : Queda_da_tela_inicial : 23/01/2021
 
 - Felipe J. O. Ribeiro : fix_input_jogador : 23/01/2021
+
+0.5.1
 
 - Mateus da Silva Fernandes : Leitura_modular : 03/02/2021;
 
@@ -134,6 +138,8 @@ stop
 
 - Felipe J. O. Ribeiro : funcao_morte : 01/02/2021
 
+0.5.2
+
 - Olavo Caetano Inácio : recuo_incial_player : 26/02/2021
 
 - Mateus da Silva Fernandes : Chamada_save_volume : 25/02/2021;
@@ -141,3 +147,13 @@ stop
 - Pedro G. R. V. Melo : resgatar_npcs :23/02/2021
 
 - Felipe J. O. Ribeiro : spawn_basico_2 : 24/02/2021
+
+0.5.3
+
+- Olavo Caetano Inácio :
+
+- Mateus da Silva Fernandes :
+
+- Pedro G. R. V. Melo :
+
+- Felipe J. O. Ribeiro :
