@@ -54,9 +54,9 @@ public class Object_selector : MonoBehaviour
         actual_stage[2][2] = satelite_3;
         actual_stage[2][3] = alien;
 
-        stage_length = stage_length_list[stage_index-2];
+        stage_length = stage_length_list[stage_index-1];
         obstacle_index = (int)Random.Range(0, stage_length);
-        obstacle = actual_stage[stage_index-2][obstacle_index];
+        obstacle = actual_stage[stage_index-1][obstacle_index];
         return obstacle;
     }
 
