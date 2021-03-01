@@ -6,27 +6,9 @@ using UnityEngine;
 public class save : MonoBehaviour
 {
 
-    public void salvar(object entrada, string endereço)
+    public void salvar(string entrada, string endereço)
     {
-        Type tipo = entrada.GetType();
-
-        if(tipo.Equals(typeof(string)))
-        {
-            PlayerPrefs.SetString(endereço, (string)entrada);
-        }
-
-        if (tipo.Equals(typeof(int)))
-        {
-            
-            PlayerPrefs.SetInt(endereço,(int)entrada);
-        }
-
-        if (tipo.Equals(typeof(float)))
-        {
-            
-            PlayerPrefs.SetFloat(endereço,(float)entrada);
-        }
-
+        PlayerPrefs.SetString(endereço, entrada);
         // o endereço deve ser setado sempre (como serão endereços diferentes nao a problemas de sobreposição )
 
     }
@@ -37,6 +19,11 @@ public class save : MonoBehaviour
         //GetString garante que o será em string.
         return PlayerPrefs.GetString(endereço); 
     }
-    
 
+    // Checa se há algum valor salvo na memória neste endereço
+    public bool existe_valor(string endereço)  
+    {
+        // Função de checagem
+        return PlayerPrefs.HasKey(endereço); 
+    }
 }

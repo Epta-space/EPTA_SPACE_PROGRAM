@@ -19,7 +19,7 @@ public class Gravity_Backyground_Initial : MonoBehaviour
 
         foreach (Rigidbody2D elemento in elementos)
         {
-            elemento.gravityScale = 1;
+            elemento.gravityScale = 3;
         }
     }
 }

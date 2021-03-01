@@ -46,7 +46,7 @@ public class interface_handler : MonoBehaviour
     // Script executado quando o jogo é pausado.
     public void Pause(){
         Basic_UI.SetActive(false);
-        Pause_UI.SetActive(true);
+        Pause_UI.GetComponent<Canvas>().enabled = true;
         Time.timeScale = 0f;
         
     }
@@ -62,7 +62,7 @@ public class interface_handler : MonoBehaviour
     // Script executado quando o jogo é resumido. 
     public void Resume(){
         Basic_UI.SetActive(true);
-        Pause_UI.SetActive(false);
+        Pause_UI.GetComponent<Canvas>().enabled = false;
         Time.timeScale = 1f;
         
     }
@@ -70,7 +70,7 @@ public class interface_handler : MonoBehaviour
     // Script executado quando clica-se no botão "about". 
     public void About(){
         About_UI.SetActive(true);
-        Pause_UI.SetActive(false);
+        Pause_UI.GetComponent<Canvas>().enabled = false;
         
     }
 
@@ -80,7 +80,7 @@ public class interface_handler : MonoBehaviour
     // Script executado quando clica-se no botão "X" para sair do menu about. 
     public void exit_about(){
         About_UI.SetActive(false);
-        Pause_UI.SetActive(true);
+        Pause_UI.GetComponent<Canvas>().enabled = true;
         
     }
 
