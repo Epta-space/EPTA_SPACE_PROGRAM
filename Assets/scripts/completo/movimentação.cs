@@ -12,6 +12,12 @@ public class movimentação : MonoBehaviour
         localScreenWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
     }
 
+    void Update(){
+        if(transform.position.y >= -1.5){
+            rb.velocity = new Vector2( rb.velocity.x, -0.5f*speed);
+        }
+    }
+
     void FixedUpdate()
     {
         
