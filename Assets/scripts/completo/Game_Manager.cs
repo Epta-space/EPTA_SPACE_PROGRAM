@@ -66,7 +66,14 @@ public class Game_Manager : MonoBehaviour{
     public float Get_phase_time(){return Time.time - phase_time;}
 
     // Pega fração de completude de fase de 0 a 1
-    public float Get_phase_fraction(){return (Time.time - phase_time)/phase_plan[phase];}
+    public float Get_phase_fraction(){
+        if(phase >= phase_plan.Length){
+
+            return 1.0f;
+        }else{
+            return (Time.time - phase_time)/phase_plan[phase - 1];
+        }
+    }
     
     // Pegar tempo global de execução
     public float Get_time(){return Time.time - game_time;}
@@ -78,9 +85,6 @@ public class Game_Manager : MonoBehaviour{
 
     // Função para iniciar jogo
     public void Initiate_game(){
-
-        GameObject ola = Get_save_options();
-        string oi = ola.GetComponent<save>().retornar_save("vishe");
 
         // Zera next phase para iniciar partida
         next_phase = 0.0f;

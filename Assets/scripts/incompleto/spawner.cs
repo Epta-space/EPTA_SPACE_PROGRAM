@@ -7,121 +7,60 @@ using UnityEngine.UI;
 
 public class spawner : MonoBehaviour {
 
-    private GameObject Player;
+    // Game Objects importantes
     public GameObject objselector;
-
-    private GameObject obstacle;
-
-    //Variáveis para dimensão da tela
-    private float width;
-    private Vector3 localScreenSize;
-
-    //Variáveis para estabelecer range seguro para geração de obstáculos
-    private float random_range_a;
-    private float random_range_b;
-
-    private float player_height;
-
-    // private float safeDistance = 0;
-
-    private float tempo_relativo;
-    private float tempo_para_spawn;
-
-    private GameObject objeto1;
-    private GameObject objeto2;
-
-    //Lista com os últimos objetos criados
-    private GameObject[] lastObstacles;
-
-    // public Object_Selector objselector;
-
-    public GameObject GameSpawner;
     private GameObject Game_manager;
 
-    private float Tx;
-    private float Ty;
-
+    // Dados globais importantes
+    private float screen_width;
 
     void Start() {
 
-        // Player = GameObject.FindWithTag("Player");
         objselector = GameObject.FindWithTag("Object_selector");
         Game_manager = GameObject.FindWithTag("Game_manager");
 
-        // Object_selector.gameObject.GetComponent<obj>().Start();
+        // Getting the screen width 
+        screen_width = Camera.main.orthographicSize * Screen.width / Screen.height - Camera.main.transform.position.x;
 
-
-        // lastObstacles = new GameObject[2];
-
-        // lastObstacles[0] = Object_selector.GetComponent<obj>().Get_Obstacle();
-        // lastObstacles[1] = Object_selector.GetComponent<obj>().Get_Obstacle();
-        
-        // // lastObstacles[0] = objselector.Get_Obstacle();
-        // // lastObstacles[1] = objselector.Get_Obstacle();
-
-        localScreenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
-        // random_range_a = localScreenSize.x - (0.1f * localScreenSize.x);
-        // random_range_b = localScreenSize.x;// + (0.2f * localScreenSize.x);
-
-        // // lastObstacles[0] = lastObstacles[1];
-        // // lastObstacles[1] = createObstacle();
-
-        // float player_height = take_height(Player);
-        // float safeDistance = player_height;
-        // safeDistance *= 1.1f;
-
-        // objeto1 = lastObstacles[0];
-        // objeto2 = lastObstacles[1];
-        InvokeRepeating("createObstacle",1f,1f);
+        // Chamada regular do SpawnerManager
+        InvokeRepeating("ObstacleCreationManager",1f,1f);
     }
 
+    // Manager of spawn methods
+    private void ObstacleCreationManager(){
 
-    // void Update()
-    // {
-        // objeto1 = lastObstacles[0];
-        // objeto2 = lastObstacles[1];
+        // Chamada do único método de spawn em existência
+        Spawn_método_simples();
 
-        // // print("Velocidade do objeto1: " + objeto1.GetComponent<move>().Get_velocity() +
-        // //       "\nVelocidade do objeto2: " + objeto2.GetComponent<move>().Get_velocity() + 
-        // //       "\nPosição do objeto1: " + objeto1.transform.position.y + 
-        // //       "\nPosição do objeto2: " + objeto2.transform.position.y
-        // //     );
-    
-
-        // //!
-        // RightTimeToSpawn();
-        // // print("Tempo para spawn: " + tempo_para_spawn);
-
-        // float tempo = GameObject.FindWithTag("Game_manager").GetComponent<Game_Manager>().Get_time();
-        // // print("Tempo atual: " + (tempo - tempo_relativo));
-        // if(tempo - tempo_relativo >= tempo_para_spawn){
-        //     lastObstacles[0] = lastObstacles[1];
-        //     lastObstacles[1] = createObstacle();
-        // }
-        
-    // }
-
-
-    void createObstacle(){
-        if(Game_manager.GetComponent<Game_Manager>().Get_phase() > 1){
-            GameObject new_obstacle = Instantiate(objselector.GetComponent<Object_selector >().Get_Obstacle());
-            new_obstacle.transform.position = transform.position + new Vector3(0, 0, 0);
-        }
-        // tempo_relativo = Game_manager.GetComponent<Game_Manager>().Get_time();
     }
 
-    // void RightTimeToSpawn(){
-    //     Debug.Log( Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0)) );
-        
-    //     Tx = Math.Abs(2* (0.6f * localScreenSize.y)/(objeto1.GetComponent<move>().Get_velocity()));
-    //     Ty = Math.Abs(2*((0.6f * localScreenSize.y) - safeDistance)/(objeto2.GetComponent<move>().Get_velocity()));
-    //     tempo_para_spawn = (Tx - Ty) * 4;
-    // }
+    private void CreateObstacle(float x_coordinate, float y_velocity){
+        // Calculate location of spawn
+        float spawn_coordinate = x_coordinate * screen_width;
 
-    // float take_height(GameObject obj){
-    //     // RectTransform rt = (RectTransform)Player.transform;   
-    //     // float player_height = rt.rect.height;
-    //     player_height = 1;
-    //     return player_height;
-    // }
+        // Get obstacle sprite for this phase and create it
+        GameObject new_obstacle = Instantiate(objselector.GetComponent<Object_selector >().Get_Obstacle());
+
+        // Transform position of the object created
+        new_obstacle.transform.position = transform.position + new Vector3(spawn_coordinate, 0, 0);
+
+        // Transform vertical velocity of object created
+        new_obstacle.GetComponent<move>().SetSpeed(y_velocity);
+    }
+
+    // MÉTODOS DE SPAWN  ##################################################################################
+    private void Spawn_método_simples(){
+
+        // Take current player location
+        float player_float_x = Game_manager.GetComponent<Game_Manager>().Get_player_x()/screen_width;
+
+        // Calcula o local do player de 0 a 1
+        float where_to_spawn = player_float_x;
+
+        // Calcula fração atual do tempo da fase
+        float velocity = Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() * 5.0f + 3;
+
+        // Cria obstáculo lá 
+        CreateObstacle(where_to_spawn, velocity);
+    }
 }
