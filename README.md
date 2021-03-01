@@ -134,7 +134,7 @@ stop
 
 - Felipe J. O. Ribeiro : funcao_morte : 01/02/2021
 
-- Olavo Caetano Inácio :
+- Olavo Caetano Inácio : recuo_incial_player : 26/02/2021
 
 - Mateus da Silva Fernandes : Chamada_save_volume : 25/02/2021;
 
