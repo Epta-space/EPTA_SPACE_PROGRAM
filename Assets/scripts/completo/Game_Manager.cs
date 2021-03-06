@@ -92,4 +92,12 @@ public class Game_Manager : MonoBehaviour{
         // Tempo inicial, após dado play
         game_time = Time.time;
     }
+
+    // Função para Pegar a altura
+    public void height_game(){
+
+        float height;
+        int velocity = 29000;
+        height = velocity*game_time;
+    }
 }
