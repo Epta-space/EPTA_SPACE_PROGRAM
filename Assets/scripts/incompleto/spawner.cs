@@ -95,14 +95,14 @@ public class spawner : MonoBehaviour {
 
         // No caso das nuvens, é interessante fazer o contrário (quanto mais tempo passa, mas devagar ficam), pois no começo o foguete tem uma aceleração maior
         // A partir de um ponto x, as nuvens devem vir com a mesma velocidade
-        float velocity = 10 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.2f) + 3;
+        float velocity = 7 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.2f) + 2;
 
-        if(velocity <= 8){
+        if(velocity <= 6){
             estabilizar = true;
         }
 
         if(estabilizar){
-            velocity = 8;
+            velocity = 6;
         }
 
         Debug.Log(velocity);
