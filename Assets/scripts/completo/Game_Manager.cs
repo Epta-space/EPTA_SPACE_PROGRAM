@@ -93,12 +93,21 @@ public class Game_Manager : MonoBehaviour{
         game_time = Time.time;
     }
 
-    // Função para Pegar a altura
-    public float height_game(){
-        
-        float height;
-        int velocity = 29000;
-        height = velocity*(game_time);
-        return height;
+        // Função para Pegar a altura 
+    
+        public float Velocity(){
+                
+             if (phase == 1){
+                return (phase_time) *36000;
+            
+             }
+             else if (phase == 2){
+                return(phase_time)*50000 + 36000;
+             }
+             else{
+                 return 0;
+             }
+
+        }
     }
-}
+
