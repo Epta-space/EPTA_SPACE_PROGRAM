@@ -98,14 +98,13 @@ public class Game_Manager : MonoBehaviour{
 
         // Função para Pegar a altura 
     
-    public float Velocity(){
+    public float Get_height(){
                 
         if (phase == 1){
-            return Get_phase_fraction[] * 36000;
-            
+            return Get_phase_fraction() * 36000 ;
         }
         else if (phase == 2){
-            return Get_phase_fraction[] *50000 + 36000;
+            return Get_phase_fraction() *50000 + 36000;
         }
         else{
             return -12;
