@@ -5,13 +5,15 @@ using UnityEngine;
 public class Gravity_Backyground_Initial : MonoBehaviour
 {
 
+    private GameObject game_manager;
+
     void Start(){
 
-        Start_fall();
+        game_manager = GameObject.FindWithTag("Game_manager");
 
     }
 
-    void Start_fall()
+    public void Start_fall()
     {
         Component[] elementos;
 
