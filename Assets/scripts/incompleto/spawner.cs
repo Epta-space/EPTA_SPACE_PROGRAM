@@ -78,7 +78,6 @@ public class spawner : MonoBehaviour {
         // Calcula fração atual do tempo da fase
         float velocity = Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() * 5.0f + 3;
 
-        Debug.Log(velocity);
         // Cria obstáculo lá 
         CreateObstacle(where_to_spawn, velocity);
     }
@@ -105,7 +104,6 @@ public class spawner : MonoBehaviour {
             velocity = 6;
         }
 
-        Debug.Log(velocity);
         // Cria obstáculo lá 
         CreateObstacle(where_to_spawn, velocity);
     }
