@@ -100,11 +100,11 @@ public class Game_Manager : MonoBehaviour{
     
     public float Get_height(){
                 
-        if (phase == 1){
-            return Get_phase_fraction() * 36000 ;
+        if (Get_phase() == 1){
+            return Get_phase_fraction() * phase_height[phase - 1] ;
         }
-        else if (phase == 2){
-            return Get_phase_fraction() *50000 + 36000;
+        else if (Get_phase() == 2){
+            return Get_phase_fraction() * phase_height[phase - 1] + phase_height[phase - 2];
         }
         else{
             return -12;
