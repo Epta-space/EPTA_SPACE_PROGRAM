@@ -13,6 +13,8 @@ public class spawner : MonoBehaviour {
 
     // Dados globais importantes
     private float screen_width;
+    private int stage;
+
 
     void Start() {
 
@@ -28,9 +30,24 @@ public class spawner : MonoBehaviour {
 
     // Manager of spawn methods
     private void ObstacleCreationManager(){
+        // Pega a fase atual
+        stage = Game_manager.GetComponent<Game_Manager>().Get_phase();
 
-        // Chamada do único método de spawn em existência
-        Spawn_método_simples();
+        // Define o método de spawn de acordo com a fase
+        switch(stage){
+        case 1:
+            // Spawn específico da fase 1
+            Spawn_nuvens();
+            break;
+        case 2:
+            // Primeiro spawn criado
+            Spawn_método_simples();
+            break;
+        default:
+            // Enquanto novos métodos não forem criados, esse é o padrão para as outras fases
+            Spawn_método_simples();
+            break;
+        }
 
     }
 
@@ -62,5 +79,19 @@ public class spawner : MonoBehaviour {
 
         // Cria obstáculo lá 
         CreateObstacle(where_to_spawn, velocity);
+    }
+
+    private void Spawn_nuvens(){
+        // Take current player location
+        float player_float_x = Game_manager.GetComponent<Game_Manager>().Get_player_x()/screen_width;
+
+        // Calcula o local do player de 0 a 1
+        float where_to_spawn = player_float_x;
+
+        // Calcula fração atual do tempo da fase
+        float velocity = Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() * 5.0f + 3;
+
+        // Cria obstáculo lá 
+        CreateObstacle(0, velocity);
     }
 }
