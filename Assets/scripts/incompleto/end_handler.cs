@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class end_handler : MonoBehaviour
 {
+    
+    private float score;
+
+    ////// função temporaria para testar o save
+    void Update()    
+    {
+        score += Time.deltaTime;
+    }
+
+
     // Function to end the game
     public void End_Game()
     {
@@ -16,9 +26,10 @@ public class end_handler : MonoBehaviour
         Call_End_Screen();
     }
 
-    // Save game
-    private void Call_Save(){
-        //TODO: Create binding with the save script
+    // Save Score
+    public void Call_Save()
+    {
+        GetComponent<save>().salvar(score.ToString(), "save_score_endereço");
     }
 
     // Disable user input
