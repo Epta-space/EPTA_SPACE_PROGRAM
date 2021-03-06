@@ -7,11 +7,7 @@ public class end_handler : MonoBehaviour
     
     private float score;
 
-    ////// função temporaria para testar o save
-    void Update()    
-    {
-        score += Time.deltaTime;
-    }
+   
 
 
     // Function to end the game
