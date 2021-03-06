@@ -16,6 +16,7 @@ public class spawner : MonoBehaviour {
     private int stage;
 
 
+
     void Start() {
 
         objselector = GameObject.FindWithTag("Object_selector");
@@ -77,21 +78,35 @@ public class spawner : MonoBehaviour {
         // Calcula fração atual do tempo da fase
         float velocity = Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() * 5.0f + 3;
 
+        Debug.Log(velocity);
         // Cria obstáculo lá 
         CreateObstacle(where_to_spawn, velocity);
     }
 
     private void Spawn_nuvens(){
+        // Contador para checar se a velocidade chegou no ponto de estabização:
+        bool estabilizar = false;
+
         // Take current player location
         float player_float_x = Game_manager.GetComponent<Game_Manager>().Get_player_x()/screen_width;
 
         // Calcula o local do player de 0 a 1
-        float where_to_spawn = player_float_x;
+        float where_to_spawn = UnityEngine.Random.Range(player_float_x * 0.9f, player_float_x * 1.1f);
 
-        // Calcula fração atual do tempo da fase
-        float velocity = Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() * 5.0f + 3;
+        // No caso das nuvens, é interessante fazer o contrário (quanto mais tempo passa, mas devagar ficam), pois no começo o foguete tem uma aceleração maior
+        // A partir de um ponto x, as nuvens devem vir com a mesma velocidade
+        float velocity = 10 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.2f) + 3;
 
+        if(velocity <= 8){
+            estabilizar = true;
+        }
+
+        if(estabilizar){
+            velocity = 8;
+        }
+
+        Debug.Log(velocity);
         // Cria obstáculo lá 
-        CreateObstacle(0, velocity);
+        CreateObstacle(where_to_spawn, velocity);
     }
 }
