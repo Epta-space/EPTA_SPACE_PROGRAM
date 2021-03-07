@@ -154,6 +154,6 @@ stop
 
 - Mateus da Silva Fernandes : chamada_save_morte : 05/03/2021;
 
-- Pedro G. R. V. Melo :
+- Pedro G. R. V. Melo : pegar_altura :01/03/2021
 
 - Felipe J. O. Ribeiro : botao_iniciar : 06/03/2021

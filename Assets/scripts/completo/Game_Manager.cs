@@ -20,6 +20,9 @@ public class Game_Manager : MonoBehaviour{
     // Define a duração de cad fase
     private float[] phase_plan = new float[2]{10.0f, 10.0f};
 
+    // Define a Altura de cada fase
+    private float[] phase_height = new float[2]{36000.0f,50000.0f};
+
     void Start()
     {
         // Procura pelo objeto de jogo do jogador
@@ -92,4 +95,21 @@ public class Game_Manager : MonoBehaviour{
         // Tempo inicial, após dado play
         game_time = Time.time;
     }
-}
+
+        // Função para Pegar a altura 
+    
+    public float Get_height(){
+                
+        if (Get_phase() == 1){
+            return Get_phase_fraction() * phase_height[phase - 1] ;
+        }
+        else if (Get_phase() == 2){
+            return Get_phase_fraction() * phase_height[phase - 1] + phase_height[phase - 2];
+        }
+        else{
+            return -12;
+        }
+
+        }
+    }
+
