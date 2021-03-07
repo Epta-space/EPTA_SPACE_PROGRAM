@@ -13,6 +13,9 @@ public class spawner : MonoBehaviour {
 
     // Dados globais importantes
     private float screen_width;
+    private int stage;
+
+
 
     void Start() {
 
@@ -28,9 +31,24 @@ public class spawner : MonoBehaviour {
 
     // Manager of spawn methods
     private void ObstacleCreationManager(){
+        // Pega a fase atual
+        stage = Game_manager.GetComponent<Game_Manager>().Get_phase();
 
-        // Chamada do único método de spawn em existência
-        Spawn_método_simples();
+        // Define o método de spawn de acordo com a fase
+        switch(stage){
+        case 1:
+            // Spawn específico da fase 1
+            Spawn_nuvens();
+            break;
+        case 2:
+            // Primeiro spawn criado
+            Spawn_método_simples();
+            break;
+        default:
+            // Enquanto novos métodos não forem criados, esse é o padrão para as outras fases
+            Spawn_método_simples();
+            break;
+        }
 
     }
 
@@ -59,6 +77,32 @@ public class spawner : MonoBehaviour {
 
         // Calcula fração atual do tempo da fase
         float velocity = Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() * 5.0f + 3;
+
+        // Cria obstáculo lá 
+        CreateObstacle(where_to_spawn, velocity);
+    }
+
+    private void Spawn_nuvens(){
+        // Contador para checar se a velocidade chegou no ponto de estabização:
+        bool estabilizar = false;
+
+        // Take current player location
+        float player_float_x = Game_manager.GetComponent<Game_Manager>().Get_player_x()/screen_width;
+
+        // Calcula o local do player de 0 a 1
+        float where_to_spawn = UnityEngine.Random.Range(player_float_x * 0.9f, player_float_x * 1.1f);
+
+        // No caso das nuvens, é interessante fazer o contrário (quanto mais tempo passa, mas devagar ficam), pois no começo o foguete tem uma aceleração maior
+        // A partir de um ponto x, as nuvens devem vir com a mesma velocidade
+        float velocity = 7 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.2f) + 2;
+
+        if(velocity <= 6){
+            estabilizar = true;
+        }
+
+        if(estabilizar){
+            velocity = 6;
+        }
 
         // Cria obstáculo lá 
         CreateObstacle(where_to_spawn, velocity);
