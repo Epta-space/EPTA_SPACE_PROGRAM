@@ -45,8 +45,7 @@ public class spawner : MonoBehaviour {
             Spawn_método_simples();
             break;
         default:
-            // Enquanto novos métodos não forem criados, esse é o padrão para as outras fases
-            Spawn_método_simples();
+            // Se a phase não está listada, para de spawn objetos
             break;
         }
 

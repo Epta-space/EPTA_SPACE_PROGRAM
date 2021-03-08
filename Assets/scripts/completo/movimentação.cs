@@ -8,16 +8,14 @@ public class movimentação : MonoBehaviour
 
     void Start()
     {
+        // Take the players rigid body
         rb = GetComponent<Rigidbody2D>();
+
+        // Take the screen size
         localScreenWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
     }
 
-    void Update(){
-        if(transform.position.y >= -1.5){
-            rb.velocity = new Vector2( rb.velocity.x, -0.5f*speed);
-        }
-    }
-
+    // Procura por toque na tela
     void FixedUpdate()
     {
         
@@ -26,26 +24,21 @@ public class movimentação : MonoBehaviour
         // Teleporta jogador para o outro canto da tela.
         if (transform.position.x >= 1.09 * localScreenWidth.x)
         {
-
             transform.position = new Vector3(- 1.07f * localScreenWidth.x, transform.position.y, transform.position.z);
-
         }
         if (transform.position.x <= -1.09 * localScreenWidth.x)
         {
-
             transform.position = new Vector3( 1.07f * localScreenWidth.x, transform.position.y, transform.position.z);
-
         }
     }
 
+    // Checa o input do jogador
     public void checkUserInput()
     {
         // Button clicking detection
         if(Input.GetMouseButton(0))
         {
             Vector3 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-            // Debug.Log(touchPos.y);
 
             if(touchPos.y < 0){
                 if(touchPos.x < 0){
@@ -56,5 +49,25 @@ public class movimentação : MonoBehaviour
                 }
             }
         }
+    }
+
+    // Faz o player cair
+    public void movimento_inicial_player()
+    {
+        // Invoca o método de recuo do jogador
+        InvokeRepeating("recuo_jogador_inicial",0f,0.1f);
+    }
+
+    private void recuo_jogador_inicial()
+    {
+        // Recuo do jogador
+        rb.velocity = new Vector2(rb.velocity.x, -0.5f*speed);
+
+        // Checa se está na altura de parada
+        if(transform.position.y <= -1.5){
+            // Para o método de recuo do jogador
+            CancelInvoke();
+        }
+
     }
 }

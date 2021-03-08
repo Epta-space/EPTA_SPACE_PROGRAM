@@ -5,12 +5,21 @@ using UnityEngine;
 public class end_handler : MonoBehaviour
 {
     
-    private float score;
+    // Game object onde o game manager está
+    private GameObject manager_object;
 
-   
+    // Game object onde o save options está
+    private GameObject save_options;
 
+    void Start(){
+        // acha game manager com tag
+        manager_object = GameObject.FindWithTag("Game_manager");
 
-    // Function to end the game
+        // pega save options com via função do game manager
+        save_options = manager_object.GetComponent<Game_Manager>().Get_save_options();
+    }
+
+    // Função para terminar o jogo
     public void End_Game()
     {
         Call_Save();
@@ -23,9 +32,13 @@ public class end_handler : MonoBehaviour
     }
 
     // Save Score
-    public void Call_Save()
+    private void Call_Save()
     {
-        GetComponent<save>().salvar(score.ToString(), "save_score_endereço");
+        // Get the score value from the player
+        float score = manager_object.GetComponent<Game_Manager>().Get_height();
+
+        // Save the score value in memory
+        save_options.GetComponent<save>().salvar(score.ToString(), "save_score_endereço");
     }
 
     // Disable user input

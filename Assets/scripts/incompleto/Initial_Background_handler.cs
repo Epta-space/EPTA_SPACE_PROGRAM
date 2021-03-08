@@ -21,7 +21,6 @@ public class Initial_Background_handler : MonoBehaviour
 
     public void launch_button()
     {
-
         // toca a animação do botão
         buttom_animator.SetBool("start_game", true);
 
@@ -32,16 +31,16 @@ public class Initial_Background_handler : MonoBehaviour
         InvokeRepeating("fall_ui",1f,1f);
 
         // Inicia fase no game handler
-        // TODO
-
+        manager_object.GetComponent<Game_Manager>().Initiate_game();
     }
 
     public void fall_ui()
     {
+        
         float time = manager_object.GetComponent<Game_Manager>().Get_phase_time();
         if (time > tempo_destruir)
         {
             Destroy(this.gameObject);
         }
-    }  
+    }
 }

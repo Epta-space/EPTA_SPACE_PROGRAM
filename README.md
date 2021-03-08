@@ -157,3 +157,13 @@ stop
 - Pedro G. R. V. Melo : pegar_altura :01/03/2021
 
 - Felipe J. O. Ribeiro : botao_iniciar : 06/03/2021
+
+0.5.4
+
+- Olavo Caetano Inácio :
+
+- Mateus da Silva Fernandes :
+
+- Pedro G. R. V. Melo :
+
+- Felipe J. O. Ribeiro :
