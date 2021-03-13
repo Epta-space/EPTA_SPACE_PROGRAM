@@ -160,7 +160,7 @@ stop
 
 0.5.4
 
-- Olavo Caetano Inácio :
+- Olavo Caetano Inácio : Stop_time_disable_general_ui : 13/03/2021
 
 - Mateus da Silva Fernandes :
 
