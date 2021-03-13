@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class end_handler : MonoBehaviour
 {
+    public GameObject Basic_UI;
     
     // Game object onde o game manager está
     private GameObject manager_object;
