@@ -7,16 +7,15 @@ public class interface_handler : MonoBehaviour
     public GameObject Basic_UI;
     public GameObject Pause_UI;
     public GameObject About_UI;
-    public int score = 0;
-    public Text scoreText;
-
-
+    public GameObject Game_manager;
+    public float score;             // de int -> float para adequar ao get_heigth
+    public Text scoreText; 
 
     void Start() {
         // Turn on ui basic
         Basic_UI.SetActive(true);
         
-
+        Game_manager = GameObject.FindWithTag("Game_manager");
     }
 
     //! Função chamada uma vez por frame. CUIDADO com o que se coloca aqui.
@@ -34,8 +33,9 @@ public class interface_handler : MonoBehaviour
         }
 
         // Contador simples para teste. No futuro referenciaremos script "phase_handler"
-        if(Input.GetKeyDown(KeyCode.Space)){
-            score = score + 100;                                                          //TODO: tirar dependência de framerate 
+        if(Input.GetKeyDown(KeyCode.Space)){                            
+            
+            score = Game_manager.GetComponent<Game_Manager>().Get_height(); 
         }
 
     }
