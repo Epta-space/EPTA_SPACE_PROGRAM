@@ -29,9 +29,9 @@ public class interface_handler : MonoBehaviour
 
         // Gerenciador de grandeza 
         if(score < 1000){
-            scoreText.text = score + " m  "; 
+            scoreText.text = (int)score + " m  "; 
         }else{
-            scoreText.text = score/10 + " km  ";
+            scoreText.text = (int)score/10 + " km  ";
         }
 
 
