@@ -166,4 +166,4 @@ stop
 
 - Pedro G. R. V. Melo :
 
-- Felipe J. O. Ribeiro :
+- Felipe J. O. Ribeiro : player_idle_sprite : 14/03/2021
