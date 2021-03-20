@@ -140,4 +140,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170b4639b3cfd5843b269fbc755d3347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volume: 0.5
+  my_slide: {fileID: 0}

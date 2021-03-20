@@ -47,7 +47,7 @@ MonoBehaviour:
   Basic_UI: {fileID: 0}
   Pause_UI: {fileID: 0}
   About_UI: {fileID: 0}
-  score: 0
+  Game_manager: {fileID: 0}
   scoreText: {fileID: 0}
 --- !u!114 &8384807006826987028
 MonoBehaviour:
