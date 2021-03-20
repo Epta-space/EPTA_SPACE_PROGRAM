@@ -7,36 +7,33 @@ public class interface_handler : MonoBehaviour
     public GameObject Basic_UI;
     public GameObject Pause_UI;
     public GameObject About_UI;
-    public int score = 0;
-    public Text scoreText;
-
-
+    public GameObject Game_manager; 
+    private float score;             // de int -> float para adequar ao get_heigth
+    public Text scoreText; 
 
     void Start() {
         // Turn on ui basic
         Basic_UI.SetActive(true);
         
-
+        Game_manager = GameObject.FindWithTag("Game_manager"); 
     }
 
     //! Função chamada uma vez por frame. CUIDADO com o que se coloca aqui.
     void Update() {
         
+        score = Game_manager.GetComponent<Game_Manager>().Get_height();
+
         // Checa se a distância é maior que mil metros para adequar unidade de medida.
         // Podemos setar o objetivo atual como a lua (384400km). Ou seja depois dessa medida 
         // o jogador passa a dar voltas na lua até a gente aumentar o jogo.
 
         // Gerenciador de grandeza 
         if(score < 1000){
-            scoreText.text = score + " m  "; 
+            scoreText.text = (int)score + " m  "; 
         }else{
-            scoreText.text = score/10 + " km  ";
+            scoreText.text = (int)score/10 + " km  ";
         }
 
-        // Contador simples para teste. No futuro referenciaremos script "phase_handler"
-        if(Input.GetKeyDown(KeyCode.Space)){
-            score = score + 100;                                                          //TODO: tirar dependência de framerate 
-        }
 
     }
 

@@ -164,6 +164,6 @@ stop
 
 - Mateus da Silva Fernandes :
 
-- Pedro G. R. V. Melo :
+- Pedro G. R. V. Melo : altura_interface 13/03/2021
 
 - Felipe J. O. Ribeiro : player_idle_sprite : 14/03/2021
