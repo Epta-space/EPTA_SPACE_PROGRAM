@@ -167,3 +167,13 @@ stop
 - Pedro G. R. V. Melo : altura_interface 13/03/2021
 
 - Felipe J. O. Ribeiro : player_idle_sprite : 14/03/2021
+
+0.5.5
+
+- Olavo Caetano Inácio :
+
+- Mateus da Silva Fernandes :
+
+- Pedro G. R. V. Melo :
+
+- Felipe J. O. Ribeiro :
