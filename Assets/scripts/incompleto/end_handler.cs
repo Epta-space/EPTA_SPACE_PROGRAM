@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class end_handler : MonoBehaviour
 {
+    public GameObject Basic_UI;
     
     // Game object onde o game manager está
     private GameObject manager_object;
@@ -46,9 +47,11 @@ public class end_handler : MonoBehaviour
         //TODO: Call user input disable routine
     }
 
-    // Disable general UI
+    //! Disable general UI
     private void Disable_general_ui(){
         //TODO: Call disable ui routine
+        Basic_UI.SetActive(false);
+        Basic_UI.GetComponent<Canvas>().enabled = false;
     }
 
     // Change Player sprite to explosion
@@ -56,9 +59,12 @@ public class end_handler : MonoBehaviour
         //TODO: Call player change sprite
     }
 
-    // Stop time in a good manner
+    //! Stop time in a good manner
     private void Stop_time(){
         //TODO: Create gradual time shift to zero
+        // Time.time = 0; // Time.time é uma variável só de leitura. Para zerá-la seria necessário criar uma nova variável para assumir seu lugar (x = Time.time; x = 0) 
+        // Dessa forma é possível zerar o tempo relativo do jogo e reiniciá-lo ao começar de novo o jogo
+        Time.timeScale = 0f;
     }
 
     // Show Intersticial add
