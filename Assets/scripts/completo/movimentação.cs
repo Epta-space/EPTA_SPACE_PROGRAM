@@ -3,6 +3,7 @@
 public class movimentação : MonoBehaviour
 {
     public float speed;
+    private bool input_consider = false;
     private Rigidbody2D rb;
     private Vector3 localScreenWidth;
 
@@ -36,7 +37,7 @@ public class movimentação : MonoBehaviour
     public void checkUserInput()
     {
         // Button clicking detection
-        if(Input.GetMouseButton(0))
+        if(Input.GetMouseButton(0) && input_consider)
         {
             Vector3 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
@@ -56,6 +57,10 @@ public class movimentação : MonoBehaviour
     {
         // Invoca o método de recuo do jogador
         InvokeRepeating("recuo_jogador_inicial",0f,0.1f);
+
+        // Toca animação do jogador
+        Animator player_animator = this.gameObject.GetComponent<Animator>();
+        player_animator.SetBool("start_game", true);
     }
 
     private void recuo_jogador_inicial()
@@ -67,6 +72,7 @@ public class movimentação : MonoBehaviour
         if(transform.position.y <= -1.5){
             // Para o método de recuo do jogador
             CancelInvoke();
+            input_consider = true;
         }
 
     }
