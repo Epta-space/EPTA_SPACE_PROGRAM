@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -350447268068456059}
   m_Layer: 0
   m_Name: balao_1
-  m_TagString: Untagged
+  m_TagString: Balao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
