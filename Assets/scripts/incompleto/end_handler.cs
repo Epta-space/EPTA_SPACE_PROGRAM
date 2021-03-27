@@ -11,13 +11,17 @@ public class end_handler : MonoBehaviour
 
     // Game object onde o save options está
     private GameObject save_options;
-
+    // boleana para o input da tela
+    
     void Start(){
         // acha game manager com tag
         manager_object = GameObject.FindWithTag("Game_manager");
 
         // pega save options com via função do game manager
         save_options = manager_object.GetComponent<Game_Manager>().Get_save_options();
+
+
+       
     }
 
     // Função para terminar o jogo
@@ -44,7 +48,9 @@ public class end_handler : MonoBehaviour
 
     // Disable user input
     private void Disable_player_input(){
-        //TODO: Call user input disable routine
+        //desabilita boleana do input la no scrip movimento
+        movimentação.input_consider = false;
+
     }
 
     //! Disable general UI

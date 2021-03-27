@@ -3,7 +3,7 @@
 public class movimentação : MonoBehaviour
 {
     public float speed;
-    private bool input_consider = false;
+    public static bool input_consider;
     private Rigidbody2D rb;
     private Vector3 localScreenWidth;
 
@@ -11,7 +11,7 @@ public class movimentação : MonoBehaviour
     {
         // Take the players rigid body
         rb = GetComponent<Rigidbody2D>();
-
+        
         // Take the screen size
         localScreenWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
     }
@@ -37,7 +37,7 @@ public class movimentação : MonoBehaviour
     public void checkUserInput()
     {
         // Button clicking detection
-        if(Input.GetMouseButton(0) && input_consider)
+        if(Input.GetMouseButton(0) && input_consider == true)
         {
             Vector3 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
