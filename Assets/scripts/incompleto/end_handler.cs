@@ -5,23 +5,27 @@ using UnityEngine;
 public class end_handler : MonoBehaviour
 {
     public GameObject Basic_UI;
-    
+
     // Game object onde o game manager está
     private GameObject manager_object;
+    private GameObject player_go;
 
     // Game object onde o save options está
     private GameObject save_options;
     // boleana para o input da tela
-    
-    void Start(){
+
+    void Start()
+    {
         // acha game manager com tag
         manager_object = GameObject.FindWithTag("Game_manager");
+
+        // player
+        player_go = manager_object.GetComponent<Game_Manager>().Get_player();
 
         // pega save options com via função do game manager
         save_options = manager_object.GetComponent<Game_Manager>().Get_save_options();
 
 
-       
     }
 
     // Função para terminar o jogo
@@ -47,26 +51,30 @@ public class end_handler : MonoBehaviour
     }
 
     // Disable user input
-    private void Disable_player_input(){
+    private void Disable_player_input()
+    {
         //desabilita boleana do input la no scrip movimento
-        movimentação.input_consider = false;
+        player_go.GetComponent<movimentação>().desativar_input();
 
     }
 
     //! Disable general UI
-    private void Disable_general_ui(){
+    private void Disable_general_ui()
+    {
         //TODO: Call disable ui routine
         Basic_UI.SetActive(false);
         Basic_UI.GetComponent<Canvas>().enabled = false;
     }
 
     // Change Player sprite to explosion
-    private void Explode_player(){
+    private void Explode_player()
+    {
         //TODO: Call player change sprite
     }
 
     //! Stop time in a good manner
-    private void Stop_time(){
+    private void Stop_time()
+    {
         //TODO: Create gradual time shift to zero
         // Time.time = 0; // Time.time é uma variável só de leitura. Para zerá-la seria necessário criar uma nova variável para assumir seu lugar (x = Time.time; x = 0) 
         // Dessa forma é possível zerar o tempo relativo do jogo e reiniciá-lo ao começar de novo o jogo
@@ -74,12 +82,14 @@ public class end_handler : MonoBehaviour
     }
 
     // Show Intersticial add
-    private void ShowAdd(){
+    private void ShowAdd()
+    {
         //TODO: Implement the add 
     }
 
     // Show End screen menu
-    private void Call_End_Screen(){
+    private void Call_End_Screen()
+    {
         //TODO: Implement the end screen menu
     }
 
