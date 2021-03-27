@@ -172,7 +172,7 @@ stop
 
 - Olavo Caetano Inácio :
 
-- Mateus da Silva Fernandes :
+- Mateus da Silva Fernandes : desabilita_player_reload_scene : 27/03/2021;
 
 - Pedro G. R. V. Melo :
 
