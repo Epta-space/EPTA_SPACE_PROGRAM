@@ -15,9 +15,9 @@ public class move : MonoBehaviour
     public float Get_velocity(){return speed;}
 
     // Set the speed of object
-    public void SetSpeed(float speed_to_set){
-        speed = speed_to_set;
-        this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, - speed_to_set);
+    public void SetSpeed(float speed_to_set_y, float speed_to_set_x){
+        // speed = speed_to_set;
+        this.GetComponent<Rigidbody2D>().velocity = new Vector2(speed_to_set_x, -speed_to_set_y);
     }
     
 }

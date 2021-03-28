@@ -42,10 +42,10 @@ public class spawner : MonoBehaviour {
             break;
         case 2:
             // Primeiro spawn criado
-            Spawn_método_simples();
+            // Spawn_método_simples();
+            Spawn_satélites();
             break;
         default:
-            Spawn_satélites();
             break;
         }
 
@@ -62,7 +62,7 @@ public class spawner : MonoBehaviour {
         new_obstacle.transform.position = transform.position + new Vector3(spawn_coordinate, 0, 0);
 
         // Transform vertical velocity of object created
-        new_obstacle.GetComponent<move>().SetSpeed(y_velocity);
+        new_obstacle.GetComponent<move>().SetSpeed(y_velocity, x_velocity);
     }
 
     // MÉTODOS DE SPAWN  ##################################################################################
