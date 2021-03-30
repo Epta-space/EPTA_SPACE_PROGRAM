@@ -6,10 +6,10 @@ public class move : MonoBehaviour
     // Some variables 
     public float speed;
 
-    void Start()
-    {
-        this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, - speed);
-    }
+    // void Start()
+    // {
+    //     this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, - speed);
+    // }
 
     // Get current velocity
     public float Get_velocity(){return speed;}

@@ -43,6 +43,7 @@ public class spawner : MonoBehaviour {
         case 2:
             // Primeiro spawn criado
             // Spawn_método_simples();
+            //  Necessário criar novas fases para configurar o switch
             Spawn_satélites();
             break;
         default:
