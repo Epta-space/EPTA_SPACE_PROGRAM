@@ -7,10 +7,15 @@ public class movimentação : MonoBehaviour
     private Rigidbody2D rb;
     private Vector3 localScreenWidth;
 
+    private GameObject sound_control;
+
     void Start()
     {
         // Take the players rigid body
         rb = GetComponent<Rigidbody2D>();
+
+        // gerenciador de sons, para ativar o som do motor 
+        sound_control = GameObject.FindWithTag("audio_control");
 
         // Take the screen size
         localScreenWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
@@ -64,6 +69,9 @@ public class movimentação : MonoBehaviour
         // Toca animação do jogador
         Animator player_animator = this.gameObject.GetComponent<Animator>();
         player_animator.SetBool("start_game", true);
+
+        // Liga o som do motor
+        sound_control.GetComponent<audio_controls>().motor_ligado(true);
     }
 
     private void recuo_jogador_inicial()
@@ -76,7 +84,7 @@ public class movimentação : MonoBehaviour
         {
             // Para o método de recuo do jogador
             CancelInvoke();
-            input_consider = true;
+            ativar_input();
         }
 
     }

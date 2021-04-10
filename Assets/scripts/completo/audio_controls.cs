@@ -11,8 +11,12 @@ public class audio_controls: MonoBehaviour
     private GameObject game_manager;
     private GameObject save_options;
 
-    // Reference to the scene audio control 
-    private GameObject music_volume_control;
+    // Fontes de audio
+    public AudioSource som_musica;
+    public AudioSource som_motor;
+
+    // Controle do som do motor
+    private float percentage_motor;
     
     // Start is called before the first frame update
     void Start()
@@ -23,9 +27,6 @@ public class audio_controls: MonoBehaviour
         // Pega referência do save options
         save_options = game_manager.GetComponent<Game_Manager>().Get_save_options();
         
-        // Achando barra de controle de volume da interface de usuário
-        music_volume_control = GameObject.FindWithTag("audio_control");
-
         // Checa se existe valor salvo no endereço que será utilizado
         float volume;
         if(save_options.GetComponent<save>().existe_valor("volume_musica")){
@@ -38,7 +39,9 @@ public class audio_controls: MonoBehaviour
         }
 
         // Volume inicial da partida é setado a partir do valor salvo em memória 
-        music_volume_control.GetComponent<AudioSource>().volume = volume;
+        percentage_motor = 1f;
+        som_musica.volume = volume;
+        som_motor.volume = volume * percentage_motor;
 
         // Determina valor inicial da barra de volume
         my_slide.value = volume;
@@ -47,7 +50,36 @@ public class audio_controls: MonoBehaviour
     
     // Função que é chamada quando o valor do volume muda
     public void volume_controll(float volume){
-        music_volume_control.GetComponent<AudioSource>().volume = volume;
+        som_musica.volume = volume;
+        som_motor.volume = volume * percentage_motor;
         save_options.GetComponent<save>().salvar(volume.ToString("#.00"), "volume_musica");
     }
+
+    // Liga e desliga motor. E quando liga ativa o motor e diminui seu volume gradativamente
+    public void motor_ligado(bool botao){
+        // Se for True, ele liga o motor, mas se for false, ele liga.
+        if(botao){
+            // Reinicia a porcentagem do motor
+            percentage_motor = 1f;
+            // Liga o som do motor
+            som_motor.enabled = true;
+            // Invoca o método de recuo do jogador
+            InvokeRepeating("gradiente_volume_motor", 0f, 0.1f);
+        }else{
+            som_motor.enabled = false;
+        };
+
+    }
+
+    // Diminui o volume gradativamente
+    private void gradiente_volume_motor(){
+        if(0.5f < percentage_motor){
+            percentage_motor -= percentage_motor * 0.05f;
+            som_motor.volume = som_musica.volume * percentage_motor;
+        }else{
+            // Cancela método repetidor
+            CancelInvoke();
+        }
+    }
+
 }

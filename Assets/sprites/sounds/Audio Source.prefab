@@ -142,6 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_slide: {fileID: 0}
+  som_musica: {fileID: 3292375210693215426}
+  som_motor: {fileID: 4391523890962244360}
 --- !u!82 &4391523890962244360
 AudioSource:
   m_ObjectHideFlags: 0
@@ -149,12 +151,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2642667783048473255}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 66a9e60d142eb064da8ab2f01b1d8b5e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.547
+  m_Volume: 0.09
   m_Pitch: 1
   Loop: 1
   Mute: 0

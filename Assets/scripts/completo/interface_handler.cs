@@ -10,12 +10,17 @@ public class interface_handler : MonoBehaviour
     public GameObject Game_manager; 
     private float score;             // de int -> float para adequar ao get_heigth
     public Text scoreText; 
+    private GameObject sound_control;
 
     void Start() {
         // Turn on ui basic
         Basic_UI.SetActive(true);
         
+        // Referência ao game manager
         Game_manager = GameObject.FindWithTag("Game_manager"); 
+
+        // gerenciador de sons, para ativar o som do motor 
+        sound_control = GameObject.FindWithTag("audio_control");
     }
 
     //! Função chamada uma vez por frame. CUIDADO com o que se coloca aqui.
@@ -34,7 +39,6 @@ public class interface_handler : MonoBehaviour
             scoreText.text = (int)score/10 + " km  ";
         }
 
-
     }
 
 
@@ -44,6 +48,11 @@ public class interface_handler : MonoBehaviour
     public void Pause(){
         Basic_UI.SetActive(false);
         Pause_UI.GetComponent<Canvas>().enabled = true;
+
+        // Desliga o som do motor
+        sound_control.GetComponent<audio_controls>().motor_ligado(false);
+
+        // Para tempo
         Time.timeScale = 0f;
         
     }
@@ -62,6 +71,14 @@ public class interface_handler : MonoBehaviour
         Pause_UI.GetComponent<Canvas>().enabled = false;
         Time.timeScale = 1f;
         
+
+        // Descobre fase atual
+        int phase = Game_manager.GetComponent<Game_Manager>().Get_phase();
+
+        // Liga o som do motor se a fase não é igual a zero
+        if (phase > 0){
+            sound_control.GetComponent<audio_controls>().motor_ligado(true);
+        }
     }
 
     // Script executado quando clica-se no botão "about". 

@@ -18,7 +18,7 @@ public class Game_Manager : MonoBehaviour{
     private float game_time;
 
     // Define a duração de cad fase
-    private float[] phase_plan = new float[2]{10.0f, 10.0f};
+    private float[] phase_plan = new float[2]{100.0f, 100.0f};
 
     // Define a Altura de cada fase
     private float[] phase_height = new float[2]{36000.0f,50000.0f};
