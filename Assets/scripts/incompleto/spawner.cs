@@ -42,16 +42,17 @@ public class spawner : MonoBehaviour {
             break;
         case 2:
             // Primeiro spawn criado
-            Spawn_método_simples();
+            // Spawn_método_simples();
+            //  Necessário criar novas fases para configurar o switch
+            Spawn_satélites();
             break;
         default:
-            // Se a phase não está listada, para de spawn objetos
             break;
         }
 
     }
 
-    private void CreateObstacle(float x_coordinate, float y_velocity){
+    private void CreateObstacle(float x_coordinate, float y_velocity, float x_velocity){
         // Calculate location of spawn
         float spawn_coordinate = x_coordinate * screen_width;
 
@@ -62,7 +63,7 @@ public class spawner : MonoBehaviour {
         new_obstacle.transform.position = transform.position + new Vector3(spawn_coordinate, 0, 0);
 
         // Transform vertical velocity of object created
-        new_obstacle.GetComponent<move>().SetSpeed(y_velocity);
+        new_obstacle.GetComponent<move>().SetSpeed(y_velocity, x_velocity);
     }
 
     // MÉTODOS DE SPAWN  ##################################################################################
@@ -78,7 +79,7 @@ public class spawner : MonoBehaviour {
         float velocity = Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() * 5.0f + 3;
 
         // Cria obstáculo lá 
-        CreateObstacle(where_to_spawn, velocity);
+        CreateObstacle(where_to_spawn, velocity,0);
     }
 
     private void Spawn_nuvens(){
@@ -104,6 +105,33 @@ public class spawner : MonoBehaviour {
         }
 
         // Cria obstáculo lá 
-        CreateObstacle(where_to_spawn, velocity);
+        CreateObstacle(where_to_spawn, velocity,0);
+    }
+
+    private void Spawn_satélites(){
+        bool estabilizar = false;
+
+        float player_float_x = Game_manager.GetComponent<Game_Manager>().Get_player_x()/screen_width;
+
+        float where_to_spawn = UnityEngine.Random.Range(player_float_x * 0.9f, player_float_x * 1.1f);
+
+        float velocity = 7 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.2f) + 2;
+
+        // Velocidade horizontal (velocidade de órbita, bem baixa)
+        float rnd = UnityEngine.Random.Range(-1,2);
+        float horizontal_velocity =  (int)rnd;
+        horizontal_velocity = (horizontal_velocity * (3/2) * Game_manager.GetComponent<Game_Manager>().Get_phase_fraction()); // Reavaliar método de criação de obstáculos para aceitar a velocidade horizontal
+        Debug.Log(horizontal_velocity);
+
+        if(velocity <= 6){
+            estabilizar = true;
+        }
+
+        if(estabilizar){
+            velocity = 6;
+        }
+
+        // Cria obstáculo com ambas as velocidades  
+        CreateObstacle(where_to_spawn, velocity,horizontal_velocity);
     }
 }
