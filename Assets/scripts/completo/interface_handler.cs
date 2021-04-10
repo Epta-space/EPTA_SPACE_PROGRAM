@@ -7,7 +7,8 @@ public class interface_handler : MonoBehaviour
     public GameObject Basic_UI;
     public GameObject Pause_UI;
     public GameObject About_UI;
-    public GameObject Game_manager; 
+    public GameObject End_UI;
+    private GameObject Game_manager; 
     private float score;             // de int -> float para adequar ao get_heigth
     public Text scoreText; 
     private GameObject sound_control;
@@ -33,10 +34,10 @@ public class interface_handler : MonoBehaviour
         // o jogador passa a dar voltas na lua até a gente aumentar o jogo.
 
         // Gerenciador de grandeza 
-        if(score < 1000){
+        if(score < 100000){
             scoreText.text = (int)score + " m  "; 
         }else{
-            scoreText.text = (int)score/10 + " km  ";
+            scoreText.text = (int)score/1000 + " km  ";
         }
 
     }
@@ -59,6 +60,9 @@ public class interface_handler : MonoBehaviour
     
     // Retorna menu básico
     public GameObject Get_basic_ui(){return Basic_UI;}
+
+    // Retorna menu básico
+    public GameObject Get_end_ui(){return End_UI;}
 
     //! Funções referentes ao menu pause:
 

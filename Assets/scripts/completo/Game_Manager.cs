@@ -21,10 +21,10 @@ public class Game_Manager : MonoBehaviour{
     private float game_time;
 
     // Define a duração de cad fase
-    private float[] phase_plan = new float[2]{100.0f, 100.0f};
+    private float[] phase_plan = new float[2]{10.0f, 10.0f};
 
     // Define a Altura de cada fase
-    private float[] phase_height = new float[2]{36000.0f,50000.0f};
+    private float[] phase_height = new float[2]{100000.0f,900000.0f};
 
     void Start()
     {
@@ -72,7 +72,7 @@ public class Game_Manager : MonoBehaviour{
     // Pega fração de completude de fase de 0 a 1
     public float Get_phase_fraction()
     {
-        if(phase >= phase_plan.Length)
+        if(phase == 0 || phase == 3)
         {
             // Se estamos na ultima fase ou na fase 0, retorna 1 sempre
             return 1.0f;
@@ -111,11 +111,13 @@ public class Game_Manager : MonoBehaviour{
     public float Get_height()
     {
         if (Get_phase() == 1){
-            return Get_phase_fraction() * phase_height[phase - 1] ;
+            return Get_phase_fraction() * phase_height[Get_phase() - 1] ;
         }else if (Get_phase() == 2){
-            return Get_phase_fraction() * phase_height[phase - 1] + phase_height[phase - 2];
+            return Get_phase_fraction() * phase_height[Get_phase() - 1] + phase_height[Get_phase() - 2];
+        }else if (Get_phase() == 3){
+            return Get_phase_time() * phase_height[Get_phase() - 2]/phase_plan[Get_phase()-2] + phase_height[Get_phase() - 2] + phase_height[Get_phase() - 3];
         }else{
-            return -12;
+            return 0;
         }
     }
 }

@@ -30,12 +30,12 @@ public class end_handler : MonoBehaviour
     public void End_Game()
     {
         Call_Save();
-        Disable_player_input_colision();
+        Disable_player_input_colision_engine();
         Disable_general_ui();
         Explode_player();
         Stop_time();
-        // ShowAdd();
-        // Call_End_Screen();
+        ShowAdd();
+        Call_End_Screen();
     }
 
     // Save Score
@@ -49,13 +49,16 @@ public class end_handler : MonoBehaviour
     }
 
     // Disable user input
-    private void Disable_player_input_colision()
+    private void Disable_player_input_colision_engine()
     {
         // player
         GameObject player = manager_object.GetComponent<Game_Manager>().Get_player();
 
         //desabilita boleana do input la no scrip movimento
         player.GetComponent<movimentação>().desativar_input();
+
+        // Desliga som do motor
+        player.GetComponent<movimentação>().Desligar_som_do_motor();
 
         //desabilita movimentos
         player.GetComponent<movimentação>().Freeze_player_y();
@@ -100,7 +103,10 @@ public class end_handler : MonoBehaviour
     // Show End screen menu
     private void Call_End_Screen()
     {
-        //TODO: Implement the end screen menu
+        GameObject End_UI = script_UI.GetComponent<interface_handler>().Get_end_ui();
+
+        // Desabilitar interface de usuário
+        End_UI.SetActive(true);
     }
 
 }

@@ -104,9 +104,15 @@ public class movimentação : MonoBehaviour
         Animator player_animator = this.gameObject.GetComponent<Animator>();
         player_animator.SetBool("explosion", true);
     }
+
     public void Freeze_player_y(){
         this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY
                                                         | RigidbodyConstraints2D.FreezeRotation
                                                         | RigidbodyConstraints2D.FreezePositionX;
     }
+
+    public void Desligar_som_do_motor(){
+        sound_control.GetComponent<audio_controls>().motor_ligado(false);
+    }
+
 }

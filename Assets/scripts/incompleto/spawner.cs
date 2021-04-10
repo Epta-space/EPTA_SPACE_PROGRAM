@@ -121,7 +121,6 @@ public class spawner : MonoBehaviour {
         float rnd = UnityEngine.Random.Range(-1,2);
         float horizontal_velocity =  (int)rnd;
         horizontal_velocity = (horizontal_velocity * (3/2) * Game_manager.GetComponent<Game_Manager>().Get_phase_fraction()); // Reavaliar método de criação de obstáculos para aceitar a velocidade horizontal
-        Debug.Log(horizontal_velocity);
 
         if(velocity <= 6){
             estabilizar = true;

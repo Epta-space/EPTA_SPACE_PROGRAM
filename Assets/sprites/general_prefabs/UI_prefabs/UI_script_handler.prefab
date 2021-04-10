@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8384807006826987028}
   m_Layer: 0
   m_Name: UI_script_handler
-  m_TagString: Untagged
+  m_TagString: interface_handler
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
   Basic_UI: {fileID: 0}
   Pause_UI: {fileID: 0}
   About_UI: {fileID: 0}
-  Game_manager: {fileID: 0}
+  End_UI: {fileID: 0}
   scoreText: {fileID: 0}
 --- !u!114 &8384807006826987028
 MonoBehaviour:

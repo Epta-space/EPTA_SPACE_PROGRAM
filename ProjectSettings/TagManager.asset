@@ -21,6 +21,7 @@ TagManager:
   - music_control_1
   - Game_manager
   - Object_selector
+  - interface_handler
   layers:
   - Default
   - TransparentFX
