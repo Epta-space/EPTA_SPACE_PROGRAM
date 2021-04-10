@@ -176,4 +176,4 @@ stop
 
 - Pedro G. R. V. Melo :
 
-- Felipe J. O. Ribeiro :
+- Felipe J. O. Ribeiro : death_by_colide : 27/03/2021
