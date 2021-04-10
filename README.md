@@ -174,6 +174,6 @@ stop
 
 - Mateus da Silva Fernandes :
 
-- Pedro G. R. V. Melo :
+- Pedro G. R. V. Melo : engine_sound : 20/03/2021
 
 - Felipe J. O. Ribeiro : death_by_colide : 27/03/2021
