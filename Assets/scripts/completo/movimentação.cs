@@ -3,7 +3,7 @@
 public class movimentação : MonoBehaviour
 {
     public float speed;
-    private bool input_consider = false;
+    public static bool input_consider;
     private Rigidbody2D rb;
     private Vector3 localScreenWidth;
 
@@ -19,17 +19,17 @@ public class movimentação : MonoBehaviour
     // Procura por toque na tela
     void FixedUpdate()
     {
-        
+
         checkUserInput();
 
         // Teleporta jogador para o outro canto da tela.
         if (transform.position.x >= 1.09 * localScreenWidth.x)
         {
-            transform.position = new Vector3(- 1.07f * localScreenWidth.x, transform.position.y, transform.position.z);
+            transform.position = new Vector3(-1.07f * localScreenWidth.x, transform.position.y, transform.position.z);
         }
         if (transform.position.x <= -1.09 * localScreenWidth.x)
         {
-            transform.position = new Vector3( 1.07f * localScreenWidth.x, transform.position.y, transform.position.z);
+            transform.position = new Vector3(1.07f * localScreenWidth.x, transform.position.y, transform.position.z);
         }
     }
 
@@ -37,16 +37,19 @@ public class movimentação : MonoBehaviour
     public void checkUserInput()
     {
         // Button clicking detection
-        if(Input.GetMouseButton(0) && input_consider)
+        if (Input.GetMouseButton(0) && input_consider == true)
         {
             Vector3 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            if(touchPos.y < 0){
-                if(touchPos.x < 0){
-                    rb.velocity = new Vector2( -speed, rb.velocity.y);
+            if (touchPos.y < 0)
+            {
+                if (touchPos.x < 0)
+                {
+                    rb.velocity = new Vector2(-speed, rb.velocity.y);
                 }
-                else{
-                    rb.velocity = new Vector2( speed, rb.velocity.y);
+                else
+                {
+                    rb.velocity = new Vector2(speed, rb.velocity.y);
                 }
             }
         }
@@ -56,7 +59,7 @@ public class movimentação : MonoBehaviour
     public void movimento_inicial_player()
     {
         // Invoca o método de recuo do jogador
-        InvokeRepeating("recuo_jogador_inicial",0f,0.1f);
+        InvokeRepeating("recuo_jogador_inicial", 0f, 0.1f);
 
         // Toca animação do jogador
         Animator player_animator = this.gameObject.GetComponent<Animator>();
@@ -66,14 +69,24 @@ public class movimentação : MonoBehaviour
     private void recuo_jogador_inicial()
     {
         // Recuo do jogador
-        rb.velocity = new Vector2(rb.velocity.x, -0.5f*speed);
+        rb.velocity = new Vector2(rb.velocity.x, -0.5f * speed);
 
         // Checa se está na altura de parada
-        if(transform.position.y <= -1.5){
+        if (transform.position.y <= -1.5)
+        {
             // Para o método de recuo do jogador
             CancelInvoke();
             input_consider = true;
         }
 
+    }
+
+    public void desativar_input()
+    {
+        input_consider = false;
+    }
+    public void ativar_input()
+    {
+        input_consider = true;
     }
 }
