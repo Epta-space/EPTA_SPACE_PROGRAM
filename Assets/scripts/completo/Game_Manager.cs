@@ -7,6 +7,9 @@ public class Game_Manager : MonoBehaviour{
 
     // Refere-se ao jogador
     private GameObject player;
+    
+    // referencia à rotina de fim de jogo
+    private GameObject fim_do_jogo;
 
     // Refere-se ao tempo relativo da fase
     private float phase_time;
@@ -27,6 +30,11 @@ public class Game_Manager : MonoBehaviour{
     {
         // Procura pelo objeto de jogo do jogador
         player = GameObject.FindWithTag("Player");
+
+        // Pega a referência às rotinas de fim de jogo
+        fim_do_jogo = transform.GetChild(1).gameObject;
+
+        // Inicializa a fase 0
         phase_time = 0.0f;
         next_phase = 3600000000.0f;
     }
@@ -91,6 +99,12 @@ public class Game_Manager : MonoBehaviour{
 
         // Faz o player cair pra trás
         Get_player().GetComponent<movimentação>().movimento_inicial_player();
+    }
+
+    // Termina o jogo
+    public void Terminar_jogo(){
+        // Chama a rotina de fim de jogo
+        fim_do_jogo.GetComponent<end_handler>().End_Game();
     }
 
     // Função para Pegar a altura

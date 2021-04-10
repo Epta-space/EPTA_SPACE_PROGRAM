@@ -28,8 +28,9 @@ public class player_colide_handler : MonoBehaviour
 
     private void ColisorHandler(string colidido){
         if(obstacle_list.Contains(colidido)){
-            Debug.Log("terminar fase - referencia ao end_handler faltando");
 
+            // Chama a função de fim de jogo
+            Game_manager.GetComponent<Game_Manager>().Terminar_jogo();
         }
 
     }

@@ -56,7 +56,9 @@ public class interface_handler : MonoBehaviour
         Time.timeScale = 0f;
         
     }
-
+    
+    // Retorna menu básico
+    public GameObject Get_basic_ui(){return Basic_UI;}
 
     //! Funções referentes ao menu pause:
 

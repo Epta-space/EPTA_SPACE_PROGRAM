@@ -84,6 +84,7 @@ public class movimentação : MonoBehaviour
         {
             // Para o método de recuo do jogador
             CancelInvoke();
+            // Atiba input jogador
             ativar_input();
         }
 
@@ -96,5 +97,16 @@ public class movimentação : MonoBehaviour
     public void ativar_input()
     {
         input_consider = true;
+    }
+
+    public void End_player(){
+        // Toca animação do jogador
+        Animator player_animator = this.gameObject.GetComponent<Animator>();
+        player_animator.SetBool("explosion", true);
+    }
+    public void Freeze_player_y(){
+        this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY
+                                                        | RigidbodyConstraints2D.FreezeRotation
+                                                        | RigidbodyConstraints2D.FreezePositionX;
     }
 }
