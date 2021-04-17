@@ -43,8 +43,10 @@ public class end_handler : MonoBehaviour
     {
         // Get the score value from the player
         float score = manager_object.GetComponent<Game_Manager>().Get_height();
-
+      
         // Save the score value in memory
+
+        
         save_options.GetComponent<save>().salvar(score.ToString(), "save_score_endereço");
     }
 

@@ -74,7 +74,7 @@ Abaixo encontra-se um roteiro de atividades com datas previstas, pessoas respons
 
 - Olavo Caetano Inácio :
 
-- Mateus da Silva Fernandes :
+- Mateus da Silva Fernandes : record_mostrar_morte : 17/04/2021;
 
 - Pedro G. R. V. Melo :
 

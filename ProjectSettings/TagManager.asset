@@ -22,6 +22,7 @@ TagManager:
   - Game_manager
   - Object_selector
   - interface_handler
+  - Score
   layers:
   - Default
   - TransparentFX
