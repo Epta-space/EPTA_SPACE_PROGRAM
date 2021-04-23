@@ -76,7 +76,7 @@ Abaixo encontra-se um roteiro de atividades com datas previstas, pessoas respons
 
 - Mateus da Silva Fernandes :
 
-- Pedro G. R. V. Melo :
+- Pedro G. R. V. Melo : Explosion_sound :18/04/2021
 
 - Felipe J. O. Ribeiro :
 
