@@ -13,6 +13,8 @@ public class end_handler : MonoBehaviour
     // Game object onde se cuida dos menus
     private GameObject script_UI;
 
+    private GameObject record_script;
+
     void Start()
     {
         // acha game manager com tag
@@ -23,6 +25,9 @@ public class end_handler : MonoBehaviour
 
         // pega save options com via função do game manager
         save_options = manager_object.GetComponent<Game_Manager>().Get_save_options();
+
+
+        //record_script = manager_object.GetComponent<marcador_score>();
 
     }
 
@@ -36,6 +41,7 @@ public class end_handler : MonoBehaviour
         Stop_time();
         ShowAdd();
         Call_End_Screen();
+       
     }
 
     // Save Score
@@ -43,11 +49,11 @@ public class end_handler : MonoBehaviour
     {
         // Get the score value from the player
         float score = manager_object.GetComponent<Game_Manager>().Get_height();
-      
-        // Save the score value in memory
-
         
-        save_options.GetComponent<save>().salvar(score.ToString(), "save_score_endereço");
+        
+            save_options.GetComponent<save>().salvar(score.ToString(), "save_score_endereço");
+           
+        
     }
 
     // Disable user input

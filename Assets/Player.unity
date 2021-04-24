@@ -178,25 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game_Handler
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1367468461031793269, guid: 52d8a1efc00b9e046a087f0d9748cf9f, type: 3}
+    - {fileID: 4325780956298506522, guid: 52d8a1efc00b9e046a087f0d9748cf9f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 52d8a1efc00b9e046a087f0d9748cf9f, type: 3}
---- !u!1 &344972602 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8684673620700913707, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
-  m_PrefabInstance: {fileID: 1380602165}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &344972606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344972602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e627237abfecd94388bf963e9bb3287, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1119974262
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,6 +255,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5538664449986369769, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6482754777187120559, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 156.9
@@ -285,6 +274,10 @@ PrefabInstance:
     - target: {fileID: 6834500958636342434, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7306293598078870367, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8392558111159909713, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
       propertyPath: m_Name
@@ -346,7 +339,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -10.41
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6241295269409137958, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
 --- !u!1 &1451158846
 GameObject:

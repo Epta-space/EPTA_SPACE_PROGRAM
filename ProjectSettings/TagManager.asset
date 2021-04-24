@@ -23,6 +23,7 @@ TagManager:
   - Object_selector
   - interface_handler
   - Score
+  - Recorde
   layers:
   - Default
   - TransparentFX

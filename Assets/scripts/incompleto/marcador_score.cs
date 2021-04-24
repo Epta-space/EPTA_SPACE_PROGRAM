@@ -8,29 +8,37 @@ public class marcador_score : MonoBehaviour
 {
     private GameObject score_text;
     private Text texto;
-    private float score,score_atual;
-    private string string_score;
+    private float score ;
+   
+  
 
     private void Start()
     {
         score_text = GameObject.FindWithTag("Score");
         texto = score_text.GetComponent<Text>();
+        score = float.Parse(PlayerPrefs.GetString("save_score_endereço"));
+
     }
-    void Update()
+    public void recorde()
     {
-        string_score = PlayerPrefs.GetString("save_score_endereço");
-
-        score = float.Parse(string_score);
-
         
 
-        if (score < 1000)
+        if(float.Parse(PlayerPrefs.GetString("save_score_endereço")) > score)
         {
-            texto.text = score.ToString("00") + " m  ";
+            score = float.Parse(PlayerPrefs.GetString("save_score_endereço"));
+
+            if (score < 1000)
+            {
+                texto.text = score.ToString("00") + " m  ";
+            }
+            else
+            {
+                texto.text = (score / 1000).ToString("00") + " km  ";
+            }
         }
-        else
-        {
-            texto.text = (score / 1000).ToString("00") + " km  ";
-        }
+        
+
+
+        
     }
 }
