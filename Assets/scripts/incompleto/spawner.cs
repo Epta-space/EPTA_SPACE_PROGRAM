@@ -38,14 +38,15 @@ public class spawner : MonoBehaviour {
         switch(stage){
         case 1:
             // Spawn específico da fase 1
-            // Spawn_nuvens();
-            Spawn_meteoros();
+            Spawn_nuvens();
             break;
         case 2:
             // Primeiro spawn criado
             // Spawn_método_simples();
             //  Necessário criar novas fases para configurar o switch
-            // Spawn_satélites();
+            Spawn_satélites();
+            break;
+        case 3:
             Spawn_meteoros();
             break;
         default:
@@ -156,7 +157,7 @@ public class spawner : MonoBehaviour {
 
         float velocity = 7 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.2f) + 2;
 
-        float speedRotate = 100;
+        float speedRotate = 50;
 
         // // Rotação dos meteóros
         // transform.Rotate(Vector3.forward * speedRotate * Time.deltaTime);
