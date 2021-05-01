@@ -46,21 +46,28 @@ public class spawner : MonoBehaviour {
             //  Necessário criar novas fases para configurar o switch
             Spawn_satélites();
             break;
+        case 3:
+            Spawn_meteoros();
+            break;
         default:
             break;
         }
 
     }
 
-    private void CreateObstacle(float x_coordinate, float y_velocity, float x_velocity){
+    private void CreateObstacle(float x_coordinate, float y_velocity, float x_velocity, float rotation){
         // Calculate location of spawn
         float spawn_coordinate = x_coordinate * screen_width;
 
         // Get obstacle sprite for this phase and create it
         GameObject new_obstacle = Instantiate(objselector.GetComponent<Object_selector >().Get_Obstacle());
 
+        Rigidbody2D rb = new_obstacle.GetComponent<Rigidbody2D>();
+
         // Transform position of the object created
         new_obstacle.transform.position = transform.position + new Vector3(spawn_coordinate, 0, 0);
+        
+        rb.angularVelocity= rotation;
 
         // Transform vertical velocity of object created
         new_obstacle.GetComponent<move>().SetSpeed(y_velocity, x_velocity);
@@ -79,7 +86,7 @@ public class spawner : MonoBehaviour {
         float velocity = Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() * 5.0f + 3;
 
         // Cria obstáculo lá 
-        CreateObstacle(where_to_spawn, velocity,0);
+        CreateObstacle(where_to_spawn, velocity,0,0);
     }
 
     private void Spawn_nuvens(){
@@ -105,7 +112,7 @@ public class spawner : MonoBehaviour {
         }
 
         // Cria obstáculo lá 
-        CreateObstacle(where_to_spawn, velocity,0);
+        CreateObstacle(where_to_spawn, velocity,0,0);
     }
 
     private void Spawn_satélites(){
@@ -131,6 +138,46 @@ public class spawner : MonoBehaviour {
         }
 
         // Cria obstáculo com ambas as velocidades  
-        CreateObstacle(where_to_spawn, velocity,horizontal_velocity);
+        CreateObstacle(where_to_spawn, velocity, horizontal_velocity,0);
     }
+
+
+    private void Spawn_meteoros(){
+
+        // Sugestão:
+        // Criar variações no tamanho, podendo ter meteoros muito grandes ou até mesmo muito pequenos
+        // Os muito pequenos, ao invés de matar, podem desviar a trajetória do foguete, causar descontrole por um período ou tirar somente parte da vida
+        // Podem ser spawnados mais de um obstáculo ao mesmo tempo
+
+        bool estabilizar = false;
+
+        float player_float_x = Game_manager.GetComponent<Game_Manager>().Get_player_x()/screen_width;
+
+        float where_to_spawn = UnityEngine.Random.Range(player_float_x * 0.9f, player_float_x * 1.1f);
+
+        float velocity = 7 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.2f) + 2;
+
+        float speedRotate = 50;
+
+        // // Rotação dos meteóros
+        // transform.Rotate(Vector3.forward * speedRotate * Time.deltaTime);
+        
+
+        // Velocidade horizontal (velocidade de órbita, bem baixa)
+        float rnd = UnityEngine.Random.Range(-1,2);
+        float horizontal_velocity = (int)rnd;
+        horizontal_velocity = (horizontal_velocity * (3/2) * Game_manager.GetComponent<Game_Manager>().Get_phase_fraction()); // Reavaliar método de criação de obstáculos para aceitar a velocidade horizontal
+
+        if(velocity <= 6){
+            estabilizar = true;
+        }
+
+        if(estabilizar){
+            velocity = 6;
+        }
+
+        // Cria obstáculo com ambas as velocidades  
+        CreateObstacle(where_to_spawn, velocity, horizontal_velocity, speedRotate);
+    }
+
 }

@@ -72,7 +72,7 @@ Abaixo encontra-se um roteiro de atividades com datas previstas, pessoas respons
 
 0.5.6
 
-- Olavo Caetano Inácio :
+- Olavo Caetano Inácio : difficult_for_level_3 : 17/04/2021
 
 - Mateus da Silva Fernandes :
 
