@@ -44,11 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f9a6fdf25c8df4a8d5ec260303fa75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Start_game_UI: {fileID: 0}
   Basic_UI: {fileID: 0}
   Pause_UI: {fileID: 0}
   About_UI: {fileID: 0}
   End_UI: {fileID: 0}
   scoreText: {fileID: 0}
+  scoreText_2: {fileID: 0}
 --- !u!114 &8384807006826987028
 MonoBehaviour:
   m_ObjectHideFlags: 0

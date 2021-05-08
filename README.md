@@ -1,4 +1,4 @@
-# EPTA_SPACE_PROGRAM - 0.5.6
+# EPTA_SPACE_PROGRAM - Beta
 Aplicativo para celular Android de jogo Arcade desenvolvido na plataforma **Unity** (**2020.1.3f1**). Com fins de angariar fundos para a equipe **EPTA** (Equipe de Propulsão e Tecnologia Aeroespacial)
 
 ## Plano de gestão para 2021-A
@@ -7,6 +7,7 @@ No primeiro semestre deste ano será desenvolvida a etapa de pré-lançamento do
 Abaixo encontra-se um roteiro de atividades com datas previstas, pessoas responsáveis e a forma como será levado o versionamento em **GIT**:
 
 ## Fichamento de implementação de features do alpha:
+Nesta etapa distribuímos atividades e estipulamos datas de entrega conforme segue abaixo. Essas atividades estão relacionadas ao desenvolvimento do alpha do aplicativo.
 
 - Felipe J. O. Ribeiro : bug-fixes : 19/01/2021
 
@@ -82,8 +83,11 @@ Abaixo encontra-se um roteiro de atividades com datas previstas, pessoas respons
 
 
 ## Fichamento de implementação de features do Beta:
+Nesta etapa foi concluído o alpha e partiu-se para o beta. Foi criado a primeira build de testes do aplicativo que foi disponibilizada para os integrantes da subárea testarem e fazerem correções nos maiores erros antes dos betas abertos (0.6, 0.7... até 0.9).
 
-0.5.7
+0.6 (bundle version 1)  ==>  Primeira build do jogo disponibilizada para os membros da subárea.
+
+Seguem abaixo as observações de cada membro:
 
 - Olavo Caetano Inácio :
 
