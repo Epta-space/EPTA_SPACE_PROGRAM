@@ -89,6 +89,16 @@ Nesta etapa foi concluído o alpha e partiu-se para o beta. Foi criado a primeir
 
 Seguem abaixo as observações de cada membro:
 
+- Olavo Caetano Inácio : Pontuação começava errada no player.
+
+- Mateus da Silva Fernandes : Área tocável muito baixa.
+
+- Pedro G. R. V. Melo : Botão de launch podia ser clicado durante o pause.
+
+- Felipe J. O. Ribeiro : Fase começava com time scale igual a zero.
+
+0.6.1 (bundle version 1) ==> Foram feitas as correções iniciais e mais uma rodada de testes.
+
 - Olavo Caetano Inácio :
 
 - Mateus da Silva Fernandes :

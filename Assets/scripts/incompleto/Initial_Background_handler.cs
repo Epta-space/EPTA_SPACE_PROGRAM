@@ -21,17 +21,19 @@ public class Initial_Background_handler : MonoBehaviour
 
     public void launch_button()
     {
-        // toca a animação do botão
-        buttom_animator.SetBool("start_game", true);
+        if (Time.timeScale != 0.0f){
+            // toca a animação do botão
+            buttom_animator.SetBool("start_game", true);
 
-        // Makes the screen fall
-        this.gameObject.GetComponent<Gravity_Backyground_Initial>().Start_fall();
+            // Makes the screen fall
+            this.gameObject.GetComponent<Gravity_Backyground_Initial>().Start_fall();
 
-        // Destrói tela depois de algum tempo
-        InvokeRepeating("fall_ui",1f,1f);
+            // Destrói tela depois de algum tempo
+            InvokeRepeating("fall_ui",1f,1f);
 
-        // Inicia fase no game handler
-        manager_object.GetComponent<Game_Manager>().Initiate_game();
+            // Inicia fase no game handler
+            manager_object.GetComponent<Game_Manager>().Initiate_game();
+        }
     }
 
     public void fall_ui()

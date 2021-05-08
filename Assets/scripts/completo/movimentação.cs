@@ -46,7 +46,7 @@ public class movimentação : MonoBehaviour
         {
             Vector3 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            if (touchPos.y < 0)
+            if (touchPos.y < 4)
             {
                 if (touchPos.x < 0)
                 {
@@ -78,7 +78,7 @@ public class movimentação : MonoBehaviour
     private void recuo_jogador_inicial()
     {
         // Recuo do jogador
-        rb.velocity = new Vector2(rb.velocity.x, -0.5f * speed);
+        rb.velocity = new Vector2(rb.velocity.x, -0.5f * 2);
 
         // Checa se está na altura de parada
         if (transform.position.y <= -1.5)

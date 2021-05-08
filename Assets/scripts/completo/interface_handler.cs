@@ -17,6 +17,10 @@ public class interface_handler : MonoBehaviour
     private GameObject save_options;
 
     void Start() {
+
+        // Para tempo
+        Time.timeScale = 1f;
+
         // Turn on ui basic
         Start_game_UI.SetActive(true);
 
