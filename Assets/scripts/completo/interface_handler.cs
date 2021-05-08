@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class interface_handler : MonoBehaviour
 {
     // Game references:
+    public GameObject Start_game_UI;
     public GameObject Basic_UI;
     public GameObject Pause_UI;
     public GameObject About_UI;
@@ -11,17 +12,29 @@ public class interface_handler : MonoBehaviour
     private GameObject Game_manager; 
     private float score;             // de int -> float para adequar ao get_heigth
     public Text scoreText; 
+    public Text scoreText_2; 
     private GameObject sound_control;
+    private GameObject save_options;
 
     void Start() {
         // Turn on ui basic
-        Basic_UI.SetActive(true);
-        
+        Start_game_UI.SetActive(true);
+
         // Referência ao game manager
         Game_manager = GameObject.FindWithTag("Game_manager"); 
 
+        // Pega referência do save options
+        save_options = Game_manager.GetComponent<Game_Manager>().Get_save_options();
+
         // gerenciador de sons, para ativar o som do motor 
         sound_control = GameObject.FindWithTag("audio_control");
+
+        // Set High score in initial screen
+        if ( save_options.GetComponent<save>().existe_valor("save_score_endereço") ){
+            scoreText_2.text = save_options.GetComponent<save>().retornar_save("save_score_endereço");
+        } else {
+            scoreText_2.text = "0";
+        }
     }
 
     //! Função chamada uma vez por frame. CUIDADO com o que se coloca aqui.
@@ -42,12 +55,16 @@ public class interface_handler : MonoBehaviour
 
     }
 
-
-    //! Funções referentes aos botões de tela principal:
+    // Initiate game
+    public void initiate_game(){
+        Start_game_UI.SetActive(false);
+        Basic_UI.SetActive(true);
+    }
 
     // Script executado quando o jogo é pausado.
     public void Pause(){
         Basic_UI.SetActive(false);
+        Start_game_UI.SetActive(false);
         Pause_UI.GetComponent<Canvas>().enabled = true;
 
         // Desliga o som do motor
@@ -73,18 +90,20 @@ public class interface_handler : MonoBehaviour
 
     // Script executado quando o jogo é resumido. 
     public void Resume(){
-        Basic_UI.SetActive(true);
         Pause_UI.GetComponent<Canvas>().enabled = false;
-        Time.timeScale = 1f;
         
-
         // Descobre fase atual
         int phase = Game_manager.GetComponent<Game_Manager>().Get_phase();
 
         // Liga o som do motor se a fase não é igual a zero
         if (phase > 0){
+            Basic_UI.SetActive(true);
             sound_control.GetComponent<audio_controls>().motor_ligado(true);
+        } else {
+            Start_game_UI.SetActive(true);
         }
+
+        Time.timeScale = 1f;
     }
 
     // Script executado quando clica-se no botão "about". 

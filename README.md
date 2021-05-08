@@ -6,7 +6,7 @@ No primeiro semestre deste ano será desenvolvida a etapa de pré-lançamento do
 
 Abaixo encontra-se um roteiro de atividades com datas previstas, pessoas responsáveis e a forma como será levado o versionamento em **GIT**:
 
-## Fichamento de implementação de features:
+## Fichamento de implementação de features do alpha:
 
 - Felipe J. O. Ribeiro : bug-fixes : 19/01/2021
 
@@ -64,7 +64,7 @@ Abaixo encontra-se um roteiro de atividades com datas previstas, pessoas respons
 
 - Olavo Caetano Inácio : difficult_for_level_2 : 20/03/2021
 
-- Mateus da Silva Fernandes : desabilita_player_reload_scene : 27/03/2021;
+- Mateus da Silva Fernandes : desabilita_player_reload_scene : 27/03/2021
 
 - Pedro G. R. V. Melo : engine_sound : 20/03/2021
 
@@ -74,9 +74,21 @@ Abaixo encontra-se um roteiro de atividades com datas previstas, pessoas respons
 
 - Olavo Caetano Inácio : difficult_for_level_3 : 17/04/2021
 
-- Mateus da Silva Fernandes :
+- Mateus da Silva Fernandes : record_mostrar_morte : 17/04/2021
 
 - Pedro G. R. V. Melo : Explosion_sound :18/04/2021
 
-- Felipe J. O. Ribeiro :
+- Felipe J. O. Ribeiro : explosiona_fix: 05/08/2021
 
+
+## Fichamento de implementação de features do Beta:
+
+0.5.7
+
+- Olavo Caetano Inácio :
+
+- Mateus da Silva Fernandes :
+
+- Pedro G. R. V. Melo :
+
+- Felipe J. O. Ribeiro :

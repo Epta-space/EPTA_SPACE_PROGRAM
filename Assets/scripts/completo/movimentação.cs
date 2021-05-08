@@ -74,6 +74,7 @@ public class movimentação : MonoBehaviour
         sound_control.GetComponent<audio_controls>().motor_ligado(true);
     }
 
+    // Repetidor invocado
     private void recuo_jogador_inicial()
     {
         // Recuo do jogador
@@ -99,11 +100,24 @@ public class movimentação : MonoBehaviour
         input_consider = true;
     }
 
-    public void End_player(){
+    public void End_player(int explosion_type){
         // Toca animação do jogador
         Animator player_animator = this.gameObject.GetComponent<Animator>();
-        player_animator.SetBool("explosion", true);
+
+        // Checa condição de fim de jogo
+        if (explosion_type == 0){
+            transform.position = new Vector3(transform.position.x, transform.position.y + 1.3f,transform.position.z);
+            player_animator.SetBool("explosion1", true);
+        } else if (explosion_type == 1) {
+            transform.position = new Vector3(transform.position.x, transform.position.y + 0.4f,transform.position.z);
+            player_animator.SetBool("explosion2", true);
+        } else if (explosion_type == 2) {
+            transform.position = new Vector3(transform.position.x, transform.position.y + 0.4f,transform.position.z);
+            player_animator.SetBool("explosion3", true);
+        }
     }
+
+
 
     public void Freeze_player_y(){
         this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY

@@ -11,6 +11,9 @@ public class Game_Manager : MonoBehaviour{
     // referencia à rotina de fim de jogo
     private GameObject fim_do_jogo;
 
+    // referencia ao gestor de interfaces
+    private GameObject interface_handler;
+
     // Refere-se ao tempo relativo da fase
     private float phase_time;
 
@@ -33,6 +36,9 @@ public class Game_Manager : MonoBehaviour{
 
         // Pega a referência às rotinas de fim de jogo
         fim_do_jogo = transform.GetChild(1).gameObject;
+
+        // Pega a referência ao gestor de interfaces
+        interface_handler = GameObject.FindWithTag("interface_handler");
 
         // Inicializa a fase 0
         phase_time = 0.0f;
@@ -91,6 +97,9 @@ public class Game_Manager : MonoBehaviour{
     // Função para iniciar jogo
     public void Initiate_game()
     {
+        // Troca menus
+        interface_handler.GetComponent<interface_handler>().initiate_game();
+
         // Zera next phase para iniciar partida
         next_phase = 0.0f;
 
@@ -102,9 +111,9 @@ public class Game_Manager : MonoBehaviour{
     }
 
     // Termina o jogo
-    public void Terminar_jogo(){
+    public void Terminar_jogo( int modo_de_termino ){
         // Chama a rotina de fim de jogo
-        fim_do_jogo.GetComponent<end_handler>().End_Game();
+        fim_do_jogo.GetComponent<end_handler>().End_Game(modo_de_termino);
     }
 
     // Função para Pegar a altura

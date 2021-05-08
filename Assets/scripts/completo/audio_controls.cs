@@ -14,6 +14,7 @@ public class audio_controls: MonoBehaviour
     // Fontes de audio
     public AudioSource som_musica;
     public AudioSource som_motor;
+    public AudioSource som_explosao;
 
     // Controle do som do motor
     private float percentage_motor;
@@ -69,6 +70,10 @@ public class audio_controls: MonoBehaviour
             som_motor.enabled = false;
         };
 
+    }
+
+    public void explosao(){
+        som_explosao.enabled = true;
     }
 
     // Diminui o volume gradativamente

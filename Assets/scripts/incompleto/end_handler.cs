@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class end_handler : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class end_handler : MonoBehaviour
 
     // Game object onde o save options está
     private GameObject save_options;
+
+    // Game object onde estão os controles de som
+    private GameObject sound_control;
 
     // Game object onde se cuida dos menus
     private GameObject script_UI;
@@ -21,21 +25,24 @@ public class end_handler : MonoBehaviour
         // acha script handler com tag
         script_UI = GameObject.FindWithTag("interface_handler");
 
+        // gerenciador de sons, para ativar o som da explosão
+        sound_control = GameObject.FindWithTag("audio_control");
+
         // pega save options com via função do game manager
         save_options = manager_object.GetComponent<Game_Manager>().Get_save_options();
 
     }
 
     // Função para terminar o jogo
-    public void End_Game()
+    public void End_Game(int modo_de_termino)
     {
         Call_Save();
         Disable_player_input_colision_engine();
         Disable_general_ui();
-        Explode_player();
+        Explode_player(modo_de_termino);
         Stop_time();
         ShowAdd();
-        Call_End_Screen();
+        StartCoroutine(Restart_match());
     }
 
     // Save Score
@@ -44,8 +51,15 @@ public class end_handler : MonoBehaviour
         // Get the score value from the player
         float score = manager_object.GetComponent<Game_Manager>().Get_height();
 
-        // Save the score value in memory
-        save_options.GetComponent<save>().salvar(score.ToString(), "save_score_endereço");
+        if (save_options.GetComponent<save>().existe_valor("save_score_endereço") ) {
+            if (float.Parse(save_options.GetComponent<save>().retornar_save("save_score_endereço")) < score) {
+                // Save the score value in memory
+                save_options.GetComponent<save>().salvar(score.ToString(), "save_score_endereço");
+            } 
+        } else {
+            // Save the score value in memory
+            save_options.GetComponent<save>().salvar(score.ToString(), "save_score_endereço");
+        }
     }
 
     // Disable user input
@@ -78,14 +92,17 @@ public class end_handler : MonoBehaviour
     }
 
     // Change Player sprite to explosion
-    private void Explode_player()
+    private void Explode_player(int explosion_type)
     {
 
         // player
         GameObject player = manager_object.GetComponent<Game_Manager>().Get_player();
 
         //desabilita boleana do input la no scrip movimento
-        player.GetComponent<movimentação>().End_player();
+        player.GetComponent<movimentação>().End_player(explosion_type);
+
+        // Habilita o som da explosão
+        sound_control.GetComponent<audio_controls>().explosao();
     }
 
     //! Stop time in a good manner
@@ -107,6 +124,13 @@ public class end_handler : MonoBehaviour
 
         // Desabilitar interface de usuário
         End_UI.SetActive(true);
+    }
+
+    // Restart the scene
+    IEnumerator Restart_match()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        SceneManager.LoadScene("Player");
     }
 
 }

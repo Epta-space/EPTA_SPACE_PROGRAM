@@ -22,16 +22,32 @@ public class player_colide_handler : MonoBehaviour
     // No momento em que ocorre a colisão ele chama essa função
     void OnCollisionEnter2D(Collision2D objeto_alvo)
     {
+        // Calcula dados sobre a colisão
+        float x_offset = this.gameObject.transform.position.x - objeto_alvo.gameObject.transform.position.x;
+        float y_offset = this.gameObject.transform.position.y - objeto_alvo.gameObject.transform.position.y;
+
         // Chama o gerenciador de colisões
-        ColisorHandler(objeto_alvo.gameObject.tag);
+        ColisorHandler(objeto_alvo.gameObject.tag, x_offset, y_offset);
     }
 
-    private void ColisorHandler(string colidido){
+    private void ColisorHandler(string colidido, float x_offset, float y_offset){
         if(obstacle_list.Contains(colidido)){
 
-            // Chama a função de fim de jogo
-            Game_manager.GetComponent<Game_Manager>().Terminar_jogo();
+            if (y_offset < -0.8){
+                // Chama a função de fim de jogo
+                // player está abaixo de obstáculo
+                Game_manager.GetComponent<Game_Manager>().Terminar_jogo(0);
+            } else {
+                if (x_offset < 0){
+                    // Chama a função de fim de jogo
+                    // player está acima e a esquerda do obstáculo
+                    Game_manager.GetComponent<Game_Manager>().Terminar_jogo(1);
+                } else {
+                    // Chama a função de fim de jogo
+                    // player está acima e a direita do obstáculo
+                    Game_manager.GetComponent<Game_Manager>().Terminar_jogo(2);
+                }
+            }
         }
-
     }
 }
