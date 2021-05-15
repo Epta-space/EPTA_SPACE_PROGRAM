@@ -62,8 +62,14 @@ public class audio_controls: MonoBehaviour
         if(botao){
             // Reinicia a porcentagem do motor
             percentage_motor = 1f;
+
             // Liga o som do motor
             som_motor.enabled = true;
+
+            // Liga a musica
+            som_musica.enabled = true;
+
+
             // Invoca o método de recuo do jogador
             InvokeRepeating("gradiente_volume_motor", 0f, 0.1f);
         }else{
@@ -73,13 +79,14 @@ public class audio_controls: MonoBehaviour
     }
 
     public void explosao(){
+        som_explosao.volume = som_musica.volume;
         som_explosao.enabled = true;
     }
 
     // Diminui o volume gradativamente
     private void gradiente_volume_motor(){
-        if(0.5f < percentage_motor){
-            percentage_motor -= percentage_motor * 0.05f;
+        if(0.65f < percentage_motor){
+            percentage_motor -= percentage_motor * 0.01f;
             som_motor.volume = som_musica.volume * percentage_motor;
         }else{
             // Cancela método repetidor

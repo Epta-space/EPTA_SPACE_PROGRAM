@@ -1,7 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class movimentação : MonoBehaviour
 {
+    // Para debug / temporario
+
+    public Text speedText; 
+    public Text dragText; 
+
+
+    //
     public float speed;
     public static bool input_consider;
     private Rigidbody2D rb;
@@ -117,7 +125,15 @@ public class movimentação : MonoBehaviour
         }
     }
 
+    public void speed_controll(float speed_input){
+        speed = speed_input;
+        speedText.text = speed_input.ToString("#.00");
+    }
 
+    public void drag_controll(float speed_input){
+        this.GetComponent<Rigidbody2D>().drag = speed_input;
+        dragText.text = speed_input.ToString("#.00");
+    }
 
     public void Freeze_player_y(){
         this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY
