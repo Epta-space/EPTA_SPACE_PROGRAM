@@ -97,12 +97,8 @@ Seguem abaixo as observações de cada membro:
 
 - Felipe J. O. Ribeiro : Fase começava com time scale igual a zero.
 
-0.6.1 (bundle version 1) ==> Foram feitas as correções iniciais e mais uma rodada de testes.
+0.6.1, 0.6.2 (bundle version 2) ==> Foram feitas as correções.
+Correções gerais que incluem:
+	- Mateus da Silva Fernandes: tela inicial e algumas correções na interface.
+	- Felipe J. O. Ribeiro: correções na interface.
 
-- Olavo Caetano Inácio :
-
-- Mateus da Silva Fernandes :
-
-- Pedro G. R. V. Melo :
-
-- Felipe J. O. Ribeiro :
