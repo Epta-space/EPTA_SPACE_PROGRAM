@@ -125,6 +125,8 @@ public class movimentação : MonoBehaviour
         }
     }
 
+    // debug
+
     public void speed_controll(float speed_input){
         speed = speed_input;
         speedText.text = speed_input.ToString("#.00");
