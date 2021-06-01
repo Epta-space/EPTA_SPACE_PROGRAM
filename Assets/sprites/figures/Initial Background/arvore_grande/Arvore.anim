@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vento
+  m_Name: Arvore
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 7d22d956d696cc24dbf709c713fdcce6, type: 3}
-    - time: 0.78333336
-      value: {fileID: 21300000, guid: abf9886e2a40a8c4cafd22a604bad815, type: 3}
-    - time: 1.45
-      value: {fileID: 21300000, guid: 7d22d956d696cc24dbf709c713fdcce6, type: 3}
+      value: {fileID: 21300000, guid: a798f6e4bf1bf6463b55703295c85b01, type: 3}
+    - time: 2
+      value: {fileID: 21300000, guid: e9e5e30b753a03fa287d799f6dce7ec0, type: 3}
+    - time: 4
+      value: {fileID: 21300000, guid: a798f6e4bf1bf6463b55703295c85b01, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,15 +44,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 7d22d956d696cc24dbf709c713fdcce6, type: 3}
-    - {fileID: 21300000, guid: abf9886e2a40a8c4cafd22a604bad815, type: 3}
-    - {fileID: 21300000, guid: 7d22d956d696cc24dbf709c713fdcce6, type: 3}
+    - {fileID: 21300000, guid: a798f6e4bf1bf6463b55703295c85b01, type: 3}
+    - {fileID: 21300000, guid: e9e5e30b753a03fa287d799f6dce7ec0, type: 3}
+    - {fileID: 21300000, guid: a798f6e4bf1bf6463b55703295c85b01, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.4666667
+    m_StopTime: 4.016667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

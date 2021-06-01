@@ -24,7 +24,7 @@ public class Game_Manager : MonoBehaviour{
     private float game_time;
 
     // Define a duração de cad fase
-    private float[] phase_plan = new float[2]{10.0f, 10.0f};
+    private float[] phase_plan = new float[2]{5.0f, 10.0f};
 
     // Define a Altura de cada fase
     private float[] phase_height = new float[2]{100000.0f,900000.0f};
@@ -127,6 +127,15 @@ public class Game_Manager : MonoBehaviour{
             return Get_phase_time() * phase_height[Get_phase() - 2]/phase_plan[Get_phase()-2] + phase_height[Get_phase() - 2] + phase_height[Get_phase() - 3];
         }else{
             return 0;
+        }
+    }
+
+    // Retorna o plano de fases
+    public float Get_phase_all_time(){
+        if (Get_phase() > 0) {
+            return phase_plan[Get_phase() - 1] ;
+        } else {
+            return 1.0f;
         }
     }
 }
