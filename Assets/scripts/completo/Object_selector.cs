@@ -58,6 +58,18 @@ public class Object_selector : MonoBehaviour
 
         stage_length = stage_length_list[stage_index-1];
         obstacle_index = (int)Random.Range(0, stage_length);
+        if (obstacle_index == 3) {
+            int valor = (int)Random.Range(0,20);
+            Debug.Log(valor);
+            if ( valor > 1){
+                Debug.Log("entrei");
+                obstacle = actual_stage[stage_index - 1][2];
+                return obstacle;
+            }
+        }
+
+        Debug.Log(obstacle_index);
+        Debug.Log("----------------");
         obstacle = actual_stage[stage_index - 1][obstacle_index];
         return obstacle;
     }

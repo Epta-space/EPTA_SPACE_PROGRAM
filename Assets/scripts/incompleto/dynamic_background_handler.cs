@@ -45,7 +45,7 @@ public class dynamic_background_handler : MonoBehaviour
         case 1:
             // Configurando as nuvens brancas
             float phase_end = manager_object.GetComponent<Game_Manager>().Get_phase_all_time();
-            nuvens_old.GetComponent<Rigidbody2D>().velocity = new Vector2(0, - 1.2f * 10.0f/phase_end);
+            nuvens_old.GetComponent<Rigidbody2D>().velocity = new Vector2(0, - 3.2f * 10.0f/phase_end);
 
             // Configurando as nuvens da base
             nuvens_new_background_1.GetComponent<Rigidbody2D>().velocity = new Vector2(0, - 0.6f);
@@ -53,11 +53,11 @@ public class dynamic_background_handler : MonoBehaviour
             break;
         case 2:
             // Cor do ceu azul
-            estrelas.GetComponent<Rigidbody2D>().velocity = new Vector2(0, - 0.5f);
-            final.a = (1.0f - Mathf.Sqrt(fraction)); 
+            final.a = (1.0f - Mathf.Sqrt(fraction) ); 
             blue_background.GetComponent<SpriteRenderer>().material.color = final;
             break;
         case 3:
+            estrelas.GetComponent<Rigidbody2D>().velocity = new Vector2(0, - 0.3f);
             break;
         default:
             break;

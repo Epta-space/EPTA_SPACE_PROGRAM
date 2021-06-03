@@ -89,7 +89,7 @@ public class movimentação : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x, -0.5f * 2);
 
         // Checa se está na altura de parada
-        if (transform.position.y <= -1.5)
+        if (transform.position.y <= -2.2)
         {
             // Para o método de recuo do jogador
             CancelInvoke();
