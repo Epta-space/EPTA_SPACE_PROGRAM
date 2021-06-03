@@ -101,7 +101,7 @@ public class spawner : MonoBehaviour {
 
         // No caso das nuvens, é interessante fazer o contrário (quanto mais tempo passa, mas devagar ficam), pois no começo o foguete tem uma aceleração maior
         // A partir de um ponto x, as nuvens devem vir com a mesma velocidade
-        float velocity = 7 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.2f) + 2;
+        float velocity = 9 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.5f) + 2;
 
         if(velocity <= 6){
             estabilizar = true;
@@ -122,7 +122,7 @@ public class spawner : MonoBehaviour {
 
         float where_to_spawn = UnityEngine.Random.Range(player_float_x * 0.9f, player_float_x * 1.1f);
 
-        float velocity = 7 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.2f) + 2;
+        float velocity = 8 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.2f) + 2;
 
         // Velocidade horizontal (velocidade de órbita, bem baixa)
         float rnd = UnityEngine.Random.Range(-1,2);
@@ -157,15 +157,28 @@ public class spawner : MonoBehaviour {
 
         float velocity = 7 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.2f) + 2;
 
-        float speedRotate = 50;
+        float speedRotate = 30;
 
         // // Rotação dos meteóros
         // transform.Rotate(Vector3.forward * speedRotate * Time.deltaTime);
         
 
         // Velocidade horizontal (velocidade de órbita, bem baixa)
-        float rnd = UnityEngine.Random.Range(-1,2);
-        float horizontal_velocity = (int)rnd;
+        // float rnd = UnityEngine.Random.Range(-1,2);
+        // float horizontal_velocity = (int)rnd;
+        float horizontal_velocity = 0;
+
+        // tem um ponto que fica invencível
+        if(player_float_x>0.1){
+            horizontal_velocity = -1;
+        }
+        else if(player_float_x < -0.1){
+            horizontal_velocity = 1;
+        }
+        else{
+            horizontal_velocity = 0;
+        }
+
         horizontal_velocity = (horizontal_velocity * (3/2) * Game_manager.GetComponent<Game_Manager>().Get_phase_fraction()); // Reavaliar método de criação de obstáculos para aceitar a velocidade horizontal
 
         if(velocity <= 6){
