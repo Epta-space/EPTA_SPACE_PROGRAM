@@ -97,14 +97,16 @@ Seguem abaixo as observações de cada membro:
 
 - Felipe J. O. Ribeiro : Fase começava com time scale igual a zero.
 
-- Lohanna: Novos Sprites.
+- Lohanna: Sprites revisados.
 
-0.6.1, 0.6.2 (bundle version 2) ==> Foram feitas as correções.
+0.6.1, 0.6.2 (bundle version 1) ==> Foram feitas as correções.
 Correções gerais que incluem:
 	- Mateus da Silva Fernandes: tela inicial e algumas correções na interface.
 	- Felipe J. O. Ribeiro: correções na interface.
 
-0.6.3 (bundle version 3) ==> Implementações e retoques.
+0.6.3 (bundle version 1) ==> Implementações e retoques.
 	- Felipe J. O. Ribeiro: Background dinâmico.
 	- Lohanna: Sprites revisados.
 
+0.6.4 (bundle version 2) ==> Retoques do beta aberto.
+	- Observações:
