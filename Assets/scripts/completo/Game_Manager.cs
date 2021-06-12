@@ -31,6 +31,8 @@ public class Game_Manager : MonoBehaviour{
 
     void Start()
     {
+        // reafirma phase zero
+        phase = 0;
         // Procura pelo objeto de jogo do jogador
         player = GameObject.FindWithTag("Player");
 

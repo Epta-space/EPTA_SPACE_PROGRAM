@@ -231,6 +231,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8457357924410717981}
     m_Modifications:
+    - target: {fileID: 4721660389461696140, guid: f631aac3830493c22bcbe697da27ce0b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6834500958841703301}
+    - target: {fileID: 4721660389461696140, guid: f631aac3830493c22bcbe697da27ce0b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: interface_handler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4721660389461696140, guid: f631aac3830493c22bcbe697da27ce0b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: feedback
+      objectReference: {fileID: 0}
+    - target: {fileID: 4721660389461696140, guid: f631aac3830493c22bcbe697da27ce0b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6689270876519723053, guid: f631aac3830493c22bcbe697da27ce0b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -811,7 +827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4849757492131418192, guid: c58df7764843190498dee2ccb5d0368a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -204.82999
+      value: -204.82996
       objectReference: {fileID: 0}
     - target: {fileID: 5302079346784116546, guid: c58df7764843190498dee2ccb5d0368a, type: 3}
       propertyPath: m_AnchoredPosition.x

@@ -117,6 +117,11 @@ public class interface_handler : MonoBehaviour
         
     }
 
+    // chama o feedback
+    public void feedback(){
+        Application.OpenURL("https://docs.google.com/forms/d/e/1FAIpQLScgpc9RUlYtOEBnlzWx-SwDoUicc_0RDqmDnIo6ypn6oGGppQ/viewform?usp=sf_link");
+    }
+
 
     //! Funções referentes ao menu about:
 
