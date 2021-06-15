@@ -109,4 +109,7 @@ Correções gerais que incluem:
 	- Lohanna: Sprites revisados.
 
 0.6.4 (bundle version 2) ==> Retoques do beta aberto.
-	- Observações:
+
+0.6.5 (bundle version 3) ==> Retoques do beta aberto.
+
+0.6.6 (bundle version 4) ==> Retoques do beta aberto.
