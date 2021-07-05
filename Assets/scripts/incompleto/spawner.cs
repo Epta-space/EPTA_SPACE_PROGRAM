@@ -107,8 +107,9 @@ public class spawner : MonoBehaviour {
         float where_to_spawn = UnityEngine.Random.Range(-1.0f,1.0f);
 
         // Calcula fração atual do tempo da fase
-        float velocity = 8 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.5f) + 1.5f;
-
+        // float velocity = 8 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.5f) + 1.5f;
+        
+        float velocity = 2f * Mathf.Exp(Game_manager.GetComponent<Game_Manager>().Get_phase_fraction()) + 1.5f  ;
 
         if(velocity <= 6){
             estabilizar = true;
