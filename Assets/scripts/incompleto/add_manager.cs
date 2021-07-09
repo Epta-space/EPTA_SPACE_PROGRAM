@@ -8,8 +8,8 @@ using GoogleMobileAds.Api;
 public class add_manager : MonoBehaviour
 {
     //! Identifications for add identification
-    string app_id = "ca-app-pub-9840334616422494~6513866522";
-    string banner_id = "ca-app-pub-9840334616422494/7827292355";
+    string app_id = "ca-app-pub-2766064639139780~9773533498";
+    string banner_id = "ca-app-pub-2766064639139780/7998498963";
 
     //! Objects declaration
     private BannerView banner_ad;
