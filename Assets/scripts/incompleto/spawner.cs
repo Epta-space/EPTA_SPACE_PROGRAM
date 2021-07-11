@@ -107,8 +107,9 @@ public class spawner : MonoBehaviour {
         float where_to_spawn = UnityEngine.Random.Range(-1.0f,1.0f);
 
         // Calcula fração atual do tempo da fase
-        float velocity = 8 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.5f) + 1.5f;
-
+        // float velocity = 8 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.5f) + 1.5f;
+        
+        float velocity = 2f * Mathf.Exp(Game_manager.GetComponent<Game_Manager>().Get_phase_fraction()) + 1.5f  ;
 
         if(velocity <= 6){
             estabilizar = true;
@@ -130,7 +131,7 @@ public class spawner : MonoBehaviour {
 
         float where_to_spawn = UnityEngine.Random.Range(player_float_x * 0.9f, player_float_x * 1.1f);
 
-        float velocity = 8 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.2f) + 2;
+        float velocity = (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() * 1.5f) + 6;
 
         // Velocidade horizontal (velocidade de órbita, bem baixa)
         float rnd = UnityEngine.Random.Range(-1,2);
@@ -163,7 +164,7 @@ public class spawner : MonoBehaviour {
 
         float where_to_spawn = UnityEngine.Random.Range(player_float_x * 0.9f, player_float_x * 1.1f);
 
-        float velocity = 7 / (Game_manager.GetComponent<Game_Manager>().Get_phase_fraction() + 1.2f) + 2;
+        float velocity = 2.5f * Mathf.Sqrt(Game_manager.GetComponent<Game_Manager>().Get_phase_fraction()) + 7.5f;
 
         float speedRotate = 30;
 
