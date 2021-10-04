@@ -1339,7 +1339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedText: {fileID: 1359072767}
   dragText: {fileID: 760573299}
-  speed: 4
+  speed: 3
 --- !u!60 &1451158851
 PolygonCollider2D:
   m_ObjectHideFlags: 0
