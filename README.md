@@ -123,3 +123,4 @@ Correções gerais que incluem:
 
 - Pedro G. R. V. Melo : 
 
+- Victor C. M. Carvalho : remove_fins_collision : 01/10/2021

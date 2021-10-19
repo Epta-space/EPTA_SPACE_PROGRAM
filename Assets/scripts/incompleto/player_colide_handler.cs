@@ -10,12 +10,17 @@ public class player_colide_handler : MonoBehaviour
     
     // Game manager reference
     private GameObject Game_manager;
+    public PolygonCollider2D polygonCollider2D;
+    //private PolygonCollider2D polygonCollider2D; // Tentativa de objeto não publico
+
+
 
     // Função chamada no início do jogo
     void Start()
     {
         // Acha o script game manager via tag
         Game_manager = GameObject.FindWithTag("Game_manager");
+        //polygonCollider2D = Game_manager.GetComponent<PolygonCollider2D>();  // Erro: Não referencia uma única Polygon Collider 
         
     }
 
@@ -29,6 +34,25 @@ public class player_colide_handler : MonoBehaviour
         // Chama o gerenciador de colisões
         ColisorHandler(objeto_alvo.gameObject.tag, x_offset, y_offset);
     }
+
+    // TENTATIVA DE LIGAR/DESLIGAR COLISOR NAS ALETAS
+    public void TurnOnAleta()
+    {
+        polygonCollider2D.enabled = true;
+
+    }
+     public void TurnOffAleta()
+    {
+        polygonCollider2D.enabled = false;
+
+    }
+    
+
+
+
+
+
+
 
     private void ColisorHandler(string colidido, float x_offset, float y_offset){
         if(obstacle_list.Contains(colidido)){
