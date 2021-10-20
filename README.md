@@ -113,3 +113,14 @@ Correções gerais que incluem:
 0.6.5 (bundle version 3) ==> Retoques do beta aberto.
 
 0.6.6 (bundle version 4) ==> Retoques do beta aberto.
+
+
+0.7.1
+
+- Olavo Caetano Inácio : 
+
+- Mateus da Silva Fernandes : movement_responsiveness : 04/10/2021
+
+- Pedro G. R. V. Melo : 
+
+- Victor C. M. Carvalho : remove_fins_collision : 01/10/2021
