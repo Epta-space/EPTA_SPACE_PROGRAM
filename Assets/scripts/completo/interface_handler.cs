@@ -35,12 +35,12 @@ public class interface_handler : MonoBehaviour
 
         // Set High score in initial screen
         if ( save_options.GetComponent<save>().existe_valor("save_score_endereço") ){
-            scoreText_2.text = save_options.GetComponent<save>().retornar_save("save_score_endereço");
+            scoreText_2.text = (float.Parse(save_options.GetComponent<save>().retornar_save("save_score_endereço"))/1000).ToString("F") + "km";
         } else {
             scoreText_2.text = "0";
         }
     }
-
+ 
     //! Função chamada uma vez por frame. CUIDADO com o que se coloca aqui.
     void Update() {
         
@@ -52,9 +52,12 @@ public class interface_handler : MonoBehaviour
 
         // Gerenciador de grandeza 
         if(score < 100000){
-            scoreText.text = (int)score + " m  "; 
-        }else{
-            scoreText.text = (int)score/1000 + " km  ";
+            scoreText.text = (int)score + " m"; 
+           
+        }
+        else{
+            
+            scoreText_2.text = (int)score / 1000 + " km";
         }
 
     }
