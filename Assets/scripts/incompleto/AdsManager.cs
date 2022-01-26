@@ -6,9 +6,9 @@ using UnityEngine.Advertisements;
 public class AdsManager : MonoBehaviour
 {
     #if UNITY_IOS
-        string gameId = "4286886";
+        string gameId = "4582056";
     #else
-        string gameId = "4286887";
+        string gameId = "4582057";
     #endif
     void Start()
     {
@@ -17,9 +17,9 @@ public class AdsManager : MonoBehaviour
     }
 
     public void ShowBanner(){
-        if(Advertisement.IsReady("Banner_Android")){
+        if(Advertisement.IsReady("banner")){
             Advertisement.Banner.SetPosition(BannerPosition.TOP_CENTER);
-            Advertisement.Banner.Show("Banner_Android");
+            Advertisement.Banner.Show("banner");
             Debug.Log("Banner pronto");
         } else {
             StartCoroutine(RepeatShowBanner());
