@@ -29,6 +29,9 @@ public class Game_Manager : MonoBehaviour{
     // Define a Altura de cada fase
     private float[] phase_height = new float[2]{100000.0f,900000.0f};
 
+    // Referencia ao script AdsManager
+    public AdsManager ads;  
+
     void Start()
     {
         // reafirma phase zero
@@ -45,6 +48,9 @@ public class Game_Manager : MonoBehaviour{
         // Inicializa a fase 0
         phase_time = 0.0f;
         next_phase = 3600000000.0f;
+        
+        //Inicializa os anúncios
+        ads.ShowBanner();
     }
 
     void Update()
