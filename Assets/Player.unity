@@ -1132,6 +1132,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 204338742743731372, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 204338742743731372, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 420.56
+      objectReference: {fileID: 0}
     - target: {fileID: 580116274372133822, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -204.82996
@@ -1354,7 +1362,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.06, y: 0.47}
+  m_Size: {x: 0.06, y: 0.52}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1406,8 +1414,8 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.06, y: 0.47}
-    newSize: {x: 0.06, y: 0.47}
+    oldSize: {x: 0.06, y: 0.52}
+    newSize: {x: 0.06, y: 0.52}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1509,8 +1517,8 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.06, y: 0.47}
-    newSize: {x: 0.06, y: 0.47}
+    oldSize: {x: 0.06, y: 0.52}
+    newSize: {x: 0.06, y: 0.52}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
