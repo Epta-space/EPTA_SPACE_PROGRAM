@@ -27,7 +27,8 @@ public class AdsManager : MonoBehaviour
         }
     }
 
-    IEnumerator RepeatShowBanner(){
+    IEnumerator RepeatShowBanner()
+    {
         yield return new WaitForSeconds(1);
         ShowBanner();
     }
