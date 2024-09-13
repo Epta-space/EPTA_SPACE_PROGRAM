@@ -1163,7 +1163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 204338742743731372, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 420.56
+      value: 420.56006
       objectReference: {fileID: 0}
     - target: {fileID: 580116274372133822, guid: e980539310f8a4a4e840738dd2bd4bff, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1851,9 +1851,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb7241cd8fce63488990f1c16c52571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  androidGameId: 5525106
-  iosGameId: 5525107
-  isTesting: 0
+  androidGameId: 5692901
+  iosGameId: 5692900
+  isTesting: 1
 --- !u!114 &1626040405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1932,7 +1932,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2120329782}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26fb881e63c60134b85b03be1a8432b5, type: 3}
+  m_Script: {fileID: 11500000, guid: f45838bd2acc56a42b9b2985503edd7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2120329787

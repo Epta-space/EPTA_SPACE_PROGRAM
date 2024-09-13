@@ -3,7 +3,8 @@ guid: 599b4403bc2295c49b514351c30aad17
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - tela: {fileID: 6689270877495391237, guid: f631aac3830493c22bcbe697da27ce0b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

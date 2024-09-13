@@ -55,8 +55,10 @@ public class Game_Manager : MonoBehaviour{
         next_phase = 3600000000.0f;
         
     }
-    //paradas de add
+   
     public static Game_Manager Instance { get; private set; }
+
+    
 
     private void Awake()
     {
@@ -71,11 +73,7 @@ public class Game_Manager : MonoBehaviour{
         StartCoroutine(DisplayBannerWithDelay());
     }
 
-    private IEnumerator DisplayBannerWithDelay()
-    { 
-        yield return new WaitForSeconds(3f);
-        AdsManager.Instance.bannerAds.ShowBannerAd();
-    }
+    
     //fim de parada de add
 
     void Update()
@@ -141,6 +139,14 @@ public class Game_Manager : MonoBehaviour{
 
         // Faz o player cair pra trás
         Get_player().GetComponent<movimentação>().movimento_inicial_player();
+
+       
+    }
+
+     public IEnumerator DisplayBannerWithDelay()
+    { 
+        yield return new WaitForSeconds(3f);
+        AdsManager.Instance.bannerAds.ShowBannerAd();
     }
 
     // Termina o jogo

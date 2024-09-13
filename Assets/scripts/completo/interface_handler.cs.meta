@@ -3,7 +3,14 @@ guid: 67f9a6fdf25c8df4a8d5ec260303fa75
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Start_game_UI: {fileID: 6689270877495391237, guid: f631aac3830493c22bcbe697da27ce0b, type: 3}
+  - Basic_UI: {fileID: 5994996201125594087, guid: 7aa60317a0db63f4b8dbe45a5ec39a8b, type: 3}
+  - Pause_UI: {fileID: 5611263953545047735, guid: a3da922acd1fbc146bb07c9a26fec9c8, type: 3}
+  - About_UI: {fileID: 4257646192198567129, guid: 618f417d4226a4c48801c45acb6c2255, type: 3}
+  - End_UI: {fileID: 924292537492980248, guid: 8d853bf0f46ea4b7cb391b560a5fdbd6, type: 3}
+  - scoreText: {instanceID: 0}
+  - scoreText_2: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
