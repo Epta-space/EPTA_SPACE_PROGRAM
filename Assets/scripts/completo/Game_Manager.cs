@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.Advertisements;
+using UnityEngine.SceneManagement;
 
 public class Game_Manager : MonoBehaviour{
 
@@ -29,8 +34,7 @@ public class Game_Manager : MonoBehaviour{
     // Define a Altura de cada fase
     private float[] phase_height = new float[2]{100000.0f,900000.0f};
 
-    // Referencia ao script AdsManager
-    public AdsManager ads;  
+
 
     void Start()
     {
@@ -41,6 +45,7 @@ public class Game_Manager : MonoBehaviour{
 
         // Pega a referência às rotinas de fim de jogo
         fim_do_jogo = transform.GetChild(1).gameObject;
+        
 
         // Pega a referência ao gestor de interfaces
         interface_handler = GameObject.FindWithTag("interface_handler");
@@ -49,9 +54,27 @@ public class Game_Manager : MonoBehaviour{
         phase_time = 0.0f;
         next_phase = 3600000000.0f;
         
-        //Inicializa os anúncios
-        ads.ShowBanner();
     }
+   
+    public static Game_Manager Instance { get; private set; }
+
+    
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        StartCoroutine(DisplayBannerWithDelay());
+    }
+
+    
+    //fim de parada de add
 
     void Update()
     {
@@ -116,11 +139,20 @@ public class Game_Manager : MonoBehaviour{
 
         // Faz o player cair pra trás
         Get_player().GetComponent<movimentação>().movimento_inicial_player();
+
+       
+    }
+
+     public IEnumerator DisplayBannerWithDelay()
+    { 
+        yield return new WaitForSeconds(3f);
+        AdsManager.Instance.bannerAds.ShowBannerAd();
     }
 
     // Termina o jogo
     public void Terminar_jogo( int modo_de_termino ){
         // Chama a rotina de fim de jogo
+        AdsManager.Instance.bannerAds.HideBannerAd();
         fim_do_jogo.GetComponent<end_handler>().End_Game(modo_de_termino);
     }
 

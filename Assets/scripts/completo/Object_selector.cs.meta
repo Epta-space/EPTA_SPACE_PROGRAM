@@ -3,7 +3,18 @@ guid: bf690f088e3b2af40b6334045f979079
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - alien: {fileID: 1576144646237445307, guid: 11c9123e840c59c45a4cee7f92e1c19c, type: 3}
+  - balao_1: {fileID: 5376109011881203717, guid: faab41e7b2093d844a4bcfbbed19607a, type: 3}
+  - meteoro_1_0: {fileID: 8015198512085035377, guid: 084704f8ca360a7459b795cf16126271, type: 3}
+  - meteoro_2_0: {fileID: 8481067611752862440, guid: 34d9ab8757e583f41a1e7cb4c0b2f663, type: 3}
+  - meteoro_3_0: {fileID: 1013226772820384082, guid: 2ef32a89b16bf7e4cb39c02939931646, type: 3}
+  - nuvem_1_0: {fileID: 4069429966911774188, guid: 2de47077589024d45a34ed2471b52523, type: 3}
+  - nuvem_1_1: {fileID: 2337825001010196342, guid: 840cefa19f3715f4095f6978e2e5823f, type: 3}
+  - nuvem_3_0: {fileID: 2817234906870207710, guid: a6981d96ff17af14eb4c8721f5981682, type: 3}
+  - satelite_3: {fileID: 8259966946108037709, guid: 7ff99b28ff512a74a994e1922f82cf4d, type: 3}
+  - satelite_1: {fileID: 7264048153884858304, guid: b87cd5cebcfcb234e9cea2c61c2a41de, type: 3}
+  - satelite_2: {fileID: 5760012962804978328, guid: 131da0a1ade3e144db7820c5af1b361d, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

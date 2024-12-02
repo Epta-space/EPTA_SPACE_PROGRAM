@@ -19,7 +19,8 @@ public class tela_morte : MonoBehaviour
     public void continuar()
     {
         Time.timeScale = 1;
-        Application.LoadLevel(Application.loadedLevel);
+       // Application.LoadLevel(Application.loadedLevel);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
     }
     public void sair()
     {
