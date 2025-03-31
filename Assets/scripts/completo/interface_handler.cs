@@ -7,7 +7,7 @@ public class interface_handler : MonoBehaviour
     public GameObject Start_game_UI;
     public GameObject Basic_UI;
     public GameObject Pause_UI;
-    public GameObject About_UI;
+
     public GameObject End_UI;
     private GameObject Game_manager; 
     private float score;             // de int -> float para adequar ao get_heigth
@@ -114,11 +114,7 @@ public class interface_handler : MonoBehaviour
     }
 
     // Script executado quando clica-se no botão "about". 
-    public void About(){
-        About_UI.SetActive(true);
-        Pause_UI.GetComponent<Canvas>().enabled = false;
-        
-    }
+
 
     // chama o feedback
     public void feedback(){
@@ -129,11 +125,7 @@ public class interface_handler : MonoBehaviour
     //! Funções referentes ao menu about:
 
     // Script executado quando clica-se no botão "X" para sair do menu about. 
-    public void exit_about(){
-        About_UI.SetActive(false);
-        Pause_UI.GetComponent<Canvas>().enabled = true;
-        
-    }
+
 
     // Script executado quando clica-se no botão do instagram. 
     public void instagram_about(){

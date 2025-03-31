@@ -56,5 +56,6 @@
         "pontuacao"
     ],
     "git.ignoreLimitWarning": true,
-    "dotnet.defaultSolution": "EPTA_SPACE_PROGRAM.sln"
+    "dotnet.defaultSolution": "EPTA_SPACE_PROGRAM.sln",
+    "dotnet.preferCSharpExtension": true
 }
