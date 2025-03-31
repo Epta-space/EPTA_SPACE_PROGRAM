@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6878745625132190875}
   - component: {fileID: 6878745625132190874}
-  - component: {fileID: 8384807006826987028}
   m_Layer: 0
   m_Name: UI_script_handler
   m_TagString: interface_handler
@@ -25,12 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6878745625132190877}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 384.77826, y: 567.68665, z: -3.625}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6878745625132190874
 MonoBehaviour:
@@ -44,22 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f9a6fdf25c8df4a8d5ec260303fa75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Start_game_UI: {fileID: 0}
-  Basic_UI: {fileID: 0}
-  Pause_UI: {fileID: 0}
-  About_UI: {fileID: 0}
-  End_UI: {fileID: 0}
+  Start_game_UI: {fileID: 6689270877495391237, guid: f631aac3830493c22bcbe697da27ce0b, type: 3}
+  Basic_UI: {fileID: 5994996201125594087, guid: 7aa60317a0db63f4b8dbe45a5ec39a8b, type: 3}
+  Pause_UI: {fileID: 5611263953545047735, guid: a3da922acd1fbc146bb07c9a26fec9c8, type: 3}
+  About_UI: {fileID: 5611263953545047735, guid: a3da922acd1fbc146bb07c9a26fec9c8, type: 3}
+  End_UI: {fileID: 924292537492980248, guid: 8d853bf0f46ea4b7cb391b560a5fdbd6, type: 3}
   scoreText: {fileID: 0}
   scoreText_2: {fileID: 0}
---- !u!114 &8384807006826987028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6878745625132190877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26fb881e63c60134b85b03be1a8432b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
