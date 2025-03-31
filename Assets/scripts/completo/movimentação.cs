@@ -58,11 +58,11 @@ public class movimentação : MonoBehaviour
             {
                 if (touchPos.x < 0)
                 {
-                    rb.velocity = new Vector2(-speed, rb.velocity.y);
+                    rb.linearVelocity = new Vector2(-speed, rb.linearVelocity.y);
                 }
                 else
                 {
-                    rb.velocity = new Vector2(speed, rb.velocity.y);
+                    rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
                 }
             }
         }
@@ -86,7 +86,7 @@ public class movimentação : MonoBehaviour
     private void recuo_jogador_inicial()
     {
         // Recuo do jogador
-        rb.velocity = new Vector2(rb.velocity.x, -1.2f * 2);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, -1.2f * 2);
 
         // Checa se está na altura de parada
         if (transform.position.y <= -2.2)
@@ -133,7 +133,7 @@ public class movimentação : MonoBehaviour
     }
 
     public void drag_controll(float speed_input){
-        this.GetComponent<Rigidbody2D>().drag = speed_input;
+        this.GetComponent<Rigidbody2D>().linearDamping = speed_input;
         dragText.text = speed_input.ToString("#.00");
     }
 

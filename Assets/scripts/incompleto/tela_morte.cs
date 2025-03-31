@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class tela_morte : MonoBehaviour
 {
@@ -18,8 +19,7 @@ public class tela_morte : MonoBehaviour
     
     public void continuar()
     {
-        Time.timeScale = 1;
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void sair()
     {
