@@ -63,6 +63,7 @@ public class Game_Manager : MonoBehaviour{
                 next_phase = phase_plan[phase];
             }
             // Passa a fase e registra tempo
+
             phase++;
             phase_time = Time.time;
         }

@@ -14,7 +14,8 @@ public class movimentação : MonoBehaviour
     public static bool input_consider;
     private Rigidbody2D rb;
     private Vector3 localScreenWidth;
-
+    private GameObject save_options;
+    private GameObject Game_manager; 
     private GameObject sound_control;
 
     void Start()
@@ -108,21 +109,31 @@ public class movimentação : MonoBehaviour
         input_consider = true;
     }
 
-    public void End_player(int explosion_type){
+    public void End_player(int explosion_type)
+    {
         // Toca animação do jogador
         Animator player_animator = this.gameObject.GetComponent<Animator>();
 
         // Checa condição de fim de jogo
-        if (explosion_type == 0){
-            transform.position = new Vector3(transform.position.x, transform.position.y + 1.3f,transform.position.z);
+        if (explosion_type == 0)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y + 1.3f, transform.position.z);
             player_animator.SetBool("explosion1", true);
-        } else if (explosion_type == 1) {
-            transform.position = new Vector3(transform.position.x, transform.position.y + 0.4f,transform.position.z);
+        }
+        else if (explosion_type == 1)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y + 0.4f, transform.position.z);
             player_animator.SetBool("explosion2", true);
-        } else if (explosion_type == 2) {
-            transform.position = new Vector3(transform.position.x, transform.position.y + 0.4f,transform.position.z);
+        }
+        else if (explosion_type == 2)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y + 0.4f, transform.position.z);
             player_animator.SetBool("explosion3", true);
         }
+        //Reporta score
+        Game_manager = GameObject.FindWithTag("Game_manager"); 
+        float score = Game_manager.GetComponent<Game_Manager>().Get_height();
+        LeaderboardManager.Instance.ReportScore((long)score / 1000);
     }
 
     // debug

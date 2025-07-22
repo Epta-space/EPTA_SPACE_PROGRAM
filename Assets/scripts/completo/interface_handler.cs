@@ -57,7 +57,7 @@ public class interface_handler : MonoBehaviour
         }
         else{
             
-            scoreText_2.text = (int)score / 1000 + " km";
+            scoreText.text = ((int)score / 1000).ToString() + "km"; 
         }
 
     }
@@ -82,8 +82,12 @@ public class interface_handler : MonoBehaviour
         
     }
     
+    public void ShowLeaderboard(){
+        LeaderboardManager.Instance.ShowLeaderboardUI();
+    }
+    
     // Retorna menu básico
-    public GameObject Get_basic_ui(){return Basic_UI;}
+    public GameObject Get_basic_ui() { return Basic_UI; }
 
     // Retorna menu básico
     public GameObject Get_end_ui(){return End_UI;}
